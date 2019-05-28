@@ -20,8 +20,7 @@ from models import readconfig
 from models.myunit import MyTest
 from pages.loginpage import LoginPage
 from pages.managepage import Manage
-from utils.config import Config, DRIVER_PATH
-from utils.log import logger
+
 
 class LoginTest(MyTest,LoginPage):
     '''登录测试'''
@@ -44,7 +43,7 @@ class LoginTest(MyTest,LoginPage):
         try:
             self.user_login()
             WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present())   #显示等待直到alert出现
-            self.assertEqual(self.error_hint(), u"用户名或密码00不能为空！") #error_hint()方法在LoginPage下
+            self.assertEqual(self.error_hint(), u"用户名或密码不能为空！") #error_hint()方法在LoginPage下
             self.accept_alert()       #accept_alert()方法在BasePage类下
         except Exception as msg:
             print(u"异常原因：%s"%msg)

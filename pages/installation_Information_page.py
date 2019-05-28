@@ -11,7 +11,6 @@ from selenium.webdriver.common.by import By
 from pages.basepage import BasePage
 from pages.loginpage import LoginPage
 from pages.home_page import HomePage
-import datetime
 from selenium.webdriver.support import expected_conditions as ES
 from selenium.webdriver.support.ui import WebDriverWait
 
@@ -74,7 +73,7 @@ class InstallInfor(BasePage):
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
         self.accept_alert()
         sleep(1)
-        self.driver.switch_to.default_content()
+        self.driver.switch_to.default_content() 
         
         
     

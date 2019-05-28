@@ -42,8 +42,10 @@ class ModifyingNetworkTest2(MyTest):
         try:
             network = Network(self.driver) 
             network.change_ip(readconfig.netaddr1,readconfig.netaddr2,readconfig.netaddr3,readconfig.netaddr4,\
-            readconfig.gateway1,readconfig.gateway2,readconfig.gateway3,readconfig.gateway4)                 
+            readconfig.gateway1,readconfig.gateway2,readconfig.gateway3,readconfig.gateway4) 
+            sleep(2)                
             self.driver.refresh()
+            sleep(3)
             new_url = self.driver.current_url
             login = LoginPage(self.driver)
             login.login_sys(readconfig.username, readconfig.password)

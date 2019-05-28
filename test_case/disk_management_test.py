@@ -1,0 +1,74 @@
+#coding:utf-8
+'''
+Created on 2019年05月28日
+
+@author: Aloe
+'''
+
+
+import os
+import unittest
+from time import sleep
+
+from models import readconfig
+from models.myunit import MyTest
+from pages.disk_management_page import DiskManagement
+
+class DiskManagementTest(MyTest, DiskManagement):
+    '''硬盘管理测试'''
+# -
+#     def test_disk_repair(self):   尚未实现
+#         '''修复文件'''
+#         try:
+#             self.disk_repair()
+#         except Exception as msg:
+#             print(u"异常原因：%s"%msg)
+#             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_disk_repair.png'))
+#             raise Exception("false")
+#         finally:
+#             self.driver.switch_to.default_content() 
+
+
+    # def test2_file_arrangement(self):
+    #     '''文件管理测试'''
+    #     try:
+    #         result = self.file_arrangement()
+    #         self.assertEqual(result, "保存成功！")   
+    #     except Exception as msg:
+    #         print(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_file_arrangement.png'))
+    #         raise Exception("false")
+    #     finally:
+    #         self.driver.switch_to.default_content() 
+
+
+    # def test_disk_format(self):   
+    #     '''硬盘格式化测试'''
+    #     try:
+    #         result = self.disk_format()
+    #         self.assertEqual(result, "硬盘格式化成功")  
+    #     except Exception as msg:
+    #         print(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_disk_format.png'))
+    #         raise Exception("false")
+    #     finally:
+    #         self.driver.switch_to.default_content() 
+    
+
+    def test_software_upload(self):   
+        '''辅助软件上传测试'''
+        try:
+            self.software_upload(readconfig.software_upload_path+"\\upload.exe")
+            self.find_element(self.success)
+            print(self.getAttribute(self.success,"textContent")) #获取 layer.msg 弹窗的信息
+            self.assertEqual(self.getAttribute(self.success,"textContent"),"上传成功！")
+        except Exception as msg:
+            print(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_disk_format.png'))
+            raise Exception("false")
+        finally:
+            self.driver.switch_to.default_content() 
+    
+        
+if __name__ == "__main__":
+   unittest.main()

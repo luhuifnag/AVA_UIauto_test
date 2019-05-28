@@ -40,7 +40,6 @@ class MyTest(unittest.TestCase):
     def setUp(self):
         print(u"******************测试开始******************")
         self.driver = webdriver.Firefox()
-        # cls.driver = webdriver.Chrome()
         self.driver.get(readconfig.url)
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)

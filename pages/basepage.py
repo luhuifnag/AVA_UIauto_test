@@ -50,10 +50,6 @@ class BasePage(object):
     #清空输入框数据    
     def clear(self,loc):
         self.find_element(loc).clear()
-
-    #获取输入框文本    
-    def gettext(self,loc):
-        return self.find_element(loc).text
     
     #鼠标悬浮    
     def move_to_element(self,loc):
@@ -81,7 +77,10 @@ class BasePage(object):
         ActionChains(self.driver).drag_and_drop_by_offset(element, xoffset, yoffset).perform()
     
 
-
+    #获取输入框文本    
+    def gettext(self,loc):
+        return self.find_element(loc).text
+        
     #获取input标签的文本
     def getValuetext(self,loc):
         return self.find_element(loc).get_attribute('value')
@@ -90,7 +89,7 @@ class BasePage(object):
     def getInnerHTML(self,loc):
         return self.find_element(loc).get_attribute('innerHTML')
     
-    #h获取标签的属性值
+    #获取标签的属性值
     def getAttribute(self,loc,arrt):
         return self.find_element(loc).get_attribute('%s' % arrt)
 

@@ -97,7 +97,7 @@ class RecordOperationTest(MyTest, RecordOperation):
     def test6_upload_logo(self):
         '''成功上传logo的测试'''
         try:
-            self.upload_logo("F:\AVAtest\date\logo_sun.bmp")
+            self.upload_logo(readconfig.software_upload_path+"\\logo_sun.bmp")
             self.find_element(self.success)
             print(self.getAttribute(self.success,"textContent")) #获取 layer.msg 弹窗的信息
             self.assertEqual(self.getAttribute(self.success,"textContent"),"LOGO上传成功!")
@@ -110,7 +110,7 @@ class RecordOperationTest(MyTest, RecordOperation):
     def test7_upload_logo2(self):
         '''上传logo失败的测试'''  
         try:
-            self.upload_logo("F:\AVAtest\date\logo_fail.bmp")
+            self.upload_logo(readconfig.software_upload_path+"\\logo_fail.bmp")
             self.find_element(self.success)
             print(self.getAttribute(self.success,"textContent")) #获取 layer.msg 弹窗的信息
             self.assertEqual(self.getAttribute(self.success,"textContent"),"LOGO文件格式错误!")
