@@ -29,9 +29,9 @@ class DiskManagement(BasePage):
     arrangementbtn = (By.XPATH, "//*[@id='hardwareContainer']/div[3]/img")
     
     # 辅助软件上传
-    uploadbtn = (By.XPATH, "//*[@id='hardwareContainer']/div[4]/img")
+    uploadbtn = (By.XPATH, "//*[@id='hardwareContainer']/div[4]/input")
     # 上传成功的提示
-    success = (By.XPATH, "/html/body/div[4]")
+    success = (By.XPATH, "/html/body/div[3]")
 
 
      # 硬盘格式化
@@ -77,8 +77,8 @@ class DiskManagement(BasePage):
         home = HomePage(self.driver)
         home.swich_to_basic_label(self.diskbtn,"硬盘管理")
         sleep(2)
-        self.click(self.arrangementbtn)
+        self.input_text(self.uploadbtn, path)
         print(u"点击辅助软件上传按钮")
-        os.system(path)
-        
+        sleep(1)
+
       

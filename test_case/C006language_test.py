@@ -24,7 +24,6 @@ class LanguagesTest(MyTest, Languages):
             self.switch_Chinese()
             sleep(3)
             self.driver.switch_to.default_content()     
-            # self.assertEqual(self.getAttribute(self.languagebtn,"data-original-title"), "Language")
             self.driver.switch_to.frame("content")  
             self.assertEqual(self.gettext(self.tips), "注意：浏览器将自动刷新！")    
         except Exception as msg:
@@ -41,7 +40,6 @@ class LanguagesTest(MyTest, Languages):
             self.switch_english()
             sleep(3)
             self.driver.switch_to.default_content()     
-            # self.assertEqual(self.getAttribute(self.languagebtn,"data-original-title"), "Language")
             self.driver.switch_to.frame("content")  
             self.assertEqual(self.gettext(self.tips), "Remark:The browser will automatically refresh!")    
         except Exception as msg:
