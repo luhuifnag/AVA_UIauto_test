@@ -1,5 +1,4 @@
-a = "kdadk"
-b = "dkapcd"
-lista = [a,b]
-print(lista)
-print("1346")
+import datetime
+time = datetime.datetime.now().timetuple()
+now_month = str(time.tm_mon)
+print(now_month)

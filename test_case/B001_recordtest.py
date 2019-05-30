@@ -139,10 +139,10 @@ class Recorder(MyTest,Records,RecordPage):
 
 
     def test7_main_720p_and_sub_540p(self):
-        '''主码流为720p，子码流为标清的录制测试'''
+        '''主码流为720p，子码流为标清的录制测试'''  
         home = HomePage(self.driver)
         video = VideoManagemen(self.driver) 
-        self.record_main_and_sub(2,6,"720p","标清","主码流和子码流录制")
+        self.record_main_and_sub(1,2,"720p","标清","主码流和子码流录制")
         # home.click_record_black()
         # sleep(1)
         # video.file_detailed(2)       

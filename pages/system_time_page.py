@@ -82,8 +82,9 @@ class SystemTime(BasePage):
         sleep(2)
         self.check_automaticbtn()
         now_year = datetime.datetime.now().strftime('%Y')
-        now_month = datetime.datetime.now().strftime('%m')
-        now_day = datetime.datetime.now().strftime('%d')
+        time = datetime.datetime.now().timetuple()
+        now_month = str(time.tm_mon)
+        now_day = str(time.tm_mday)   #这种方式可以去掉日期月份小于10的时候前面带的0
         now_hours = datetime.datetime.now().strftime("%H")
         datelist = [now_year, now_month,now_day,now_hours]
         print(datelist)

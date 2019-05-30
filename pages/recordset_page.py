@@ -10,6 +10,7 @@ from time import sleep
 from selenium.webdriver.common.by import By
 from pages.basepage import BasePage
 from pages.home_page import HomePage
+from selenium.webdriver.support.ui import Select
 
 class RecordSet(BasePage):
 
@@ -44,8 +45,13 @@ class RecordSet(BasePage):
         self.click(self.main_stream)
         sleep(2)
         print(u"选择主码流质量为%s" % quality)  
-        main_streams = (By.ID,"ui-id-%d" % num) #%d取值1、2、3、4分别对应的码流质量为1080p\720p\标清\流畅  
-        self.click(main_streams)       
+        # self.click(self.main_stream)
+        # sleep(2)
+        js = "document.getElementById('main_quality_select').style.display='block';" #编写JS语句把更改display的属性
+        self.driver.execute_script(js) #执行JS
+        sleep(2) 
+        main_streams = (By.ID,"main_quality_select")
+        Select(self.find_element(main_streams)).select_by_value("%d" % num)  #%d取值0\1\2\3分别对应的码流质量为1080p\720p\标清\流畅       
         sleep(1)
 
         
@@ -63,11 +69,9 @@ class RecordSet(BasePage):
         self.click(self.sub_stream)
         sleep(2)
         print(u"选择子码流质量为%s" % quality)
-        sub_streams = (By.ID,"ui-id-%d" % num)  #%d取值5、6、7分别对应的码流质量为720p\标清\流畅
-        # sub_streams = (By.XPATH, "//*[@id='main_quality_select-menu']/li[%d]" % num)  #%d取值5、6、7分别对应的码流质量为720p\标清\流畅
-        print(self.getAttribute(sub_streams,"class"))
-        print(self.gettext(sub_streams))
-        self.click(sub_streams)          
+        sub_streams = (By.ID,"multi_quality") 
+        self.click(sub_streams)  
+        Select(self.find_element(sub_streams)).select_by_value("%d" % num)  #%d取值1、2、3分别对应的码流质量为720p\标清\流畅        
         sleep(1)
 
         
