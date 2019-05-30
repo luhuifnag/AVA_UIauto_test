@@ -7601,3 +7601,184 @@ console.error: BroadcastService:
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1559200303783	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.TwcYrAYDjlLI"
+1559200307653	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559200307674	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559200307674	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+[Parent 25208, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 24392, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 24392, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035[Parent 25208, Gecko_IOThread] WARNING: file z:/task_1558035249/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+1559200331351	Marionette	INFO	Listening on port 51683
+1559200331736	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.120/admin/system/sysConfigure.js?_=0.4608021924244372, line 464: unreachable code after return statement
+1559200357308	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+openRemotePrompt@resource://gre/modules/Prompter.jsm:508:17
+openPrompt@resource://gre/modules/Prompter.jsm:542:17
+alert@resource://gre/modules/Prompter.jsm:615:14
+recOptionSaveAfter/request.onreadystatechange@http://192.168.13.120/admin/system/recOptioncfg.1.js?_=0.8109900677964554:1006:25
+recOptionSaveAfter@http://192.168.13.120/admin/system/recOptioncfg.1.js?_=0.8109900677964554:1020:13
+recOptionSave/request.onreadystatechange@http://192.168.13.120/admin/system/recOptioncfg.1.js?_=0.8109900677964554:938:21
+recOptionSave@http://192.168.13.120/admin/system/recOptioncfg.1.js?_=0.8109900677964554:943:13
+onclick@http://192.168.13.120/admin/system/recOptioncfg.1.html?_=0.25458865641956496:1:1
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:202:14
+webdriverClickElement@chrome://marionette/content/interaction.js:183:11
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.6876903535637722, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.6876903535637722, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.6876903535637722, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.6876903535637722, line 6761: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.6876903535637722, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.6876903535637722, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.6876903535637722, line 1278: unreachable code after return statement
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0099,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0088,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0099,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0088,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0099,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0088,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x36010F,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0099,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0088,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590015,name=PLayerTransaction::Msg_ClearCachedResources) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x950003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590006,name=PLayerTransaction::Msg_ReleaseCompositable) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x59001E,name=PLayerTransaction::Msg_Shutdown) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x330017,name=PCompositorBridge::Msg_WillClose) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590015,name=PLayerTransaction::Msg_ClearCachedResources) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x59001E,name=PLayerTransaction::Msg_Shutdown) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x330017,name=PCompositorBridge::Msg_WillClose) Channel error: cannot send/recv
+
+[GFX1-]: Receive IP[GFX1C close with re-ason=AbnormalShutdown]
+: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Parent 25208, Gecko_IOThread] WARNING: file z:/task_1558035249/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+[Parent 25208, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 25208, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9748, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9748, Chrome_ChildThread] WARNING: pipe e[Child 18556, Chrome_ChildThread] W1559200374002	Marionette	INFO	Stopped listening on port 51683
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 142041559200549513	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.Ats8x7w2zE4C"
+1559200550194	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559200550194	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559200550194	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559200554908	Marionette	INFO	Listening on port 52064
+1559200554949	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.24556159901547892, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.24556159901547892, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.24556159901547892, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.24556159901547892, line 6761: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.24556159901547892, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.24556159901547892, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.24556159901547892, line 1278: unreachable code after return statement
+1559200620969	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.MowocxVqXg8M"
+1559200622250	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559200622250	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559200622250	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559200627417	Marionette	INFO	Listening on port 52202
+1559200627512	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.120/admin/system/sysConfigure.js?_=0.14809557794831685, line 464: unreachable code after return statement
+1559200647555	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+openRemotePrompt@resource://gre/modules/Prompter.jsm:508:17
+openPrompt@resource://gre/modules/Prompter.jsm:542:17
+alert@resource://gre/modules/Prompter.jsm:615:14
+recOptionSaveAfter/request.onreadystatechange@http://192.168.13.120/admin/system/recOptioncfg.1.js?_=0.25865119399174474:1006:25
+recOptionSaveAfter@http://192.168.13.120/admin/system/recOptioncfg.1.js?_=0.25865119399174474:1020:13
+recOptionSave/request.onreadystatechange@http://192.168.13.120/admin/system/recOptioncfg.1.js?_=0.25865119399174474:938:21
+recOptionSave@http://192.168.13.120/admin/system/recOptioncfg.1.js?_=0.25865119399174474:943:13
+onclick@http://192.168.13.120/admin/system/recOptioncfg.1.html?_=0.34668749541409505:1:1
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:202:14
+webdriverClickElement@chrome://marionette/content/interaction.js:183:11
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.017618765393031977, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.017618765393031977, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.017618765393031977, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.017618765393031977, line 6761: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.017618765393031977, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.017618765393031977, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.017618765393031977, line 1278: unreachable code after return statement
+1559200673735	Marionette	INFO	Stopped listening on port 52202
+[Child 2516, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[[ChiClhildd 10 251528, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10528, Chrome_ChildTh[Parent 15640, Gecko_IOThread] WARNING: file z:/task_1558035249/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+[Parent 15640, Gecko_IOThread] WARNING: file z:/task_1558035249/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+[Parent 15640, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 11816, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 11816, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1558035249/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[GPU 20
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+132, Chr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1559200730512	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.8w2nnRM04veG"
+1559200731292	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559200731293	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559200731293	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559200735846	Marionette	INFO	Listening on port 52389
+1559200735953	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.120/admin/system/sysConfigure.js?_=0.533961644559714, line 464: unreachable code after return statement
+1559200755233	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+openRemotePrompt@resource://gre/modules/Prompter.jsm:508:17
+openPrompt@resource://gre/modules/Prompter.jsm:542:17
+alert@resource://gre/modules/Prompter.jsm:615:14
+recOptionSaveAfter/request.onreadystatechange@http://192.168.13.120/admin/system/recOptioncfg.1.js?_=0.06482108662720232:1006:25
+recOptionSaveAfter@http://192.168.13.120/admin/system/recOptioncfg.1.js?_=0.06482108662720232:1020:13
+recOptionSave/request.onreadystatechange@http://192.168.13.120/admin/system/recOptioncfg.1.js?_=0.06482108662720232:938:21
+recOptionSave@http://192.168.13.120/admin/system/recOptioncfg.1.js?_=0.06482108662720232:943:13
+onclick@http://192.168.13.120/admin/system/recOptioncfg.1.html?_=0.1201555618061434:1:1
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:202:14
+webdriverClickElement@chrome://marionette/content/interaction.js:183:11
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.39232415826625266, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.39232415826625266, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.39232415826625266, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.39232415826625266, line 6761: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.39232415826625266, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.39232415826625266, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.39232415826625266, line 1278: unreachable code after return statement

@@ -38,20 +38,6 @@ class RecordSet(BasePage):
 
 
 
-
-
-    # #进入到录制参数页面
-    # def swich_to_recordset(self):
-    #     home = HomePage(self.driver)
-    #     home.click_system_setup()
-    #     sleep(2)
-    #     home.click_application_settings()
-    #     sleep(2)
-    #     self.click(self.recordsetbtn)
-    #     print(u"点击录制参数标签")
-    #     self.driver.switch_to.frame("content")
-
-
     # 设置主码流质量
     def set_main_quality(self,num,quality="1080p"):
         self.click(self.mainbtn)
@@ -78,6 +64,9 @@ class RecordSet(BasePage):
         sleep(2)
         print(u"选择子码流质量为%s" % quality)
         sub_streams = (By.ID,"ui-id-%d" % num)  #%d取值5、6、7分别对应的码流质量为720p\标清\流畅
+        # sub_streams = (By.XPATH, "//*[@id='main_quality_select-menu']/li[%d]" % num)  #%d取值5、6、7分别对应的码流质量为720p\标清\流畅
+        print(self.getAttribute(sub_streams,"class"))
+        print(self.gettext(sub_streams))
         self.click(sub_streams)          
         sleep(1)
 
