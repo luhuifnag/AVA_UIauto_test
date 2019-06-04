@@ -41,3 +41,11 @@ class MyTest(unittest.TestCase):
         login.login_sys(readconfig.username, readconfig.password)
         sleep(2)
         WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统")) 
+
+    def test01(self):
+        print("测试OK")
+
+
+if __name__ == "__main__":
+
+    unittest.main()
