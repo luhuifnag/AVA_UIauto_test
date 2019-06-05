@@ -100,4 +100,4 @@ class ConfigureRegister(BasePage):
         self.input_localport()
         self.input_udpport()
         self.click(self.registerSave)
-        sleep(20)
+  

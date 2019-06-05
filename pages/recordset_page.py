@@ -15,7 +15,7 @@ from selenium.webdriver.support.ui import Select
 class RecordSet(BasePage):
 
     #录制参数标签按钮
-    recordsetbtn = (By.XPATH,"//*[@id='sec_navs']/li[7]/a")  
+    recordsetbtn = (By.XPATH,"//*[@id='sec_navs']/li[7]/a") 
 
     # 主码流选择按钮
     mainbtn = (By.XPATH,"//*[@id='main_quality']/a[1]/label/i")  

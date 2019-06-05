@@ -22,7 +22,7 @@ from pages.networkpage import Network
 
 
 class ModifyingNetworkTest2(MyTest):
-
+    '''在系统设置中更改IP测试'''
     
     def setUp(self):
         print(u"******************测试开始******************")

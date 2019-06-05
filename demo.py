@@ -1,51 +1,38 @@
+#coding:utf-8
+'''
+Created on 2019年05月20日
+
+@author: Aloe
+'''
+
+
+    #######################添加临时环境变量路径###########################  
+# import sys
+# import os
+#将models和pages的绝对路径写到系统环境变量中，实现跨目录的调用,这个方法是临时生效的，脚本运行后就会失效(如果已经将文件路径永久添加到PYTHONPATH中则不需要这个步骤)
+# sys.path.append(os.path.abspath("F:\\AVAtest"))
+# print(sys.path)
+
+    #######################添加临时环境变量路径###########################  
+
+import sys
 import time
 import unittest
-from time import sleep
 
-from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as ES
-from selenium.webdriver.support.ui import WebDriverWait
-
+import HTMLTestRunner
 from models import readconfig
-from pages.home_page import HomePage
-from pages.loginpage import LoginPage
 
 
 
-class MyTest(unittest.TestCase):
-    
-    # @classmethod
-    # def setUpClass(cls):
-    #     cls.driver = webdriver.Firefox()
-    #     # cls.driver = webdriver.Chrome()
-    #     cls.driver.get(readconfig.url)
-    #     cls.driver.maximize_window()
-    #     cls.driver.implicitly_wait(10)
-    #     login = LoginPage(cls.driver)
-    #     login.login_sys(readconfig.username, readconfig.password)
-    #     sleep(2)
-    #     WebDriverWait(cls.driver,5,0.5).until(ES.title_is(u"录播管理系统")) 
-    
-    # @classmethod
-    # def tearDownClass(cls):
-    #     cls.driver.quit()
+report_path = readconfig.report_path
+print(U"测试报告存放位置：%s" % report_path)
 
 
-    def setUp(self):
-        print(u"******************测试开始******************")
-        self.driver = webdriver.Firefox()
-        self.driver.get(readconfig.url)
-        self.driver.maximize_window()
-        self.driver.implicitly_wait(10)
-        login = LoginPage(self.driver)
-        login.login_sys(readconfig.username, readconfig.password)
-        sleep(2)
-        WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统")) 
-
-    def test01(self):
-        print("测试OK")
-
-
-if __name__ == "__main__":
-
-    unittest.main()
+if __name__ == '__main__':
+    now = time.strftime("%Y%m%d%H%M%S",time.localtime(time.time()))
+    filename = report_path+now+'result.html'
+    fp = open(filename,'wb')
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp,title='云互动UI自动化测试报告',description='环境：win10，firefox')
+    discover = unittest.defaultTestLoader.discover("test_case",pattern="A001_logintest.py",top_level_dir=None)
+    runner.run(discover)
+    fp.close()

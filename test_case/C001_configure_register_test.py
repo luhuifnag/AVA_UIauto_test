@@ -25,37 +25,37 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
         ''' 服务器地址为空的rsever注册测试'''
         try:
             self.register_rserver("",readconfig.name,readconfig.pwd,readconfig.machineName)
+            sleep(3)
             self.assertEqual(self.error_hint(), u"服务器地址不能为空！") 
             WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
-            self.accept_alert()
-            sleep(2)      
+            sleep(2)
+            self.accept_alert()     
         except Exception as msg:
             print(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register1.png'))
             raise Exception("false")
-        finally:
-            self.driver.switch_to.default_content()
 
 
     def test_register2(self):
         ''' 服务账号为空的rsever注册测试'''  
         try:
             self.register_rserver(readconfig.rserverip,"",readconfig.pwd,readconfig.machineName)
+            sleep(3)
             self.assertEqual(self.error_hint(), u"用户账号不能为空！") 
             WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
+            sleep(2)
             self.accept_alert()      
         except Exception as msg:
             print(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register2.png'))
             raise Exception("false")
-        finally:
-            self.driver.switch_to.default_content()
 
     
     def test_register3(self):
         ''' 服务昵称为空的rsever注册测试'''   
         try:
             self.register_rserver(readconfig.rserverip,readconfig.name,readconfig.pwd,"")
+            sleep(3)
             self.assertEqual(self.error_hint(), u"用户昵称不能为空！") 
             WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
             sleep(2)
@@ -64,26 +64,9 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
             print(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register3.png'))
             raise Exception("false")
-        finally:
-            self.driver.switch_to.default_content() 
      
 
     def test_register4(self):
-        ''' 成功注册rserver'''    
-        try:
-            self.register_rserver(readconfig.rserverip,readconfig.name,readconfig.pwd,readconfig.machineName)
-            base = BasePage(self.driver)
-            self.assertEqual(base.gettext(self.regstateStatus), u"注册成功")      
-        except Exception as msg:
-            print(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register4.png'))
-            raise Exception("false")
-        finally:
-            self.driver.switch_to.default_content() 
-        
-
-        
-    def test_register5(self):
         ''' 使用备用服务器成功注册rserver'''
         try:
             self.register_rserver("123",readconfig.name,readconfig.pwd,readconfig.machineName,readconfig.rserverip)
@@ -94,7 +77,24 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register5.png'))
             raise Exception("false")
         finally:
+      
             self.driver.switch_to.default_content() 
+
+    def test_register5(self):
+        ''' 成功注册rserver'''    
+        try:
+            self.register_rserver(readconfig.rserverip,readconfig.name,readconfig.pwd,readconfig.machineName)
+            sleep(20)
+            base = BasePage(self.driver)
+            self.assertEqual(base.gettext(self.regstateStatus), u"注册成功")      
+        except Exception as msg:
+            print(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register4.png'))
+            raise Exception("false")
+
+
+        
+    
 
 
         

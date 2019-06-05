@@ -35,8 +35,6 @@ class ModifyingNetworkTest(MyTest):
             print(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_not_operable.png'))
             raise Exception("false")
-        finally:
-            self.driver.switch_to.default_content()
 
 
     def test2_select_self_adaption(self):
@@ -53,8 +51,6 @@ class ModifyingNetworkTest(MyTest):
             print(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_select_self_adaption.png'))
             raise Exception("false")
-        finally:
-            self.driver.switch_to.default_content()
 
 
     def test3_modifying_dnsa1(self):
@@ -62,23 +58,12 @@ class ModifyingNetworkTest(MyTest):
         try:
             gnetwork = ConfigureNetwork(self.driver)
             gnetwork.modifying_dnsa1()
-            sleep(2)
-            self.driver.refresh()
-            sleep(3)
-            login = LoginPage(self.driver)
-            login.login_sys(readconfig.username, readconfig.password)
-            sleep(2)
-            home = HomePage(self.driver)
-            home.swich_to_configure_label(gnetwork.networkbtn, "网络参数")
-            sleep(2)
             base = BasePage(self.driver) 
             self.assertEqual(base.getValuetext(gnetwork.dnsa3),"118")
         except Exception as msg:
             print(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_modifying_dnsa1.png'))
             raise Exception("false")
-        finally:
-            self.driver.switch_to.default_content()
 
 
     def test4_modifying_dnsa1(self):
@@ -86,23 +71,12 @@ class ModifyingNetworkTest(MyTest):
         try:
             gnetwork = ConfigureNetwork(self.driver)
             gnetwork.modifying_dnsb1()
-            sleep(2)
-            self.driver.refresh()
-            sleep(3)
-            login = LoginPage(self.driver)
-            login.login_sys(readconfig.username, readconfig.password)
-            sleep(2)
-            home = HomePage(self.driver)
-            home.swich_to_configure_label(gnetwork.networkbtn, "网络参数")
-            sleep(2)
             base = BasePage(self.driver)  
             self.assertEqual(base.getValuetext(gnetwork.dnsb3),"6")
         except Exception as msg:
             print(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_modifying_dnsa1.png'))
             raise Exception("false")
-        finally:
-            self.driver.switch_to.default_content()
 
 
     def test5_select_manual_ip(self):

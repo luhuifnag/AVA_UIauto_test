@@ -49,7 +49,7 @@ class RecordOperation(RecordPage):
         self.select_windows()
         self.start_recording("云台控制录制")
         self.PTZ_turning()
-        self.PTZ_focusing()
+        self.PTZ_focusing() 
         self.PTZ_fast_focusing()
         self.stop_recording()
 
