@@ -11,12 +11,12 @@ from pages.basepage import BasePage
 
 class HomePage(BasePage):
 
-    def click_record (self):
+    def click_record(self):
         print (u"点击录播按钮")
         record = (By.XPATH,"//*[@id='content']/div[1]/a[1]")
         self.click(record)
 
-    def click_record_black (self):
+    def click_record_black(self):
         print(u"点击录播页面返回按钮")
         backbtn = (By.ID,"back")
         self.click(backbtn)

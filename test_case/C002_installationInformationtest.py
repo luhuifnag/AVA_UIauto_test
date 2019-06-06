@@ -31,8 +31,6 @@ class InstallInforTest(MyTest,InstallInfor):
             print(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_InstallInfor.png'))
             raise Exception("false")
-        finally:
-            self.driver.switch_to.default_content()
 
     
             

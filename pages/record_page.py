@@ -137,8 +137,16 @@ class RecordPage(BasePage):
         preview_num = len(previews)
         return int(preview_num)
 
-    
-
+    # 获取预览视窗的名称
+    def get_preview_tag(self):
+        num = self.get_preview_num()
+        taglist = []
+        for i in range(num):
+            tags = (By.XPATH, "//*[@id='videoLists']/li[%s]/div[1]/div" % str(i+1))
+            taglist.append(self.gettext(tags))
+        print(taglist)
+        return taglist
+            
 
     def back(self):
         print(u"点击录播页面返回按钮")
