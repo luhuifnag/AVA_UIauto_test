@@ -17,7 +17,7 @@ from models.myunit import MyTest
 from pages.basepage import BasePage
 from pages.configure_register_page import ConfigureRegister
 
-#############这里的用例连起来跑会报错#####################
+
 class ConfigureRegisterTest(MyTest,ConfigureRegister):
     '''快速配置，rserver注册相关测试'''
 
@@ -64,9 +64,21 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
             print(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register3.png'))
             raise Exception("false")
+    
+    def test_register4(self):
+        ''' 非白名单的用户注册'''   
+        try:
+            self.register_rserver(readconfig.rserverip,"djicnf",readconfig.pwd,readconfig.machineName)
+            sleep(20)
+            base = BasePage(self.driver)
+            self.assertEqual(base.gettext(self.regstateStatus), u"注册错误！当前设备未在Rserver注册！")   
+        except Exception as msg:
+            print(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register4.png'))
+            raise Exception("false")
      
 
-    def test_register4(self):
+    def test_register5(self):
         ''' 使用备用服务器成功注册rserver'''
         try:
             self.register_rserver("123",readconfig.name,readconfig.pwd,readconfig.machineName,readconfig.rserverip)
@@ -77,10 +89,10 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register5.png'))
             raise Exception("false")
         finally:
-      
             self.driver.switch_to.default_content() 
 
-    def test_register5(self):
+
+    def test_register6(self):
         ''' 成功注册rserver'''    
         try:
             self.register_rserver(readconfig.rserverip,readconfig.name,readconfig.pwd,readconfig.machineName)
@@ -92,9 +104,6 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register4.png'))
             raise Exception("false")
 
-
-        
-    
 
 
         
