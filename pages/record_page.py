@@ -99,7 +99,7 @@ class RecordPage(BasePage):
 
     # 变焦
     ptzbtn = (By.ID, "ptzMenu")
-        # 快捷变焦的4个按钮
+    # 快捷变焦的4个按钮
     focus1 = (By.XPATH,"//*[@id='c_zoom']/li[1]/img")
     focus2 = (By.XPATH,"//*[@id='c_zoom']/li[2]/img")
     focus3 = (By.XPATH,"//*[@id='c_zoom']/li[3]/img")
@@ -222,7 +222,9 @@ class RecordPage(BasePage):
 
     #点击云台四个变焦按钮
     def PTZ_fast_focusing(self):
+        print("控制快速变焦")
         self.click(self.ptzbtn)
+        sleep(2)
         self.click(self.focus4)
         sleep(5)
         self.click(self.focus3)
@@ -234,6 +236,7 @@ class RecordPage(BasePage):
 
     # 控制云台的方位转动
     def PTZ_turning(self):
+        print("控制云台上下左右转动")
         self.long_click(self.up)
         sleep(2)
         self.long_click(self.down)
@@ -244,10 +247,11 @@ class RecordPage(BasePage):
 
     # 控制云台的变焦
     def PTZ_focusing(self):
+        print("控制云台聚焦")
         self.long_click(self.addbtn)
-        sleep(5)
+        sleep(10)
         self.long_click(self.reducebtn)
-        sleep(5)
+        sleep(10)
 
     # 调整云台的灵敏度
     def PTZ_sensitivity(self, xoffset, yoffset):

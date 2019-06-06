@@ -85,7 +85,7 @@ class SystemTime(BasePage):
         time = datetime.datetime.now().timetuple()
         now_month = str(time.tm_mon)
         now_day = str(time.tm_mday)   #这种方式可以去掉日期月份小于10的时候前面带的0
-        now_hours = datetime.datetime.now().strftime("%H")
+        now_hours = str(time.tm_hour)   
         datelist = [now_year, now_month,now_day,now_hours]
         print(datelist)
         self.driver.refresh()
