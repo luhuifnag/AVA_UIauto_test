@@ -17,13 +17,15 @@ from pages.home_page import HomePage
 class IterTeaching(BasePage):
 
     # 会议模式
-    metting_typle = (By.XPATH, "//*[@id='header']/div[3]/h2")
+    meeting_typle = (By.XPATH, "//*[@id='header']/div[3]/h2")
     # 会议主题
-    metting_theam = (By.XPATH, "//*[@id='header']/div[3]/div[1]/span")
+    meeting_theam = (By.XPATH, "//*[@id='header']/div[3]/div[1]/span")
     # 会议号
-    metting_no = (By.XPATH, "//*[@id='header']/div[3]/div[2]")
+    meeting_no = (By.XPATH, "//*[@id='header']/div[3]/div[2]")
     # 会议密码
-    metting_pwd = (By.XPATH, "//*[@id='header']/div[3]/div[3]")
+    meeting_pwd = (By.XPATH, "//*[@id='header']/div[3]/div[3]")
+    # 双流标志
+    doubletag = (By.XPATH, "//*[@id='baseController']/div[1]/div[1]/label")
     # 退出会议按钮
     intera_stop = (By.ID, "intera_stop")
     # 退出会议的确定按钮
@@ -31,7 +33,7 @@ class IterTeaching(BasePage):
 
 
     # 退出会议
-    def stop_metting(self):
+    def stop_meeting(self):
         self.click(self.intera_stop)
         sleep(2)
         self.click(self.sure2)

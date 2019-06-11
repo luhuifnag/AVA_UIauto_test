@@ -38,11 +38,16 @@ defaulturl = conf.get("platform", "defaulturl")
 url = conf.get("platform", "url")
 newurl = conf.get("platform", "newurl")
 
-##rserver注册的相关参数
+#rserver注册的相关参数
 rserverip = conf.get("rserver", "rserverip")
 name = conf.get("rserver", "name")
 pwd = conf.get("rserver", "pwd")
 machineName = conf.get("rserver", "machineName")
+
+# 用来做听课的在线设备
+Attendant1 = conf.get("Attendant", "Attendant1")
+Attendant2 = conf.get("Attendant", "Attendant2")
+Attendant3 = conf.get("Attendant", "Attendant3")
 
 # 更改前的网络参数
 netaddr1 = conf.get("network","netaddr1")

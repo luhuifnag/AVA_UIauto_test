@@ -73,7 +73,6 @@ class BasePage(object):
     # 鼠标按坐标来拖拽
     def drag_and_drop_by_offset(self, loc, xoffset, yoffset):
         element = self.find_element(loc) 
-        # ActionChains(self.driver).move_to_element_with_offset(element, xoffset, yoffset).perform()
         ActionChains(self.driver).drag_and_drop_by_offset(element, xoffset, yoffset).perform()
     
 

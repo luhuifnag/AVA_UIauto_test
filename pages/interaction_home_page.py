@@ -31,6 +31,8 @@ class InteractionHmoe(BasePage):
     frame = (By.XPATH,"//*[@class='layui-layer-content']/iframe")
     # 当前状态
     regstate = (By.ID, "regstate")  
+    # 系统注册服务链接
+    link = (By.XPATH, "//*[@id='sipModule']/div/div[1]/div/a")
     # 内置云勾选框
     Built_in_cloud = (By.XPATH, "//*[@id='sipModule']/div/div[2]/div[1]/div/div[5]/div/label")
     # 确认按钮
@@ -41,7 +43,7 @@ class InteractionHmoe(BasePage):
     confName = (By.ID, "confName")
     # 会议密码勾选框
     box1= (By.XPATH, "//*[@id='beforeCall_panel']/div[1]/div[1]/div[2]/div[1]/label/i")
-    #  会议密码输入框
+    # 会议密码输入框
     confpasswd= (By.ID, "confpasswd")
     # 授课模式
     Teaching = (By.XPATH, "//*[@id='beforeCall_panel']/div[1]/div[2]/div[1]/div/label/div")
@@ -54,8 +56,6 @@ class InteractionHmoe(BasePage):
     # 取消按钮
     createMeetingCancel = (By.ID, "createMeetingCancel")
 
-
- 
     # 进入到互动页面
     def getin_interaction(self):
         home = HomePage(self.driver)
@@ -63,6 +63,15 @@ class InteractionHmoe(BasePage):
         print("进入到互动页面")
         sleep(2)
 
+    #去掉最近呼叫的所有勾选
+    def recent_call(self):
+        recents = self.driver.find_elements_by_xpath("//*[@id='latestCall']/li")
+        recent_num = len(recents)
+        for i in range(recent_num):
+            labels = (By.XPATH, "//*[@id='latestCall']/li[%s]/label" % str(i+1))
+            if self.getAttribute(labels, "class") == "g_checkbox g_checkbox-checked":
+                self.click(labels)
+        
     # 进入到互动设置页面
     def getin_interactSet(self):
         self.click(self.interactSet)
@@ -103,28 +112,63 @@ class InteractionHmoe(BasePage):
 
     # 输入听课设备
     def input_call(self, *calls):
-        self.clear(self.callinput)
+        print("输入已选用户%s" % (calls,) )
         self.input_text(self.callinput, *calls)
 
     # 输入会议主题和密码
     def input_confName_confpasswd(self,name='',pwd='123456'):
         self.input_text(self.confName, name)
+        print("主题：%s" % name)
         self.click(self.box1)
         self.input_text(self.confpasswd, pwd)
+        print("密码:%s" % pwd)
 
+    # 启用双流
+    def start_Double(self):
+        if self.getAttribute(self.Double_current, "class") == "g_checkbox g_checkbox-checked":
+            print("已勾选双流")
+        else:
+            self.click(self.Double_current)
+            print("勾选双流")
 
+    # 不启用双流
+    def no_start_Doubl(self):
+        if self.getAttribute(self.Double_current, "class") == "g_checkbox g_checkbox-checked":
+            self.click(self.Double_current)
+            print("不勾选双流")
+        else:
+            pass
 
-    # 创建一个没有主题和密码的授课模式的会议
-    def create_teaching_meeting(self, *calls):
+    # 创建会议
+    def create_meeting(self, *calls):
         self.getin_interaction()
         self.getin_interactSet()
         self.register_situation()
         self.no_start_cloud()
         self.register_login()
+        self.recent_call()
         self.input_call(*calls)
         self.click(self.callbtn)
         sleep(1)
+
+    # 创建内置云会议
+    def create_cloudmeeting(self, *calls):
+        self.getin_interaction()
+        self.getin_interactSet()
+        self.register_situation()
+        self.start_up_cloud()
+        self.register_login()
+        self.recent_call()
+        self.input_call(*calls)
+        self.click(self.callbtn)
+        sleep(1)
+
+############测试用例步骤#################
+    # 创建一个没有主题和密码的授课模式的会议
+    def create_teaching_meeting(self, *calls):
+        self.create_meeting(*calls)
         self.click(self.Teaching)
+        self.no_start_Doubl()
         print("创建授课模式会议")
         self.click(self.createMeeting) 
         sleep(3)
@@ -132,22 +176,88 @@ class InteractionHmoe(BasePage):
     
     # 创建一个自定义主题和密码的授课模式的会议
     def create_teaching_meeting2(self, name, pwd, *calls):
-        self.getin_interaction()
-        self.getin_interactSet()
-        self.register_situation()
-        self.no_start_cloud()
-        self.register_login()
-        self.input_call(*calls)
+        self.create_meeting(*calls)
         self.input_confName_confpasswd(name, pwd)
-        self.click(self.callbtn)
-        sleep(1)
         self.click(self.Teaching)
+        self.no_start_Doubl()
         print("创建授课模式会议")
         self.click(self.createMeeting) 
         sleep(3)
         self.click(self.sure1)
+
+    # 创建一个双流的授课模式的会议
+    def create_Doubl_teaching_meeting(self, *calls):
+        self.create_meeting(*calls)
+        self.click(self.Teaching)
+        self.start_Double()
+        print("创建授课模式会议")
+        self.click(self.createMeeting) 
+        sleep(3)
+        self.click(self.sure1)
+
+    # 创建一个没有主题和密码的会议模式的会议
+    def create_meeting_meeting(self, *calls):
+        self.create_meeting(*calls)
+        self.click(self.Meeting)
+        self.no_start_Doubl()
+        print("创建会议模式会议")
+        self.click(self.createMeeting) 
+        sleep(3)
+        self.click(self.sure1)
     
+    # 创建一个自定义主题和密码的会议模式的会议
+    def create_meeting_meeting2(self, name, pwd, *calls):
+        self.create_meeting(*calls)
+        self.input_confName_confpasswd(name, pwd)
+        self.click(self.Meeting)
+        self.no_start_Doubl()
+        print("创建授会议模式会议")
+        self.click(self.createMeeting) 
+        sleep(3)
+        self.click(self.sure1)
 
+    # 创建一个双流的会议模式的会议
+    def create_Doubl_meeting_meeting(self, *calls):
+        self.create_meeting(*calls)
+        self.click(self.Meeting)
+        self.start_Double()
+        print("创建授课模式会议")
+        self.click(self.createMeeting) 
+        sleep(3)
+        self.click(self.sure1)
 
+    # 创建一个没有主题和密码的内置云会议
+    def create_cloud_meeting(self, *calls):
+        self.create_cloudmeeting(*calls)
+        self.no_start_Doubl()
+        print("创建内置云会议")
+        self.click(self.createMeeting) 
+        sleep(3)
+        self.click(self.sure1)
 
-    
+    # 创建一个自定义主题和密码的内置云会议
+    def create_cloud_meeting2(self, name, pwd, *calls):
+        self.create_cloudmeeting(*calls)
+        self.input_confName_confpasswd(name, pwd)
+        self.no_start_Doubl()
+        print("创建内置云会议")
+        self.click(self.createMeeting) 
+        sleep(3)
+        self.click(self.sure1)
+
+    # 创建一个双流的内置云会议
+    def create_Doubl_cloud_meeting(self, *calls):
+        self.create_cloudmeeting(*calls)
+        self.start_Double()
+        print("创建内置云会议")
+        self.click(self.createMeeting) 
+        sleep(3)
+        self.click(self.sure1)
+
+    # 互动设置转跳系统设置-注册服务
+    def link_jump(self):
+        self.getin_interaction()
+        self.getin_interactSet()
+        self.click(self.link)
+        print("转跳至系统设置-注册服务")
+        sleep(2)
