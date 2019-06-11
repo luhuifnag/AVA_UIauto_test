@@ -186,7 +186,7 @@ class InteractionHmoe(BasePage):
         self.click(self.sure1)
 
     # 创建一个双流的授课模式的会议
-    def create_Doubl_teaching_meeting(self, *calls):
+    def create_Double_teaching_meeting(self, *calls):
         self.create_meeting(*calls)
         self.click(self.Teaching)
         self.start_Double()
@@ -217,7 +217,7 @@ class InteractionHmoe(BasePage):
         self.click(self.sure1)
 
     # 创建一个双流的会议模式的会议
-    def create_Doubl_meeting_meeting(self, *calls):
+    def create_Double_meeting_meeting(self, *calls):
         self.create_meeting(*calls)
         self.click(self.Meeting)
         self.start_Double()
@@ -246,7 +246,7 @@ class InteractionHmoe(BasePage):
         self.click(self.sure1)
 
     # 创建一个双流的内置云会议
-    def create_Doubl_cloud_meeting(self, *calls):
+    def create_Double_cloud_meeting(self, *calls):
         self.create_cloudmeeting(*calls)
         self.start_Double()
         print("创建内置云会议")

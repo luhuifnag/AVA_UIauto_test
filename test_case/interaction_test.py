@@ -55,10 +55,10 @@ class InteractionTest(MyTest, InteractionHmoe, IterTeaching):
         finally:
             self.stop_meeting()
 
-    def test_create_Doubl_teaching_meeting(self):
+    def test_create_Double_teaching_meeting(self):
         '''创建一个双流的授课模式空会议测试''' 
         try:
-            self.create_Doubl_teaching_meeting("")
+            self.create_Double_teaching_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
             self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "%s_CONF" % readconfig.name)
@@ -121,10 +121,10 @@ class InteractionTest(MyTest, InteractionHmoe, IterTeaching):
         finally:
             self.stop_meeting()
 
-    def test_create_Doubl_meeting_meeting(self):
+    def test_create_Double_meeting_meeting(self):
         '''创建一个双流的会议模式空会议测试''' 
         try:
-            self.create_Doubl_meeting_meeting("")
+            self.create_Double_meeting_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "会议模式")
             self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "%s_CONF" % readconfig.name)
@@ -170,10 +170,10 @@ class InteractionTest(MyTest, InteractionHmoe, IterTeaching):
         finally:
             self.stop_meeting()
 
-    def test_create_Doubl_cloud_meeting(self):
+    def test_create_Double_cloud_meeting(self):
         '''创建一个双流的内置云会议测试''' 
         try:
-            self.create_Doubl_cloud_meeting("")
+            self.create_Double_cloud_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
             self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "%s_Conference" % readconfig.name)
