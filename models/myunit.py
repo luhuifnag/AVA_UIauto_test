@@ -25,7 +25,7 @@ class MyTest(unittest.TestCase):
         self.driver = webdriver.Firefox()
         self.driver.get(readconfig.url)
         self.driver.maximize_window()
-        self.driver.implicitly_wait(10)
+        self.driver.implicitly_wait(20)
         login = LoginPage(self.driver)
         login.login_sys(readconfig.username, readconfig.password)
         sleep(2)
