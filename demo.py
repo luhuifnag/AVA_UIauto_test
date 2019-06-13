@@ -1,5 +1,14 @@
-def input_call(*calls):
-        print("输入已选用户%s" % (calls,) )
 
+class a ():
 
-input_call("a","b","c")
+    status = 1
+
+    def test_status(self):
+            if 1>2:
+                status = 1
+            else:
+                status = 0
+            print(status)
+        
+s = a()
+s.test_status()

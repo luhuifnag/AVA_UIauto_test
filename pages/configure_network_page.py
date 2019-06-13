@@ -154,6 +154,7 @@ class ConfigureNetwork(BasePage):
         home.swich_to_configure_label(self.networkbtn, "网络参数")
         self.check_automatic_ip()
         self.ensure()
+        sleep(2)
 
     #手动获取IP
     def select_manual_ip(self, addr1, addr2, addr3, addr4, way1, way2, way3, way4): 

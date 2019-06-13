@@ -55,7 +55,7 @@ class DiskManagementTest(MyTest, DiskManagement):
         '''硬盘格式化测试'''
         try:
             result = self.disk_format()
-            self.assertEqual(result, "硬盘格式化成功")  
+            self.assertIn("硬盘格式化成功" ,result)  
         except Exception as msg:
             print(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_disk_format.png'))

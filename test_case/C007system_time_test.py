@@ -13,12 +13,39 @@ from time import sleep
 from models import readconfig
 from models.myunit import MyTest
 from pages.system_time_page import SystemTime
-
+from selenium.webdriver.support import expected_conditions as ES
+from selenium.webdriver.support.ui import WebDriverWait
+from pages.home_page import HomePage
 
 class SystemTimerTest(MyTest,SystemTime):
     '''系统时间测试'''
+    
+    status = 1
 
-    def test1_manual_change_time(self):
+    def test_status(self):
+        if self.try_get_Term():
+            status = 1
+        else:
+            status = 0
+        print(status)
+
+    @unittest.skipIf(status == 0, "当设备无效期时跳过该测试")
+    def tetst1_no_change_time(self):
+        try:
+            home = HomePage(self.driver)
+            home.swich_to_basic_label(self.systemTimebtn,"系统时间")
+            sleep(2)
+            self.assertTrue(ES.text_to_be_present_in_element_value(self.year, "disabled"))
+        except Exception as msg:
+            print(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'tetst_no_change_tim.png'))
+            raise Exception("false")
+        finally:
+            self.driver.switch_to.default_content()
+
+
+    @unittest.skipIf(status == 1, "当设备为有效期时跳过该测试")
+    def test2_manual_change_time(self):
         '''手动修改系统时间'''
         try:
             self.manual_change_time()
@@ -30,13 +57,13 @@ class SystemTimerTest(MyTest,SystemTime):
             self.assertEqual(self.getValuetext(self.second), "0")
         except Exception as msg:
             print(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test1_manual_change_time.png'))
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_manual_change_time.png'))
             raise Exception("false")
         finally:
             self.driver.switch_to.default_content()
 
 
-    def test2_automatic_change_time(self):
+    def test3_automatic_change_time(self):
         '''自动同步网络时间测试'''
         try:
             datelist = self.automatic_change_time()
@@ -46,7 +73,7 @@ class SystemTimerTest(MyTest,SystemTime):
             self.assertEqual(self.getValuetext(self.hours), datelist[3])
         except Exception as msg:
             print(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test2_automatic_change_time.png'))
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_automatic_change_time.png'))
             raise Exception("false")
         finally:
             self.driver.switch_to.default_content()

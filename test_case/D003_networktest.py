@@ -27,7 +27,6 @@ class ModifyingNetworkTest2(MyTest):
     def setUp(self):
         print(u"******************测试开始******************")
         self.driver = webdriver.Firefox()
-        # cls.driver = webdriver.Chrome()
         self.driver.get(readconfig.newurl)
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)

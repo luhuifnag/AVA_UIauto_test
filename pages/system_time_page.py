@@ -28,6 +28,8 @@ class SystemTime(BasePage):
     hours = (By.ID,"hours")
     minute = (By.ID,"minute")
     second = (By.ID,"second")
+    # 有效期标签
+    Term = (By.ID,"isunLimit") 
     #确认按钮
     surebtn = (By.ID,"save")
 
@@ -53,8 +55,17 @@ class SystemTime(BasePage):
         self.click(self.surebtn)
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
         self.accept_alert()
- 
-
+    
+    # 获取有效期标签
+    def try_get_Term(self):
+        try:    
+            home = HomePage(self.driver)
+            home.swich_to_basic_label(self.systemTimebtn,"系统时间")
+            sleep(2)
+            unittest.assertIn("有效期：", self.gettext(self.Term))
+            return True
+        except:
+            return False
 
     # 手动修改系统时间
     def manual_change_time(self):

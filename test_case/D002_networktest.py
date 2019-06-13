@@ -26,7 +26,8 @@ class ModifyingNetworkTest(MyTest):
         try:
             home = HomePage(self.driver)
             gnetwork = ConfigureNetwork(self.driver)
-            home.swich_to_configure_label(gnetwork.networkbtn, "网络参数") 
+            home.swich_to_configure_label(gnetwork.networkbtn, "网络参数")
+            sleep(3)
             gnetwork.check_automatic_ip()
             base = BasePage(self.driver)
             self.assertFalse(base.is_enabled(gnetwork.netaddr1))
@@ -85,7 +86,7 @@ class ModifyingNetworkTest(MyTest):
             gnetwork = ConfigureNetwork(self.driver)
             gnetwork.select_manual_ip(readconfig.new_netaddr1,readconfig.new_netaddr2,readconfig.new_netaddr3,readconfig.new_netaddr4,\
             readconfig.new_gateway1,readconfig.new_gateway2,readconfig.new_gateway3,readconfig.new_gateway4)
-            sleep(2)
+            sleep(5)
             self.driver.refresh()
             sleep(3)
             new_url = self.driver.current_url
