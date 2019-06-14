@@ -73,7 +73,7 @@ class Network(BasePage):
             self.clear(d)
         for e,f in zip(list3,list4):
             self.input_text(e,f)
-        sleep(2)
+        sleep(4)
         self.click(self.sure)
         sleep(2)
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
@@ -81,7 +81,7 @@ class Network(BasePage):
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
         self.accept_alert()
         self.driver.switch_to.default_content()
-        sleep(5)
+        sleep(8)
 
 
    

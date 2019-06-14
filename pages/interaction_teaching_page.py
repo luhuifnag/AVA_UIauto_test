@@ -32,6 +32,22 @@ class IterTeaching(BasePage):
     sure2 = (By.XPATH, "//*[@id='layui-layer1']/div[3]/a[1]")
 
 
+    # 获取预览视窗的个数
+    def get_preview_num(self):
+        previews = self.driver.find_elements_by_xpath("//*[@id='videoLists']/li")
+        preview_num = len(previews)
+        return int(preview_num)
+
+     # 获取预览视窗的名称
+    def get_preview_tag(self):
+        num = self.get_preview_num()
+        taglist = []
+        for i in range(num):
+            tags = (By.XPATH, "//*[@id='videoLists']/li[%s]/div[1]/div" % str(i+1))
+            taglist.append(self.gettext(tags))
+        print(taglist)
+        return taglist
+        
     # 退出会议
     def stop_meeting(self):
         self.click(self.intera_stop)

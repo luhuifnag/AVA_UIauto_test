@@ -140,11 +140,7 @@ class ConfigureNetwork(BasePage):
         self.accept_alert()
         WebDriverWait(self.driver, 5, 0.5).until(ES.alert_is_present()) 
         self.accept_alert()
-        # self.driver.switch_to.default_content()
-        # sleep(5)
 
-
-   
 
 ######################完整用例步骤######################
 

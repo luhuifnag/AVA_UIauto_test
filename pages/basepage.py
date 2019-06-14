@@ -34,9 +34,9 @@ class BasePage(object):
 
     # 查找元素s
     def find_element(self, loc):
-        # return WebDriverWait(self.driver,10, 0.5, ignored_exceptions="no this element").until(ES.presence_of_element_located((loc)))
+        return WebDriverWait(self.driver,10, 0.5, ignored_exceptions="no this element").until(ES.presence_of_element_located((loc)))
         # 使用上面的加了等待的查找元素有的类似于alert的对话框元素查找不到
-        return self.driver.find_element(*loc)
+        # return self.driver.find_element(*loc)
     
 
     #在输入框中输入文字
