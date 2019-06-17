@@ -24,7 +24,7 @@ class BuzzerTest(MyTest,Buzzer):
             self.driver.switch_to.frame("content")
             logger.info(self.getInnerHTML(self.text))
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_buzzer.png'))
             raise Exception("false")
         finally:

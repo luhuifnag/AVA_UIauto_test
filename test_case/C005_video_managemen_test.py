@@ -37,7 +37,7 @@ class VideoTest(MyTest):
             self.assertEqual(totalCount1-1,totalCount2)
             sleep(2)
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_delete_documents.png'))
             raise Exception("false")
 
@@ -56,7 +56,7 @@ class VideoTest(MyTest):
             total2 = video2.check_total_documents()   
             self.assertEqual(total1,total2)
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_compare_total_documents.png'))
             raise Exception("false")
 

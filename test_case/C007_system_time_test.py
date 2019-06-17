@@ -38,7 +38,7 @@ class SystemTimerTest(MyTest,SystemTime):
             sleep(2)
             self.assertTrue(ES.text_to_be_present_in_element_value(self.year, "disabled"))
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'tetst_no_change_tim.png'))
             raise Exception("false")
         finally:
@@ -58,7 +58,7 @@ class SystemTimerTest(MyTest,SystemTime):
             self.assertEqual(self.getValuetext(self.minute), "59")
             self.assertEqual(self.getValuetext(self.second), "0")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_manual_change_time.png'))
             raise Exception("false")
         finally:
@@ -75,7 +75,7 @@ class SystemTimerTest(MyTest,SystemTime):
             self.assertEqual(self.getValuetext(self.day), datelist[2])
             self.assertEqual(self.getValuetext(self.hours), datelist[3])
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_automatic_change_time.png'))
             raise Exception("false")
         finally:

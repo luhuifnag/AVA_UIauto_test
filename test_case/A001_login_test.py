@@ -47,7 +47,7 @@ class LoginTest(MyTest,LoginPage):
             self.assertEqual(self.error_hint(), u"用户名或密码不能为空！") #error_hint()方法在LoginPage下
             self.accept_alert()       #accept_alert()方法在BasePage类下
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s" % msg)
+            logger.error(u"异常原因：%s" % msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'login1.png'))
             raise Exception("false")
         
@@ -60,7 +60,7 @@ class LoginTest(MyTest,LoginPage):
             self.assertEqual(self.error_hint(), u"用户名或密码不能为空！")
             self.accept_alert()
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'login2.png'))
             raise Exception("false")
         
@@ -73,7 +73,7 @@ class LoginTest(MyTest,LoginPage):
             self.assertEqual(self.error_hint(),u"用户名或密码不能为空！")   
             self.accept_alert()
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'login3.png'))
             raise Exception("false")
     
@@ -86,7 +86,7 @@ class LoginTest(MyTest,LoginPage):
             self.assertEqual(self.error_hint(), u"用户名不存在或密码错误！")           
             self.accept_alert()
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'login4.png'))
             raise Exception("false")
         
@@ -98,7 +98,7 @@ class LoginTest(MyTest,LoginPage):
             WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统"))  #显示等待直到当前开头是否与预期一致
             self.assertEqual(self.driver.title, u"录播管理系统")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'login5.png'))
             raise Exception("false")
    
@@ -110,7 +110,7 @@ class LoginTest(MyTest,LoginPage):
             WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统")) 
             self.assertEqual(self.driver.title, u"录播管理系统")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'login4.png'))
             raise Exception("false")
         

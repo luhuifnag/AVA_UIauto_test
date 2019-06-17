@@ -112,3 +112,48 @@
 2019-06-17 16:05:09,679 - framework - INFO - 输入区信息：萝岗区科学城
 2019-06-17 16:05:09,763 - framework - INFO - 输入所属单位信息：广州奥威亚电子科技有限公司
 2019-06-17 16:05:09,830 - framework - INFO - 输入安装位置信息：科汇金谷2街15号
+2019-06-17 16:26:46,112 - framework - INFO - ******************测试开始******************
+2019-06-17 16:27:00,105 - framework - INFO - 输入用户名：admin
+2019-06-17 16:27:00,149 - framework - INFO - 输入密码：admin
+2019-06-17 16:27:00,185 - framework - INFO - 点击 登录  按钮
+2019-06-17 16:27:04,930 - framework - INFO - 创建一个有三个在线听课的授课模式的会议测
+2019-06-17 16:27:04,931 - framework - INFO - 点击互动按钮
+2019-06-17 16:27:05,221 - framework - INFO - 进入到互动页面
+2019-06-17 16:27:09,845 - framework - INFO - 注册成功 192.168.13.121
+2019-06-17 16:27:11,973 - framework - INFO - 输入已选用户(['auto01', ';', 'auto02', ';', 'auto03'],)
+2019-06-17 16:27:13,520 - framework - INFO - 创建授课模式会议
+2019-06-17 16:32:37,664 - framework - INFO - ******************测试开始******************
+2019-06-17 16:32:51,374 - framework - INFO - 输入用户名：admin
+2019-06-17 16:32:51,459 - framework - INFO - 输入密码：admin
+2019-06-17 16:32:51,495 - framework - INFO - 点击 登录  按钮
+2019-06-17 16:32:55,960 - framework - INFO - 创建一个有三个在线听课的授课模式的会议测
+2019-06-17 16:32:55,961 - framework - INFO - 点击互动按钮
+2019-06-17 16:32:56,301 - framework - INFO - 进入到互动页面
+2019-06-17 16:33:00,660 - framework - INFO - 未注册rserver
+2019-06-17 16:33:03,023 - framework - INFO - 输入已选用户(['auto01', ';', 'auto02', ';', 'auto03'],)
+2019-06-17 16:33:04,826 - framework - ERROR - 异常原因：Message: Element <div> could not be scrolled into view
+
+2019-06-17 16:40:49,013 - framework - INFO - ******************测试开始******************
+2019-06-17 16:40:57,897 - framework - INFO - 输入用户名：admin
+2019-06-17 16:40:57,941 - framework - INFO - 输入密码：admin
+2019-06-17 16:40:57,971 - framework - INFO - 点击 登录  按钮
+2019-06-17 16:41:02,545 - framework - INFO - 创建一个有三个在线听课的授课模式的会议测
+2019-06-17 16:41:02,546 - framework - INFO - 点击互动按钮
+2019-06-17 16:41:02,867 - framework - INFO - 进入到互动页面
+2019-06-17 16:41:07,283 - framework - INFO - 注册成功 192.168.13.121
+2019-06-17 16:41:09,660 - framework - INFO - 输入已选用户(['auto01', ';', 'auto02', ';', 'auto03'],)
+2019-06-17 16:41:11,203 - framework - INFO - 创建授课模式会议
+2019-06-17 16:41:16,925 - framework - ERROR - 异常原因：'LU_A3S1_CONF' != 'test01_CONF'
+- LU_A3S1_CONF
++ test01_CONF
+
+2019-06-17 16:42:51,686 - framework - INFO - ******************测试开始******************
+2019-06-17 16:43:00,722 - framework - INFO - 输入用户名：admin
+2019-06-17 16:43:00,779 - framework - INFO - 输入密码：admin
+2019-06-17 16:43:00,810 - framework - INFO - 点击 登录  按钮
+2019-06-17 16:43:05,361 - framework - INFO - 创建一个有三个在线听课的授课模式的会议测
+2019-06-17 16:43:05,362 - framework - INFO - 点击互动按钮
+2019-06-17 16:43:05,676 - framework - INFO - 进入到互动页面
+2019-06-17 16:43:10,051 - framework - INFO - 注册成功 192.168.13.121
+2019-06-17 16:43:12,451 - framework - INFO - 输入已选用户(['auto01', ';', 'auto02', ';', 'auto03'],)
+2019-06-17 16:43:32,508 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed

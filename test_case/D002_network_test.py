@@ -35,7 +35,7 @@ class ModifyingNetworkTest(MyTest):
             self.assertFalse(base.is_enabled(gnetwork.netaddr1))
             self.assertFalse(base.is_enabled(gnetwork.gateway1))
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_not_operable.png'))
             raise Exception("false")
 
@@ -52,7 +52,7 @@ class ModifyingNetworkTest(MyTest):
             base = BasePage(self.driver) 
             self.assertEqual(base.getAttribute(gnetwork.self_adaption,"class"),"checkbox g_checkbox g_checkbox-checked")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_select_self_adaption.png'))
             raise Exception("false")
 
@@ -66,7 +66,7 @@ class ModifyingNetworkTest(MyTest):
             base = BasePage(self.driver) 
             self.assertEqual(base.getValuetext(gnetwork.dnsa3),"118")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_modifying_dnsa1.png'))
             raise Exception("false")
 
@@ -80,7 +80,7 @@ class ModifyingNetworkTest(MyTest):
             base = BasePage(self.driver)  
             self.assertEqual(base.getValuetext(gnetwork.dnsb3),"6")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_modifying_dnsa1.png'))
             raise Exception("false")
 
@@ -102,7 +102,7 @@ class ModifyingNetworkTest(MyTest):
             self.assertEqual(new_url,"%slogin.html" % readconfig.newurl)
             self.assertEqual(self.driver.title, u"录播管理系统")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_select_manual_ip.png'))
             raise Exception("false")
 

@@ -27,7 +27,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             self.click(self.recording_back_cancel)
             self.assertEqual(tips, "正在录制或直播 ,确定返回模式选择？")   
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path, 'test_living_back.png'))
             raise Exception("false")
         finally:
@@ -42,7 +42,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             self.assertFalse(self.is_enabled(self.blendmodebtn))
             self.assertFalse(self.is_enabled(self.ptzbtn))
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'select_auto.png'))
             raise Exception("false")
         finally:
@@ -57,7 +57,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             self.select_semiauto()
             self.assertFalse(self.is_enabled(self.ptzbtn))
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_select_semiauto.png'))
             raise Exception("false")
         finally:
@@ -72,7 +72,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             self.PTZ_control_record()
             print(u"录制成功")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_adjust_subtitles.png'))
             raise Exception("false")
         finally:
@@ -89,7 +89,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             self.switching_layout()
             print(u"录制成功")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_adjust_subtitles.png'))
             raise Exception("false")
         finally:
@@ -109,7 +109,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             print(self.getAttribute(self.success,"textContent")) #获取 layer.msg 弹窗的信息
             self.assertEqual(self.getAttribute(self.success,"textContent"),"LOGO上传成功!")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path, 'test_upload_logo.png'))
             raise Exception("false")
 
@@ -123,7 +123,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             print(self.getAttribute(self.success,"textContent")) #获取 layer.msg 弹窗的信息
             self.assertEqual(self.getAttribute(self.success,"textContent"),"LOGO文件格式错误!")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path, 'test_upload_logo2.png'))
             raise Exception("false")
 
@@ -135,7 +135,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             self.adjust_subtitles()
             print(u"录制成功")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_adjust_subtitles.png'))
             raise Exception("false")
         finally:

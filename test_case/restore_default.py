@@ -26,7 +26,7 @@ class Restore_tests(MyTest,Restore):
             self.restore()      
             self.assertEqual(self.driver.title, u"录播管理系统")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_restore.png'))
             raise Exception("false")
         

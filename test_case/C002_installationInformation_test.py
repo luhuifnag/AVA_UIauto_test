@@ -30,7 +30,7 @@ class InstallInforTest(MyTest,InstallInfor):
             self.assertEqual(self.getValuetext(self.addrLocation), "广州奥威亚电子科技有限公司")
             self.assertEqual(self.getValuetext(self.addrInstall), "科汇金谷2街15号")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_InstallInfor.png'))
             raise Exception("false")
 

@@ -36,7 +36,7 @@ class VideoTagTest(MyTest, VideoTag):
             b = record.get_preview_tag()
             self.assertEqual(a, b)
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test1_input_custom_label.png'))
             raise Exception("false")
 
@@ -55,7 +55,7 @@ class VideoTagTest(MyTest, VideoTag):
             interteach.stop_meeting()
             self.assertEqual(a, b)
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test2_input_custom_label.png'))
             raise Exception("false")
 
@@ -65,7 +65,7 @@ class VideoTagTest(MyTest, VideoTag):
             logger.info("选择默认标签测试")
             self.C_default()
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test2_C_defaultr.png'))
             raise Exception("false")
 

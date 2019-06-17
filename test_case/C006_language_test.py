@@ -29,7 +29,7 @@ class LanguagesTest(MyTest, Languages):
             self.driver.switch_to.frame("content")  
             self.assertEqual(self.gettext(self.tips), "Remark:The browser will automatically refresh!")    
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_switch_english.png'))
             raise Exception("false")
         finally:
@@ -46,7 +46,7 @@ class LanguagesTest(MyTest, Languages):
             self.driver.switch_to.frame("content")  
             self.assertEqual(self.gettext(self.tips), "注意：浏览器将自动刷新！")    
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_switch_Chinese.png'))
             raise Exception("false")
         finally:

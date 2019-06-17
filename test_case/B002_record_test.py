@@ -34,7 +34,7 @@ class Recorder(MyTest,Records,RecordPage):
             self.assertEqual(self.gettext(video.themesinf),"基本录制")
             self.assertEqual(self.gettext(video.spaekerinf),"陈老师")
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_basic_recording.png'))
             raise Exception("false")
      
@@ -52,7 +52,7 @@ class Recorder(MyTest,Records,RecordPage):
             sleep(2)
             self.assertEqual(pause_time1,pause_time2)
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_pause_recording1.png'))
             raise Exception("false")
         finally:
@@ -76,7 +76,7 @@ class Recorder(MyTest,Records,RecordPage):
             sleep(2)
             self.assertNotEqual(pause_time3,pause_time1)   
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_resume_recording.png'))
             raise Exception("false")
         finally:
@@ -96,7 +96,7 @@ class Recorder(MyTest,Records,RecordPage):
             self.click(self.recording_back_cancel)    
             self.assertEqual(tips,"正在录制或直播 ,确定返回模式选择？")   
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_recording_back.png'))
             raise Exception("false")
         finally:
@@ -120,7 +120,7 @@ class Recorder(MyTest,Records,RecordPage):
     #         sleep(3)
     #         self.assertEqual(self.gettext(video.resolving),"1920x1080")   
     #     except Exception as msg:
-    #         logger.ERROR(u"异常原因：%s"%msg)
+    #         logger.error(u"异常原因：%s"%msg)
     #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_main_1080p.png'))
     #         raise Exception("false")
         
@@ -138,7 +138,7 @@ class Recorder(MyTest,Records,RecordPage):
     #         sleep(1)
     #         self.assertEqual(self.gettext(video.resolving),"1280x720")   
     #     except Exception as msg:
-    #         logger.ERROR(u"异常原因：%s"%msg)
+    #         logger.error(u"异常原因：%s"%msg)
     #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_sub_720p.png'))
     #         raise Exception("false")
 
@@ -156,7 +156,7 @@ class Recorder(MyTest,Records,RecordPage):
         # try:
         #     self.assertEqual(self.gettext(video.resolving),"1280x720")   
         # except Exception as msg:
-        #     logger.ERROR(u"异常原因：%s"%msg)
+        #     logger.error(u"异常原因：%s"%msg)
         #     self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_main_720p_and_sub_540p1.png'))
         #     raise Exception("false")
         # sleep(1)
@@ -164,7 +164,7 @@ class Recorder(MyTest,Records,RecordPage):
         # try:
         #     self.assertEqual(self.gettext(video.resolving),"960x540")   
         # except Exception as msg:
-        #     logger.ERROR(u"异常原因：%s"%msg)
+        #     logger.error(u"异常原因：%s"%msg)
         #     self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_main_720p_and_sub_540p2.png'))
         #     raise Exception("false")
 

@@ -32,7 +32,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
             sleep(2)
             self.accept_alert()     
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register1.png'))
             raise Exception("false")
 
@@ -48,7 +48,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
             sleep(2)
             self.accept_alert()      
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register2.png'))
             raise Exception("false")
 
@@ -64,7 +64,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
             sleep(2)
             self.accept_alert()      
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register3.png'))
             raise Exception("false")
     
@@ -77,7 +77,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
             base = BasePage(self.driver)
             self.assertEqual(base.gettext(self.regstateStatus), u"注册错误！当前设备未在Rserver注册！")   
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register4.png'))
             raise Exception("false")
      
@@ -90,7 +90,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
             base = BasePage(self.driver)
             self.assertEqual(base.gettext(self.regstateStatus), u"注册成功")      
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register5.png'))
             raise Exception("false")
         finally:
@@ -106,7 +106,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
             base = BasePage(self.driver)
             self.assertEqual(base.gettext(self.regstateStatus), u"注册成功")      
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_register4.png'))
             raise Exception("false")
 

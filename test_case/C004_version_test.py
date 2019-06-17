@@ -34,7 +34,7 @@ class VersionTest(MyTest):
             version2 = cversion.get_versions()      
             self.assertEqual(version1,version2)
         except Exception as msg:
-            logger.ERROR(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_compare_version_information.png'))
             raise Exception("false")
 
