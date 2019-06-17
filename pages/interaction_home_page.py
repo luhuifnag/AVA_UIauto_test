@@ -18,7 +18,7 @@ from utils.log import logger
 class InteractionHmoe(BasePage):
 
     # 已选用户输入框
-    callinput = (By.XPATH, "//*[@id='callinput']/div/input")   
+    # callinput = (By.XPATH, "//*[@id='callinput']/div/input")   
     # 呼叫按钮
     callbtn = (By.ID, "callUsers")
     # 互动设置按钮
@@ -113,7 +113,14 @@ class InteractionHmoe(BasePage):
     # 输入听课设备
     def input_call(self, *calls):
         logger.info("输入已选用户%s" % (calls,) )
-        self.input_text(self.callinput, *calls)
+        blist = list(*calls)
+        num = len(*calls)
+        for i in range(1, num):
+            callinput = (By.XPATH, "//*[@id='callinput']/div[%d]/input" % i) 
+            self.input_text(callinput, blist[i-1])
+            self.input_text(callinput, ";")
+            sleep(2)
+
 
     # 输入会议主题和密码
     def input_confName_confpasswd(self,name='',pwd='123456'):

@@ -80,7 +80,7 @@ class InteractionTest(MyTest, InteractionHmoe, IterTeaching):
         try:
             logger.info("创建一个有三个在线听课的授课模式的会议测")
             # self.create_teaching_meeting(readconfig.Attendant1+";"+readconfig.Attendant2+";"+readconfig.Attendant3)
-            Attendants = ["auto01",";","auto02",";","auto03"]
+            Attendants = ["auto01","auto02","auto03"]
             self.create_teaching_meeting(Attendants)
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")

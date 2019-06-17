@@ -157,3 +157,33 @@
 2019-06-17 16:43:10,051 - framework - INFO - 注册成功 192.168.13.121
 2019-06-17 16:43:12,451 - framework - INFO - 输入已选用户(['auto01', ';', 'auto02', ';', 'auto03'],)
 2019-06-17 16:43:32,508 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-17 17:09:14,473 - framework - INFO - ******************测试开始******************
+2019-06-17 17:09:23,622 - framework - INFO - 输入用户名：admin
+2019-06-17 17:09:23,663 - framework - INFO - 输入密码：admin
+2019-06-17 17:09:23,705 - framework - INFO - 点击 登录  按钮
+2019-06-17 17:09:28,380 - framework - INFO - 创建一个有三个在线听课的授课模式的会议测
+2019-06-17 17:09:28,381 - framework - INFO - 点击互动按钮
+2019-06-17 17:09:28,677 - framework - INFO - 进入到互动页面
+2019-06-17 17:09:33,013 - framework - INFO - 注册成功 192.168.13.120
+2019-06-17 17:09:35,373 - framework - INFO - 输入已选用户(['auto01', ';', 'auto02', ';', 'auto03'],)
+2019-06-17 17:09:55,381 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-17 17:31:15,601 - framework - INFO - ******************测试开始******************
+2019-06-17 17:31:25,007 - framework - INFO - 输入用户名：admin
+2019-06-17 17:31:25,052 - framework - INFO - 输入密码：admin
+2019-06-17 17:31:25,081 - framework - INFO - 点击 登录  按钮
+2019-06-17 17:31:29,609 - framework - INFO - 创建一个有三个在线听课的授课模式的会议测
+2019-06-17 17:31:29,610 - framework - INFO - 点击互动按钮
+2019-06-17 17:31:30,141 - framework - INFO - 进入到互动页面
+2019-06-17 17:31:34,490 - framework - INFO - 注册成功 192.168.13.120
+2019-06-17 17:31:36,875 - framework - INFO - 输入已选用户(['auto01', 'auto02', 'auto03'],)
+2019-06-17 17:31:56,956 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-17 17:33:25,470 - framework - INFO - ******************测试开始******************
+2019-06-17 17:33:33,977 - framework - INFO - 输入用户名：admin
+2019-06-17 17:33:34,030 - framework - INFO - 输入密码：admin
+2019-06-17 17:33:34,059 - framework - INFO - 点击 登录  按钮
+2019-06-17 17:33:38,708 - framework - INFO - 创建一个有三个在线听课的授课模式的会议测
+2019-06-17 17:33:38,709 - framework - INFO - 点击互动按钮
+2019-06-17 17:33:39,014 - framework - INFO - 进入到互动页面
+2019-06-17 17:33:43,329 - framework - INFO - 注册成功 192.168.13.120
+2019-06-17 17:33:45,708 - framework - INFO - 输入已选用户(['auto01', 'auto02', 'auto03'],)
+2019-06-17 17:34:07,806 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
