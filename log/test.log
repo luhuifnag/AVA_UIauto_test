@@ -187,3 +187,80 @@
 2019-06-17 17:33:43,329 - framework - INFO - 注册成功 192.168.13.120
 2019-06-17 17:33:45,708 - framework - INFO - 输入已选用户(['auto01', 'auto02', 'auto03'],)
 2019-06-17 17:34:07,806 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-17 18:21:16,030 - framework - INFO - ******************测试开始******************
+2019-06-17 18:21:28,355 - framework - INFO - 输入用户名：admin
+2019-06-17 18:21:28,398 - framework - INFO - 输入密码：admin
+2019-06-17 18:21:28,438 - framework - INFO - 点击 登录  按钮
+2019-06-17 18:21:32,890 - framework - INFO - 基本录制测试,检验录制的视频详细信息与输入的主题主讲人是否一致
+2019-06-17 18:21:32,891 - framework - INFO - 点击录播按钮
+2019-06-17 18:21:34,163 - framework - INFO - 输入主题：基本录制
+2019-06-17 18:21:38,242 - framework - INFO - 输入主讲人：陈老师
+2019-06-17 18:21:39,311 - framework - INFO - 点击开始录制
+2019-06-17 18:21:49,585 - framework - INFO - 点击停止录制按钮
+2019-06-17 18:21:57,060 - framework - INFO - 点击录播页面返回按钮
+2019-06-17 18:21:58,364 - framework - INFO - 点击录像管理按钮
+2019-06-17 18:22:00,587 - framework - INFO - 查看文件的详细信息
+2019-06-17 18:22:06,275 - framework - INFO - ******************测试开始******************
+2019-06-17 18:22:09,555 - framework - INFO - ******************测试开始******************
+2019-06-17 18:22:18,403 - framework - INFO - 输入用户名：admin
+2019-06-17 18:22:18,427 - framework - INFO - 输入密码：admin
+2019-06-17 18:22:18,441 - framework - INFO - 点击 登录  按钮
+2019-06-17 18:22:22,899 - framework - INFO - 暂停后恢复录制测试
+2019-06-17 18:22:22,900 - framework - INFO - 点击录播按钮
+2019-06-17 18:22:24,362 - framework - INFO - 输入主题：暂停后恢复录制测试
+2019-06-17 18:22:31,706 - framework - INFO - ******************测试开始******************
+2019-06-17 18:22:45,106 - framework - INFO - 输入用户名：admin
+2019-06-17 18:22:45,292 - framework - INFO - 输入密码：admin
+2019-06-17 18:22:45,349 - framework - INFO - 点击 登录  按钮
+2019-06-17 18:22:49,814 - framework - INFO - 测试在录制过程中点击录播页面返回按钮，验证是否有提示信息'
+2019-06-17 18:22:49,815 - framework - INFO - 点击录播按钮
+2019-06-17 18:22:51,246 - framework - INFO - 输入主题：2019-06-17
+2019-06-17 18:22:55,306 - framework - INFO - 输入主讲人：18:21:15
+2019-06-17 18:22:56,344 - framework - INFO - 点击开始录制
+2019-06-17 18:22:58,572 - framework - INFO - 点击录播页面返回按钮
+2019-06-17 18:23:01,092 - framework - INFO - 点击停止录制按钮
+2019-06-17 18:23:11,443 - framework - INFO - ******************测试开始******************
+2019-06-17 18:23:20,254 - framework - INFO - 输入用户名：admin
+2019-06-17 18:23:20,283 - framework - INFO - 输入密码：admin
+2019-06-17 18:23:20,301 - framework - INFO - 点击 登录  按钮
+2019-06-17 18:23:24,673 - framework - INFO - 测试录制时启用全自动跟踪'
+2019-06-17 18:23:24,673 - framework - INFO - 点击系统设置按钮
+2019-06-17 18:23:28,067 - framework - INFO - 点击应用设置
+2019-06-17 18:23:32,591 - framework - INFO - 点击录制参数标签
+2019-06-17 18:23:32,656 - framework - ERROR - 异常原因：Message: Element <input class="ava-btn ava-btn-normal" type="button"> could not be scrolled into view
+
+2019-06-17 18:27:11,236 - framework - INFO - ******************测试开始******************
+2019-06-17 18:27:19,449 - framework - INFO - 输入用户名：admin
+2019-06-17 18:27:19,490 - framework - INFO - 输入密码：admin
+2019-06-17 18:27:19,532 - framework - INFO - 点击 登录  按钮
+2019-06-17 18:27:23,963 - framework - INFO - 测试录制时启用全自动跟踪'
+2019-06-17 18:27:23,964 - framework - INFO - 点击系统设置按钮
+2019-06-17 18:27:27,315 - framework - INFO - 点击应用设置
+2019-06-17 18:27:31,871 - framework - INFO - 点击录制参数标签
+2019-06-17 18:27:32,290 - framework - INFO - 勾选启动自动跟踪
+2019-06-17 18:27:34,434 - framework - INFO - 点击系统设置页面返回按钮
+2019-06-17 18:27:35,699 - framework - INFO - 点击录播按钮
+2019-06-17 18:27:36,002 - framework - INFO - 输入主题：2019-06-17
+2019-06-17 18:27:40,067 - framework - INFO - 输入主讲人：18:27:11
+2019-06-17 18:27:41,156 - framework - INFO - 点击开始录制
+2019-06-17 18:27:46,434 - framework - INFO - 点击停止录制按钮
+2019-06-17 18:27:54,558 - framework - ERROR - 异常原因：'ava-btn ava-btn-md ava-btn-normal' != 'ava-btn ava-btn-md ava-btn-normal ava-btn-primary'
+- ava-btn ava-btn-md ava-btn-normal
++ ava-btn ava-btn-md ava-btn-normal ava-btn-primary
+?                                  ++++++++++++++++
+
+2019-06-17 18:28:47,216 - framework - INFO - ******************测试开始******************
+2019-06-17 18:28:55,655 - framework - INFO - 输入用户名：admin
+2019-06-17 18:28:55,747 - framework - INFO - 输入密码：admin
+2019-06-17 18:28:55,771 - framework - INFO - 点击 登录  按钮
+2019-06-17 18:29:00,430 - framework - INFO - 测试录制时启用全自动跟踪'
+2019-06-17 18:29:00,431 - framework - INFO - 点击系统设置按钮
+2019-06-17 18:29:03,765 - framework - INFO - 点击应用设置
+2019-06-17 18:29:08,285 - framework - INFO - 点击录制参数标签
+2019-06-17 18:29:08,661 - framework - INFO - 勾选启动自动跟踪
+2019-06-17 18:29:10,750 - framework - INFO - 点击系统设置页面返回按钮
+2019-06-17 18:29:12,019 - framework - INFO - 点击录播按钮
+2019-06-17 18:29:12,270 - framework - INFO - 输入主题：2019-06-17
+2019-06-17 18:29:16,329 - framework - INFO - 输入主讲人：18:28:47
+2019-06-17 18:29:17,410 - framework - INFO - 点击开始录制
+2019-06-17 18:29:22,699 - framework - INFO - 点击停止录制按钮

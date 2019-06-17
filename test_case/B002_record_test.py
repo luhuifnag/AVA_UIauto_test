@@ -170,6 +170,27 @@ class Recorder(MyTest,Records,RecordPage):
 
 ############选择不了其他的码流质量#####################
 
+    # 录制时启用全自动跟踪
+    def test_record_strat_auacking(self):
+        '''录制时启用全自动跟踪（录播模式下）'''
+        try:
+            logger.info("测试录制时启用全自动跟踪（录播模式下）")
+            records = Records(self.driver)
+            auto_status = records.record_strat_auacking()   
+            self.assertEqual(auto_status,"ava-btn ava-btn-md ava-btn-normal ava-btn-primary")   
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_strat_auacking.png'))
+            raise Exception("false")
+        finally:
+            if self.getAttribute(self.recordbtn,"style")==self.stop_record_style():
+                pass
+            else:
+                self.stop_recording()
+
+
+
+
 
                   
 

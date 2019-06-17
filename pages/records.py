@@ -95,3 +95,19 @@ class Records(RecordPage,RecordSet):
         # self.start_recording(thems)
         # sleep(10)
         # self.stop_recording()
+
+
+       #录制时启用自动跟踪
+    def record_strat_auacking(self):
+        home = HomePage(self.driver)
+        home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        self.strat_au_au_racking()
+        self.ensure()
+        home.click_system_setup_blck()
+        sleep(1)
+        home.click_record()
+        self.start_recording()
+        sleep(10)
+        auto_status = self.getAttribute(self.autobtn, "class")
+        self.stop_recording()
+        return auto_status

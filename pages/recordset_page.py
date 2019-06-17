@@ -31,9 +31,11 @@ class RecordSet(BasePage):
     main_stream = (By.XPATH,"//*[@id='main_quality_select-button']/span[1]")
     #子码流质量选择下拉框
     sub_stream = (By.XPATH,"//*[@id='multi_quality-button']/span[1]") 
-
     # 启动子码流录制复选框
     sub_stream5 = (By.XPATH,"//*[@id='others_body']/div[2]/label/i")
+
+    # 启动全自动跟踪按钮
+    au_racking = (By.XPATH,"//*[@id='startOption']/div/label[2]/i")
 
     #页面确认按钮
     sure = (By.XPATH,"/html/body/div[1]/div[3]/input")
@@ -59,7 +61,7 @@ class RecordSet(BasePage):
     # 勾选启动子码流录制按钮
     def start_up_sub_stream(self):
         if self.is_selected(self.sub_stream5):
-            pass
+            logger.info(u"已勾选启动子码流录制按钮") 
         else:
             self.click(self.sub_stream5)
             logger.info(u"勾选启动子码流录制按钮")       
@@ -75,6 +77,14 @@ class RecordSet(BasePage):
         Select(self.find_element(sub_streams)).select_by_value("%d" % num)  #%d取值1、2、3分别对应的码流质量为720p\标清\流畅        
         sleep(1)
 
+    #启动全自动跟踪
+    def strat_au_au_racking(self):
+        if self.getAttribute(self.au_racking,"class") =="checkbox g_checkbox g_checkbox-checked":
+            logger.info(u"已勾选启动自动跟踪") 
+        else:
+            self.click(self.au_racking)
+            logger.info(u"勾选启动自动跟踪") 
+   
         
    # 点击页面确认按钮后切换回iframe
     def ensure(self):

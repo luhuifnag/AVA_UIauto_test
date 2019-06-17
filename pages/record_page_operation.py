@@ -116,8 +116,10 @@ class RecordOperation(RecordPage):
             self.change_background_colorr(n)
             self.click(self.outputbtn)
             sleep(5)
+    
         self.stop_recording()
         
+ 
 
 
 
