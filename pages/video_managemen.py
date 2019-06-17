@@ -46,7 +46,6 @@ class VideoManagemen(BasePage):
         sleep(2)
      
 
-
     #查看文件详细信息
     def file_detailed(self,num):
         self.check_recorder_massage()

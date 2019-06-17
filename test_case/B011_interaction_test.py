@@ -19,6 +19,7 @@ from pages.interaction_home_page import InteractionHmoe
 from pages.interaction_teaching_page import IterTeaching
 from pages.sys_register_page import Register
 from utils.log import logger
+from pages.home_page import HomePage
 
 class InteractionTest(MyTest, InteractionHmoe, IterTeaching):
     '''互动页面的测试'''
@@ -75,22 +76,22 @@ class InteractionTest(MyTest, InteractionHmoe, IterTeaching):
     #     finally:
     #         self.stop_meeting()
 
-    def test_create_teaching_meeting3(self):
-        '''创建一个有三个在线听课的授课模式的会议测试''' 
-        try:
-            logger.info("创建一个有三个在线听课的授课模式的会议测")
-            # self.create_teaching_meeting(readconfig.Attendant1+";"+readconfig.Attendant2+";"+readconfig.Attendant3)
-            Attendants = ["auto01","auto02","auto03"]
-            self.create_teaching_meeting(Attendants)
-            sleep(2)
-            self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
-            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "%s_CONF" % readconfig.name)
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_create_teaching_meeting3.png'))
-            raise Exception("false")
-        finally:
-            self.stop_meeting()
+    # def test_create_teaching_meeting3(self):
+    #     '''创建一个有三个在线听课的授课模式的会议测试''' 
+    #     try:
+    #         logger.info("创建一个有三个在线听课的授课模式的会议测")
+    #         # self.create_teaching_meeting(readconfig.Attendant1+";"+readconfig.Attendant2+";"+readconfig.Attendant3)
+    #         Attendants = ["auto01","auto02","auto03"]
+    #         self.create_teaching_meeting(Attendants)
+    #         sleep(2)
+    #         self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
+    #         self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "%s_CONF" % readconfig.name)
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_create_teaching_meeting3.png'))
+    #         raise Exception("false")
+    #     finally:
+    #         self.stop_meeting()
 
     # def test_create_meeting_meeting(self):
     #     '''创建一个不带主题和密码的会议式空会议测试''' 
@@ -207,6 +208,30 @@ class InteractionTest(MyTest, InteractionHmoe, IterTeaching):
     #         logger.error(u"异常原因：%s"%msg)
     #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_link_jump.png'))
     #         raise Exception("false")
+    
+
+    # 在互动中录制管理置灰
+    def test_Limited_Recording_Management(self):
+        '''互动过程中限制进入录制管理模块'''
+        try:
+            logger.info("互动过程中限制进入录制管理模块")
+            self.create_teaching_meeting("")
+            sleep(3)
+            self.click(self.backbtn)
+            sleep(3)
+            home = HomePage(self.driver)
+            self.assertIn( "disabled", (self.getAttribute(home.video_management, "class")))
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_Limited_Recording_Management'))
+            raise Exception("false")
+        finally:
+            home.click_interaction()
+            sleep(2)
+            self.stop_meeting()   
+
+    
+
 
 
 if __name__ == "__main__":

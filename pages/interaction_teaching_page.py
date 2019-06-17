@@ -27,6 +27,8 @@ class IterTeaching(BasePage):
     meeting_pwd = (By.XPATH, "//*[@id='header']/div[3]/div[3]")
     # 双流标志
     doubletag = (By.XPATH, "//*[@id='baseController']/div[1]/div[1]/label")
+    # 返回按钮
+    backbtn = (By.XPATH, "//*[@id='header']/div[2]")
     # 退出会议按钮
     intera_stop = (By.ID, "intera_stop")
     # 退出会议的确定按钮
@@ -51,6 +53,7 @@ class IterTeaching(BasePage):
         
     # 退出会议
     def stop_meeting(self):
+        logger.info("结束互动会议")
         self.click(self.intera_stop)
         sleep(2)
         self.click(self.sure2)

@@ -11,6 +11,9 @@ from utils.log import logger
 
 class HomePage(BasePage):
 
+    # 录像管理按钮
+    video_management = (By.XPATH,"//*[@id='content']/div[2]/a[2]") 
+
     def click_record(self):
         logger.info (u"点击录播按钮")
         record = (By.XPATH,"//*[@id='content']/div[1]/a[1]")
@@ -32,9 +35,8 @@ class HomePage(BasePage):
         self.click(backbtn)
 
     def click_video_managemen(self):
-        logger.info (u"点击录像管理按钮")
-        video_management = (By.XPATH,"//*[@id='content']/div[2]/a[2]")  
-        self.click(video_management)
+        logger.info (u"点击录像管理按钮")  
+        self.click(self.video_management)
 
     def click_video_managemen_black(self):
         logger.info (u"点击录像管理页面返回按钮")
