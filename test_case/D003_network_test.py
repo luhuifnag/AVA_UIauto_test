@@ -19,13 +19,14 @@ from pages.basepage import BasePage
 from pages.home_page import HomePage
 from pages.loginpage import LoginPage
 from pages.networkpage import Network
+from utils.log import logger
 
 
 class ModifyingNetworkTest2(MyTest):
     '''在系统设置中更改IP测试'''
     
     def setUp(self):
-        print(u"******************测试开始******************")
+        logger.info(u"******************测试开始******************")
         self.driver = webdriver.Firefox()
         self.driver.get(readconfig.newurl)
         self.driver.maximize_window()
@@ -39,6 +40,7 @@ class ModifyingNetworkTest2(MyTest):
     def test6_change_ip(self):
         '''在系统设置中更改IP测试'''
         try:
+            logger.info("在系统设置中更改IP测试")
             network = Network(self.driver) 
             network.change_ip(readconfig.netaddr1,readconfig.netaddr2,readconfig.netaddr3,readconfig.netaddr4,\
             readconfig.gateway1,readconfig.gateway2,readconfig.gateway3,readconfig.gateway4) 
@@ -52,7 +54,7 @@ class ModifyingNetworkTest2(MyTest):
             self.assertEqual(new_url,"%slogin.html" % readconfig.url)
             self.assertEqual(self.driver.title, u"录播管理系统")
         except Exception as msg:
-            print(u"异常原因：%s"%msg)
+            logger.ERROR(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_change_ip.png'))
             raise Exception("false")
 

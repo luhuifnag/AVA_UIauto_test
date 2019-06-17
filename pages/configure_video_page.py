@@ -12,6 +12,7 @@ from pages.basepage import BasePage
 from pages.home_page import HomePage
 from selenium.webdriver.support import expected_conditions as ES
 from selenium.webdriver.support.ui import WebDriverWait
+from utils.log import logger
 
 class VideoQuery(BasePage):
     
@@ -28,7 +29,7 @@ class VideoQuery(BasePage):
         home = HomePage(self.driver)
         home.swich_to_configure_label(self.videobtn,"录像查询")
         sleep(1)
-        print(self.gettext(self.total_documents))
+        logger.info(self.gettext(self.total_documents))
         a = self.gettext(self.total_documents)
         self.driver.switch_to.default_content()
         return a

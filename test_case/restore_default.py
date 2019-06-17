@@ -14,6 +14,7 @@ from pages.home_page import HomePage
 from pages.loginpage import LoginPage
 from pages.restore_default_page import Restore
 from models import readconfig
+from utils.log import logger
 
 class Restore_tests(MyTest,Restore):
     '''恢复默认操作测试'''
@@ -21,10 +22,11 @@ class Restore_tests(MyTest,Restore):
     def test_restore(self):
         '''恢复默认操作测试'''
         try:
+            logger.info("恢复默认操作测试")
             self.restore()      
             self.assertEqual(self.driver.title, u"录播管理系统")
         except Exception as msg:
-            print(u"异常原因：%s"%msg)
+            logger.ERROR(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_restore.png'))
             raise Exception("false")
         

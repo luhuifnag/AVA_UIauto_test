@@ -11,7 +11,7 @@ import unittest
 from models.myunit import MyTest
 from pages.buzzerpage import Buzzer
 from models import readconfig
-
+from utils.log import logger
 
 class BuzzerTest(MyTest,Buzzer):
      '''关闭蜂鸣器的测试'''
@@ -19,11 +19,12 @@ class BuzzerTest(MyTest,Buzzer):
      def test_buzzer(self):
         '''关闭蜂鸣器的测试'''
         try:
+            logger.info("关闭蜂鸣器的测试")
             self.close_buzzer()
             self.driver.switch_to.frame("content")
-            print(self.getInnerHTML(self.text))
+            logger.info(self.getInnerHTML(self.text))
         except Exception as msg:
-            print(u"异常原因：%s"%msg)
+            logger.ERROR(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_buzzer.png'))
             raise Exception("false")
         finally:

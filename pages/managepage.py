@@ -15,7 +15,7 @@ from models import readconfig
 from pages.basepage import BasePage
 from pages.loginpage import LoginPage
 from pages.record_page import RecordPage
-
+from utils.log import logger
 
 class Manage(BasePage):
 
@@ -42,7 +42,7 @@ class Manage(BasePage):
 
     #退出系统
     def logout(self):
-        print( u"点击退出系统按钮")
+        logger.info( u"点击退出系统按钮")
         logoutbtn= (By.ID, "logout")
         self.click(logoutbtn)
         sleep(1)       
@@ -51,14 +51,14 @@ class Manage(BasePage):
 
     #关机
     def shutdown(self):
-        print(u"点击关机按钮")
+        logger.info(u"点击关机按钮")
         self.click(self.shutdownbtn)
         self.driver.switch.frame("layui-layer-iframe3")
         self.click(self.sure)
 
     #休眠
     def dormancy(self):
-        print(u"点击休眠按钮")
+        logger.info(u"点击休眠按钮")
         self.click(self.shutdownbtn)
         sleep(1)
         self.driver.switch_to.frame("layui-layer-iframe1")
@@ -71,7 +71,7 @@ class Manage(BasePage):
         sleep(120)
         LoginPage(self.driver).login_sys(readconfig.username, readconfig.password)
         sleep(2)
-        print(u"点击唤醒按钮")
+        logger.info(u"点击唤醒按钮")
         awakenbtn = (By.XPATH, "//*[@id='awaken']/div/button[1]")
         self.click(awakenbtn)
         sleep(60)
@@ -81,7 +81,7 @@ class Manage(BasePage):
 
     #重启
     def reboot(self):
-        print(u"点击重启按钮")
+        logger.info(u"点击重启按钮")
         self.click(self.shutdownbtn)
         sleep(1)
         self.driver.switch_to.frame("layui-layer-iframe1")

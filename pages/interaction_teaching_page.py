@@ -13,6 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.basepage import BasePage
 from pages.home_page import HomePage
+from utils.log import logger
 
 class IterTeaching(BasePage):
 
@@ -45,7 +46,7 @@ class IterTeaching(BasePage):
         for i in range(num):
             tags = (By.XPATH, "//*[@id='videoLists']/li[%s]/div[1]/div" % str(i+1))
             taglist.append(self.gettext(tags))
-        print(taglist)
+        logger.info(taglist)
         return taglist
         
     # 退出会议

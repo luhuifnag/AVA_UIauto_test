@@ -11,6 +11,7 @@ from time import sleep
 from selenium.webdriver.common.by import By
 from pages.basepage import BasePage
 from pages.home_page import HomePage
+from utils.log import logger
 
 class ConVersion(BasePage):
     
@@ -33,6 +34,6 @@ class ConVersion(BasePage):
             version_nums = (By.XPATH,"//*[@id='versionList']/tr[%d]/td[3]" % i)  #第一行的版本名的行的取值分别为1后面的以此类推
             version_names_text.append(self.gettext(version_names))
             version_nums_text.append(self.gettext(version_nums))
-        print (version_names_text,version_nums_text)
+        logger.info (version_names_text,version_nums_text)
         self.driver.switch_to.default_content()
         return(version_names_text,version_nums_text)  

@@ -12,7 +12,7 @@ from selenium.webdriver.common.by import By
 from pages.basepage import BasePage
 from pages.home_page import HomePage
 from pages.record_page import RecordPage
-
+from utils.log import logger
 
 class RecordOperation(RecordPage):
 
@@ -59,7 +59,7 @@ class RecordOperation(RecordPage):
         home.click_record() 
         sleep(1)
         self.start_recording("切换布局录制")
-        print(u"切换预览的视窗")
+        logger.info(u"切换预览的视窗")
         num = self.get_preview_num()
         for i in range(1, num-1):
             self.select_windows_tags1(i)
@@ -79,7 +79,7 @@ class RecordOperation(RecordPage):
         home.click_record() 
         sleep(1)
         self.click(self.logobtn)
-        print(u"上传logo")
+        logger.info(u"上传logo")
         self.input_text(self.logofile,path)
         sleep(3)
         self.click(self.upload)

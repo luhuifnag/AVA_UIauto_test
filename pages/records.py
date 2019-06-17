@@ -14,6 +14,7 @@ from pages.home_page import HomePage
 from pages.record_page import RecordPage
 from pages.recordset_page import RecordSet
 from pages.video_managemen import VideoManagemen
+from utils.log import logger
 
 
 class Records(RecordPage,RecordSet):

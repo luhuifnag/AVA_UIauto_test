@@ -13,6 +13,7 @@ from pages.loginpage import LoginPage
 from pages.home_page import HomePage
 from selenium.webdriver.support import expected_conditions as ES
 from selenium.webdriver.support.ui import WebDriverWait
+from utils.log import logger
 
 class VideoTag(BasePage):
 
@@ -36,7 +37,7 @@ class VideoTag(BasePage):
         home.swich_to_system_label(self.videotagbtn, "视频标签")
         sleep(2)
         self.click(self.default_label)
-        print("选择默认标签名")
+        logger.info("选择默认标签名")
         sleep(1)
         self.click(self.sure)
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
@@ -48,7 +49,7 @@ class VideoTag(BasePage):
         home.swich_to_system_label(self.videotagbtn, "视频标签")
         sleep(3)
         self.click(self.custom_label)
-        print("选择自定义标签名称")  
+        logger.info("选择自定义标签名称")  
         sleep(1)
         num = self.get_windows_num()
         albellist = []
@@ -62,7 +63,7 @@ class VideoTag(BasePage):
         self.click(self.sure)
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
         self.accept_alert()
-        print(albellist)
+        logger.info(albellist)
         self.driver.switch_to.default_content()
         return albellist
 

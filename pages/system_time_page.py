@@ -13,6 +13,7 @@ from pages.home_page import HomePage
 from selenium.webdriver.support import expected_conditions as ES
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.ui import Select
+from utils.log import logger
 
 class SystemTime(BasePage):
 
@@ -35,7 +36,7 @@ class SystemTime(BasePage):
 
     # 勾选自动同步网络时间
     def check_automaticbtn(self):
-        print("勾选自动同步网络时间")
+        logger.info("勾选自动同步网络时间")
         if self.getAttribute(self.automaticbtn, "class")=="checkbox g_checkbox g_checkbox-checked":
             pass
         else:
@@ -98,7 +99,7 @@ class SystemTime(BasePage):
         now_day = str(time.tm_mday)   #这种方式可以去掉日期月份小于10的时候前面带的0
         now_hours = str(time.tm_hour)   
         datelist = [now_year, now_month,now_day,now_hours]
-        print(datelist)
+        logger.info(datelist)
         self.driver.refresh()
         sleep(3)
         self.driver.switch_to.frame("content")

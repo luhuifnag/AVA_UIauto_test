@@ -13,7 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.basepage import BasePage
 from pages.home_page import HomePage
-
+from utils.log import logger
 
 class InteractionHmoe(BasePage):
 
@@ -60,7 +60,7 @@ class InteractionHmoe(BasePage):
     def getin_interaction(self):
         home = HomePage(self.driver)
         home.click_interaction()
-        print("进入到互动页面")
+        logger.info("进入到互动页面")
         sleep(2)
 
     #去掉最近呼叫的所有勾选
@@ -81,16 +81,16 @@ class InteractionHmoe(BasePage):
     # 启动内置云
     def start_up_cloud(self):
         if self.getAttribute(self.Built_in_cloud, "class") == "g_checkbox g_checkbox-checked":
-            print("已启用内置云")
+            logger.info("已启用内置云")
         else:
             self.click(self.Built_in_cloud)
-            print("启用内置云")
+            logger.info("启用内置云")
 
     # 不启动用内置云
     def no_start_cloud(self):
         if self.getAttribute(self.Built_in_cloud, "class") == "g_checkbox g_checkbox-checked":
             self.click(self.Built_in_cloud)
-            print("不启用内置云")
+            logger.info("不启用内置云")
         else:
             pass
 
@@ -106,36 +106,36 @@ class InteractionHmoe(BasePage):
     def register_situation(self):
         register_text = self.gettext(self.regstate)
         if u"注册成功" in register_text:
-            print (register_text)
+            logger.info (register_text)
         else:
-            print("未注册rserver")
+            logger.info("未注册rserver")
 
     # 输入听课设备
     def input_call(self, *calls):
-        print("输入已选用户%s" % (calls,) )
+        logger.info("输入已选用户%s" % (calls,) )
         self.input_text(self.callinput, *calls)
 
     # 输入会议主题和密码
     def input_confName_confpasswd(self,name='',pwd='123456'):
         self.input_text(self.confName, name)
-        print("主题：%s" % name)
+        logger.info("主题：%s" % name)
         self.click(self.box1)
         self.input_text(self.confpasswd, pwd)
-        print("密码:%s" % pwd)
+        logger.info("密码:%s" % pwd)
 
     # 启用双流
     def start_Double(self):
         if self.getAttribute(self.Double_current, "class") == "g_checkbox g_checkbox-checked":
-            print("已勾选双流")
+            logger.info("已勾选双流")
         else:
             self.click(self.Double_current)
-            print("勾选双流")
+            logger.info("勾选双流")
 
     # 不启用双流
     def no_start_Doubl(self):
         if self.getAttribute(self.Double_current, "class") == "g_checkbox g_checkbox-checked":
             self.click(self.Double_current)
-            print("不勾选双流")
+            logger.info("不勾选双流")
         else:
             pass
 
@@ -169,7 +169,7 @@ class InteractionHmoe(BasePage):
         self.create_meeting(*calls)
         self.click(self.Teaching)
         self.no_start_Doubl()
-        print("创建授课模式会议")
+        logger.info("创建授课模式会议")
         self.click(self.createMeeting) 
         sleep(3)
         self.click(self.sure1)
@@ -180,7 +180,7 @@ class InteractionHmoe(BasePage):
         self.input_confName_confpasswd(name, pwd)
         self.click(self.Teaching)
         self.no_start_Doubl()
-        print("创建授课模式会议")
+        logger.info("创建授课模式会议")
         self.click(self.createMeeting) 
         sleep(3)
         self.click(self.sure1)
@@ -190,7 +190,7 @@ class InteractionHmoe(BasePage):
         self.create_meeting(*calls)
         self.click(self.Teaching)
         self.start_Double()
-        print("创建授课模式会议")
+        logger.info("创建授课模式会议")
         self.click(self.createMeeting) 
         sleep(3)
         self.click(self.sure1)
@@ -200,7 +200,7 @@ class InteractionHmoe(BasePage):
         self.create_meeting(*calls)
         self.click(self.Meeting)
         self.no_start_Doubl()
-        print("创建会议模式会议")
+        logger.info("创建会议模式会议")
         self.click(self.createMeeting) 
         sleep(3)
         self.click(self.sure1)
@@ -211,7 +211,7 @@ class InteractionHmoe(BasePage):
         self.input_confName_confpasswd(name, pwd)
         self.click(self.Meeting)
         self.no_start_Doubl()
-        print("创建授会议模式会议")
+        logger.info("创建授会议模式会议")
         self.click(self.createMeeting) 
         sleep(3)
         self.click(self.sure1)
@@ -221,7 +221,7 @@ class InteractionHmoe(BasePage):
         self.create_meeting(*calls)
         self.click(self.Meeting)
         self.start_Double()
-        print("创建授课模式会议")
+        logger.info("创建授课模式会议")
         self.click(self.createMeeting) 
         sleep(3)
         self.click(self.sure1)
@@ -230,7 +230,7 @@ class InteractionHmoe(BasePage):
     def create_cloud_meeting(self, *calls):
         self.create_cloudmeeting(*calls)
         self.no_start_Doubl()
-        print("创建内置云会议")
+        logger.info("创建内置云会议")
         self.click(self.createMeeting) 
         sleep(3)
         self.click(self.sure1)
@@ -240,7 +240,7 @@ class InteractionHmoe(BasePage):
         self.create_cloudmeeting(*calls)
         self.input_confName_confpasswd(name, pwd)
         self.no_start_Doubl()
-        print("创建内置云会议")
+        logger.info("创建内置云会议")
         self.click(self.createMeeting) 
         sleep(3)
         self.click(self.sure1)
@@ -249,7 +249,7 @@ class InteractionHmoe(BasePage):
     def create_Double_cloud_meeting(self, *calls):
         self.create_cloudmeeting(*calls)
         self.start_Double()
-        print("创建内置云会议")
+        logger.info("创建内置云会议")
         self.click(self.createMeeting) 
         sleep(3)
         self.click(self.sure1)
@@ -259,5 +259,5 @@ class InteractionHmoe(BasePage):
         self.getin_interaction()
         self.getin_interactSet()
         self.click(self.link)
-        print("转跳至系统设置-注册服务")
+        logger.info("转跳至系统设置-注册服务")
         sleep(2)

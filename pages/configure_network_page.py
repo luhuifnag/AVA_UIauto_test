@@ -16,6 +16,7 @@ from selenium.webdriver.support import expected_conditions as ES
 from selenium.webdriver.support.ui import WebDriverWait
 from pages.home_page import HomePage
 from models import readconfig
+from utils.log import logger
 
 class ConfigureNetwork(BasePage):
 
@@ -72,7 +73,7 @@ class ConfigureNetwork(BasePage):
             pass
         else:
             self.click(self.automatic_ip)
-            print(u"勾选自动获取IP")       
+            logger.info(u"勾选自动获取IP")       
 
     #勾选手动获取ip按钮
     def check_manual_ip(self):
@@ -80,7 +81,7 @@ class ConfigureNetwork(BasePage):
             pass
         else:
             self.click(self.manual_ip)
-            print(u"勾选手动获取IP")
+            logger.info(u"勾选手动获取IP")
 
     #更改IP和对应网关
     def change_ip_gateway(self, addr1, addr2, addr3, addr4, way1, way2, way3, way4): 
@@ -88,7 +89,7 @@ class ConfigureNetwork(BasePage):
         list2 = [addr1, addr2, addr3, addr4]
         list3 = [self.gateway1, self.gateway2, self.gateway3, self.gateway4]
         list4 = [way1, way2, way3, way4]
-        print(u"更改设备IP为:%s, 更改设备网关为%s" % (".".join(list2), ".".join(list4)))   
+        logger.info(u"更改设备IP为:%s, 更改设备网关为%s" % (".".join(list2), ".".join(list4)))   
         for a in list1:
             self.clear(a)
         for b, c in zip(list1, list2):
@@ -105,7 +106,7 @@ class ConfigureNetwork(BasePage):
         list1 = [self.dnsa1, self.dnsa2, self.dnsa3, self.dnsa4]
         list2 = [118, 118, 118, 118]
         list2_str = [str(x) for x in list2]
-        print(u"修改首选DNS为:%s" % ".".join(list2_str))  
+        logger.info(u"修改首选DNS为:%s" % ".".join(list2_str))  
         for a in list1:
             self.clear(a)
         for b, c in zip(list1, list2):
@@ -116,7 +117,7 @@ class ConfigureNetwork(BasePage):
         list1 = [self.dnsb1, self.dnsb2, self.dnsb3, self.dnsb4]
         list2 = [6, 6, 6, 6]
         list2_str = [str(x) for x in list2]
-        print(u"修改备选DNS为:%s" % ".".join(list2_str))  
+        logger.info(u"修改备选DNS为:%s" % ".".join(list2_str))  
         for a in list1:
             self.clear(a)
         for b, c in zip(list1, list2):
@@ -130,7 +131,7 @@ class ConfigureNetwork(BasePage):
             self.click(self.self_adaption)
             WebDriverWait(self.driver, 5, 0.5).until(ES.alert_is_present()) 
             self.accept_alert()
-        print(u"勾选百兆/千兆网口自适应")
+        logger.info(u"勾选百兆/千兆网口自适应")
 
     # 点击页面确认按钮后切换回iframe
     def ensure(self):

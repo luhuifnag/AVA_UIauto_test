@@ -16,12 +16,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from models import readconfig
 from pages.home_page import HomePage
 from pages.loginpage import LoginPage
-
+from utils.log import logger
 
 class MyTest(unittest.TestCase):
 
     def setUp(self):
-        print(u"******************测试开始******************")
+        logger.info(u"******************测试开始******************")
         self.driver = webdriver.Firefox()
         self.driver.get(readconfig.url)
         self.driver.maximize_window()

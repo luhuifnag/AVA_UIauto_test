@@ -12,6 +12,7 @@ from pages.basepage import BasePage
 from pages.home_page import HomePage
 from selenium.webdriver.support import expected_conditions as ES
 from selenium.webdriver.support.ui import WebDriverWait
+from utils.log import logger
 
 class VideoManagemen(BasePage):
 
@@ -49,21 +50,21 @@ class VideoManagemen(BasePage):
     #查看文件详细信息
     def file_detailed(self,num):
         self.check_recorder_massage()
-        print(u"查看文件的详细信息")
+        logger.info(u"查看文件的详细信息")
         detailedbtn = (By.XPATH,"//*[@id='filesInfo']/tbody/tr[%d]/td[9]/a" % num) #第一个文件的%d值为2,后面的以此类推
         self.click(detailedbtn)
 
     #查看文件总数
     def check_total_documents(self):
         self.check_recorder_massage()
-        print(self.gettext(self.total_documents))
+        logger.info(self.gettext(self.total_documents))
         return self.gettext(self.total_documents)
 
     #删除文件
     def delete_documents(self):
         self.click(self.radio)
         self.click(self.delete) 
-        print(u"删除掉默认排序的第一个文件")
+        logger.info(u"删除掉默认排序的第一个文件")
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present())     
         self.accept_alert()
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present())     

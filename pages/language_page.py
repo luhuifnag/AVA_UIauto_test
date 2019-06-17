@@ -13,6 +13,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.basepage import BasePage
 from pages.home_page import HomePage
+from utils.log import logger
+
 
 class Languages(BasePage):
 
@@ -30,7 +32,7 @@ class Languages(BasePage):
 
     # 选择中文
     def choose_Chinese(self):
-        print("选择中文")
+        logger.info("选择中文")
         if self.getAttribute(self.Chinese, "style")=="background-image: url(\"/assets/images/common/radio_checked.png\");":
             pass
         else:
@@ -38,7 +40,7 @@ class Languages(BasePage):
 
     # 选择英文
     def choose_english(self):
-        print("选择英文")
+        logger.info("选择英文")
         if self.getAttribute(self.english, "style")=="background-image: url(\"/assets/images/common/radio_checked.png\");":
             pass
         else:

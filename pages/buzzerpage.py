@@ -13,7 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.basepage import BasePage
 from pages.home_page import HomePage
-
+from utils.log import logger
 
 
 class Buzzer(BasePage):
@@ -36,6 +36,7 @@ class Buzzer(BasePage):
         sleep(2)
         home.click_basic_setting()
         sleep(2)
+        logger.info("点击关闭蜂蜜器")
         home.click(self.buzzerbtn)
         sleep(1)
         self.driver.switch_to.frame("content")

@@ -11,7 +11,7 @@ from selenium.webdriver.common.by import By
 
 from pages.basepage import BasePage
 from pages.home_page import HomePage
-
+from utils.log import logger
 
 
 class ConfigureRegister(BasePage):
@@ -48,37 +48,37 @@ class ConfigureRegister(BasePage):
 
 
     def input_serverIP(self,text):
-        print( u"输入服务器地址：",text)
+        logger.info( u"输入服务器地址：%s" % text)
         self.clear(self.serverIP)
         self.input_text(self.serverIP, text)
         
     def input_userName(self,text):
-        print( u"输入账号：",text)
+        logger.info( u"输入账号：%s" % text)
         self.clear(self.userName)
         self.input_text(self.userName, text)
 
     def input_backupip(self,text=""):
-        print( u"输入备用服务器地址：",text)
+        logger.info( u"输入备用服务器地址：%s" % text)
         self.clear(self.backupip)
         self.input_text(self.backupip, text)
 
     def input_pwd(self,text="123456"):
-        print (u"输入密码：",text)
+        logger.info (u"输入密码：%s" % text)
         self.clear(self.pwd)
         self.input_text(self.pwd, text)
 
     def input_machineName(self,text):
-        print (u"输入昵称：",text)
+        logger.info (u"输入昵称：%s" % text)
         self.clear(self.machineName)
         self.input_text(self.machineName, text)
     
     def input_localport(self,text="554"):
-        print (u"输入本地端口：",text)
+        logger.info (u"输入本地端口：%s" % text)
         self.clear(self.localport)
         self.input_text(self.localport, text)
 
     def input_udpport(self,text="32768"):
-        print (u"输入udp端口：",text)
+        logger.info (u"输入udp端口：%s" % text)
         self.clear(self.udpport)
         self.input_text(self.udpport, text)
 

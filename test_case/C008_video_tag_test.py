@@ -17,6 +17,7 @@ from pages.home_page import HomePage
 from pages.record_page import RecordPage
 from pages.interaction_home_page import InteractionHmoe
 from pages.interaction_teaching_page import IterTeaching
+from utils.log import logger
 
 class VideoTagTest(MyTest, VideoTag):
     '''视频标签测试'''
@@ -24,6 +25,7 @@ class VideoTagTest(MyTest, VideoTag):
     def test1_input_custom_label(self):
         '''选择自定义标签测试（录播模式）'''
         try:
+            logger.info("选择自定义标签测试（录播模式）")
             a = self.input_custom_label()
             home = HomePage(self.driver)
             home.click_system_setup_blck()
@@ -34,13 +36,14 @@ class VideoTagTest(MyTest, VideoTag):
             b = record.get_preview_tag()
             self.assertEqual(a, b)
         except Exception as msg:
-            print(u"异常原因：%s"%msg)
+            logger.ERROR(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test1_input_custom_label.png'))
             raise Exception("false")
 
     def test2_input_custom_label(self):
         '''选择自定义标签测试（互动模式）'''
         try:
+            logger.info("选择默认标签测试")
             a = self.input_custom_label()
             home = HomePage(self.driver)
             home.click_system_setup_blck()
@@ -52,16 +55,17 @@ class VideoTagTest(MyTest, VideoTag):
             interteach.stop_meeting()
             self.assertEqual(a, b)
         except Exception as msg:
-            print(u"异常原因：%s"%msg)
+            logger.ERROR(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test2_input_custom_label.png'))
             raise Exception("false")
 
     def test3_C_default(self):
         '''选择默认标签测试'''
         try:
+            logger.info("选择默认标签测试")
             self.C_default()
         except Exception as msg:
-            print(u"异常原因：%s"%msg)
+            logger.ERROR(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test2_C_defaultr.png'))
             raise Exception("false")
 

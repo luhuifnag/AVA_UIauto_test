@@ -7,6 +7,7 @@ Created on 2019年06月11日
 
 from selenium.webdriver.common.by import By
 from pages.basepage import BasePage
+from utils.log import logger
 
 class Register(BasePage):
 

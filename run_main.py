@@ -24,15 +24,15 @@ from models import readconfig
 
 
 
-report_path = readconfig.report_path
-print(U"测试报告存放位置：%s" % report_path)
 
 
 if __name__ == '__main__':
+    report_path = readconfig.report_path
+    print(U"测试报告存放位置：%s" % report_path)
     now = time.strftime("%Y%m%d%H%M%S",time.localtime(time.time()))
-    filename = report_path+now+'result.html'
+    filename = report_path+'\\'+now+'result.html'
     fp = open(filename,'wb')
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp,title='云互动UI自动化测试报告',description='环境：win10，firefox')
-    discover = unittest.defaultTestLoader.discover("test_case",pattern="*test.py",top_level_dir=None)
+    discover = unittest.defaultTestLoader.discover("test_case",pattern="C002_installationInformation_test.py",top_level_dir=None)
     runner.run(discover)
     fp.close()

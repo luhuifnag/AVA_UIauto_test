@@ -13,6 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.basepage import BasePage
 from pages.home_page import HomePage
+from utils.log import logger
 
 class DiskManagement(BasePage):
 
@@ -40,7 +41,7 @@ class DiskManagement(BasePage):
         home.swich_to_basic_label(self.diskbtn,"硬盘管理")
         sleep(2)
         self.click(self.formatbtn)
-        print(u"点击硬盘格式化按钮")
+        logger.info(u"点击硬盘格式化按钮")
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present())
         self.get_alert_text()
         self.accept_alert()
@@ -56,7 +57,7 @@ class DiskManagement(BasePage):
         home.swich_to_basic_label(self.diskbtn,"硬盘管理")
         sleep(2)
         self.click(self.repairbtn)
-        print(u"点击文件修复按钮")     
+        logger.info(u"点击文件修复按钮")     
 
     # 文件整理
     def file_arrangement(self):
@@ -64,7 +65,7 @@ class DiskManagement(BasePage):
         home.swich_to_basic_label(self.diskbtn,"硬盘管理")
         sleep(2)
         self.click(self.arrangementbtn)
-        print(u"点击文件整理按钮")
+        logger.info(u"点击文件整理按钮")
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
         self.accept_alert()
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present())
@@ -78,7 +79,7 @@ class DiskManagement(BasePage):
         home.swich_to_basic_label(self.diskbtn,"硬盘管理")
         sleep(2)
         self.input_text(self.uploadbtn, path)
-        print(u"点击辅助软件上传按钮")
+        logger.info(u"点击辅助软件上传按钮")
         sleep(1)
 
       

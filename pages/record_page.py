@@ -16,6 +16,7 @@ from pages.basepage import BasePage
 from pages.home_page import HomePage
 from pages.loginpage import LoginPage
 from selenium.webdriver.common.action_chains import ActionChains
+from utils.log import logger
 
 class RecordPage(BasePage):
     now_date = datetime.datetime.now().strftime('%Y-%m-%d')
@@ -144,17 +145,17 @@ class RecordPage(BasePage):
         for i in range(num):
             tags = (By.XPATH, "//*[@id='videoLists']/li[%s]/div[1]/div" % str(i+1))
             taglist.append(self.gettext(tags))
-        print(taglist)
+        logger.info(taglist)
         return taglist
             
 
     def back(self):
-        print(u"点击录播页面返回按钮")
+        logger.info(u"点击录播页面返回按钮")
         backbtn = (By.XPATH, "//*[@id='back']")
         self.click(backbtn)
 
     def input_topic(self, themes):
-        print(u"输入主题：%s"% themes)
+        logger.info(u"输入主题：%s"% themes)
         themeinput = (By.XPATH, "//*[@id='title']")
         sleep(1)
         self.clear(themeinput)
@@ -162,7 +163,7 @@ class RecordPage(BasePage):
         self.input_text(themeinput, themes)
 
     def input_speaker(self, speaker):
-        print(u"输入主讲人：%s"% speaker)
+        logger.info(u"输入主讲人：%s"% speaker)
         speakerinput = (By.XPATH, "//*[@id='speaker']")
         self.clear(speakerinput)
         sleep(1)
@@ -174,17 +175,17 @@ class RecordPage(BasePage):
         self.input_topic(themes)
         sleep(1)
         self.input_speaker(speaker)
-        print(u"点击开始录制")
+        logger.info(u"点击开始录制")
         self.click(self.recordbtn)
 
     #暂停录制
     def pause_recording(self):
-        print(u"点击暂停/恢复录制按钮")
+        logger.info(u"点击暂停/恢复录制按钮")
         self.click(self.pausebtn)
         
     #停止录制
     def stop_recording(self):
-        print(u"点击停止录制按钮")
+        logger.info(u"点击停止录制按钮")
         self.click(self.recordbtn)
         sleep(2)
         sure = (By.XPATH, "//*[@class='layui-layer layui-layer-dialog']/div[3]/a[1]")
@@ -193,13 +194,13 @@ class RecordPage(BasePage):
     
     # 开始/停止直播
     def start_or_stop_live(self):
-        print(u"点击直播按钮")
+        logger.info(u"点击直播按钮")
         self.click(self.livebtn)
         sleep(2)
 
     # 点击全自动按钮
     def click_autobtn(self):
-        print(u"点击全自动按钮")
+        logger.info(u"点击全自动按钮")
         if self.getAttribute(self.autobtn,"class")=="ava-btn ava-btn-md ava-btn-normal ava-btn-primary":
             pass
         else:
@@ -207,7 +208,7 @@ class RecordPage(BasePage):
 
     # 点击半自动按钮
     def click_semiautobtn(self):
-        print(u"点击半自动按钮")
+        logger.info(u"点击半自动按钮")
         if self.getAttribute(self.autobtn,"class")=="ava-btn ava-btn-md ava-btn-normal ava-btn-primary":
             pass
         else:
@@ -230,7 +231,7 @@ class RecordPage(BasePage):
 
     #点击云台四个变焦按钮
     def PTZ_fast_focusing(self):
-        print("控制快速变焦")
+        logger.info("控制快速变焦")
         self.click(self.ptzbtn)
         sleep(2)
         self.click(self.focus4)
@@ -244,7 +245,7 @@ class RecordPage(BasePage):
 
     # 控制云台的方位转动
     def PTZ_turning(self):
-        print("控制云台上下左右转动")
+        logger.info("控制云台上下左右转动")
         self.long_click(self.up)
         sleep(2)
         self.long_click(self.down)
@@ -255,7 +256,7 @@ class RecordPage(BasePage):
 
     # 控制云台的变焦
     def PTZ_focusing(self):
-        print("控制云台聚焦")
+        logger.info("控制云台聚焦")
         self.long_click(self.addbtn)
         sleep(10)
         self.long_click(self.reducebtn)
@@ -263,7 +264,7 @@ class RecordPage(BasePage):
 
     # 调整云台的灵敏度
     def PTZ_sensitivity(self, xoffset, yoffset):
-        print(u"调整灵敏度")
+        logger.info(u"调整灵敏度")
         self.drag_and_drop_by_offset(self.ytbar, xoffset, yoffset)
 
     # 输出字幕

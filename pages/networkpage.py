@@ -16,6 +16,7 @@ from selenium.webdriver.support import expected_conditions as ES
 from selenium.webdriver.support.ui import WebDriverWait
 from pages.home_page import HomePage
 from models import readconfig
+from utils.log import logger
 
 class Network(BasePage):
 
@@ -64,7 +65,7 @@ class Network(BasePage):
         list2 = [addr1,addr2,addr3,addr4]
         list3 = [self.gateway1,self.gateway2,self.gateway3,self.gateway4]
         list4 = [way1,way2,way3,way4]
-        print(u"更改设备IP为:%s,更改设备网关为%s" % (".".join(list2),".".join(list4)))
+        logger.info(u"更改设备IP为:%s,更改设备网关为%s" % (".".join(list2),".".join(list4)))
         for a in list1:
             self.clear(a)
         for b,c in zip(list1,list2):

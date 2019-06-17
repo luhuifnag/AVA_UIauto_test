@@ -8,7 +8,7 @@ Created on 2019年04月16日
 from selenium.webdriver.common.by import By
 from pages.basepage import BasePage
 from time import sleep
-
+from utils.log import logger
 
 class LoginPage(BasePage):
     '''
@@ -27,20 +27,19 @@ class LoginPage(BasePage):
 
     
     def input_username(self,text):
-
-        print( u"输入用户名：",text)
+        logger.info( u"输入用户名：%s" % text)
         self.input_text(self.username, text)
         
     def input_passwd(self,text):
-        print (u"输入密码：",text)
+        logger.info (u"输入密码：%s" % text)
         self.input_text(self.passwd, text)
         
     def click_loginbtn(self):
-        print( u"点击 登录  按钮")
+        logger.info( u"点击 登录  按钮")
         self.click(self.loginbtn)
              
     def click_rememberpasswd(self):
-        print( u"勾选 记住密码")
+        logger.info( u"勾选 记住密码")
         self.click(self.remember_passwd)
     
     #用户名或密码错误提示   
@@ -49,7 +48,6 @@ class LoginPage(BasePage):
 
     
     
-
         
     #普通登录    
     def login_sys(self,username,passwd):
@@ -60,9 +58,7 @@ class LoginPage(BasePage):
         self.input_passwd(passwd)
         self.click_loginbtn()
         sleep(2)
-        
-
-    
+          
      #记住密码登录 
     def rememberlogin_sys(self,username,passwd):
         self.clear(self.username)

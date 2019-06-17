@@ -13,6 +13,7 @@ from pages.loginpage import LoginPage
 from pages.home_page import HomePage
 from selenium.webdriver.support import expected_conditions as ES
 from selenium.webdriver.support.ui import WebDriverWait
+from utils.log import logger
 
 class InstallInfor(BasePage):
 
@@ -33,23 +34,23 @@ class InstallInfor(BasePage):
 
 
     def input_province(self,info):
-        print(u"输入省信息：%s" % info)
+        logger.info(u"输入省信息：%s" % info)
         self.input_text(self.province,info)
 
     def input_city(self,info):
-        print(u"输入市信息：%s" % info)
+        logger.info(u"输入市信息：%s" % info)
         self.input_text(self.city,info)
     
     def input_area(self,info):
-        print(u"输入区信息：%s" % info)
+        logger.info(u"输入区信息：%s" % info)
         self.input_text(self.area,info)
 
     def input_addrLocation(self,info):
-        print(u"输入所属单位信息：%s" % info)
+        logger.info(u"输入所属单位信息：%s" % info)
         self.input_text(self.addrLocation,info)
 
     def input_addrInstall(self,info):
-        print(u"输入安装位置信息：%s" % info)
+        logger.info(u"输入安装位置信息：%s" % info)
         self.input_text(self.addrInstall,info)
     
 

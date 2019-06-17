@@ -15,6 +15,7 @@ from pages.basepage import BasePage
 from pages.home_page import HomePage
 from pages.loginpage import LoginPage
 from models import readconfig
+from utils.log import logger
 
 class Restore(BasePage):
 
@@ -29,7 +30,7 @@ class Restore(BasePage):
         home = HomePage(self.driver)
         home.swich_to_basic_label(self.restorebtn,"恢复默认")
         self.click(self.sure)
-        print(u"恢复默认")
+        logger.info(u"恢复默认")
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present())
         self.accept_alert()
         sleep(120)

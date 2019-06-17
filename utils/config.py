@@ -5,12 +5,9 @@ import os
 from utils.file_reader import YamlReader
 
 # 通过当前文件的绝对路径，其父级目录一定是框架的base目录，然后确定各层的绝对路径。如果你的结构不同，可自行修改。
-BASE_PATH = os.path.split(os.path.dirname(os.path.abspath(__file__)))[0]  # os.path.dirname(os.path.abspath(__file__) 这里首先得到文件所处的绝对路径，然后得到前面的目录；
-                                                                          # 照路径将文件名和路径分割开os.path.split('PATH')
-                                                                          # 1.PATH指一个文件的全路径作为参数：
-                                                                          # 2.如果给出的是一个目录和文件名，则输出路径和文件名
-                                                                          # 3.如果给出的是一个目录名，则输出路径和为空文件名
-DATA_PATH = os.path.join(BASE_PATH, 'data')               # 连接两个或更多的路径名组件
+BASE_PATH = os.path.split(os.path.dirname(os.path.abspath(__file__)))[0]
+CONFIG_FILE = os.path.join(BASE_PATH, 'config', 'config.yml')
+DATA_PATH = os.path.join(BASE_PATH, 'data')
 DRIVER_PATH = os.path.join(BASE_PATH, 'drivers')
 LOG_PATH = os.path.join(BASE_PATH, 'log')
 REPORT_PATH = os.path.join(BASE_PATH, 'report')
