@@ -99,6 +99,10 @@ class BasePage(object):
     #接受alert
     def accept_alert(self):
         self.driver.switch_to.alert.accept()
+
+    #取消alert
+    def dismiss_alert(self):
+        self.driver.switch_to.alert.dismiss()
     
     #滚动条拉到屏幕最下方    
     def scroll_to_down(self):

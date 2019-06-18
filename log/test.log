@@ -360,3 +360,66 @@
 2019-06-17 19:53:47,611 - framework - INFO - 创建授课模式会议
 2019-06-17 19:53:57,807 - framework - INFO - 点击互动按钮
 2019-06-17 19:54:00,407 - framework - INFO - 结束互动会议
+2019-06-18 14:07:03,780 - framework - INFO - ******************测试开始******************
+2019-06-18 14:09:08,740 - framework - INFO - ******************测试开始******************
+2019-06-18 14:11:04,254 - framework - INFO - ******************测试开始******************
+2019-06-18 14:11:17,576 - framework - INFO - 输入用户名：admin
+2019-06-18 14:11:17,813 - framework - INFO - 输入密码：admin
+2019-06-18 14:11:17,843 - framework - INFO - 点击 登录  按钮
+2019-06-18 14:11:23,409 - framework - INFO - 下载windows播放器插件1
+2019-06-18 14:11:23,410 - framework - INFO - 点击插件管理按钮
+2019-06-18 14:11:26,767 - framework - ERROR - 异常原因：list index out of range
+2019-06-18 14:12:48,338 - framework - INFO - ******************测试开始******************
+2019-06-18 14:12:59,047 - framework - INFO - 输入用户名：admin
+2019-06-18 14:12:59,085 - framework - INFO - 输入密码：admin
+2019-06-18 14:12:59,122 - framework - INFO - 点击 登录  按钮
+2019-06-18 14:13:03,654 - framework - INFO - 下载windows播放器插件1
+2019-06-18 14:13:03,655 - framework - INFO - 点击插件管理按钮
+2019-06-18 14:14:26,363 - framework - ERROR - 异常原因：['6442450945', '6442450951'] != 'https://sourceforge.net/projects/fbvlc/postdownload'
+2019-06-18 14:17:28,570 - framework - INFO - ******************测试开始******************
+2019-06-18 14:17:37,587 - framework - INFO - 输入用户名：admin
+2019-06-18 14:17:37,746 - framework - INFO - 输入密码：admin
+2019-06-18 14:17:37,786 - framework - INFO - 点击 登录  按钮
+2019-06-18 14:17:42,254 - framework - INFO - 下载windows播放器插件1
+2019-06-18 14:17:42,254 - framework - INFO - 点击插件管理按钮
+2019-06-18 14:17:44,528 - framework - INFO - 点击下载按钮
+2019-06-18 14:17:53,121 - framework - ERROR - 异常原因：'https://sourceforge.net/projects/fbvlc/files/latest/download' != 'https://sourceforge.net/projects/fbvlc/postdownload'
+- https://sourceforge.net/projects/fbvlc/files/latest/download
+?                                        ^^^^^^^^^^  -
++ https://sourceforge.net/projects/fbvlc/postdownload
+?                                        ^^
+
+2019-06-18 14:21:05,125 - framework - INFO - ******************测试开始******************
+2019-06-18 14:21:13,622 - framework - INFO - 输入用户名：admin
+2019-06-18 14:21:13,662 - framework - INFO - 输入密码：admin
+2019-06-18 14:21:13,689 - framework - INFO - 点击 登录  按钮
+2019-06-18 14:21:18,140 - framework - INFO - 下载windows播放器插件1
+2019-06-18 14:21:18,141 - framework - INFO - 点击插件管理按钮
+2019-06-18 14:21:20,400 - framework - INFO - 点击下载按钮
+2019-06-18 14:21:31,878 - framework - INFO - ******************测试开始******************
+2019-06-18 14:21:41,157 - framework - INFO - 输入用户名：admin
+2019-06-18 14:21:41,211 - framework - INFO - 输入密码：admin
+2019-06-18 14:21:41,248 - framework - INFO - 点击 登录  按钮
+2019-06-18 14:21:45,857 - framework - INFO - 下载windows播放器插件2(support H265)
+2019-06-18 14:21:45,858 - framework - INFO - 点击插件管理按钮
+2019-06-18 14:21:48,139 - framework - INFO - 点击下载按钮
+2019-06-18 14:21:56,737 - framework - ERROR - 异常原因：'https://sourceforge.net/projects/fbvlc/files/latest/download' != 'https://sourceforge.net/projects/webchimera/files/latest/download'
+- https://sourceforge.net/projects/fbvlc/files/latest/download
+?                                  ^ --
++ https://sourceforge.net/projects/webchimera/files/latest/download
+?                                  ^^  ++++++
+
+2019-06-18 14:22:32,087 - framework - INFO - ******************测试开始******************
+2019-06-18 14:22:40,248 - framework - INFO - 输入用户名：admin
+2019-06-18 14:22:40,287 - framework - INFO - 输入密码：admin
+2019-06-18 14:22:40,316 - framework - INFO - 点击 登录  按钮
+2019-06-18 14:22:44,791 - framework - INFO - 下载windows播放器插件2(support H265)
+2019-06-18 14:22:44,793 - framework - INFO - 点击插件管理按钮
+2019-06-18 14:22:47,039 - framework - INFO - 点击下载按钮
+2019-06-18 14:30:34,617 - framework - INFO - ******************测试开始******************
+2019-06-18 14:30:43,997 - framework - INFO - 输入用户名：admin
+2019-06-18 14:30:44,066 - framework - INFO - 输入密码：admin
+2019-06-18 14:30:44,105 - framework - INFO - 点击 登录  按钮
+2019-06-18 14:30:48,773 - framework - INFO - 下载MAC版播放器插件
+2019-06-18 14:30:48,774 - framework - INFO - 点击插件管理按钮
+2019-06-18 14:30:51,036 - framework - INFO - 点击下载按钮
