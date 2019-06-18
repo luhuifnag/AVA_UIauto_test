@@ -1,8 +1,10 @@
 
 class a ():
 
-    status = "1,2,3"
-    print(status.split(';', 2))
+    status = ['20190617','基本录制', '20190617', '20190617' ]
+    # status.sort()
+    print(sorted(status))
+    
 
         
 
