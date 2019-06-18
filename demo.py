@@ -1,10 +1,19 @@
+import unittest
 
-class a ():
+class Status(unittest.TestCase):
 
-    status = ['20190617','基本录制', '20190617', '20190617' ]
-    # status.sort()
-    print(sorted(status))
-    
+
+    status = 136 #当值为0时设备为云台设备，当值为1时，设备为云镜设备
+
+    def test_get_status(self):
+        if self.assertEqual("你好","dada"):
+            # self.assertEqual("你好","dada")
+            status = 0
+        else:
+            print("断言错误")
+            status = 1
+    print (status)
+
 
         
 

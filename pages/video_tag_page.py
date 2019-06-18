@@ -25,6 +25,7 @@ class VideoTag(BasePage):
     custom_label = (By.XPATH, "//*[@id='videoLabelModule']/div[1]/label[2]/i") 
     # 确认按钮
     sure = (By.ID, "videoLabelSave")
+    
     # 获取窗口的个数
     def get_windows_num(self):
         previews = self.driver.find_elements_by_xpath("//*[@id='labelList']/li")
