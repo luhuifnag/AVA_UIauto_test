@@ -20,9 +20,7 @@ class Status(MyTest, BasePage):
     # 云镜参数标签按钮
     Cmirrorbtn = (By.XPATH, "//*[@id='sec_navs']/li[6]/a")
 
-    status = 0 #当值为0时设备为云台设备，当值为1时设备为云镜设备
-
-    def try_get_status(self):
+    def test_try_get_status(self):
         try:
             home = HomePage(self.driver)
             home.swich_to_system_label(self.Cmirrorbtn, "云镜参数")
@@ -30,18 +28,11 @@ class Status(MyTest, BasePage):
             self.driver.switch_to.default_content() 
             print(self.getAttribute(self.Cmirrorbtn,"text"))
             unittest.assertIn("云镜参数", (self.getAttribute(self.Cmirrorbtn, "text")))
-            return True
+            return False # 返回False时设备为云镜设备
         except:
-            return False
-
-    def test_status(self):
-        if self.try_get_status():
-            status = 1
-        else:
-            status = 0
+            return True # 返回True时设备为云台设备
 
     
-
 
 if __name__ == "__main__":
    unittest.main()
