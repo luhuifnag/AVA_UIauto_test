@@ -86,7 +86,7 @@ class RecordSet(BasePage):
         sleep(1)
 
     #启动全自动跟踪
-    def strat_au_au_racking(self):
+    def strat_au_racking(self):
         if self.getAttribute(self.au_racking,"class") =="checkbox g_checkbox g_checkbox-checked":
             logger.info(u"已勾选启动自动跟踪") 
         else:

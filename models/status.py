@@ -27,12 +27,13 @@ class Status(MyTest, BasePage):
             home.swich_to_system_label(self.Cmirrorbtn, "云镜参数")
             sleep(2)
             self.driver.switch_to.default_content() 
-            self.assertIn("云镜参数", (self.getAttribute(self.Cmirrorbtn, "text")))
-            self.tearDown()
+            self.assertIn("云镜参数", (self.getAttribute(self.Cmirrorbtn, "text")))   
             logger.info("云镜设备")
             return False # 返回False时设备为云镜设备
         except:
             logger.info("云台设备")
             return True # 返回True时设备为云台设备
+        finally:
+            self.tearDown()
 
     

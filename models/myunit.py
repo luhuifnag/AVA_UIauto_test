@@ -33,5 +33,6 @@ class MyTest(unittest.TestCase):
         
    
     def tearDown(self):
+        logger.info(u"~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~")
         self.driver.quit()
 

@@ -54,7 +54,7 @@ class Records(RecordPage,RecordSet):
         sleep(1)
         
 
-    #在录制过程中点击录播页面返回按钮,并且点击取消返回
+    #在录制过程中点击录播页面返回按钮
     def recording_back(self):
         home = HomePage(self.driver)
         home.click_record() 
@@ -96,12 +96,11 @@ class Records(RecordPage,RecordSet):
         # sleep(10)
         # self.stop_recording()
 
-
        #录制时启用自动跟踪
     def record_strat_auacking(self):
         home = HomePage(self.driver)
         home.swich_to_system_label(self.recordsetbtn(),"录制参数") #进入到录制参数页面
-        self.strat_au_au_racking()
+        self.strat_au_racking()
         self.ensure()
         home.click_system_setup_blck()
         sleep(1)
@@ -111,3 +110,18 @@ class Records(RecordPage,RecordSet):
         auto_status = self.getAttribute(self.autobtn, "class")
         self.stop_recording()
         return auto_status
+
+    # 录制期间无法更改录制管理中的设置
+    def modify_limit(self):
+       self.recording_back()
+       self.click(self.recording_back_conmit) 
+       sleep(2)
+       home = HomePage(self.driver)
+       home.swich_to_system_label(self.recordsetbtn(),"录制参数") #进入到录制参数页面
+       sleep(2)
+       logger.info("点击保存按钮")
+       self.click(self.sure)
+       sleep(1)
+       
+
+        

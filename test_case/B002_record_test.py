@@ -16,6 +16,8 @@ from pages.record_page import RecordPage
 from pages.records import Records
 from pages.video_managemen import VideoManagemen
 from utils.log import logger
+from selenium.webdriver.support import expected_conditions as ES
+from selenium.webdriver.support.ui import WebDriverWait
 
 class Recorder(MyTest,Records,RecordPage):
     '''录制相关测试'''
@@ -171,7 +173,7 @@ class Recorder(MyTest,Records,RecordPage):
 ############选择不了其他的码流质量#####################
 
     # 录制时启用全自动跟踪
-    def test_record_strat_auacking(self):
+    def test10_record_strat_auacking(self):
         '''录制时启用全自动跟踪（录播模式下）'''
         try:
             logger.info("测试录制时启用全自动跟踪（录播模式下）")
@@ -188,12 +190,30 @@ class Recorder(MyTest,Records,RecordPage):
             else:
                 self.stop_recording()
 
+    # 录制期间无法更改录制管理中的设置
+    def test11_modify_limit(self):
+        '''录制期间无法更改录制管理中的设置'''
+        try:
+            logger.info("录制期间无法更改录制管理中的设置")
+            records = Records(self.driver)
+            records.modify_limit()
+            WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
+            self.assertEqual(self.get_alert_text(), "录制中，无法保存")           
+            self.accept_alert()
+            self.driver.switch_to.default_content()
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test11_modify_limit.png'))
+            raise Exception("false")
+        finally:
+            home = HomePage(self.driver)
+            home.click_system_setup_blck()
+            sleep(1)
+            home.click_record()
+            sleep(2)
+            self.stop_recording()
 
-
-
-
-                  
-
+            
         
 if __name__ == "__main__":
    unittest.main()
