@@ -69,7 +69,7 @@ class Records(RecordPage,RecordSet):
     #录制一段主码流为1080p的视频
     def record_main_1080p(self):
         home = HomePage(self.driver)
-        home.swich_to_system_label(self.recordsetbtn,"录制参数")
+        home.swich_to_system_label(self.recordsetbtn(),"录制参数")
         self.set_main_quality(1,"1080p")
         self.ensure()
         home.click_system_setup_blck()
@@ -84,7 +84,7 @@ class Records(RecordPage,RecordSet):
     #录制一段主码流为quality1，子码流为quality2的视频
     def record_main_and_sub(self,num1,num2,quality1,quality2,thems):
         home = HomePage(self.driver)
-        home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        home.swich_to_system_label(self.recordsetbtn(),"录制参数") #进入到录制参数页面
         self.set_main_quality(num1,quality1)
         self.start_up_sub_stream()
         self.set_sub_quality(num2,quality2)
@@ -100,7 +100,7 @@ class Records(RecordPage,RecordSet):
        #录制时启用自动跟踪
     def record_strat_auacking(self):
         home = HomePage(self.driver)
-        home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        home.swich_to_system_label(self.recordsetbtn(),"录制参数") #进入到录制参数页面
         self.strat_au_au_racking()
         self.ensure()
         home.click_system_setup_blck()

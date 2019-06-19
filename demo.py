@@ -1,19 +1,33 @@
+#coding:utf-8
+'''
+Created on 2019年06月06日
+
+@author: Aloe
+'''
+
+import os
 import unittest
+from time import sleep
 
-class Status(unittest.TestCase):
 
+from models.myunit import MyTest
+from pages.video_tag_page import VideoTag
+from models import readconfig
+from pages.home_page import HomePage
+from pages.record_page import RecordPage
+from pages.interaction_home_page import InteractionHmoe
+from pages.interaction_teaching_page import IterTeaching
+from utils.log import logger
 
-    # status = 136 #当值为0时设备为云台设备，当值为1时，设备为云镜设备
+from models.status import Status
 
-    def test_get_status(self):
-        status = 0
-        if "你好"=="dada":
-            return (status = 0)
-        else:
-            print("断言错误")
-            status = 1
-    print (status)
+class VideoTagTest(MyTest, VideoTag):
 
+    def test1(self):
+        status = Status()
+        status.try_get_status()
 
         
+if __name__ == "__main__":
 
+    unittest.main()

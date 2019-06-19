@@ -23,11 +23,11 @@ class VideoTag(BasePage):
     # 视频标签按钮
     def videotagbtn(self):
         status = Status()
-        if status.test_try_get_status():
+        a = status.try_get_status()
+        if a == True:
            videotagbtn = (By.XPATH, "//*[@id='sec_navs']/li[12]/a")
         else:
             videotagbtn = (By.XPATH, "//*[@id='sec_navs']/li[14]/a")
-        print(videotagbtn)
         return videotagbtn
     
     # 默认标签

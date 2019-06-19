@@ -647,3 +647,132 @@ First differing element 0:
 2019-06-19 10:08:14,699 - framework - INFO - 点击应用设置
 2019-06-19 10:08:19,249 - framework - INFO - 点击视频标签标签
 2019-06-19 10:08:21,499 - framework - INFO - 选择默认标签名
+2019-06-19 10:20:51,611 - framework - INFO - ******************测试开始******************
+2019-06-19 10:21:26,390 - framework - INFO - 输入用户名：admin
+2019-06-19 10:21:26,438 - framework - INFO - 输入密码：admin
+2019-06-19 10:21:26,465 - framework - INFO - 点击 登录  按钮
+2019-06-19 10:21:30,863 - framework - INFO - 选择默认标签测试
+2019-06-19 10:21:30,864 - framework - INFO - 点击系统设置按钮
+2019-06-19 10:21:34,128 - framework - INFO - 点击应用设置
+2019-06-19 10:21:38,622 - framework - INFO - 点击视频标签标签
+2019-06-19 10:22:00,669 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-19 10:23:48,795 - framework - INFO - ******************测试开始******************
+2019-06-19 10:23:57,653 - framework - INFO - 输入用户名：admin
+2019-06-19 10:23:57,691 - framework - INFO - 输入密码：admin
+2019-06-19 10:23:57,719 - framework - INFO - 点击 登录  按钮
+2019-06-19 10:24:02,235 - framework - INFO - 选择默认标签测试
+2019-06-19 10:24:02,236 - framework - INFO - 点击系统设置按钮
+2019-06-19 10:24:05,485 - framework - INFO - 点击应用设置
+2019-06-19 10:24:09,992 - framework - INFO - 点击视频标签标签
+2019-06-19 10:24:26,807 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-19 10:26:27,465 - framework - INFO - ******************测试开始******************
+2019-06-19 10:26:35,356 - framework - INFO - 输入用户名：admin
+2019-06-19 10:26:35,398 - framework - INFO - 输入密码：admin
+2019-06-19 10:26:35,434 - framework - INFO - 点击 登录  按钮
+2019-06-19 10:26:40,183 - framework - INFO - 选择默认标签测试
+2019-06-19 10:26:40,184 - framework - ERROR - 异常原因：'Status' object has no attribute 'test_try_get_status'
+2019-06-19 10:27:29,052 - framework - INFO - ******************测试开始******************
+2019-06-19 10:27:37,287 - framework - INFO - 输入用户名：admin
+2019-06-19 10:27:37,344 - framework - INFO - 输入密码：admin
+2019-06-19 10:27:37,379 - framework - INFO - 点击 登录  按钮
+2019-06-19 10:27:41,629 - framework - INFO - 选择默认标签测试
+2019-06-19 10:27:41,630 - framework - INFO - ******************测试开始******************
+2019-06-19 10:27:52,323 - framework - INFO - 输入用户名：admin
+2019-06-19 10:27:52,365 - framework - INFO - 输入密码：admin
+2019-06-19 10:27:52,427 - framework - INFO - 点击 登录  按钮
+2019-06-19 10:27:56,917 - framework - INFO - 点击系统设置按钮
+2019-06-19 10:28:00,275 - framework - INFO - 点击应用设置
+2019-06-19 10:28:04,778 - framework - INFO - 点击云镜参数标签
+2019-06-19 10:28:06,869 - framework - INFO - 点击系统设置按钮
+2019-06-19 10:28:10,124 - framework - INFO - 点击应用设置
+2019-06-19 10:28:14,636 - framework - INFO - 点击视频标签标签
+2019-06-19 10:28:36,688 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-19 10:34:42,209 - framework - INFO - ******************测试开始******************
+2019-06-19 10:34:55,525 - framework - INFO - 输入用户名：admin
+2019-06-19 10:34:55,572 - framework - INFO - 输入密码：admin
+2019-06-19 10:34:55,598 - framework - INFO - 点击 登录  按钮
+2019-06-19 10:35:00,098 - framework - INFO - ******************测试开始******************
+2019-06-19 10:35:09,708 - framework - INFO - 输入用户名：admin
+2019-06-19 10:35:09,775 - framework - INFO - 输入密码：admin
+2019-06-19 10:35:09,820 - framework - INFO - 点击 登录  按钮
+2019-06-19 10:35:14,751 - framework - INFO - 点击系统设置按钮
+2019-06-19 10:35:18,008 - framework - INFO - 点击应用设置
+2019-06-19 10:35:22,515 - framework - INFO - 点击云镜参数标签
+2019-06-19 10:35:24,635 - framework - INFO - 云台设备
+2019-06-19 10:56:44,557 - framework - INFO - ******************测试开始******************
+2019-06-19 10:56:58,139 - framework - INFO - 输入用户名：admin
+2019-06-19 10:56:58,175 - framework - INFO - 输入密码：admin
+2019-06-19 10:56:58,214 - framework - INFO - 点击 登录  按钮
+2019-06-19 10:57:02,687 - framework - INFO - ******************测试开始******************
+2019-06-19 10:57:12,889 - framework - INFO - 输入用户名：admin
+2019-06-19 10:57:12,932 - framework - INFO - 输入密码：admin
+2019-06-19 10:57:12,977 - framework - INFO - 点击 登录  按钮
+2019-06-19 10:57:18,033 - framework - INFO - 点击系统设置按钮
+2019-06-19 10:57:21,331 - framework - INFO - 点击应用设置
+2019-06-19 10:57:25,888 - framework - INFO - 点击云镜参数标签
+2019-06-19 10:57:29,902 - framework - INFO - 云镜设备
+2019-06-19 10:57:57,878 - framework - INFO - ******************测试开始******************
+2019-06-19 10:58:06,801 - framework - INFO - 输入用户名：admin
+2019-06-19 10:58:06,851 - framework - INFO - 输入密码：admin
+2019-06-19 10:58:06,882 - framework - INFO - 点击 登录  按钮
+2019-06-19 10:58:11,480 - framework - INFO - 选择默认标签测试
+2019-06-19 10:58:11,480 - framework - INFO - ******************测试开始******************
+2019-06-19 10:58:20,621 - framework - INFO - 输入用户名：admin
+2019-06-19 10:58:20,664 - framework - INFO - 输入密码：admin
+2019-06-19 10:58:20,695 - framework - INFO - 点击 登录  按钮
+2019-06-19 10:58:24,944 - framework - INFO - 点击系统设置按钮
+2019-06-19 10:58:28,523 - framework - INFO - 点击应用设置
+2019-06-19 10:58:33,037 - framework - INFO - 点击云镜参数标签
+2019-06-19 10:58:37,863 - framework - INFO - 云镜设备
+2019-06-19 10:58:37,866 - framework - INFO - 点击系统设置按钮
+2019-06-19 10:58:41,123 - framework - INFO - 点击应用设置
+2019-06-19 10:58:45,645 - framework - INFO - 点击视频标签标签
+2019-06-19 10:58:47,907 - framework - INFO - 选择默认标签名
+2019-06-19 11:00:39,476 - framework - INFO - ******************测试开始******************
+2019-06-19 11:00:48,222 - framework - INFO - 输入用户名：admin
+2019-06-19 11:00:48,262 - framework - INFO - 输入密码：admin
+2019-06-19 11:00:48,295 - framework - INFO - 点击 登录  按钮
+2019-06-19 11:00:52,928 - framework - INFO - 互动设置转跳系统设置-注册服务测试
+2019-06-19 11:00:52,929 - framework - INFO - 点击互动按钮
+2019-06-19 11:00:53,474 - framework - INFO - 进入到互动页面
+2019-06-19 11:00:58,040 - framework - INFO - 转跳至系统设置-注册服务
+2019-06-19 11:01:00,048 - framework - ERROR - 异常原因：'Status' object has no attribute 'test_try_get_status'
+2019-06-19 11:02:12,029 - framework - INFO - ******************测试开始******************
+2019-06-19 11:02:20,489 - framework - INFO - 输入用户名：admin
+2019-06-19 11:02:20,598 - framework - INFO - 输入密码：admin
+2019-06-19 11:02:20,654 - framework - INFO - 点击 登录  按钮
+2019-06-19 11:02:25,531 - framework - INFO - 互动设置转跳系统设置-注册服务测试
+2019-06-19 11:02:25,532 - framework - INFO - 点击互动按钮
+2019-06-19 11:02:26,107 - framework - INFO - 进入到互动页面
+2019-06-19 11:02:30,606 - framework - INFO - 转跳至系统设置-注册服务
+2019-06-19 11:02:32,614 - framework - INFO - ******************测试开始******************
+2019-06-19 11:02:41,074 - framework - INFO - 输入用户名：admin
+2019-06-19 11:02:41,117 - framework - INFO - 输入密码：admin
+2019-06-19 11:02:41,140 - framework - INFO - 点击 登录  按钮
+2019-06-19 11:02:46,217 - framework - INFO - 点击系统设置按钮
+2019-06-19 11:02:49,586 - framework - INFO - 点击应用设置
+2019-06-19 11:02:54,100 - framework - INFO - 点击云镜参数标签
+2019-06-19 11:02:57,916 - framework - INFO - 云镜设备
+2019-06-19 11:09:38,382 - framework - INFO - ******************测试开始******************
+2019-06-19 11:09:47,589 - framework - INFO - 输入用户名：admin
+2019-06-19 11:09:47,633 - framework - INFO - 输入密码：admin
+2019-06-19 11:09:47,673 - framework - INFO - 点击 登录  按钮
+2019-06-19 11:09:52,569 - framework - INFO - 测试录制时启用全自动跟踪（录播模式下）
+2019-06-19 11:09:52,570 - framework - INFO - ******************测试开始******************
+2019-06-19 11:10:01,408 - framework - INFO - 输入用户名：admin
+2019-06-19 11:10:01,443 - framework - INFO - 输入密码：admin
+2019-06-19 11:10:01,498 - framework - INFO - 点击 登录  按钮
+2019-06-19 11:10:05,746 - framework - INFO - 点击系统设置按钮
+2019-06-19 11:10:09,060 - framework - INFO - 点击应用设置
+2019-06-19 11:10:13,571 - framework - INFO - 点击云镜参数标签
+2019-06-19 11:10:17,743 - framework - INFO - 云镜设备
+2019-06-19 11:10:17,744 - framework - INFO - 点击系统设置按钮
+2019-06-19 11:10:21,121 - framework - INFO - 点击应用设置
+2019-06-19 11:10:25,609 - framework - INFO - 点击录制参数标签
+2019-06-19 11:10:26,041 - framework - INFO - 勾选启动自动跟踪
+2019-06-19 11:10:28,136 - framework - INFO - 点击系统设置页面返回按钮
+2019-06-19 11:10:29,402 - framework - INFO - 点击录播按钮
+2019-06-19 11:10:29,767 - framework - INFO - 输入主题：2019-06-19
+2019-06-19 11:10:33,831 - framework - INFO - 输入主讲人：11:09:38
+2019-06-19 11:10:34,982 - framework - INFO - 点击开始录制
+2019-06-19 11:10:45,260 - framework - INFO - 点击停止录制按钮
