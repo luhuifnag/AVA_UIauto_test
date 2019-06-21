@@ -43,7 +43,7 @@ class VideoTagTest(MyTest, VideoTag):
     def test2_input_custom_label(self):
         '''选择自定义标签测试（互动模式）'''
         try:
-            logger.info("选择默认标签测试")
+            logger.info("选择自定义标签测试（互动模式）")
             a = self.input_custom_label()
             home = HomePage(self.driver)
             home.click_system_setup_blck()
@@ -64,6 +64,15 @@ class VideoTagTest(MyTest, VideoTag):
         try:
             logger.info("选择默认标签测试")
             self.C_default()
+            a = self.input_custom_label()
+            home = HomePage(self.driver)
+            home.click_system_setup_blck()
+            sleep(1)
+            home.click_record()
+            sleep(4)
+            record = RecordPage(self.driver)
+            b = record.get_preview_tag()
+            self.assertNotEqual(a, b)
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test2_C_defaultr.png'))
