@@ -18,7 +18,7 @@ from utils.log import logger
 class InstallInfor(BasePage):
 
     #安装信息标签
-    InstallInfobtn = (By.XPATH,"//*[@id='sec_navs']/li[1]/a")
+    InstallInfobtn = (By.PARTIAL_LINK_TEXT,"安装信息")
     #省
     province =(By.XPATH,"//*[@id='province']")
     #市

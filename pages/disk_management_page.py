@@ -18,7 +18,7 @@ from utils.log import logger
 class DiskManagement(BasePage):
 
     #硬盘管理标签按钮
-    diskbtn = (By.XPATH, "//*[@id='sec_navs']/li[3]/a")
+    diskbtn = (By.PARTIAL_LINK_TEXT, "硬盘管理")
 
     # 硬盘格式化按钮
     formatbtn = (By.XPATH, "//*[@id='hardwareContainer']/div[1]/img")

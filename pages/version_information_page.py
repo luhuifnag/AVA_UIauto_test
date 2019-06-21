@@ -15,12 +15,10 @@ from utils.log import logger
 class Version(BasePage):
     
     #版本信息标签按钮
-    versionbtn = (By.XPATH, "//*[@id='sec_navs']/li[9]/a")
+    versionbtn = (By.PARTIAL_LINK_TEXT, "版本信息")
     # 升级设置按钮
     UpgradeSet = (By.ID, "toUpgradePanel")
     
-       
-
     # 获取版本信息
     def get_versions(self):
         home = HomePage(self.driver)

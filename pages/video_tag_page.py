@@ -11,7 +11,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ES
 from selenium.webdriver.support.ui import WebDriverWait
 
-from models.status import Status
 from pages.basepage import BasePage
 from pages.home_page import HomePage
 from pages.loginpage import LoginPage
@@ -21,15 +20,7 @@ from utils.log import logger
 class VideoTag(BasePage):
 
     # 视频标签按钮
-    def videotagbtn(self):
-        status = Status()
-        a = status.try_get_status()
-        if a == True:
-           videotagbtn = (By.XPATH, "//*[@id='sec_navs']/li[12]/a")
-        else:
-            videotagbtn = (By.XPATH, "//*[@id='sec_navs']/li[14]/a")
-        return videotagbtn
-    
+    videotagbtn = (By.PARTIAL_LINK_TEXT, "视频标签")  
     # 默认标签
     default_label = (By.XPATH, "//*[@id='videoLabelModule']/div[1]/label[1]/i")
     # 自定义标签
@@ -46,7 +37,7 @@ class VideoTag(BasePage):
     # 选择默认标签
     def C_default(self):
         home = HomePage(self.driver)
-        home.swich_to_system_label(self.videotagbtn(), "视频标签")
+        home.swich_to_system_label(self.videotagbtn, "视频标签")
         sleep(2)
         self.click(self.default_label)
         logger.info("选择默认标签名")
@@ -58,7 +49,7 @@ class VideoTag(BasePage):
     # 向自定义窗口输入
     def input_custom_label(self):
         home = HomePage(self.driver)
-        home.swich_to_system_label(self.videotagbtn(), "视频标签")
+        home.swich_to_system_label(self.videotagbtn, "视频标签")
         sleep(3)
         self.click(self.custom_label)
         logger.info("选择自定义标签名称")  

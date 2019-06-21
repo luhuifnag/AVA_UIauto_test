@@ -18,7 +18,7 @@ from utils.log import logger
 class SystemTime(BasePage):
 
     # 系统时间标签按钮
-    systemTimebtn = (By.XPATH,"//*[@id='sec_navs']/li[8]/a")
+    systemTimebtn = (By.PARTIAL_LINK_TEXT,"系统时间")
     # 自动同步网络时间按钮  
     automaticbtn = (By.XPATH,"/html/body/div/div/div[2]/div[1]/label") 
     # 当前日期、年、月、日

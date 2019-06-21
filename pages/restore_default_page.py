@@ -20,7 +20,7 @@ from utils.log import logger
 class Restore(BasePage):
 
     #恢复默认标签按钮
-    restorebtn = (By.XPATH,"//*[@id='sec_navs']/li[11]/a")
+    restorebtn = (By.PARTIAL_LINK_TEXT,"恢复默认")
 
     #确认按钮
     sure = (By.ID,"recoveryDefault")

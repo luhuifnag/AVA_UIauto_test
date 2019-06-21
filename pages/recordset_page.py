@@ -12,20 +12,12 @@ from pages.basepage import BasePage
 from pages.home_page import HomePage
 from selenium.webdriver.support.ui import Select
 from utils.log import logger
-from models.status import Status
 
 
 class RecordSet(BasePage):
 
     #录制参数标签按钮
-    def recordsetbtn(self):
-        status = Status()
-        if status.try_get_status():
-           recordsetbtn = (By.XPATH, "//*[@id='sec_navs']/li[7]/a")
-        else:
-            recordsetbtn = (By.XPATH, "//*[@id='sec_navs']/li[8]/a")
-        return recordsetbtn
-
+    recordsetbtn = (By.PARTIAL_LINK_TEXT, "录制参数")
     # 主码流选择按钮
     mainbtn = (By.XPATH,"//*[@id='main_quality']/a[1]/label/i")  
 

@@ -15558,3 +15558,19 @@ JavaScript warning: http://192.168.13.120/admin/playguide/playguide.1.js?_=0.364
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1561103675025	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.Ouwik2M0AHa4"
+1561103676553	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561103676553	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561103676553	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561103681465	Marionette	INFO	Listening on port 52102
+1561103681641	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.120/admin/system/sysConfigure.js?_=0.09266025870398653, line 464: unreachable code after return statement
+JavaScript warning: http://192.168.13.120/assets/libs/regular/regular.js, line 766: unreachable code after return statement
+1561103703669	Marionette	INFO	Stopped listening on port 52102
+[Child 1640, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1640, Chrome_ChildThread] WARNING: pipe error: 109: file z:/ta[Parent 7236, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 7236, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 21688, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 21688, Chrome_Child
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

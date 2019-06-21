@@ -19,7 +19,7 @@ from models import readconfig
 
 class HeadTail(BasePage):
     # 片头片尾标签按钮
-    headtaibtn = (By.XPATH, "//*[@id='sec_navs']/li[3]/a")
+    headtaibtn = (By.PARTIAL_LINK_TEXT, "片头片尾")
     # 片头上传按钮
     title_up = (By.XPATH, "//*[@id='title_form']/label/input")
     # 片头下载按钮

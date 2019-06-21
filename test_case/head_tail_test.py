@@ -27,16 +27,16 @@ from pages.record_page import RecordPage
 class HeadTailTest(MyTest,HeadTail):
     '''片头片尾相关功能测试'''
     
-    # def test_upload(self):
-    #     '''上传片头,片尾等图片测试'''
-    #     try:
-    #         logger.info("上传片头,片尾等图片测试")
-    #         texts =self.upload()
-    #         self.assertEqual(texts , ['上传文件成功!', '上传文件成功!', '上传文件成功!', '上传文件成功!', '上传文件成功!'])
-    #     except Exception as msg: 
-    #         logger.error(u"异常原因：%s"%msg)
-    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_upload.png'))
-    #         raise Exception("false")
+    def test_upload(self):
+        '''上传片头,片尾等图片测试'''
+        try:
+            logger.info("上传片头,片尾等图片测试")
+            texts =self.upload()
+            self.assertEqual(texts , ['上传文件成功!', '上传文件成功!', '上传文件成功!', '上传文件成功!', '上传文件成功!'])
+        except Exception as msg: 
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_upload.png'))
+            raise Exception("false")
     
     def test_set_title_trailer_time(self):
         '''片头片尾机显示视频信息测试'''

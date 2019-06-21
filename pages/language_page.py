@@ -19,7 +19,7 @@ from utils.log import logger
 class Languages(BasePage):
 
     #Language标签按钮
-    languagebtn = (By.XPATH,"//*[@id='sec_navs']/li[7]/a/i")
+    languagebtn = (By.PARTIAL_LINK_TEXT,"Language")
 
     # 中文按钮
     Chinese = (By.XPATH, "//*[@id='panel']/label[1]")

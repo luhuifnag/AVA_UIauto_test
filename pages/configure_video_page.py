@@ -17,12 +17,10 @@ from utils.log import logger
 class VideoQuery(BasePage):
     
     #录像查询标签按钮
-    videobtn = (By.XPATH,"//*[@id='quickCfgContainer']/div[2]/div/div[1]/ul/li[4]/a")
+    videobtn = (By.PARTIAL_LINK_TEXT,"录像查询")
 
     #文件总数
     total_documents = (By.ID,"fnToltal")
-
-
 
     # 查看文件总数
     def check_total_documents(self):

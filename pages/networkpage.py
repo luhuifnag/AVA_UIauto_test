@@ -21,7 +21,7 @@ from utils.log import logger
 class Network(BasePage):
 
     #网络参数标签按钮
-    networkbtn = (By.XPATH,"//*[@id='sec_navs']/li[2]/a")
+    networkbtn = (By.PARTIAL_LINK_TEXT,"网络参数")
 
     #网络地址
     netaddr1 = (By.ID,"ip_1")

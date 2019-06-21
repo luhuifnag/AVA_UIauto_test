@@ -16,10 +16,8 @@ from utils.log import logger
 class ConVersion(BasePage):
     
     #版本信息标签按钮
-    versionbtn = (By.XPATH,"//*[@id='quickCfgContainer']/div[2]/div/div[1]/ul/li[6]/a")
+    versionbtn = (By.PARTIAL_LINK_TEXT,"版本信息")
     
-       
-
     # 获取版本信息
     def get_versions(self):
         home = HomePage(self.driver)

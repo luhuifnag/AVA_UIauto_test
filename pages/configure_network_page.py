@@ -21,7 +21,7 @@ from utils.log import logger
 class ConfigureNetwork(BasePage):
 
     #网络参数标签按钮
-    networkbtn = (By.XPATH, "//*[@id='quickCfgContainer']/div[2]/div/div[1]/ul/li[1]/a")
+    networkbtn = (By.PARTIAL_LINK_TEXT, "网络参数")
 
     #自动获取IP单选框
     automatic_ip = (By.XPATH, "//*[@id='local_auto_manul']/div[1]/label")
