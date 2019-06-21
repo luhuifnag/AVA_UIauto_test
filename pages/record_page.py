@@ -19,10 +19,9 @@ from selenium.webdriver.common.action_chains import ActionChains
 from utils.log import logger
 
 class RecordPage(BasePage):
+    
     now_date = datetime.datetime.now().strftime('%Y-%m-%d')
     now_time = datetime.datetime.now().strftime("%H:%M:%S")
-
-
     #记时器
     timer = (By.ID, "time")
     #录制按钮

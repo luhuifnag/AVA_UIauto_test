@@ -45,7 +45,7 @@ class DiskManagementTest(MyTest, DiskManagement):
         '''辅助软件上传测试'''
         try:
             logger.info("辅助软件上传测试")
-            self.software_upload(readconfig.software_upload_path+"\\Auxiliary_software.zip")
+            self.software_upload(readconfig.date_path+"\\Auxiliary_software.zip")
             self.find_element(self.success)
             print(self.getAttribute(self.success,"textContent")) #获取 layer.msg 弹窗的信息
             self.assertEqual(self.getAttribute(self.success,"textContent"),"上传成功！")

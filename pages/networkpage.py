@@ -61,6 +61,7 @@ class Network(BasePage):
     def change_ip(self,addr1,addr2,addr3,addr4,way1,way2,way3,way4): 
         home = HomePage(self.driver)
         home.swich_to_basic_label(self.networkbtn,"网络参数")
+        sleep(2)
         list1 = [self.netaddr1,self.netaddr2,self.netaddr3,self.netaddr4]
         list2 = [addr1,addr2,addr3,addr4]
         list3 = [self.gateway1,self.gateway2,self.gateway3,self.gateway4]

@@ -103,9 +103,9 @@ class HomePage(BasePage):
     #进入到应用设置的某个页面里面
     def swich_to_system_label(self,labelname,text):
         self.click_system_setup()
-        sleep(3)
+        sleep(2)
         self.click_application_settings()
-        sleep(4)
+        sleep(3)
         self.click(labelname)
         logger.info(u"点击%s标签" % text)
         self.driver.switch_to.frame("content")    
@@ -114,9 +114,9 @@ class HomePage(BasePage):
     #进入到基本设置的某个页面里面
     def swich_to_basic_label(self,labelname,text):
         self.click_system_setup()
-        sleep(3)
+        sleep(2)
         self.click_basic_setting()
-        sleep(4)
+        sleep(3)
         self.click(labelname)
         logger.info(u"点击%s标签" % text)
         self.driver.switch_to.frame("content")
@@ -125,10 +125,10 @@ class HomePage(BasePage):
     #进入到快速配置设置的某个页面里面
     def swich_to_configure_label(self,labelname,text): 
         self.click_configure()
-        sleep(3)
+        sleep(2)
         self.click(labelname)
         logger.info(u"进入到快速配置的%s页面" % text)
-        sleep(4)
+        sleep(3)
         self.driver.switch_to.frame("main") 
 
 

@@ -173,7 +173,7 @@ class Recorder(MyTest,Records,RecordPage):
 ############选择不了其他的码流质量#####################
 
     # 录制时启用全自动跟踪
-    def test10_record_strat_auacking(self):
+    def test8_record_strat_auacking(self):
         '''录制时启用全自动跟踪（录播模式下）'''
         try:
             logger.info("测试录制时启用全自动跟踪（录播模式下）")
@@ -191,7 +191,7 @@ class Recorder(MyTest,Records,RecordPage):
                 self.stop_recording()
 
     # 录制期间无法更改录制管理中的设置
-    def test11_modify_limit(self):
+    def test9_modify_limit(self):
         '''录制期间无法更改录制管理中的设置'''
         try:
             logger.info("录制期间无法更改录制管理中的设置")

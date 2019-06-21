@@ -30,8 +30,8 @@ password = conf.get("login", "password")
 screen_path = os.path.join(BASE_PATH, 'screen')
 log_path = os.path.join(BASE_PATH, 'log')
 report_path = os.path.join(BASE_PATH, 'report')
-logo_upload_path = os.path.join(BASE_PATH, 'date')
-software_upload_path = os.path.join(BASE_PATH, 'date')
+date_path = os.path.join(BASE_PATH, 'date')
+
 
 #url
 defaulturl = conf.get("platform", "defaulturl")

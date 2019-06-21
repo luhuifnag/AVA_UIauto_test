@@ -23,6 +23,7 @@ class MyTest(unittest.TestCase):
     def setUp(self):
         logger.info(u"******************测试开始******************")
         self.driver = webdriver.Firefox()
+        sleep(4)
         self.driver.get(readconfig.url)
         self.driver.maximize_window()
         self.driver.implicitly_wait(20)
@@ -35,4 +36,5 @@ class MyTest(unittest.TestCase):
     def tearDown(self):
         logger.info(u"~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~")
         self.driver.quit()
+        
 
