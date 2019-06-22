@@ -46,17 +46,11 @@ class RecordSet(BasePage):
     def set_main_quality(self,num,quality="1080p"):
         self.click(self.mainbtn)
         self.click(self.main_stream)
-        sleep(2)
-        logger.info(u"选择主码流质量为%s" % quality)  
-        # self.click(self.main_stream)
-        # sleep(2)
-        js = "document.getElementById('main_quality_select').style.display='block';" #编写JS语句把更改display的属性
-        self.driver.execute_script(js) #执行JS
-        sleep(2) 
-        main_streams = (By.ID,"main_quality_select")
-        Select(self.find_element(main_streams)).select_by_value("%d" % num)  #%d取值0\1\2\3分别对应的码流质量为1080p\720p\标清\流畅       
         sleep(1)
-
+        logger.info(u"选择主码流质量为%s" % quality) 
+        main_quality = (By.ID, "ui-id-%d" % num) #%d取值1、2、3、4分别对应的码流质量为高清\720p\标清\流畅  
+        self.move_to_element(main_quality)
+        self.click(main_quality)     
         
     # 勾选启动子码流录制按钮
     def start_up_sub_stream(self):
@@ -66,16 +60,14 @@ class RecordSet(BasePage):
             self.click(self.sub_stream5)
             logger.info(u"勾选启动子码流录制按钮")       
 
-
     # 设置子码流质量
     def set_sub_quality(self,num,quality="720p"):
         self.click(self.sub_stream)
         sleep(2)
         logger.info(u"选择子码流质量为%s" % quality)
-        sub_streams = (By.ID,"multi_quality") 
-        self.click(sub_streams)  
-        Select(self.find_element(sub_streams)).select_by_value("%d" % num)  #%d取值1、2、3分别对应的码流质量为720p\标清\流畅        
-        sleep(1)
+        sub_quality= (By.ID, "ui-id-%d" % num) #%d取值5、6、7分别对应的码流质量为720p\标清\流畅 
+        self.move_to_element(sub_quality)
+        self.click(sub_quality)
 
     #启动全自动跟踪
     def strat_au_racking(self):
@@ -84,8 +76,7 @@ class RecordSet(BasePage):
         else:
             self.click(self.au_racking)
             logger.info(u"勾选启动自动跟踪") 
-   
-        
+      
    # 点击页面确认按钮后切换回iframe
     def ensure(self):
         self.click(self.sure)

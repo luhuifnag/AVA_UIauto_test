@@ -89,12 +89,12 @@ class Records(RecordPage,RecordSet):
         self.start_up_sub_stream()
         self.set_sub_quality(num2,quality2)
         self.ensure()
-        # home.click_system_setup_blck()
-        # sleep(1)
-        # home.click_record()
-        # self.start_recording(thems)
-        # sleep(10)
-        # self.stop_recording()
+        home.click_system_setup_blck()
+        sleep(1)
+        home.click_record()
+        self.start_recording(thems)
+        sleep(10)
+        self.stop_recording()
 
        #录制时启用自动跟踪
     def record_strat_auacking(self):

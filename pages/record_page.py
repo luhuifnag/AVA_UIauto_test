@@ -271,6 +271,7 @@ class RecordPage(BasePage):
         self.click(self.drop_downbtn)
         sleep(1)
         subtitle = (By.ID, "ui-id-%d" % num) #%d=11时表示第一个默认字幕
+        self.move_to_element(subtitle)
         self.click(subtitle)
         self.click(self.outputbtn)
 
@@ -278,6 +279,7 @@ class RecordPage(BasePage):
     def edit_subtitles(self,num,text="自定义的字幕ABC123"):
         self.click(self.drop_downbtn)
         subtitle = (By.ID, "ui-id-%d" % num) #%d=11时表示第一个默认字幕
+        self.move_to_element(subtitle)
         self.click(subtitle)
         self.clear(self.osd_input) 
         self.input_text(self.osd_input,text)

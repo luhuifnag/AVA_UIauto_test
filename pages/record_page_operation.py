@@ -98,7 +98,6 @@ class RecordOperation(RecordPage):
             self.output_subtitles(11+i)
             sleep(5)       
         self.edit_subtitles(14)  # 编辑第四条字幕后输出
-        self.output_subtitles(14)
         self.click(self.outputbtn)
         sleep(5)
         self.select_hidebtn()  #隐藏字幕
@@ -116,7 +115,6 @@ class RecordOperation(RecordPage):
             self.change_background_colorr(n)
             self.click(self.outputbtn)
             sleep(5)
-    
         self.stop_recording()
         
  
