@@ -48,6 +48,7 @@ class RecordOperation(RecordPage):
         self.select_windows_tags1()
         self.select_windows()
         self.start_recording("云台控制录制")
+        self.click(self.manualbtn)
         self.PTZ_turning()
         self.PTZ_focusing() 
         self.PTZ_fast_focusing()
@@ -59,6 +60,7 @@ class RecordOperation(RecordPage):
         home.click_record() 
         sleep(1)
         self.start_recording("切换布局录制")
+        self.click(self.manualbtn)
         logger.info(u"切换预览的视窗")
         num = self.get_preview_num()
         for i in range(1, num-1):
