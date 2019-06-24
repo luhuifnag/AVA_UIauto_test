@@ -29,8 +29,6 @@ class Records(RecordPage,RecordSet):
         sleep(10)
         self.stop_recording()
 
-
-
     #暂停录制
     def pause_record(self):
         home = HomePage(self.driver)
@@ -41,8 +39,6 @@ class Records(RecordPage,RecordSet):
         self.pause_recording() 
         sleep(1)
 
-
-
     #暂停后恢复录制测试
     def resume_recording(self):
         home = HomePage(self.driver)
@@ -52,8 +48,7 @@ class Records(RecordPage,RecordSet):
         sleep(10)
         self.pause_recording() 
         sleep(1)
-        
-
+      
     #在录制过程中点击录播页面返回按钮
     def recording_back(self):
         home = HomePage(self.driver)
@@ -64,27 +59,23 @@ class Records(RecordPage,RecordSet):
         home.click_record_black()
         sleep(2)
 
-
-
-    #录制一段主码流为1080p的视频
-    def record_main_1080p(self):
-        home = HomePage(self.driver)
-        home.swich_to_system_label(self.recordsetbtn,"录制参数")
-        self.set_main_quality(1,"1080p")
-        self.ensure()
-        home.click_system_setup_blck()
-        sleep(1)
-        home.click_record()
-        self.start_recording("1080p主码流录制")
-        sleep(10)
-        self.stop_recording()
-
-
+    # #录制一段主码流为1080p的视频
+    # def record_main_1080p(self):
+    #     home = HomePage(self.driver)
+    #     home.swich_to_system_label(self.recordsetbtn,"录制参数")
+    #     self.set_main_quality(1,"1080p")
+    #     self.ensure()
+    #     home.click_system_setup_blck()
+    #     sleep(1)
+    #     home.click_record()
+    #     self.start_recording("1080p主码流录制")
+    #     sleep(10)
+    #     self.stop_recording()
     
     #录制一段主码流为quality1，子码流为quality2的视频
     def record_main_and_sub(self,num1,num2,quality1,quality2,thems):
         home = HomePage(self.driver)
-        home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        # home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
         self.set_main_quality(num1,quality1)
         self.start_up_sub_stream()
         self.set_sub_quality(num2,quality2)

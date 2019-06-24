@@ -52,6 +52,11 @@ class VideoManagemen(BasePage):
         logger.info(u"查看文件的详细信息")
         detailedbtn = (By.XPATH,"//*[@id='filesInfo']/tbody/tr[%d]/td[9]/a" % num) #第一个文件的%d值为2,后面的以此类推
         self.click(detailedbtn)
+    
+    def file_detailed2(self,num):
+        logger.info(u"查看文件的详细信息")
+        detailedbtn = (By.XPATH,"//*[@id='filesInfo']/tbody/tr[%d]/td[9]/a" % num) #第一个文件的%d值为2,后面的以此类推
+        self.click(detailedbtn)
 
     #查看文件总数
     def check_total_documents(self):
