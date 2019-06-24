@@ -12,12 +12,12 @@ from utils.log import logger
 class HomePage(BasePage):
 
     # 录像管理按钮
-    video_management = (By.PARTIAL_LINK_TEXT, "录像管理") 
+    video_management = (By.XPATH, "//*[@id='content']/div[2]/a[2]") 
 
     def click_record(self):
         logger.info (u"点击录播按钮")
         record = (By.XPATH,"//*[@id='content']/div[1]/a[1]")
-        self.click(record)
+        self.click(record)  
 
     def click_record_black(self):
         logger.info(u"点击录播页面返回按钮")
