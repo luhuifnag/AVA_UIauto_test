@@ -76,7 +76,8 @@ class RecordPage(BasePage):
     # 位置框内的logo
     logoDrag = (By.ID,"logoDrag")
     # logo上成功提示
-    success = (By.XPATH, "//*[@id='sysVersion']/div[6]")
+    success_message1 = (By.XPATH, "//*[@id='sysVersion']/div[5]")  #当设备为h2类型时，这个定位
+    success_message2 = (By.XPATH, "//*[@id='sysVersion']/div[6]")  #当设备为u8类型时，这个定位
 
     # 字幕
     subtitlebtn = (By.ID, "subtitleMenu")
