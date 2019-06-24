@@ -143,6 +143,7 @@ class RecordPage(BasePage):
         taglist = []
         for i in range(num):
             tags = (By.XPATH, "//*[@id='videoLists']/li[%s]/div[1]/div" % str(i+1))
+            sleep(1)
             taglist.append(self.gettext(tags))
         logger.info(taglist)
         return taglist

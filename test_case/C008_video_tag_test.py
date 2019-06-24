@@ -31,7 +31,7 @@ class VideoTagTest(MyTest, VideoTag):
             home.click_system_setup_blck()
             sleep(1)
             home.click_record()
-            sleep(4)
+            sleep(3)
             record = RecordPage(self.driver)
             b = record.get_preview_tag()
             self.assertEqual(a, b)

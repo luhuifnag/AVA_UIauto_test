@@ -59,7 +59,6 @@ class VideoTag(BasePage):
         for i in range(num):
             windowsid = (By.XPATH, "//*[@id='labelList']/li[%s]/input" % str(i+1))
             self.clear(windowsid)
-            sleep(1)
             self.input_text(windowsid, "自定义abc00%s" % str(i+1))
             albellist.append("%s 自定义abc00%s" % (str(i+1), str(i+1)))
         sleep(1)

@@ -12,7 +12,6 @@ from pages.basepage import BasePage
 from pages.home_page import HomePage
 from selenium.webdriver.support.ui import Select
 from utils.log import logger
-from models.status import Status
 from selenium.webdriver.support import expected_conditions as ES
 from selenium.webdriver.support.ui import WebDriverWait 
 from models import readconfig
