@@ -37,6 +37,7 @@ date_path = os.path.join(BASE_PATH, 'date')
 defaulturl = conf.get("platform", "defaulturl")
 url = conf.get("platform", "url")
 newurl = conf.get("platform", "newurl")
+multiurl = conf.get("platform", "multiurl")
 
 #rserver注册的相关参数
 rserverip = conf.get("rserver", "rserverip")

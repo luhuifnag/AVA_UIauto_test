@@ -18,6 +18,7 @@ from pages.video_managemen import VideoManagemen
 from utils.log import logger
 from selenium.webdriver.support import expected_conditions as ES
 from selenium.webdriver.support.ui import WebDriverWait
+from pages.Input_output_page import InputOutput
 
 class Recorder(MyTest,Records,RecordPage):
     '''录制相关测试'''
@@ -39,8 +40,6 @@ class Recorder(MyTest,Records,RecordPage):
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_basic_recording.png'))
             raise Exception("false")
-     
-
 
     def test2_pause_recording(self):
         '''暂停录制测试'''
@@ -63,8 +62,6 @@ class Recorder(MyTest,Records,RecordPage):
             else:
                 self.stop_recording()
 
-
-
     def test3_resume_recording(self):
         '''暂停后恢复录制测试'''
         try:
@@ -86,8 +83,6 @@ class Recorder(MyTest,Records,RecordPage):
                 pass
             else:
                 self.stop_recording()
-
-
 
     def test4_recording_back(self):
         '''测试在录制过程中点击录播页面返回按钮，验证是否有提示信息''' 
@@ -254,6 +249,23 @@ class Recorder(MyTest,Records,RecordPage):
             home.click_record()
             sleep(2)
             self.stop_recording()
+
+    def test_get_multi_num(self):
+        '''录制所有的网络多流'''
+        try:
+            logger.info("录制所有的网络多流")
+            records = Records(self.driver)
+            records.record_all_netmulti(readconfig.multiurl)
+            logger.info("录制成功")
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test11_modify_limit.png'))
+            raise Exception("false")
+        
+    # def test_record_custom_quality(self):
+    #     records = Records(self.driver)
+    #     records.record_custom_quality()
+      
 
             
         

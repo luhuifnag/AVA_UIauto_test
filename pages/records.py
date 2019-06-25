@@ -15,6 +15,7 @@ from pages.record_page import RecordPage
 from pages.recordset_page import RecordSet
 from pages.video_managemen import VideoManagemen
 from utils.log import logger
+from pages.Input_output_page import InputOutput
 
 
 class Records(RecordPage,RecordSet):
@@ -59,23 +60,10 @@ class Records(RecordPage,RecordSet):
         home.click_record_black()
         sleep(2)
 
-    # #录制一段主码流为1080p的视频
-    # def record_main_1080p(self):
-    #     home = HomePage(self.driver)
-    #     home.swich_to_system_label(self.recordsetbtn,"录制参数")
-    #     self.set_main_quality(1,"1080p")
-    #     self.ensure()
-    #     home.click_system_setup_blck()
-    #     sleep(1)
-    #     home.click_record()
-    #     self.start_recording("1080p主码流录制")
-    #     sleep(10)
-    #     self.stop_recording()
     
     #录制一段主码流为quality1，子码流为quality2的视频
     def record_main_and_sub(self,num1,num2,quality1,quality2,thems):
         home = HomePage(self.driver)
-        # home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
         self.set_main_quality(num1,quality1)
         self.start_up_sub_stream()
         self.set_sub_quality(num2,quality2)
@@ -84,6 +72,40 @@ class Records(RecordPage,RecordSet):
         sleep(1)
         home.click_record()
         self.start_recording(thems)
+        sleep(10)
+        self.stop_recording()
+
+    # #录制一段自定义的主码流质量的视频
+    def record_custom_quality(self):
+        home = HomePage(self.driver)
+        self.get_status()
+        self.custom_quality()
+        # sleep(1)
+        # self.ensure()
+        # home.click_system_setup_blck()
+        # sleep(1)
+        # home.click_record()
+        # self.start_recording("自定义码流质量录制")
+        # sleep(10)
+        # self.stop_recording()
+
+    # 录制所有的网络多流
+    def record_all_netmulti(self, url):
+        home = HomePage(self.driver)
+        home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        self.check_allmuti()
+        self.ensure()
+        self.driver.switch_to.default_content()
+        home.click_system_setup_blck()
+        sleep(1)
+        inputoutput = InputOutput(self.driver)
+        inputoutput.getin_outin()
+        inputoutput.set_all_netmulti(url)
+        self.driver.switch_to.default_content()
+        home.click_system_setup_blck()
+        sleep(1)
+        home.click_record()
+        self.start_recording("所有网络多流录制")
         sleep(10)
         self.stop_recording()
 

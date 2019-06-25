@@ -98,8 +98,6 @@ class HomePage(BasePage):
         user = (By.XPATH,"//*[@id='user']")
         self.click(user)
 
-
-    
     #进入到应用设置的某个页面里面
     def swich_to_system_label(self,labelname,text):
         self.click_system_setup()

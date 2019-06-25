@@ -19,7 +19,7 @@ class InputOutput(BasePage):
     # 输入输出按钮
     InputOutputbtn = (By.PARTIAL_LINK_TEXT, "输入输出")
     # 网络多流按钮
-    Network = (By.XPATH, "//*[@id='multStream']/div/div/label[1]/i")
+    network = (By.XPATH, "//*[@id='multStream']/div/div/label[1]/i")
     # 本地多流按钮"
     local = (By.XPATH, "//*[@id='multStream']/div/div/label[2]/i)")
     # url输入框
@@ -33,17 +33,30 @@ class InputOutput(BasePage):
     # 确认按钮
     sure = (By.XPATH, "//*[@id='inputdevicePanel']/div[3]/button")
 
+    # 进入输入输出设置页面
+    def getin_outin(self):
+        home = HomePage(self.driver)
+        home.swich_to_system_label(self.InputOutputbtn, "输入输出")
+        sleep(2)
+
     # 获取输入设备标签数量
     def input_tag_num(self):
         input_tags = self.driver.find_elements_by_xpath("//*[@id='menus']/li")
         preview_num = len(input_tags)
         return int(preview_num)
 
-    # 进入输入输出设置
-    def getin_outin(self):
-        home = HomePage(self.driver)
-        home.swich_to_system_label(self.InputOutputbtn, "输入输出")
-        sleep(2)
+    # 勾选所有网络多流，并填写网络多流地址
+    def set_all_netmulti(self, url):
+        tag_num = self.input_tag_num()
+        logger.info("勾选所有网络多流并填写好地址")
+        for i in range(tag_num):
+            input_tag = (By.XPATH, "//*[@id='menus']/li[%s]" % str(i+1))
+            self.click(input_tag)
+            self.click(self.network)
+            self.clear(self.urlinput)
+            self.input_text(self.urlinput, url)
+            sleep(1)
+            self.ensure()
 
     # 启动poc供电
     def enable_poc(self):
