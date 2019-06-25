@@ -63,8 +63,9 @@ class VideoTagTest(MyTest, VideoTag):
         '''选择默认标签测试'''
         try:
             logger.info("选择默认标签测试")
-            self.C_default()
             a = self.input_custom_label()
+            self.driver.switch_to.frame("content")  
+            self.C_default()   
             home = HomePage(self.driver)
             home.click_system_setup_blck()
             sleep(1)

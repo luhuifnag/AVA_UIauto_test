@@ -99,7 +99,7 @@ class RecordPage(BasePage):
 
 
     # 变焦
-    ptzbtn = (By.ID, "ptzMenu")
+    ptzbtn = (By.ID, "zoomMenu")
     # 快捷变焦的4个按钮
     focus1 = (By.XPATH,"//*[@id='c_zoom']/li[1]/img")
     focus2 = (By.XPATH,"//*[@id='c_zoom']/li[2]/img")
@@ -146,6 +146,7 @@ class RecordPage(BasePage):
             tags = (By.XPATH, "//*[@id='videoLists']/li[%s]/div[1]/div" % str(i+1))
             sleep(1)
             taglist.append(self.gettext(tags))
+        sleep(1)
         logger.info(taglist)
         return taglist
             
@@ -254,6 +255,7 @@ class RecordPage(BasePage):
         self.long_click(self.left)
         sleep(2)
         self.long_click(self.right)
+        sleep(2)
 
     # 控制云台的变焦
     def PTZ_focusing(self):

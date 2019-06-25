@@ -36,15 +36,13 @@ class VideoTag(BasePage):
 
     # 选择默认标签
     def C_default(self):
-        home = HomePage(self.driver)
-        home.swich_to_system_label(self.videotagbtn, "视频标签")
-        sleep(2)
         self.click(self.default_label)
         logger.info("选择默认标签名")
         sleep(1)
         self.click(self.sure)
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
         self.accept_alert()
+        self.driver.switch_to.default_content()
 
     # 向自定义窗口输入
     def input_custom_label(self):

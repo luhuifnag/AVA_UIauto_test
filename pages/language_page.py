@@ -61,6 +61,7 @@ class Languages(BasePage):
         home.swich_to_basic_label(self.languagebtn,"Language")
         sleep(2)
         self.choose_Chinese()
+        sleep(1)
         self.click_surebtn()
 
   # 切换为英文
@@ -69,6 +70,7 @@ class Languages(BasePage):
         home.swich_to_basic_label(self.languagebtn,"Language")
         sleep(2)
         self.choose_english()
+        sleep(1)
         self.click_surebtn()
 
         

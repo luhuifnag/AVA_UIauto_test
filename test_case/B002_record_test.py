@@ -214,7 +214,7 @@ class Recorder(MyTest,Records,RecordPage):
                 self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test7_main_540p_and_sub_360p2.png'))
                 raise Exception("false")
 
-    录制时启用全自动跟踪
+    # 录制时启用全自动跟踪
     def test8_record_strat_auacking(self):
         '''录制时启用全自动跟踪（录播模式下）'''
         try:
