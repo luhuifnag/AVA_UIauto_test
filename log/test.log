@@ -1093,3 +1093,108 @@ First differing element 0:
 2019-06-25 20:01:40,686 - framework - INFO - 点击录制参数标签
 2019-06-25 20:02:02,846 - framework - INFO - 设置自定义码流质量
 2019-06-25 20:02:17,968 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 15:54:43,165 - framework - INFO - ******************测试开始******************
+2019-06-26 15:55:02,899 - framework - INFO - 输入用户名：admin
+2019-06-26 15:55:02,952 - framework - INFO - 输入密码：admin
+2019-06-26 15:55:02,989 - framework - INFO - 点击 登录  按钮
+2019-06-26 15:55:07,755 - framework - INFO - 切换成英文测试
+2019-06-26 15:55:07,756 - framework - INFO - 点击系统设置按钮
+2019-06-26 15:55:10,015 - framework - INFO - 点击基本设置
+2019-06-26 15:55:33,366 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 15:55:33,477 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 15:55:35,322 - framework - INFO - ******************测试开始******************
+2019-06-26 15:59:35,835 - framework - INFO - ******************测试开始******************
+2019-06-26 15:59:47,762 - framework - INFO - 输入用户名：admin
+2019-06-26 15:59:47,804 - framework - INFO - 输入密码：admin
+2019-06-26 15:59:47,845 - framework - INFO - 点击 登录  按钮
+2019-06-26 15:59:52,246 - framework - INFO - 切换成英文测试
+2019-06-26 16:00:32,291 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 16:00:32,559 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:00:34,622 - framework - INFO - ******************测试开始******************
+2019-06-26 16:00:47,833 - framework - INFO - 输入用户名：admin
+2019-06-26 16:00:47,874 - framework - INFO - 输入密码：admin
+2019-06-26 16:00:47,918 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:00:52,439 - framework - INFO - 切换成英文测试
+2019-06-26 16:01:32,474 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 16:01:32,740 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:06:16,482 - framework - INFO - ******************测试开始******************
+2019-06-26 16:06:29,794 - framework - INFO - 输入用户名：admin
+2019-06-26 16:06:29,850 - framework - INFO - 输入密码：admin
+2019-06-26 16:06:29,901 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:06:34,409 - framework - INFO - 切换成英文测试
+2019-06-26 16:06:34,410 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:06:36,680 - framework - INFO - 点击基本设置
+2019-06-26 16:06:59,976 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:07:14,801 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 16:07:14,804 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:07:14,810 - framework - INFO - ******************测试开始******************
+2019-06-26 16:14:00,111 - framework - INFO - ******************测试开始******************
+2019-06-26 16:14:12,322 - framework - INFO - 输入用户名：admin
+2019-06-26 16:14:12,377 - framework - INFO - 输入密码：admin
+2019-06-26 16:14:12,410 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:14:16,956 - framework - INFO - 切换成英文测试
+2019-06-26 16:14:16,957 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:14:19,223 - framework - INFO - 点击基本设置
+2019-06-26 16:14:42,549 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:15:02,568 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 16:15:02,650 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:15:04,972 - framework - INFO - ******************测试开始******************
+2019-06-26 16:16:44,929 - framework - INFO - ******************测试开始******************
+2019-06-26 16:16:56,542 - framework - INFO - 输入用户名：admin
+2019-06-26 16:16:56,596 - framework - INFO - 输入密码：admin
+2019-06-26 16:16:56,626 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:17:01,045 - framework - INFO - 切换成英文测试
+2019-06-26 16:17:01,046 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:17:03,320 - framework - INFO - 点击基本设置
+2019-06-26 16:17:26,636 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:17:46,644 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 16:17:46,723 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:17:48,550 - framework - INFO - ******************测试开始******************
+2019-06-26 16:18:52,837 - framework - INFO - ******************测试开始******************
+2019-06-26 16:19:05,002 - framework - INFO - 输入用户名：admin
+2019-06-26 16:19:05,050 - framework - INFO - 输入密码：admin
+2019-06-26 16:19:05,089 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:19:09,453 - framework - INFO - 切换成英文测试
+2019-06-26 16:19:09,454 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:19:11,717 - framework - INFO - 点击基本设置
+2019-06-26 16:19:15,288 - framework - INFO - 点击Language标签
+2019-06-26 16:19:17,306 - framework - INFO - 选择英文
+2019-06-26 16:19:23,456 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:19:42,598 - framework - INFO - ******************测试开始******************
+2019-06-26 16:19:54,352 - framework - INFO - 输入用户名：admin
+2019-06-26 16:19:54,431 - framework - INFO - 输入密码：admin
+2019-06-26 16:19:54,481 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:19:59,046 - framework - INFO - 切换成中文测试
+2019-06-26 16:19:59,047 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:20:01,334 - framework - INFO - 点击基本设置
+2019-06-26 16:20:24,643 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 16:20:24,777 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:20:26,704 - framework - INFO - ******************测试开始******************
+2019-06-26 16:20:40,174 - framework - INFO - 输入用户名：admin
+2019-06-26 16:20:40,218 - framework - INFO - 输入密码：admin
+2019-06-26 16:20:40,273 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:20:44,789 - framework - INFO - 切换成中文测试
+2019-06-26 16:20:44,790 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:20:47,144 - framework - INFO - 点击基本设置
+2019-06-26 16:21:10,460 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 16:21:10,547 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:24:35,929 - framework - INFO - ******************测试开始******************
+2019-06-26 16:24:51,584 - framework - INFO - 输入用户名：admin
+2019-06-26 16:24:51,635 - framework - INFO - 输入密码：admin
+2019-06-26 16:24:51,670 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:24:56,052 - framework - INFO - 切换成英文测试
+2019-06-26 16:24:56,053 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:24:58,327 - framework - INFO - 点击基本设置
+2019-06-26 16:25:01,879 - framework - INFO - 点击Language标签
+2019-06-26 16:25:03,904 - framework - INFO - 选择英文
+2019-06-26 16:25:10,253 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:25:12,234 - framework - INFO - ******************测试开始******************
+2019-06-26 16:25:25,079 - framework - INFO - 输入用户名：admin
+2019-06-26 16:25:25,126 - framework - INFO - 输入密码：admin
+2019-06-26 16:25:25,195 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:25:29,608 - framework - INFO - 切换成中文测试
+2019-06-26 16:25:29,609 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:25:31,857 - framework - INFO - 点击基本设置
+2019-06-26 16:25:35,410 - framework - INFO - 点击Language标签
+2019-06-26 16:25:37,425 - framework - INFO - 选择中文
+2019-06-26 16:25:43,791 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~

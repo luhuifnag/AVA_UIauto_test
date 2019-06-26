@@ -19,9 +19,8 @@ from utils.log import logger
 class Languages(BasePage):
 
     #Language标签按钮
-    languagebtn = (By.XPATH,"//*[@id='sec_navs']/li[7]/a")
-
-
+    languagebtn1 = (By.PARTIAL_LINK_TEXT,"Language")
+    languagebtn2 = (By.PARTIAL_LINK_TEXT,"语言切换")
     # 中文按钮
     Chinese = (By.XPATH, "//*[@id='panel']/label[1]")
     # 英文按钮
@@ -58,7 +57,7 @@ class Languages(BasePage):
     # 切换为中文
     def switch_Chinese(self):
         home = HomePage(self.driver)
-        home.swich_to_basic_label(self.languagebtn,"Language")
+        home.swich_to_basic_label(self.languagebtn2,"Language")
         sleep(2)
         self.choose_Chinese()
         sleep(1)
@@ -67,7 +66,7 @@ class Languages(BasePage):
   # 切换为英文
     def switch_english(self):
         home = HomePage(self.driver)
-        home.swich_to_basic_label(self.languagebtn,"Language")
+        home.swich_to_basic_label(self.languagebtn1,"Language")
         sleep(2)
         self.choose_english()
         sleep(1)

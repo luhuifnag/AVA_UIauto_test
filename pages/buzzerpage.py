@@ -19,7 +19,7 @@ from utils.log import logger
 class Buzzer(BasePage):
 
     #蜂鸣器
-    buzzerbtn = (By.XPATH,"//*[@id='sec_navs']/li[5]/a")
+    buzzerbtn = (By.PARTIAL_LINK_TEXT,"蜂鸣器")
 
     #确认按钮
     surebtn = (By.ID,"closeBuzzer") 
