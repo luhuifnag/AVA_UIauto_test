@@ -29,7 +29,7 @@ class RecordSet(BasePage):
     height = (By.ID, "height")
     fps = (By.XPATH, "//*[@id='fps-button']/span[1]")
     fps_25 = (By.XPATH, "ui-id-12")
-    fps_30 = (By.XPATH, "ui-id-13")
+    fps_30 = (By.XPATH, "ui-id-13")  #这是不同机型而不同的
     bps = (By.ID, "bps")
     vrb = (By.XPATH, "//*[@id='customQuality']/div/div[5]/div/label[1]/i")
     cbr = (By.XPATH, "//*[@id='customQuality']/div/div[5]/div/label[2]/i")
@@ -44,9 +44,20 @@ class RecordSet(BasePage):
     sub_stream = (By.XPATH,"//*[@id='multi_quality-button']/span[1]") 
     # 启动子码流录制复选框
     sub_stream5 = (By.XPATH,"//*[@id='others_body']/div[2]/label/i")
-
     # 启动全自动跟踪按钮
     au_racking = (By.XPATH,"//*[@id='startOption']/div/label[2]/i")
+    # ftp上传按钮
+    ftpbtn = (By.XPATH,"//*[@id='autoUpload']/div[2]/div[1]/label")
+    # 用户输入框
+    ftpUser = (By.ID,"ftpUser")
+    # 密码输出框
+    ftpPsw = (By.ID,"ftpPsw")
+    # 路径输入框
+    ftpUrl = (By.ID,"ftpUrl")
+    # IP输入框
+    ftpIp = (By.ID,"ftpIp")
+    # 端口输入框
+    ftpPort = (By.ID,"ftpPort")
 
     #页面确认按钮
     sure = (By.XPATH,"/html/body/div[1]/div[3]/input")
@@ -86,10 +97,6 @@ class RecordSet(BasePage):
         self.input_text(self.width, "400")
         self.clear(self.height)
         self.input_text(self.height, "200")
-        self.click(self.fps)
-        sleep(1)
-        self.move_to_element(self.fps_25)
-        self.click(self.fps_25)
         self.click(self.cbr)
         self.clear(self.gop)
         self.input_text(self.gop, "10")
@@ -108,7 +115,7 @@ class RecordSet(BasePage):
         self.click(self.sub_stream)
         sleep(2)
         logger.info(u"选择子码流质量为%s" % quality)
-        sub_quality= (By.ID, "ui-id-%d" % num)  #%d取值、6、7分别对应的码流质量为720p\标清\流畅;
+        sub_quality= (By.ID, "ui-id-%d" % num)  #%d取值5、6、7分别对应的码流质量为720p\标清\流畅;
                                                 #设备为u8时#%d取值9、10、11分别对应的码流质量为\720p\标清\流
         self.move_to_element(sub_quality)
         self.click(sub_quality)
@@ -129,6 +136,17 @@ class RecordSet(BasePage):
             else:
                 self.click(mulsti)
 
+    # 不勾选全部多流录制按钮
+    def uncheck_allmuti(self):
+        mulstis = self.get_multi_num()
+        logger.info("不勾选所有多流录制按钮")
+        for i in range(mulstis):
+            mulsti = (By.XPATH, "//*[@id='multi_streams_con']/div[%s]/label" % str(i+1))
+            if self.getAttribute(mulsti,"class") =="checkbox g_checkbox g_checkbox-checked":
+                self.click(mulsti)
+            else:
+                pass
+
     #启动全自动跟踪
     def strat_au_racking(self):
         if self.getAttribute(self.au_racking,"class") =="checkbox g_checkbox g_checkbox-checked":
@@ -136,6 +154,29 @@ class RecordSet(BasePage):
         else:
             self.click(self.au_racking)
             logger.info(u"勾选启动自动跟踪") 
+
+    # 启ftp上传
+    def start_ftp(self):
+        logger.info("勾选ftp上传按钮")
+        if self.getAttribute(self.ftpbtn, "class") == "checkbox g_checkbox g_checkbox-checked":
+            pass
+        else:
+            self.click(self.ftpbtn)
+
+    # 填写ftp信息
+    def ftp_input(self, ftpUser="root", ftpPsw="gzava_a4s", ftpUrl="./", ftpIp="192.168.13.245", ftpPort="21"):
+        self.start_ftp()
+        self.click(self.ftpbtn)
+        self.clear(self.ftpUser)
+        self.input_text(self.ftpUser, ftpUser)
+        self.clear(self.ftpPsw)
+        self.input_text(self.ftpPsw, ftpPsw)
+        self.clear(self.ftpUrl)
+        self.input_text(self.ftpUrl, ftpUrl)
+        self.clear(self.ftpIp)
+        self.input_text(self.ftpIp, ftpIp)
+        self.clear(self.ftpPort)
+        self.input_text(self.ftpPort, ftpPort)
       
    # 点击页面确认按钮后切换回iframe
     def ensure(self):

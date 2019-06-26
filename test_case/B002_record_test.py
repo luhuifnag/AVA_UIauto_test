@@ -264,10 +264,29 @@ class Recorder(MyTest,Records,RecordPage):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test11_modify_limit.png'))
             raise Exception("false")
         
-    # def test_record_custom_quality(self):
-    #     '''自定义码流质量的录制'''
-    #     records = Records(self.driver)
-    #     records.record_custom_quality()
+    def test_record_custom_quality(self):
+        '''自定义码流质量的录制'''
+        try:
+            logger.info("自定义码流质量的录制")
+            records = Records(self.driver)
+            records.record_custom_quality()
+            logger.info("录制成功")
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_custom_quality.png'))
+            raise Exception("false")
+    
+    # def test_record_start_ftp(self):
+    #     '''启动ftp上传录制'''
+    #     try:
+    #         logger.info("启动ftp上传录制")
+    #         records = Records(self.driver)
+    #         records.record_start_ftp()
+    #         logger.info("录制成功")
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_custom_quality.png'))
+    #         raise Exception("false")
       
 
             

@@ -78,16 +78,17 @@ class Records(RecordPage,RecordSet):
     # #录制一段自定义的主码流质量的视频
     def record_custom_quality(self):
         home = HomePage(self.driver)
-        self.get_status()
+        home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        # self.get_status()
         self.custom_quality()
-        # sleep(1)
-        # self.ensure()
-        # home.click_system_setup_blck()
-        # sleep(1)
-        # home.click_record()
-        # self.start_recording("自定义码流质量录制")
-        # sleep(10)
-        # self.stop_recording()
+        sleep(1)
+        self.ensure()
+        home.click_system_setup_blck()
+        sleep(1)
+        home.click_record()
+        self.start_recording("自定义码流质量录制")
+        sleep(10)
+        self.stop_recording()
 
     # 录制所有的网络多流
     def record_all_netmulti(self, url):
@@ -123,6 +124,21 @@ class Records(RecordPage,RecordSet):
         auto_status = self.getAttribute(self.autobtn, "class")
         self.stop_recording()
         return auto_status
+
+    # 启动ftp上传录制
+    def record_start_ftp(self):
+        home = HomePage(self.driver)
+        home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        self.uncheck_allmuti()
+        self.start_ftp()
+        self.ftp_input()
+        self.ensure()
+        sleep(1)
+        home.click_record()
+        self.start_recording()
+        sleep(10)
+        self.stop_recording()
+        
 
     # 录制期间无法更改录制管理中的设置
     def modify_limit(self):
