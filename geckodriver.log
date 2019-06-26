@@ -18821,3 +18821,15 @@ JavaScript warning: http://192.168.13.120/admin/system/sysConfigure.js?_=0.18879
 1561464085543	Marionette	INFO	Listening on port 50789
 1561464085726	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: http://192.168.13.120/admin/system/sysConfigure.js?_=0.8230519665978564, line 464: unreachable code after return statement
+1561464137972	Marionette	INFO	Stopped listening on port 50789
+[Parent 6436, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14384, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14384, Chrome_Child[Parent 6436, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1812, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1812, Chrome_ChildThre[Child 14708, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14708, Chrome_ChildThread[G
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

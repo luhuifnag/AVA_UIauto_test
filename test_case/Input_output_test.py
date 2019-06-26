@@ -28,7 +28,7 @@ class InputOutputTest(MyTest, InputOutput):
         try:
             logger.info("更改poc供电状态测试'")
             state = self.change_poc_state()
-            self.assertEqual(state, ('PoC已连接', 'PoC未连接')) 
+            self.assertEqual(state, ('PoC未连接', 'PoC已连接'))
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_change_poc_state.png'))

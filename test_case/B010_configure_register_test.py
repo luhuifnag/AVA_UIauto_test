@@ -87,6 +87,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
         try:
             logger.info("使用备用服务器成功注册rserver")
             self.register_rserver("123",readconfig.name,readconfig.pwd,readconfig.machineName,readconfig.rserverip)
+            sleep(15)
             base = BasePage(self.driver)
             self.assertEqual(base.gettext(self.regstateStatus), u"注册成功")      
         except Exception as msg:
