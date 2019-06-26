@@ -71,7 +71,8 @@ class RecordOperation(RecordPage):
             self.select_windows_tags1(u)
             sleep(8)
         self.click(self.blendmodebtn)
-        for m in range(1,10):
+        ble = self.get_blendmode_num()
+        for m in range(1,ble+1):
             self.click_blendmode(m)
             sleep(8)
         self.stop_recording()

@@ -49,6 +49,10 @@ class RecordPage(BasePage):
 
     # 布局
     blendmodebtn = (By.ID, "blendmodeMenu")
+    # 获取布局按钮的数量
+    def get_blendmode_num(self):
+        bles = self.driver.find_elements_by_xpath("//*[@id='layout']/li")
+        return len(bles)   
     # 点击不同的布局按钮
     def click_blendmode(self,num):
         blendmode = (By.XPATH, "//*[@id='layout']/li[%d]/img" % num) # %d的取值分别为1、2…9代表不同的布局 
@@ -76,8 +80,13 @@ class RecordPage(BasePage):
     # 位置框内的logo
     logoDrag = (By.ID,"logoDrag")
     # logo上成功提示
-    success_message1 = (By.XPATH, "//*[@id='sysVersion']/div[5]")  #当设备为h2类型时，这个定位
-    success_message2 = (By.XPATH, "//*[@id='sysVersion']/div[6]")  #当设备为u8类型时，这个定位
+    def success_message(self):
+        divs = self.driver.find_elements_by_xpath("//*[@id='sysVersion']/div")
+        num = len(divs)
+        print(num)
+        message = (By.XPATH, "//*[@id='sysVersion']/div[%s]" % str(num-1))
+        print(self.getAttribute(message,"textContent"))
+        return self.getAttribute(message,"textContent")
 
     # 字幕
     subtitlebtn = (By.ID, "subtitleMenu")

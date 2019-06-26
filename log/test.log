@@ -1198,3 +1198,170 @@ First differing element 0:
 2019-06-26 16:25:35,410 - framework - INFO - 点击Language标签
 2019-06-26 16:25:37,425 - framework - INFO - 选择中文
 2019-06-26 16:25:43,791 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:27:40,515 - framework - INFO - ******************测试开始******************
+2019-06-26 16:27:52,522 - framework - INFO - 输入用户名：admin
+2019-06-26 16:27:52,567 - framework - INFO - 输入密码：admin
+2019-06-26 16:27:52,594 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:27:57,111 - framework - INFO - 关闭蜂鸣器的测试
+2019-06-26 16:27:57,112 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:27:59,357 - framework - INFO - 点击基本设置
+2019-06-26 16:28:01,635 - framework - INFO - 点击关闭蜂蜜器
+2019-06-26 16:28:05,009 - framework - INFO - 
+            是否关闭蜂鸣器？
+        
+2019-06-26 16:28:05,016 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:28:33,564 - framework - INFO - ******************测试开始******************
+2019-06-26 16:28:46,956 - framework - INFO - 输入用户名：admin
+2019-06-26 16:28:46,999 - framework - INFO - 输入密码：admin
+2019-06-26 16:28:47,049 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:28:51,546 - framework - INFO - 关闭蜂鸣器的测试
+2019-06-26 16:28:51,547 - framework - INFO - 点击系统设置按钮
+2019-06-26 16:28:53,816 - framework - INFO - 点击基本设置
+2019-06-26 16:28:56,097 - framework - INFO - 点击关闭蜂蜜器
+2019-06-26 16:28:59,502 - framework - INFO - 
+            是否关闭蜂鸣器？
+        
+2019-06-26 16:28:59,510 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:58:04,739 - framework - INFO - ******************测试开始******************
+2019-06-26 16:58:22,492 - framework - INFO - 输入用户名：admin
+2019-06-26 16:58:22,550 - framework - INFO - 输入密码：admin
+2019-06-26 16:58:22,582 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:58:26,946 - framework - INFO - 成功上传logo的测试
+2019-06-26 16:58:26,947 - framework - INFO - 点击录播按钮
+2019-06-26 16:58:28,471 - framework - INFO - 上传logo
+2019-06-26 16:58:52,759 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 16:58:52,851 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 16:58:54,629 - framework - INFO - ******************测试开始******************
+2019-06-26 16:59:07,667 - framework - INFO - 输入用户名：admin
+2019-06-26 16:59:07,713 - framework - INFO - 输入密码：admin
+2019-06-26 16:59:07,746 - framework - INFO - 点击 登录  按钮
+2019-06-26 16:59:12,177 - framework - INFO - 成功上传logo的测试
+2019-06-26 16:59:12,178 - framework - INFO - 点击录播按钮
+2019-06-26 16:59:13,755 - framework - INFO - 上传logo
+2019-06-26 16:59:38,018 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 16:59:38,084 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 17:06:55,375 - framework - INFO - ******************测试开始******************
+2019-06-26 17:07:13,191 - framework - INFO - 输入用户名：admin
+2019-06-26 17:07:13,240 - framework - INFO - 输入密码：admin
+2019-06-26 17:07:13,276 - framework - INFO - 点击 登录  按钮
+2019-06-26 17:07:17,628 - framework - INFO - 成功上传logo的测试
+2019-06-26 17:07:17,629 - framework - INFO - 点击录播按钮
+2019-06-26 17:07:19,195 - framework - INFO - 上传logo
+2019-06-26 17:07:43,474 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 17:07:43,538 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 17:07:45,666 - framework - INFO - ******************测试开始******************
+2019-06-26 17:10:00,704 - framework - INFO - ******************测试开始******************
+2019-06-26 17:10:12,853 - framework - INFO - 输入用户名：admin
+2019-06-26 17:10:12,892 - framework - INFO - 输入密码：admin
+2019-06-26 17:10:12,922 - framework - INFO - 点击 登录  按钮
+2019-06-26 17:10:17,388 - framework - INFO - 成功上传logo的测试
+2019-06-26 17:10:17,389 - framework - INFO - 点击录播按钮
+2019-06-26 17:10:18,992 - framework - INFO - 上传logo
+2019-06-26 17:10:43,284 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 17:10:43,374 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 17:10:45,656 - framework - INFO - ******************测试开始******************
+2019-06-26 17:10:59,653 - framework - INFO - 输入用户名：admin
+2019-06-26 17:10:59,705 - framework - INFO - 输入密码：admin
+2019-06-26 17:10:59,753 - framework - INFO - 点击 登录  按钮
+2019-06-26 17:11:04,221 - framework - INFO - 成功上传logo的测试
+2019-06-26 17:11:04,223 - framework - INFO - 点击录播按钮
+2019-06-26 17:11:05,960 - framework - INFO - 上传logo
+2019-06-26 17:11:30,249 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 17:11:30,337 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 17:12:31,480 - framework - INFO - ******************测试开始******************
+2019-06-26 17:12:46,186 - framework - INFO - 输入用户名：admin
+2019-06-26 17:12:46,238 - framework - INFO - 输入密码：admin
+2019-06-26 17:12:46,261 - framework - INFO - 点击 登录  按钮
+2019-06-26 17:12:50,753 - framework - INFO - 成功上传logo的测试
+2019-06-26 17:12:50,754 - framework - INFO - 点击录播按钮
+2019-06-26 17:12:52,360 - framework - INFO - 上传logo
+2019-06-26 17:13:16,648 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 17:13:16,743 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 17:13:18,835 - framework - INFO - ******************测试开始******************
+2019-06-26 17:19:36,234 - framework - INFO - ******************测试开始******************
+2019-06-26 17:19:52,753 - framework - INFO - 输入用户名：admin
+2019-06-26 17:19:52,799 - framework - INFO - 输入密码：admin
+2019-06-26 17:19:52,838 - framework - INFO - 点击 登录  按钮
+2019-06-26 17:19:57,165 - framework - INFO - 成功上传logo的测试
+2019-06-26 17:19:57,166 - framework - INFO - 点击录播按钮
+2019-06-26 17:19:58,906 - framework - INFO - 上传logo
+2019-06-26 17:20:23,195 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 17:20:23,273 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 17:20:24,828 - framework - INFO - ******************测试开始******************
+2019-06-26 17:20:38,821 - framework - INFO - 输入用户名：admin
+2019-06-26 17:20:38,865 - framework - INFO - 输入密码：admin
+2019-06-26 17:20:38,893 - framework - INFO - 点击 登录  按钮
+2019-06-26 17:20:43,238 - framework - INFO - 成功上传logo的测试
+2019-06-26 17:20:43,239 - framework - INFO - 点击录播按钮
+2019-06-26 17:20:44,818 - framework - INFO - 上传logo
+2019-06-26 17:21:09,090 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-26 17:21:09,166 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 17:42:16,895 - framework - INFO - ******************测试开始******************
+2019-06-26 17:42:31,313 - framework - INFO - 输入用户名：admin
+2019-06-26 17:42:31,372 - framework - INFO - 输入密码：admin
+2019-06-26 17:42:31,405 - framework - INFO - 点击 登录  按钮
+2019-06-26 17:42:35,841 - framework - INFO - 成功上传logo的测试
+2019-06-26 17:42:35,843 - framework - INFO - 点击录播按钮
+2019-06-26 17:42:37,575 - framework - INFO - 上传logo
+2019-06-26 17:42:41,855 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 17:44:07,815 - framework - INFO - ******************测试开始******************
+2019-06-26 17:44:22,286 - framework - INFO - 输入用户名：admin
+2019-06-26 17:44:22,349 - framework - INFO - 输入密码：admin
+2019-06-26 17:44:22,375 - framework - INFO - 点击 登录  按钮
+2019-06-26 17:44:26,621 - framework - INFO - 成功上传logo的测试
+2019-06-26 17:44:26,624 - framework - INFO - 点击录播按钮
+2019-06-26 17:44:28,375 - framework - INFO - 上传logo
+2019-06-26 17:44:32,675 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 17:52:02,196 - framework - INFO - ******************测试开始******************
+2019-06-26 17:52:14,810 - framework - INFO - 输入用户名：admin
+2019-06-26 17:52:14,871 - framework - INFO - 输入密码：admin
+2019-06-26 17:52:14,907 - framework - INFO - 点击 登录  按钮
+2019-06-26 17:52:20,366 - framework - INFO - 成功上传logo的测试
+2019-06-26 17:52:20,367 - framework - INFO - 点击录播按钮
+2019-06-26 17:52:21,933 - framework - INFO - 上传logo
+2019-06-26 17:52:26,246 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 17:58:17,748 - framework - INFO - ******************测试开始******************
+2019-06-26 17:58:30,355 - framework - INFO - 输入用户名：admin
+2019-06-26 17:58:30,418 - framework - INFO - 输入密码：admin
+2019-06-26 17:58:30,441 - framework - INFO - 点击 登录  按钮
+2019-06-26 17:58:34,849 - framework - INFO - 上传logo失败的测试
+2019-06-26 17:58:34,850 - framework - INFO - 点击录播按钮
+2019-06-26 17:58:36,446 - framework - INFO - 上传logo
+2019-06-26 17:58:40,744 - framework - ERROR - 异常原因：'LOGO文件格式错误!' != '文件格式错误!'
+- LOGO文件格式错误!
+? ----
++ 文件格式错误!
+
+2019-06-26 17:58:40,845 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 17:58:42,460 - framework - INFO - ******************测试开始******************
+2019-06-26 17:58:55,540 - framework - INFO - 输入用户名：admin
+2019-06-26 17:58:55,596 - framework - INFO - 输入密码：admin
+2019-06-26 17:58:55,629 - framework - INFO - 点击 登录  按钮
+2019-06-26 17:59:00,147 - framework - INFO - 上传logo失败的测试
+2019-06-26 17:59:00,154 - framework - INFO - 点击录播按钮
+2019-06-26 18:13:26,308 - framework - INFO - ******************测试开始******************
+2019-06-26 18:13:46,288 - framework - INFO - 输入用户名：admin
+2019-06-26 18:13:46,337 - framework - INFO - 输入密码：admin
+2019-06-26 18:13:46,375 - framework - INFO - 点击 登录  按钮
+2019-06-26 18:13:50,823 - framework - INFO - 录制一段切换布局的视频
+2019-06-26 18:13:50,824 - framework - INFO - 点击录播按钮
+2019-06-26 18:13:52,135 - framework - INFO - 输入主题：切换布局录制
+2019-06-26 18:13:56,211 - framework - INFO - 输入主讲人：18:13:26
+2019-06-26 18:13:57,290 - framework - INFO - 点击开始录制
+2019-06-26 18:13:57,766 - framework - INFO - 切换预览的视窗
+2019-06-26 18:14:47,411 - framework - INFO - 点击停止录制按钮
+2019-06-26 18:14:54,926 - framework - INFO - 录制成功
+2019-06-26 18:14:54,946 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-26 18:16:23,588 - framework - INFO - ******************测试开始******************
+2019-06-26 18:16:37,310 - framework - INFO - 输入用户名：admin
+2019-06-26 18:16:37,365 - framework - INFO - 输入密码：admin
+2019-06-26 18:16:37,411 - framework - INFO - 点击 登录  按钮
+2019-06-26 18:16:42,073 - framework - INFO - 录制一段切换布局的视频
+2019-06-26 18:16:42,073 - framework - INFO - 点击录播按钮
+2019-06-26 18:16:43,435 - framework - INFO - 输入主题：切换布局录制
+2019-06-26 18:16:47,516 - framework - INFO - 输入主讲人：18:16:23
+2019-06-26 18:16:48,593 - framework - INFO - 点击开始录制
+2019-06-26 18:16:49,074 - framework - INFO - 切换预览的视窗
+2019-06-26 18:18:11,702 - framework - INFO - 点击停止录制按钮
+2019-06-26 18:18:19,181 - framework - INFO - 录制成功
+2019-06-26 18:18:19,207 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~

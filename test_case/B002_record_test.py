@@ -265,6 +265,7 @@ class Recorder(MyTest,Records,RecordPage):
             raise Exception("false")
         
     # def test_record_custom_quality(self):
+    #     '''自定义码流质量的录制'''
     #     records = Records(self.driver)
     #     records.record_custom_quality()
       

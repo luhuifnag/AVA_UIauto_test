@@ -19050,3 +19050,395 @@ JavaScript warning: http://192.168.13.123/admin/system/sysConfigure.js?_=0.21865
 [Child 1272, Chr
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1561537663589	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.Oi3mhTo41sqD"
+1561537664688	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561537664688	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561537664688	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561537667905	Marionette	INFO	Listening on port 51989
+1561537667922	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.123/admin/system/sysConfigure.js?_=0.3431115724912688, line 464: unreachable code after return statement
+1561537685019	Marionette	INFO	Stopped listening on port 51989
+[Parent 13876, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9284, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 117[Child 928436, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 11736, Chrome_Child[Parent 13876, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 2356, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 2356, Chr[GPU 7204, Chrome_Ch
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561537716629	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.vCpXsN8jZOUa"
+1561537717993	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561537717993	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561537717993	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561537721741	Marionette	INFO	Listening on port 52085
+1561537722148	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/system/sysConfigure.js?_=0.682465127747929, line 464: unreachable code after return statement
+1561537739515	Marionette	INFO	Stopped listening on port 52085
+[Parent 4316, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14380, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14380, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/bui[Child 16116, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16116, Chrome_ChildThr[Parent 4316, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561539487994	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.fExg0DfvzaMK"
+1561539489193	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561539489194	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561539489194	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561539494885	Marionette	INFO	Listening on port 53991
+1561539495137	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.9437468708253449, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.9437468708253449, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.9437468708253449, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.9437468708253449, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.9437468708253449, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.9437468708253449, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.9437468708253449, line 1278: unreachable code after return statement
+1561539532867	Marionette	INFO	Stopped listening on port 53991
+[Child 2300, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14[Child 23400,76, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14476, Chrome_Child[Parent 15224, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7864, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7864, Chrome_Child
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561539537763	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.bpzAtT9O7E0K"
+1561539539073	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561539539074	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561539539074	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561539542805	Marionette	INFO	Listening on port 54083
+1561539542966	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.25668608554487693, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.25668608554487693, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.25668608554487693, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.25668608554487693, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.25668608554487693, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.25668608554487693, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.25668608554487693, line 1278: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561481775439%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561539578089	Marionette	INFO	Stopped listening on port 54083
+[Child 12092, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/comm[Chion/ipc_channlel_wdin. cc,4 li1ne 2341,
+ Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 412, Chrome_Chi[Parent 17544, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13568, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13568, Ch[GPU 16404, C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561540018648	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.O7UPtaxUunuo"
+1561540019888	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561540020004	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561540020004	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561540028352	Marionette	INFO	Listening on port 54565
+1561540028498	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.8067794508026577, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.8067794508026577, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.8067794508026577, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.8067794508026577, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.8067794508026577, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.8067794508026577, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.8067794508026577, line 1278: unreachable code after return statement
+1561540063543	Marionette	INFO	Stopped listening on port 54565
+[Parent 10344, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16980, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chrom[Chiium/ld 5936, src/Chrochrome_Cme/chommon/iildThread] WARNING: pipe error:pc_ chan1nel_w09: in.cc, line 34f1i
+le z:/task_1559[Chi936ld 1101/698buil0, Cd/srhromc/ipe_Chilc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5936, Chrome_ChildThread] WAR[Parent 10344, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8100, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8100, Chrome_ChildThread] [GPU 14324
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561540068740	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.gXTAPP8pSCHg"
+1561540069363	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561540069363	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561540069363	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561540072980	Marionette	INFO	Listening on port 54654
+1561540073072	Marionette	WARN	TLS certificate errors will be ignored for this session
+1561540203795	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.pTv805LVsean"
+1561540204433	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561540204434	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561540204434	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561540207761	Marionette	INFO	Listening on port 54816
+1561540208124	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7703691759758698, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7703691759758698, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7703691759758698, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7703691759758698, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7703691759758698, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7703691759758698, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7703691759758698, line 1278: unreachable code after return statement
+1561540243379	Marionette	INFO	Stopped listening on port 54816
+[Parent 19236, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 19236, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14116, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[[Child 17848, ChChilromed 14_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 17848,[Parent 19236, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 19028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 19028, Chrome_Ch[G
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+PU 10564,
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561540248752	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.F0MZxIxVyB7k"
+1561540250062	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561540250064	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561540250064	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561540254363	Marionette	INFO	Listening on port 54897
+1561540254860	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7157411068026873, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7157411068026873, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7157411068026873, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7157411068026873, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7157411068026873, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7157411068026873, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7157411068026873, line 1278: unreachable code after return statement
+1561540290341	Marionette	INFO	Stopped listening on port 54897
+[Child 17296, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 17296, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10428, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10428, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 15100, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15820, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15820, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[GPU 12
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+424, Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561540354817	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.A5i6nUtiOEmx"
+1561540356445	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561540356445	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561540356445	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561540361216	Marionette	INFO	Listening on port 55043
+1561540361353	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.38291121522207194, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.38291121522207194, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.38291121522207194, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.38291121522207194, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.38291121522207194, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.38291121522207194, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.38291121522207194, line 1278: unreachable code after return statement
+1561540396748	Marionette	INFO	Stopped listening on port 55043
+[Parent 3220, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15056, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 34[Chil1d
+ 3280, Chro[Child 15056, Chme_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 3280, Chrome_Ch[Parent 3220, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[GP
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+U 7356, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561540401893	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.qqOkkn1QgxTC"
+1561540779311	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.DysRAdx0AJKK"
+1561540780520	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561540780521	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561540780521	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561540786085	Marionette	INFO	Listening on port 55545
+1561540786449	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.16067474783427282, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.16067474783427282, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.16067474783427282, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.16067474783427282, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.16067474783427282, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.16067474783427282, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.16067474783427282, line 1278: unreachable code after return statement
+1561540823278	Marionette	INFO	Stopped listening on port 55545
+[Parent 11688, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12468, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12468, Chrome_Ch[Child 7528, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7528, Chrome_[Parent 11688, Gecko_IOThread] WARNING: file z:/task_1559936101/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+[GPU 12784, Chrome_Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561540827883	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.Dre2jiASIuIq"
+1561540829017	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561540829018	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561540829018	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561540833635	Marionette	INFO	Listening on port 55647
+1561540833931	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.04460253497282485, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.04460253497282485, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.04460253497282485, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.04460253497282485, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.04460253497282485, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.04460253497282485, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.04460253497282485, line 1278: unreachable code after return statement
+1561540869169	Marionette	INFO	Stopped listening on port 55647
+[Parent 4340, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 19384, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 19384, Chrome_ChildThread] WARNING: pipe error: 109: file z:/ta[Child 736, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 736, Chrome_ChildThread][Parent 4340, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 2524, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 2524, Chr[GPU 16472, Chr
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561542139992	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.dy8MteSQEeYC"
+1561542141380	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561542141437	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561542141438	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561542145593	Marionette	INFO	Listening on port 57055
+1561542146089	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.461811010612709, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.461811010612709, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.461811010612709, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.461811010612709, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.461811010612709, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.461811010612709, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.461811010612709, line 1278: unreachable code after return statement
+1561542161858	Marionette	INFO	Stopped listening on port 57055
+[Child 7712, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channe[Cl_winhil.d 849cc, line 2, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559934136101
+/build/src/ipc[Chi/chrld 7omium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8492, Chrome_ChildThrea[Parent 7356, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 864, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 864, Chrome_ChildTh[GPU 18340
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+, Chr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561542251136	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.Vxch9kW6wdBM"
+1561542252625	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561542252626	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561542252626	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561542256712	Marionette	INFO	Listening on port 57209
+1561542256749	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.6000179288804347, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.6000179288804347, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.6000179288804347, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.6000179288804347, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.6000179288804347, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.6000179288804347, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.6000179288804347, line 1278: unreachable code after return statement
+1561542272679	Marionette	INFO	Stopped listening on port 57209
+[Child 10724, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10724, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/sr[Child 14328, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14328, Chrome_ChildThread] W[Parent 18780, Gecko_IOThread] WARNING: file z:/task_1559936101/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+[Child 4300, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 4300, Chrome_ChildThread] WARNING:[GPU 6008, C
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+h
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561542725459	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.dYLceaceHf7T"
+1561542726240	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561542726241	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561542726241	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561542729743	Marionette	INFO	Listening on port 57732
+1561542729790	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.969421847158889, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.969421847158889, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.969421847158889, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.969421847158889, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.969421847158889, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.969421847158889, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.969421847158889, line 1278: unreachable code after return statement
+1561542746252	Marionette	INFO	Stopped listening on port 57732
+[Child 17968, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_chan[Cnel_hild 77win.00, Chrcc, line 341
+ome_Chi[Child 17ldThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 7700, Chr[Parent 16964, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561543100831	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.zS9meDWOkrqN"
+1561543101549	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561543101549	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561543101549	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561543105269	Marionette	INFO	Listening on port 58150
+1561543105771	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.3945870714213775, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.3945870714213775, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.3945870714213775, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.3945870714213775, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.3945870714213775, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.3945870714213775, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.123/admin/playguide/playguide.1.js?_=0.3945870714213775, line 1278: unreachable code after return statement
+1561543120850	Marionette	INFO	Stopped listening on port 58150
+[Parent 480, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16744, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build[Parent 4/80, src/ipc/Gecko_IOThchroread]mium/src/ WARNING: pipec errhorr: o10m9:e f/ile z:/task_155common/ipc_chan9936101/build/src/ipc/nel_chrowin.miumcc, /src/chline 341
+rome/common/ip[Chic_chld 1674annel_win.cc, li4, nCehr o3me_Chi41
+[Child 8528, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8528, Chrome_ChildThread] [Parent 480, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10980, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10980, Chro[GPU 12400, Chr
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561543125561	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.FHGP3U91opAG"
+1561543126274	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561543126275	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561543126275	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561543130111	Marionette	INFO	Listening on port 58215
+1561543130759	Marionette	WARN	TLS certificate errors will be ignored for this session
+1561544009563	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.3J0Cnp15rIQt"
+1561544010351	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561544010351	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561544010352	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561544015901	Marionette	INFO	Listening on port 59121
+1561544016100	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.4049429050174971, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.4049429050174971, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.4049429050174971, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.4049429050174971, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.4049429050174971, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.4049429050174971, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.4049429050174971, line 1278: unreachable code after return statement
+1561544094950	Marionette	INFO	Stopped listening on port 59121
+[Parent 19084, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 19084, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13992, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13992, Chrom[Child 14928, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14928, Chrome_C[Parent 19084, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9172, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9172, Chrome[GP
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+U 12920, Chr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561544186671	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.4W7OSgXD6qmo"
+1561544188039	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561544188039	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561544188039	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561544192205	Marionette	INFO	Listening on port 59343
+1561544192275	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7526181573640032, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7526181573640032, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7526181573640032, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7526181573640032, line 6976: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7526181573640032, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7526181573640032, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.124/admin/playguide/playguide.1.js?_=0.7526181573640032, line 1278: unreachable code after return statement
+1561544299213	Marionette	INFO	Stopped listening on port 59343
+[Child 18704, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 18704, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 14076, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 14076, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[GPU 5744, Ch
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+r
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

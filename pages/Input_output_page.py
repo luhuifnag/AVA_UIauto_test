@@ -82,7 +82,7 @@ class InputOutput(BasePage):
     
     # 更改poc供电状态
     def change_poc_state(self):
-         self.not_poc()
+        self.not_poc()
         self.ensure()
         sleep(3)
         state1 = self.gettext(self.poc_state)
