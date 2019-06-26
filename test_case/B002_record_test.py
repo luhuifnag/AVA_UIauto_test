@@ -8,17 +8,19 @@ import os
 import unittest
 from time import sleep
 
+from selenium.webdriver.support import expected_conditions as ES
+from selenium.webdriver.support.ui import WebDriverWait
+
 from models import readconfig
 from models.myunit import MyTest
 from pages.home_page import HomePage
+from pages.Input_output_page import InputOutput
 from pages.loginpage import LoginPage
 from pages.record_page import RecordPage
 from pages.records import Records
 from pages.video_managemen import VideoManagemen
 from utils.log import logger
-from selenium.webdriver.support import expected_conditions as ES
-from selenium.webdriver.support.ui import WebDriverWait
-from pages.Input_output_page import InputOutput
+
 
 class Recorder(MyTest,Records,RecordPage):
     '''录制相关测试'''
@@ -271,4 +273,3 @@ class Recorder(MyTest,Records,RecordPage):
         
 if __name__ == "__main__":
    unittest.main()
- 

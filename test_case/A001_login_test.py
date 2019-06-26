@@ -5,7 +5,6 @@ Created on 2019年04月16日
 @author: Aloe
 '''
 
-import HTMLTestRunner
 import os
 import time
 import unittest
@@ -29,7 +28,6 @@ class LoginTest(MyTest,LoginPage):
     def setUp(self):
         logger.info(u"******************测试开始******************")
         self.driver = webdriver.Firefox()
-        # cls.driver = webdriver.Chrome()
         self.driver.get(readconfig.url)
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
