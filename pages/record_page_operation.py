@@ -48,6 +48,7 @@ class RecordOperation(RecordPage):
         self.select_windows_tags1()
         self.select_windows()
         self.start_recording("云台控制录制")
+        self.driver.maximize_window()
         sleep(2)
         self.click(self.manualbtn)
         self.PTZ_turning()

@@ -19,10 +19,9 @@ class RecordSet(BasePage):
     #录制参数标签按钮
     recordsetbtn = (By.PARTIAL_LINK_TEXT, "录制参数")
     # 主码流选择按钮
-    mainbtn = (By.XPATH,"//*[@id='main_quality']/a[1]/label/i")  
-
+    mainbtn = (By.XPATH,"//*[@id='main_quality']/a[1]/label") 
     # 自定义码流质量勾选按钮
-    customckb = (By.XPATH,"//*[@id='main_quality']/a[2]/label/i") 
+    customckb = (By.XPATH,"//*[@id='main_quality']/a[2]/label") 
     # 自定义码流质量按钮
     custombtn = (By.ID,"customQualityBtn")
     width = (By.ID, "width")
