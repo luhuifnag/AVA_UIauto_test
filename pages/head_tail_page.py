@@ -17,6 +17,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from models import readconfig
 
 class HeadTail(BasePage):
+    
     # 片头片尾标签按钮
     headtaibtn = (By.PARTIAL_LINK_TEXT, "片头片尾")
     # 片头上传按钮

@@ -291,6 +291,16 @@ class RecordPage(BasePage):
         self.click(subtitle)
         self.click(self.outputbtn)
 
+    # 获取每条字幕的内容
+    def get_subtitles(self):
+        self.click(self.drop_downbtn)
+        sleep(1)
+        subtitles = []
+        for i in range(5):
+            subtitle = (By.XPATH, "//*[@id='preosd_sel-menu']/li[%s]/div" % str(i+1))
+            subtitles.append(self.gettext(subtitle))
+        return subtitles
+
     # 编辑字幕
     def edit_subtitles(self,num,text="自定义的字幕ABC123"):
         self.click(self.drop_downbtn)
