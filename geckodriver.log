@@ -19896,3 +19896,247 @@ JavaScript warning: http://192.168.13.120/assets/libs/regular/regular.js, line 7
 [Child 12564, Chrome_ChildThrea[GPU 15228
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1561616245954	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.erK6q8hOLPIl"
+1561616247174	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561616247174	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561616247174	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561616250580	Marionette	INFO	Listening on port 59390
+1561616250887	Marionette	WARN	TLS certificate errors will be ignored for this session
+1561616263611	Marionette	INFO	Stopped listening on port 59390
+[Parent 16804, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 836, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 836, Chrome_ChildThread] [Parent 16804, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8464, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8464, Chrome_Chil[Parent 16804, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[G
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+PU 173
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561616269052	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.82NCj0udWOd5"
+1561616269838	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561616269839	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561616269839	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+[Child 9612, Main Thread] WARNING: failed to create pipe: 2: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 227
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x340001,name=PCompositorManager::Msg_PCompositorBridgeConstructor) Channel error: cannot send/recv
+
+[Child 9612, Main Thread] WARNING: failed to create pipe: 2: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 227
+[Child 9612, ImageBridgeChild] WARNING: failed to create pipe: 2: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 227
+[Child 9612, VideoChild] WARNING: failed to create pipe: 2: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 227
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x330030,name=PCompositorBridge::Msg_PLayerTransactionConstructor) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x59001B,name=PLayerTransaction::Msg_GetTextureFactoryIdentifier) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x59001E,name=PLayerTransaction::Msg_Shutdown) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x4C000D,name=PGPU::Msg_NewContentCompositorManager) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x4C000E,name=PGPU::Msg_NewContentImageBridge) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x4C000F,name=PGPU::Msg_NewContentVRManager) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x4C0010,name=PGPU::Msg_NewContentVideoDecoderManager) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x340001,name=PCompositorManager::Msg_PCompositorBridgeConstructor) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x33000C,name=PCompositorBridge::Msg_PCompositorWidgetConstructor) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x33000E,name=PCompositorBridge::Msg_Initialize) Channel error: cannot send/recv
+
+[GFX1-]: Failed to create remote compositor
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x4C001A,name=PGPU::Msg_ShutdownVR) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590015,name=PLayerTransaction::Msg_ClearCachedResources) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x950003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590006,name=PLayerTransaction::Msg_ReleaseCompositable) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x950003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590006,name=PLayerTransaction::Msg_ReleaseCompositable) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x950003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590006,name=PLayerTransaction::Msg_ReleaseCompositable) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590006,name=PLayerTransaction::Msg_ReleaseCompositable) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x59001E,name=PLayerTransaction::Msg_Shutdown) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x330017,name=PCompositorBridge::Msg_WillClose) Channel error: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 10612, Main Thread] WARNING: failed to create pipe: 2: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 227
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x340001,name=PCompositorManager::Msg_PCompositorBridgeConstructor) Channel error: cannot send/recv
+
+[Child 10612, Main Thread] WARNING: failed to create pipe: 2: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 227
+[Child 10612, ImageBridgeChild] WARNING: failed to create pipe: 2: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 227
+[Child 10612, VideoChild] WARNING: failed to create pipe: 2: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 227
+
+###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x330017,name=PCompositorBridge::Msg_WillClose) Channel error: cannot send/recv
+
+[Child 4052, Main Thread] WARNING: failed to create pipe: 2: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 227
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x340001,name=PCompositorManager::Msg_PCompositorBridgeConstructor) Channel error: cannot send/recv
+
+[Child 4052, ImageBridgeChild] WARNING: failed to create pipe: 2: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 227
+[Child 4052, Main Thread] WARNING: failed to create pipe: 2: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 227
+[Child 4052, VideoChild] WARNING: failed to create pipe: 2: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 227
+
+###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x330017,name=PCompositorBridge::Msg_WillClose) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1561616273642	Marionette	INFO	Listening on port 59450
+1561616274140	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 23: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
+[Parent 6592, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 6592, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 4052, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10612, [ChiCld 4052, Chrome_Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10612, Chrome_ChildThr[Parent 6592, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9612, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9612, Chrome_ChildThread] WARNING: JavaScript error: resource://gre/modules/JSONFile.jsm, line 159: Error: Data is not ready.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 674: Error: Phase "OS.File: Waiting for clients before profileBeforeChange" is finished, it is too late to register completion condition "Search service: shutting down"
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  UnknownError
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  UnknownError
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+1561616277013	Marionette	INFO	Stopped listening on port 59450
+1561616354098	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.Eq1AvKScuDUc"
+1561616354758	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561616354759	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561616354759	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561616358198	Marionette	INFO	Listening on port 59556
+1561616358432	Marionette	WARN	TLS certificate errors will be ignored for this session
+1561616370870	Marionette	INFO	Stopped listening on port 59556
+[Child 15904, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15904, Chrome_ChildTh[Child 9512, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9512, Chrome_ChildThrea[Parent 17360, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15508, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15508, Ch[GPU 1528, Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561616375721	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.oFuQDrwfZfbT"
+1561616376372	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561616376372	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561616376372	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561616379751	Marionette	INFO	Listening on port 59615
+1561616380066	Marionette	WARN	TLS certificate errors will be ignored for this session
+1561616391913	Marionette	INFO	Stopped listening on port 59615
+[Parent 11300, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16984, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16984, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task[Child 5732, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5732, Chrome_ChildTh[Parent 11300, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[GPU 1
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+012, Chrome_C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1561617173443	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.NTmGJS28ZXub"
+1561617174246	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561617174246	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561617174246	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561617178031	Marionette	INFO	Listening on port 60425
+1561617178377	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.5732579412687567, line 464: unreachable code after return statement
+1561617196593	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+openRemotePrompt@resource://gre/modules/Prompter.jsm:508:17
+openPrompt@resource://gre/modules/Prompter.jsm:542:17
+alert@resource://gre/modules/Prompter.jsm:615:14
+recOptionSaveAfter/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.9274816134229966:1055:25
+recOptionSaveAfter@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.9274816134229966:1069:13
+recOptionSave/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.9274816134229966:984:21
+recOptionSave@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.9274816134229966:989:13
+onclick@http://192.168.13.125/admin/system/recOptioncfg.1.html?_=0.9591464795342907:1:1
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:202:14
+webdriverClickElement@chrome://marionette/content/interaction.js:183:11
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.05921299727239793, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.05921299727239793, line 1278: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.05921299727239793, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.05921299727239793, line 7001: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.05921299727239793, line 3125: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.05921299727239793, line 545: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.05921299727239793, line 1278: unreachable code after return statement
+1561617209882	Marionette	INFO	Stopped listening on port 60425
+[Parent 7508, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14728, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child[Child  147214328, 0,Chrome_C Chrome_ChihildldThreaThred] Wad] WARNING: ARNING:pipe error: 109: file z:/task_1559936101/build/src[Parent 7508, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1992, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1992, Chrome_ChildThread] WARNING[GPU 4052, 
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Chrome_Child
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

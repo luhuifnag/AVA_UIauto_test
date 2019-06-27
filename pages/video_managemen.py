@@ -37,6 +37,8 @@ class VideoManagemen(BasePage):
     radio = (By.XPATH,"//*[@id='filesInfo']/tbody/tr[2]/td[1]/label/i")  #第一个文件的tr值为2，后面的以此类推
     #删除按钮
     delete = (By.ID,"delSelectFile")
+    # 第一个文件的ftp上传按钮
+    ftp = (By.XPATH, "//*[@id='filesInfo']/tbody/tr[2]/td[12]/a")
 
 
     #进入录制管理页面

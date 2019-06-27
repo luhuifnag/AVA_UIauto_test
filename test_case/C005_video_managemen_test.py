@@ -5,17 +5,23 @@ Created on 2019年05月14日
 @author: Aloe
 '''
 import os
+import re
 import unittest
 from time import sleep
-import re
+
+from selenium.webdriver.support import expected_conditions as ES
+from selenium.webdriver.support.ui import WebDriverWait
 
 from models import readconfig
 from models.myunit import MyTest
-from pages.home_page import HomePage
-from pages.video_managemen import VideoManagemen
-from pages.configure_video_page import VideoQuery
 from pages.basepage import BasePage
+from pages.configure_video_page import VideoQuery
+from pages.home_page import HomePage
+from pages.record_page import RecordPage
+from pages.recordset_page import RecordSet
+from pages.video_managemen import VideoManagemen
 from utils.log import logger
+
 
 class VideoTest(MyTest, VideoManagemen):
     '''录制管理相关测试'''
@@ -133,8 +139,33 @@ class VideoTest(MyTest, VideoManagemen):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test3_sortfile6.png'))
             raise Exception("false")
 
-
+    def test4_ftp(self):
+        '''ftp上传测试'''
+        try:
+            logger.info("ftp上传测试")
+            home = HomePage(self.driver)
+            recordset = RecordSet(self.driver)
+            home.swich_to_system_label(recordset.recordsetbtn,"录制参数") #进入到录制参数页面
+            recordset.uncheck_allmuti()
+            recordset.start_ftp()
+            recordset.ftp_input()
+            recordset.ensure()
+            home.click_system_setup_blck()
+            sleep(1)
+            self.check_recorder_massage()
+            self.click(self.ftp)
+            WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present())   
+            self.accept_alert()  
+            home.click_record_black()
+            sleep(1)
+            home.click_record()
+            sleep(5)
+            recordpage = RecordPage(self.driver)
+            self.assertIn(self.gettext(recordpage.ftp_status), "上传完成")
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_ftp.png'))
+            raise Exception("false")
 
 if __name__ == "__main__":
    unittest.main()
-

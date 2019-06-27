@@ -1575,3 +1575,47 @@ First differing element 0:
 2019-06-27 13:53:09,704 - framework - INFO - 不启动poc供电
 2019-06-27 13:53:12,809 - framework - INFO - 启动poc供电
 2019-06-27 13:53:43,120 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-27 14:17:22,880 - framework - INFO - ******************测试开始******************
+2019-06-27 14:17:35,922 - framework - INFO - 输入用户名：admin
+2019-06-27 14:17:35,986 - framework - INFO - 输入密码：admin
+2019-06-27 14:17:36,050 - framework - INFO - 点击 登录  按钮
+2019-06-27 14:17:41,121 - framework - INFO - ftp上传测试
+2019-06-27 14:17:41,122 - framework - INFO - 点击录像管理按钮
+2019-06-27 14:17:43,461 - framework - INFO - 点击录播页面返回按钮
+2019-06-27 14:17:43,488 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-27 14:17:43,606 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-27 14:17:45,989 - framework - INFO - ******************测试开始******************
+2019-06-27 14:19:10,838 - framework - INFO - ******************测试开始******************
+2019-06-27 14:19:23,822 - framework - INFO - 输入用户名：admin
+2019-06-27 14:19:23,897 - framework - INFO - 输入密码：admin
+2019-06-27 14:19:23,927 - framework - INFO - 点击 登录  按钮
+2019-06-27 14:19:28,419 - framework - INFO - ftp上传测试
+2019-06-27 14:19:28,420 - framework - INFO - 点击录像管理按钮
+2019-06-27 14:19:30,761 - framework - INFO - 点击录播页面返回按钮
+2019-06-27 14:19:30,775 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-27 14:19:30,866 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-27 14:19:32,652 - framework - INFO - ******************测试开始******************
+2019-06-27 14:19:44,828 - framework - INFO - 输入用户名：admin
+2019-06-27 14:19:44,884 - framework - INFO - 输入密码：admin
+2019-06-27 14:19:44,911 - framework - INFO - 点击 登录  按钮
+2019-06-27 14:19:49,388 - framework - INFO - ftp上传测试
+2019-06-27 14:19:49,389 - framework - INFO - 点击录像管理按钮
+2019-06-27 14:19:51,778 - framework - INFO - 点击录播页面返回按钮
+2019-06-27 14:19:51,803 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-27 14:19:51,909 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-27 14:32:50,391 - framework - INFO - ******************测试开始******************
+2019-06-27 14:33:03,391 - framework - INFO - 输入用户名：admin
+2019-06-27 14:33:03,447 - framework - INFO - 输入密码：admin
+2019-06-27 14:33:03,474 - framework - INFO - 点击 登录  按钮
+2019-06-27 14:33:08,088 - framework - INFO - ftp上传测试
+2019-06-27 14:33:08,089 - framework - INFO - 点击系统设置按钮
+2019-06-27 14:33:10,348 - framework - INFO - 点击应用设置
+2019-06-27 14:33:13,901 - framework - INFO - 点击录制参数标签
+2019-06-27 14:33:14,102 - framework - INFO - 不勾选所有多流录制按钮
+2019-06-27 14:33:15,536 - framework - INFO - 勾选ftp上传按钮
+2019-06-27 14:33:15,775 - framework - INFO - 勾选ftp上传按钮
+2019-06-27 14:33:18,162 - framework - INFO - 点击系统设置页面返回按钮
+2019-06-27 14:33:19,432 - framework - INFO - 点击录像管理按钮
+2019-06-27 14:33:23,217 - framework - INFO - 点击录播页面返回按钮
+2019-06-27 14:33:24,503 - framework - INFO - 点击录播按钮
+2019-06-27 14:33:29,877 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
