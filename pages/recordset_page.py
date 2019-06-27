@@ -158,7 +158,7 @@ class RecordSet(BasePage):
     # 启ftp上传
     def start_ftp(self):
         logger.info("勾选ftp上传按钮")
-        if self.getAttribute(self.ftpbtn, "class") == "checkbox g_checkbox g_checkbox-checked":
+        if self.getAttribute(self.ftpbtn, "class") == "checkbox  g_checkbox g_checkbox-checked":
             pass
         else:
             self.click(self.ftpbtn)
@@ -166,7 +166,6 @@ class RecordSet(BasePage):
     # 填写ftp信息
     def ftp_input(self, ftpUser="root", ftpPsw="gzava_a4s", ftpUrl="./", ftpIp="192.168.13.245", ftpPort="21"):
         self.start_ftp()
-        self.click(self.ftpbtn)
         self.clear(self.ftpUser)
         self.input_text(self.ftpUser, ftpUser)
         self.clear(self.ftpPsw)

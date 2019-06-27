@@ -24,6 +24,8 @@ class RecordPage(BasePage):
     now_time = datetime.datetime.now().strftime("%H:%M:%S")
     #记时器
     timer = (By.ID, "time")
+    #ftp上传状态
+    ftp_status = (By.ID, "ftpMsg")
     #录制按钮
     recordbtn = (By.ID, "video_rec")
     #停止录制的style属性值

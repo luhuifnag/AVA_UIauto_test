@@ -133,9 +133,10 @@ class Records(RecordPage,RecordSet):
         self.start_ftp()
         self.ftp_input()
         self.ensure()
+        home.click_system_setup_blck()
         sleep(1)
         home.click_record()
-        self.start_recording()
+        self.start_recording("ftp上传")
         sleep(10)
         self.stop_recording()
         
