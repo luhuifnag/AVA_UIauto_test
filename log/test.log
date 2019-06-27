@@ -1523,3 +1523,55 @@ First differing element 0:
 2019-06-27 10:20:41,624 - framework - INFO - 点击停止录制按钮
 2019-06-27 10:20:49,092 - framework - INFO - 录制成功
 2019-06-27 10:20:54,111 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-27 13:46:30,919 - framework - INFO - ******************测试开始******************
+2019-06-27 13:46:44,572 - framework - INFO - 输入用户名：admin
+2019-06-27 13:46:44,614 - framework - INFO - 输入密码：admin
+2019-06-27 13:46:44,643 - framework - INFO - 点击 登录  按钮
+2019-06-27 13:46:49,038 - framework - INFO - 更改poc供电状态测试'
+2019-06-27 13:46:49,039 - framework - INFO - 不启动poc供电
+2019-06-27 13:47:09,057 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-27 13:47:09,280 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-27 13:47:11,494 - framework - INFO - ******************测试开始******************
+2019-06-27 13:47:24,314 - framework - INFO - 输入用户名：admin
+2019-06-27 13:47:24,357 - framework - INFO - 输入密码：admin
+2019-06-27 13:47:24,390 - framework - INFO - 点击 登录  按钮
+2019-06-27 13:47:28,799 - framework - INFO - 更改poc供电状态测试'
+2019-06-27 13:47:28,800 - framework - INFO - 不启动poc供电
+2019-06-27 13:47:48,812 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-27 13:47:49,079 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-27 13:49:32,511 - framework - INFO - ******************测试开始******************
+2019-06-27 13:49:46,433 - framework - INFO - 输入用户名：admin
+2019-06-27 13:49:46,482 - framework - INFO - 输入密码：admin
+2019-06-27 13:49:46,516 - framework - INFO - 点击 登录  按钮
+2019-06-27 13:49:50,850 - framework - INFO - 更改poc供电状态测试'
+2019-06-27 13:49:50,851 - framework - INFO - 点击系统设置按钮
+2019-06-27 13:49:53,118 - framework - INFO - 点击应用设置
+2019-06-27 13:49:56,642 - framework - INFO - 点击输入输出标签
+2019-06-27 13:49:58,711 - framework - INFO - 不启动poc供电
+2019-06-27 13:50:01,894 - framework - INFO - 点击系统设置按钮
+2019-06-27 13:50:21,912 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-06-27 13:50:21,983 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-27 13:50:23,921 - framework - INFO - ******************测试开始******************
+2019-06-27 13:52:11,586 - framework - INFO - ******************测试开始******************
+2019-06-27 13:52:23,917 - framework - INFO - 输入用户名：admin
+2019-06-27 13:52:23,972 - framework - INFO - 输入密码：admin
+2019-06-27 13:52:23,998 - framework - INFO - 点击 登录  按钮
+2019-06-27 13:52:28,438 - framework - INFO - 更改poc供电状态测试'
+2019-06-27 13:52:28,439 - framework - INFO - 点击系统设置按钮
+2019-06-27 13:52:30,670 - framework - INFO - 点击应用设置
+2019-06-27 13:52:34,201 - framework - INFO - 点击输入输出标签
+2019-06-27 13:52:36,218 - framework - INFO - 不启动poc供电
+2019-06-27 13:52:41,549 - framework - ERROR - 异常原因：Message: 
+
+2019-06-27 13:52:41,618 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-06-27 13:52:44,062 - framework - INFO - ******************测试开始******************
+2019-06-27 13:52:57,412 - framework - INFO - 输入用户名：admin
+2019-06-27 13:52:57,456 - framework - INFO - 输入密码：admin
+2019-06-27 13:52:57,486 - framework - INFO - 点击 登录  按钮
+2019-06-27 13:53:01,827 - framework - INFO - 更改poc供电状态测试'
+2019-06-27 13:53:01,828 - framework - INFO - 点击系统设置按钮
+2019-06-27 13:53:04,085 - framework - INFO - 点击应用设置
+2019-06-27 13:53:07,638 - framework - INFO - 点击输入输出标签
+2019-06-27 13:53:09,704 - framework - INFO - 不启动poc供电
+2019-06-27 13:53:12,809 - framework - INFO - 启动poc供电
+2019-06-27 13:53:43,120 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~

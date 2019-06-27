@@ -39,7 +39,10 @@ class RecordOperationTest(MyTest, RecordOperation):
             logger.info("点击全自动按钮布局与变焦置灰的测试")
             self.select_auto()
             self.assertFalse(self.is_enabled(self.blendmodebtn))
-            self.assertFalse(self.is_enabled(self.ptzbtn))
+            try:
+                self.assertFalse(self.is_enabled(self.ptzbtn1))
+            except:
+                self.assertFalse(self.is_enabled(self.ptzbtn2))
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'select_auto.png'))
@@ -53,7 +56,10 @@ class RecordOperationTest(MyTest, RecordOperation):
         try:
             logger.info("点击半自动按钮变焦置灰的测试'")
             self.select_semiauto()
-            self.assertFalse(self.is_enabled(self.ptzbtn))
+            try:
+                self.assertFalse(self.is_enabled(self.ptzbtn1))
+            except:
+                self.assertFalse(self.is_enabled(self.ptzbtn2))
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_select_semiauto.png'))

@@ -23,6 +23,7 @@ class InputOutputTest(MyTest, InputOutput):
         '''更改poc供电状态测试'''
         try:
             logger.info("更改poc供电状态测试'")
+            self.getin_outin()
             state = self.change_poc_state()
             self.assertEqual(state, ('PoC未连接', 'PoC已连接'))
         except Exception as msg:

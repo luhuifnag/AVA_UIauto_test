@@ -107,10 +107,9 @@ class RecordPage(BasePage):
     # 静止按钮
     staticbtn = (By.XPATH, "//*[@id='subtitleView']/div/div/div[2]/div[3]/label[2]/i") 
    
-
-
     # 变焦
-    ptzbtn = (By.ID, "zoomMenu")
+    ptzbtn1 = (By.ID, "zoomMenu")
+    ptzbtn2 = (By.ID, "ptzMenu")
     # 快捷变焦的4个按钮
     focus1 = (By.XPATH,"//*[@id='c_zoom']/li[1]/img")
     focus2 = (By.XPATH,"//*[@id='c_zoom']/li[2]/img")
@@ -119,7 +118,6 @@ class RecordPage(BasePage):
 
     # 音量
     volumetn = (By.ID, "volumeMenu")
-
 
     # 云台的上、下、左、右控制按钮 
     '''
@@ -245,7 +243,10 @@ class RecordPage(BasePage):
     #点击云台四个变焦按钮
     def PTZ_fast_focusing(self):
         logger.info("控制快速变焦")
-        self.click(self.ptzbtn)
+        try:
+            self.click(self.ptzbtn1)
+        except:
+            self.click(self.ptzbtn2)
         sleep(2)
         self.click(self.focus4)
         sleep(5)

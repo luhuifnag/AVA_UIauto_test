@@ -27,7 +27,7 @@ class InputOutput(BasePage):
     # 缓冲时间
     buffertime = (By.ID, "bufferTime")
     # POC供电按钮
-    poc = (By.XPATH, "//*[@id='enableDiv']/div/label")
+    poc = (By.XPATH, "//*[@id='enableDiv']/div/label")  
     # POC供电状态
     poc_state = (By.XPATH, "//*[@id='connectState']/span")
     # 确认按钮
@@ -86,7 +86,6 @@ class InputOutput(BasePage):
         self.ensure()
         sleep(3)
         state1 = self.gettext(self.poc_state)
-        self.getin_outin()
         self.enable_poc()
         self.ensure()
         sleep(30)
