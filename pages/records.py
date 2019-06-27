@@ -125,6 +125,24 @@ class Records(RecordPage,RecordSet):
         self.stop_recording()
         return auto_status
 
+    # 录制一段带有教师行为分析文件的视频
+    def record_teacher_act(self):
+        home = HomePage(self.driver)
+        home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        self.start_teacher_act()
+        self.ensure()
+        home.click_system_setup_blck()
+        sleep(1)
+        home.click_record()
+        self.start_recording()
+        sleep(1)
+        self.click(self.manualbtn)
+        num = self.get_preview_num()
+        for i in range(1, num-1):
+            self.select_windows_tags1(i)
+            sleep(8)
+        self.stop_recording()
+
     # 启动ftp上传录制
     def record_start_ftp(self):
         home = HomePage(self.driver)

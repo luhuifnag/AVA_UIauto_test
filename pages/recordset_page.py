@@ -45,6 +45,8 @@ class RecordSet(BasePage):
     sub_stream5 = (By.XPATH,"//*[@id='others_body']/div[2]/label/i")
     # 启动全自动跟踪按钮
     au_racking = (By.XPATH,"//*[@id='startOption']/div/label[2]/i")
+    # 教师行为分析文件
+    teacher_act = (By.XPATH, "//*[@id='startOption']/div/label[5]")
     # ftp上传按钮
     ftpbtn = (By.XPATH,"//*[@id='autoUpload']/div[2]/div[1]/label")
     # 用户输入框
@@ -153,6 +155,14 @@ class RecordSet(BasePage):
         else:
             self.click(self.au_racking)
             logger.info(u"勾选启动自动跟踪") 
+
+    # 勾选教师行为分析文件按钮
+    def start_teacher_act(self):
+        if self.getAttribute(self.teacher_act,"class") =="checkbox g_checkbox g_checkbox-checked":
+            logger.info(u"已勾选教师行为分析文件按钮") 
+        else:
+            self.click(self.teacher_act)
+            logger.info(u"勾选教师行为分析文件按钮") 
 
     # 启ftp上传
     def start_ftp(self):
