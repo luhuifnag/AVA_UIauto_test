@@ -139,6 +139,16 @@ class RecordSet(BasePage):
             else:
                 pass
 
+    # 勾选其中一路多流录制
+    def check_a_allmuti(self, i):
+        multi_name = (By.XPATH, "//*[@id='multi_streams_con']/div[%s]/label" % str(i+1)) #i==1时表示第一个多流录制标签名
+        names = self.gettext(multi_name)
+        self.uncheck_allmuti()
+        mulsti = (By.XPATH, "//*[@id='multi_streams_con']/div[%s]/label" % str(i+1))
+        logger.info("勾选%s多流录制按钮" % names)
+        self.click(mulsti)
+        return names
+
     #启动全自动跟踪
     def strat_au_racking(self):
         if self.getAttribute(self.au_racking,"class") =="checkbox g_checkbox g_checkbox-checked":

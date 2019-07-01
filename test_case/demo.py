@@ -19,13 +19,14 @@ from pages.interaction_home_page import InteractionHmoe
 from pages.interaction_teaching_page import IterTeaching
 from utils.log import logger
 
-from models.status import Status
-
 class VideoTagTest(MyTest, VideoTag):
-
     def test1(self):
-        status = Status()
-        status.try_get_status()
+        for i in range(2):
+            print("2的测试")
+            self.test1()
+    
+    def test2(self):
+        print("1的测试")
 
         
 if __name__ == "__main__":

@@ -13,6 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from pages.basepage import BasePage
 from utils.log import logger
 from pages.home_page import HomePage
+from models import readconfig
 
 class InputOutput(BasePage):
 
@@ -21,7 +22,7 @@ class InputOutput(BasePage):
     # 网络多流按钮
     network = (By.XPATH, "//*[@id='multStream']/div/div/label[1]/i")
     # 本地多流按钮"
-    local = (By.XPATH, "//*[@id='multStream']/div/div/label[2]/i)")
+    local = (By.XPATH, "//*[@id='multStream']/div/div/label[2]/i")
     # url输入框
     urlinput = (By.ID, "url")
     # 缓冲时间
@@ -52,11 +53,23 @@ class InputOutput(BasePage):
         for i in range(tag_num):
             input_tag = (By.XPATH, "//*[@id='menus']/li[%s]" % str(i+1))
             self.click(input_tag)
+            sleep(1)
             self.click(self.network)
             self.clear(self.urlinput)
             self.input_text(self.urlinput, url)
             sleep(1)
             self.ensure()
+
+    # 只勾选其中的一路本地多流
+    def set_localmulti(self,i):
+        self.set_all_netmulti( readconfig.multiurl)
+        input_tag = (By.XPATH, "//*[@id='menus']/li[%s]" % str(i+1))
+        self.click(input_tag)
+        logger.info("勾选第%s路本地多流录制" % str(i+1))
+        self.click(self.local)
+        sleep(1)
+        self.ensure()
+
 
     # 启动poc供电
     def enable_poc(self):

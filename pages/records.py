@@ -110,7 +110,37 @@ class Records(RecordPage,RecordSet):
         sleep(10)
         self.stop_recording()
 
-       #录制时启用自动跟踪
+    
+    # 录制一路本地多流
+    def record_localmulti(self):
+        home = HomePage(self.driver)
+        home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        tag_num = self.get_multi_num()
+        for i in range(tag_num):
+            logger.info("~~~~~~开始新的本地多流录制~~~~~~~")
+            if i==0:
+                pass
+            else:
+                home.swich_to_system_label(self.recordsetbtn,"录制参数") 
+            theme = self.check_a_allmuti(i)
+            self.ensure()
+            self.driver.switch_to.default_content()
+            home.click_system_setup_blck()
+            sleep(1)
+            inputoutput = InputOutput(self.driver)
+            inputoutput.getin_outin()
+            inputoutput.set_localmulti(i)
+            self.driver.switch_to.default_content()
+            home.click_system_setup_blck()
+            sleep(1)
+            home.click_record()
+            self.start_recording("%s本地多流录制" % theme)
+            sleep(10)
+            self.stop_recording()
+            self.back()
+            sleep(1)
+
+    #录制时启用自动跟踪
     def record_strat_auacking(self):
         home = HomePage(self.driver)
         home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
