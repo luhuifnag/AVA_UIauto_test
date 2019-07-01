@@ -85,7 +85,6 @@ class RecordPage(BasePage):
     def success_message(self):
         divs = self.driver.find_elements_by_xpath("//*[@id='sysVersion']/div")
         num = len(divs)
-        print(num)
         message = (By.XPATH, "//*[@id='sysVersion']/div[%s]" % str(num-1))
         print(self.getAttribute(message,"textContent"))
         return self.getAttribute(message,"textContent")

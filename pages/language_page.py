@@ -57,7 +57,7 @@ class Languages(BasePage):
     # 切换为中文
     def switch_Chinese(self):
         home = HomePage(self.driver)
-        home.swich_to_basic_label(self.languagebtn2,"Language")
+        home.swich_to_basic_label(self.languagebtn2,"语言切换")
         sleep(2)
         self.choose_Chinese()
         sleep(1)
