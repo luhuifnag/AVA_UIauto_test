@@ -75,7 +75,7 @@ class HomePage(BasePage):
 
     def click_user_management(self):
         logger.info(u"点击用户管理")
-        user_management = (By.XPATH,"//*[@id='g_navs']/li[5]/a")
+        user_management = (By.XPATH,"//*[@id='g_navs']/li[5]/a") 
         self.click(user_management)
 
     def click_configure(self):
@@ -105,6 +105,7 @@ class HomePage(BasePage):
         self.click_application_settings()
         sleep(3)
         self.click(labelname)
+        sleep(1)
         logger.info(u"点击%s标签" % text)
         self.driver.switch_to.frame("content")    
 
@@ -116,9 +117,19 @@ class HomePage(BasePage):
         self.click_basic_setting()
         sleep(3)
         self.click(labelname)
+        sleep(1)
         logger.info(u"点击%s标签" % text)
         self.driver.switch_to.frame("content")
 
+
+    #进入到用户管理页面里面
+    def swich_to_user_label(self,labelname,text):
+        self.click_system_setup()
+        sleep(2)
+        self.click_user_management()
+        logger.info(u"点击%s标签" % text)
+        sleep(3)
+        
 
     #进入到快速配置设置的某个页面里面
     def swich_to_configure_label(self,labelname,text): 

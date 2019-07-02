@@ -34,7 +34,7 @@ class InteractionHmoe(BasePage):
     # 系统注册服务链接
     link = (By.XPATH, "//*[@id='sipModule']/div/div[1]/div/a")
     # 内置云勾选框
-    Built_in_cloud = (By.XPATH, "//*[@id='sipModule']/div/div[2]/div[1]/div/div[5]/div/label")
+    Built_in_cloud = (By.XPATH, "//*[@id='beforeCall_panel']/div[1]/div[2]/div[1]/div/div[1]/label")
     # 确认按钮
     login = (By.ID, "login")
 
@@ -46,7 +46,7 @@ class InteractionHmoe(BasePage):
     # 会议密码输入框
     confpasswd= (By.ID, "confpasswd")
     # 授课模式
-    Teaching = (By.XPATH, "//*[@id='beforeCall_panel']/div[1]/div[2]/div[1]/div/label/div")
+    Teaching = (By.XPATH, "//*[@id='beforeCall_panel']/div[1]/div[2]/div[1]/div/label/div")     
     # 会议模式
     Meeting = (By.XPATH, "//*[@id='beforeCall_panel']/div[1]/div[2]/div[2]/div/label")
     # 双流勾选框

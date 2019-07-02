@@ -145,7 +145,7 @@ class Recorder(MyTest,Records,RecordPage):
             home = HomePage(self.driver)
             video = VideoManagemen(self.driver)
             self.getinto_recordset()
-            self.record_main_and_sub(1,1,"720p","标清","主码流和子码流录制")
+            self.record_main_and_sub(2,2,"720p","标清","主码流和子码流录制")
             home.click_record_black()
             sleep(1)
             video.file_detailed(2)       
@@ -309,7 +309,7 @@ class Recorder(MyTest,Records,RecordPage):
             logger.info("录制成功")
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_ record_localmulti.png'))
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_localmulti.png'))
             raise Exception("false")
 
             

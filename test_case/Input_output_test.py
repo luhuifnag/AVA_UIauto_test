@@ -31,6 +31,19 @@ class InputOutputTest(MyTest, InputOutput):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_change_poc_state.png'))
             raise Exception("false")
         
+    def test_urldisabled(self):
+        '''选择本地多流时，URL不可编辑'''
+        try:
+            logger.info("选择本地多流时，URL不可编辑'")
+            self.getin_outin()
+            self.click(self.local)
+            sleep(1)
+            self.assertTrue(self.getAttribute(self.urlinput, "disabled"))
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_change_poc_state.png'))
+            raise Exception("false")
+
 
 
 if __name__ == "__main__":

@@ -51,8 +51,7 @@ class Languages(BasePage):
         self.click(self.surebtn)
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
         self.accept_alert()
-
-
+        sleep(2)
 
     # 切换为中文
     def switch_Chinese(self):

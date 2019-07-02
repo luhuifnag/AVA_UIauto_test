@@ -79,7 +79,6 @@ class Records(RecordPage,RecordSet):
     def record_custom_quality(self):
         home = HomePage(self.driver)
         home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
-        # self.get_status()
         self.custom_quality()
         sleep(1)
         self.ensure()

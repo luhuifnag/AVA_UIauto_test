@@ -32,8 +32,8 @@ class ModifyingNetworkTest(MyTest):
             sleep(3)
             gnetwork.check_automatic_ip()
             base = BasePage(self.driver)
-            self.assertFalse(base.is_enabled(gnetwork.netaddr1))
-            self.assertFalse(base.is_enabled(gnetwork.gateway1))
+            self.assertTrue(base.getAttribute(gnetwork.netaddr1, "disabled"))
+            self.assertTrue(base.getAttribute(gnetwork.gateway1, "disabled"))
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_not_operable.png'))

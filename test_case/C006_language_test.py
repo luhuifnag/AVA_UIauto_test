@@ -24,8 +24,8 @@ class LanguagesTest(MyTest, Languages):
         try:
             logger.info("切换成英文测试")
             self.switch_english()
-            sleep(5)
-            self.driver.switch_to.default_content()     
+            self.driver.refresh()
+            sleep(5)  
             self.driver.switch_to.frame("content")  
             self.assertEqual(self.gettext(self.tips), "Remark:The browser will automatically refresh!")    
         except Exception as msg:
@@ -41,6 +41,7 @@ class LanguagesTest(MyTest, Languages):
         try:
             logger.info("切换成中文测试")
             self.switch_Chinese()
+            self.driver.refresh()
             sleep(5)
             self.driver.switch_to.default_content()     
             self.driver.switch_to.frame("content")  
