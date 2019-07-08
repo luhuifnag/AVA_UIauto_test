@@ -129,7 +129,7 @@ class HomePage(BasePage):
         self.click_user_management()
         logger.info(u"点击%s标签" % text)
         sleep(3)
-        
+        self.driver.switch_to.frame("content")
 
     #进入到快速配置设置的某个页面里面
     def swich_to_configure_label(self,labelname,text): 

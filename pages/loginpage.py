@@ -45,9 +45,7 @@ class LoginPage(BasePage):
     #用户名或密码错误提示   
     def error_hint(self):
         return self.driver.switch_to.alert.text
-
-    
-    
+ 
         
     #普通登录    
     def login_sys(self,username,passwd):

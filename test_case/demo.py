@@ -18,15 +18,26 @@ from pages.record_page import RecordPage
 from pages.interaction_home_page import InteractionHmoe
 from pages.interaction_teaching_page import IterTeaching
 from utils.log import logger
+from ddt import ddt,file_data,unpack,data
 
-class VideoTagTest(MyTest, VideoTag):
-    def test1(self):
-        for i in range(2):
-            print("2的测试")
-            self.test1()
+@ddt
+class VideoTagTest(unittest.TestCase):
+
+    # @data("1","2")
+    data1 = ("1","2")
+    # def test1(self):
+    #     alist = []
+    #     for i in range(4):
+    #         alist.append(i)
+    #     data1 = alist
+        
+
+    @data(data1) 
+    @unpack
+    def test2(self, data):
+        print("%s的测试" % data)
+  
     
-    def test2(self):
-        print("1的测试")
 
         
 if __name__ == "__main__":
