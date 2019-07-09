@@ -42,7 +42,7 @@ class RecordSet(BasePage):
     #子码流质量选择下拉框
     sub_stream = (By.XPATH,"//*[@id='multi_quality-button']/span[1]") 
     # 启动子码流录制复选框
-    sub_stream5 = (By.XPATH,"//*[@id='others_body']/div[2]/label/i")
+    sub_stream5 = (By.XPATH,"//*[@id='autoRec']/..") 
     # 启动全自动跟踪按钮
     au_racking = (By.XPATH,"//*[@id='startOption']/div/label[2]/i")
     # 教师行为分析文件
@@ -97,11 +97,18 @@ class RecordSet(BasePage):
         
     # 勾选启动子码流录制按钮
     def start_up_sub_stream(self):
-        if self.is_selected(self.sub_stream5):
+        if self.getAttribute(self.sub_stream5, "class") == "checkbox g_checkbox g_checkbox-checked":
             logger.info(u"已勾选启动子码流录制按钮") 
         else:
             self.click(self.sub_stream5)
-            logger.info(u"勾选启动子码流录制按钮")       
+            logger.info(u"勾选启动子码流录制按钮")
+
+    # 不启动子码流录制按钮
+    def off_sub_stream(self):
+        if self.getAttribute(self.sub_stream5, "class") == "checkbox g_checkbox g_checkbox-checked":
+            self.click(self.sub_stream5) 
+        else:
+            pass
 
     # 设置子码流质量
     def set_sub_quality(self,num,quality="720p"):

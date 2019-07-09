@@ -118,7 +118,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             logger.info("上传logo失败的测试")
             self.upload_logo(readconfig.date_path+"\\logo_fail.bmp")
             message = self.success_message()
-            self.assertEqual(message,"LOGO文件格式错误!")
+            self.assertEqual(message,"LOGO文件尺寸过大!")
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path, 'test_upload_logo2.png'))

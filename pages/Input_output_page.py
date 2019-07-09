@@ -47,7 +47,7 @@ class InputOutput(BasePage):
         return int(preview_num)
 
     # 勾选所有网络多流，并填写网络多流地址
-    def set_all_netmulti(self, url):
+    def set_all_netmulti(self, url=readconfig.multiurl):
         tag_num = self.input_tag_num()
         logger.info("勾选所有网络多流并填写好地址")
         for i in range(tag_num):

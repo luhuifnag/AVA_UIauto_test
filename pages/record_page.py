@@ -285,10 +285,11 @@ class RecordPage(BasePage):
     def output_subtitles(self,num):
         self.click(self.drop_downbtn)
         sleep(1)
-        subtitle = (By.ID, "ui-id-%d" % num) #%d=11时表示第一个默认字幕
+        subtitle = (By.XPATH, "//*[@id='preosd_sel-menu']/li[%s]/div" % str(num)) #%s=1时表示第一个默认字幕
         self.move_to_element(subtitle)
         self.click(subtitle)
         self.click(self.outputbtn)
+        logger.info("输出第%d条字幕" % num)
 
     # 获取每条字幕的内容
     def get_subtitles(self):
@@ -296,18 +297,19 @@ class RecordPage(BasePage):
         sleep(1)
         subtitles = []
         for i in range(5):
-            subtitle = (By.XPATH, "//*[@id='preosd_sel-menu']/li[%s]/div" % str(i+1))
+            subtitle = (By.XPATH, "//*[@id='preosd_sel-menu']/li[%s]/div" % str(i+1)) #%s=1时表示第一个默认字幕
             subtitles.append(self.gettext(subtitle))
         return subtitles
 
     # 编辑字幕
     def edit_subtitles(self,num,text="自定义的字幕ABC123"):
         self.click(self.drop_downbtn)
-        subtitle = (By.ID, "ui-id-%d" % num) #%d=11时表示第一个默认字幕
+        subtitle = (By.XPATH, "//*[@id='preosd_sel-menu']/li[%s]/div" % str(num)) #%s=1时表示第一个默认字幕
         self.move_to_element(subtitle)
         self.click(subtitle)
         self.clear(self.osd_input) 
         self.input_text(self.osd_input,text)
+        logger.info("编辑第%d条字幕并输出" % num)
     
     # 选择显示字幕
     def select_showbtn(self):

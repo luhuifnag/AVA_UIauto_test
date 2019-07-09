@@ -158,6 +158,7 @@ class Records(RecordPage,RecordSet):
     def record_teacher_act(self):
         home = HomePage(self.driver)
         home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        self.off_sub_stream()
         self.start_teacher_act()
         self.ensure()
         home.click_system_setup_blck()

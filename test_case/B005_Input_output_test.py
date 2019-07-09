@@ -36,6 +36,8 @@ class InputOutputTest(MyTest, InputOutput):
         try:
             logger.info("选择本地多流时，URL不可编辑'")
             self.getin_outin()
+            self.set_all_netmulti()
+            logger.info("勾选本地多流")
             self.click(self.local)
             sleep(1)
             self.assertTrue(self.getAttribute(self.urlinput, "disabled"))

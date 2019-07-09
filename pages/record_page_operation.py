@@ -100,9 +100,9 @@ class RecordOperation(RecordPage):
         self.click(self.subtitlebtn)
         self.select_showbtn()  #显示字幕
         for i in range(3):   # 依次输出前3个默认字幕
-            self.output_subtitles(11+i)
+            self.output_subtitles(1+i)
             sleep(5)       
-        self.edit_subtitles(14)  # 编辑第四条字幕后输出
+        self.edit_subtitles(4)  # 编辑第四条字幕后输出
         self.click(self.outputbtn)
         sleep(5)
         self.select_hidebtn()  #隐藏字幕
