@@ -10,7 +10,6 @@ from time import sleep
 from selenium.webdriver.common.by import By
 from pages.basepage import BasePage
 from pages.home_page import HomePage
-from selenium.webdriver.support.ui import Select
 from utils.log import logger
 
 
