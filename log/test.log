@@ -478,3 +478,56 @@
 2019-07-10 09:42:40,039 - framework - INFO - 点击停止录制按钮
 2019-07-10 09:42:47,511 - framework - INFO - 录制成功
 2019-07-10 09:42:47,529 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-10 10:27:33,543 - framework - INFO - ******************测试开始******************
+2019-07-10 10:27:45,901 - framework - INFO - 输入用户名：admin
+2019-07-10 10:27:45,954 - framework - INFO - 输入密码：admin
+2019-07-10 10:27:45,982 - framework - INFO - 点击 登录  按钮
+2019-07-10 10:27:50,385 - framework - INFO - 录制一段控制云台的视频
+2019-07-10 10:27:50,386 - framework - INFO - 点击录播按钮
+2019-07-10 10:27:52,149 - framework - INFO - 输入主题：云台控制录制
+2019-07-10 10:27:56,213 - framework - INFO - 输入主讲人：10:27:33
+2019-07-10 10:27:57,284 - framework - INFO - 点击开始录制
+2019-07-10 10:28:00,771 - framework - INFO - 控制云台聚焦
+2019-07-10 10:28:20,805 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-07-10 10:28:20,900 - framework - INFO - 点击停止录制按钮
+2019-07-10 10:28:28,362 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-10 10:28:30,430 - framework - INFO - ******************测试开始******************
+2019-07-10 10:28:42,557 - framework - INFO - 输入用户名：admin
+2019-07-10 10:28:42,642 - framework - INFO - 输入密码：admin
+2019-07-10 10:28:42,668 - framework - INFO - 点击 登录  按钮
+2019-07-10 10:28:47,054 - framework - INFO - 录制一段控制云台的视频
+2019-07-10 10:28:47,056 - framework - INFO - 点击录播按钮
+2019-07-10 10:28:48,835 - framework - INFO - 输入主题：云台控制录制
+2019-07-10 10:28:52,889 - framework - INFO - 输入主讲人：10:27:33
+2019-07-10 10:28:53,934 - framework - INFO - 点击开始录制
+2019-07-10 10:28:57,423 - framework - INFO - 控制云台聚焦
+2019-07-10 10:29:17,445 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-07-10 10:29:17,523 - framework - INFO - 点击停止录制按钮
+2019-07-10 10:29:24,983 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-10 10:31:17,097 - framework - INFO - ******************测试开始******************
+2019-07-10 10:31:29,468 - framework - INFO - 输入用户名：admin
+2019-07-10 10:31:29,530 - framework - INFO - 输入密码：admin
+2019-07-10 10:31:29,565 - framework - INFO - 点击 登录  按钮
+2019-07-10 10:31:33,970 - framework - INFO - 录制一段控制云台的视频
+2019-07-10 10:31:33,971 - framework - INFO - 点击录播按钮
+2019-07-10 10:31:35,827 - framework - INFO - 输入主题：云台控制录制
+2019-07-10 10:31:39,889 - framework - INFO - 输入主讲人：10:31:17
+2019-07-10 10:31:40,957 - framework - INFO - 点击开始录制
+2019-07-10 10:31:44,449 - framework - INFO - 控制云台聚焦
+2019-07-10 10:32:04,459 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-07-10 10:32:04,541 - framework - INFO - 点击停止录制按钮
+2019-07-10 10:32:11,999 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-10 10:32:13,967 - framework - INFO - ******************测试开始******************
+2019-07-10 10:34:07,438 - framework - INFO - ******************测试开始******************
+2019-07-10 10:34:19,529 - framework - INFO - 输入用户名：admin
+2019-07-10 10:34:19,585 - framework - INFO - 输入密码：admin
+2019-07-10 10:34:19,613 - framework - INFO - 点击 登录  按钮
+2019-07-10 10:34:23,955 - framework - INFO - 录制一段控制云台的视频
+2019-07-10 10:34:23,956 - framework - INFO - 点击录播按钮
+2019-07-10 10:34:25,785 - framework - INFO - 输入主题：云台控制录制
+2019-07-10 10:34:29,851 - framework - INFO - 输入主讲人：10:34:07
+2019-07-10 10:34:30,914 - framework - INFO - 点击开始录制
+2019-07-10 10:34:34,399 - framework - INFO - 控制云台聚焦
+2019-07-10 10:34:45,559 - framework - INFO - 点击停止录制按钮
+2019-07-10 10:34:53,015 - framework - INFO - 录制成功
+2019-07-10 10:34:53,033 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~

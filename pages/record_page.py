@@ -275,10 +275,10 @@ class RecordPage(BasePage):
     # 控制云台的变焦
     def PTZ_focusing(self):
         logger.info("控制云台聚焦")
-        self.scroll_to_element(self.addbtn)
+        # self.scroll_to_element(self.addbtn)
         self.long_click(self.addbtn)
         sleep(2)
-        self.scroll_to_element(self.recordbtn)
+        # self.scroll_to_element(self.recordbtn)
         self.long_click(self.reducebtn)
         sleep(2)
 
