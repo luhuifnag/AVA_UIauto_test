@@ -48,13 +48,12 @@ class RecordOperation(RecordPage):
         self.select_windows_tags1()
         self.select_windows()
         self.start_recording("云台控制录制")
-        # self.driver.maximize_window()
         sleep(2)
         self.click(self.manualbtn)
         sleep(1)
-        self.PTZ_turning()
-        # self.PTZ_focusing() 
-        self.PTZ_fast_focusing()
+        # self.PTZ_turning()
+        self.PTZ_focusing() 
+        # self.PTZ_fast_focusing()
         self.stop_recording()
 
     # 录制一段切换布局的视频

@@ -277,10 +277,10 @@ class RecordPage(BasePage):
         logger.info("控制云台聚焦")
         self.scroll_to_element(self.addbtn)
         self.long_click(self.addbtn)
-        sleep(10)
+        sleep(2)
         self.scroll_to_element(self.recordbtn)
         self.long_click(self.reducebtn)
-        sleep(10)
+        sleep(2)
 
     # 调整云台的灵敏度
     def PTZ_sensitivity(self, xoffset, yoffset):
