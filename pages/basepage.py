@@ -118,6 +118,14 @@ class BasePage(object):
     def scroll_to_element(self,loc):
         element = self.find_element(loc)
         self.driver.execute_script("arguments[0].scrollIntoView();",element)
+
+    # 设置视窗的大小
+    def set_viewport_size(self,driver, width, height):
+        window_size = self.driver.execute_script("""
+            return [window.outerWidth - window.innerWidth + arguments[0],
+            window.outerHeight - window.innerHeight + arguments[1]];
+            """, width, height)
+        self.driver.set_window_size(*window_size)
     
     #某个预期元素是否被选中
     def is_selected(self,loc):
@@ -148,9 +156,4 @@ class BasePage(object):
         jp = "$('#frmVideoEdit > div:nth-child(23) > div > label > select').attr('disabled')"
         return self.driver.execute_script(jp)
 
-    def set_viewport_size(self,driver, width, height):
-        window_size = self.driver.execute_script("""
-            return [window.outerWidth - window.innerWidth + arguments[0],
-            window.outerHeight - window.innerHeight + arguments[1]];
-            """, width, height)
-        self.driver.set_window_size(*window_size)
+    

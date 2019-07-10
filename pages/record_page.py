@@ -148,6 +148,7 @@ class RecordPage(BasePage):
 
     # 获取预览视窗的名称
     def get_preview_tag(self):
+        self.set_viewport_size(self.driver,1920, 1080)
         num = self.get_preview_num()
         taglist = []
         for i in range(num):
@@ -275,7 +276,7 @@ class RecordPage(BasePage):
 
     # 控制云台的变焦
     def PTZ_focusing(self):
-        self.set_viewport_size(self.driver,1920, 1080)
+        self.set_viewport_size(self.driver,1920, 1080) 
         logger.info("控制云台拉近聚焦")
         self.scroll_to_element(self.addbtn)
         self.long_click(self.addbtn)
