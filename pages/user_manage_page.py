@@ -22,7 +22,7 @@ class UserMange(BasePage):
     # 添加用户按钮
     adduserbtn = (By.PARTIAL_LINK_TEXT, "添加用户")
     # 更改超级管理员密码按钮
-    changepwd = (By.PARTIAL_LINK_TEXT, "更改密码")
+    changepwd = (By.XPATH, "//*[@id='usersInfo_tbody']/tr[1]/td[9]/a")
     # 新密码输入框
     newpwd = (By.ID, "password")
     # 确认密码输出框
