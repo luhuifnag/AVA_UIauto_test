@@ -153,6 +153,7 @@ class RecordPage(BasePage):
         for i in range(num):
             tags = (By.XPATH, "//*[@id='videoLists']/li[%s]/div[1]/div" % str(i+1))
             sleep(1)
+            self.scroll_to_element(tags)
             taglist.append(self.gettext(tags))
         sleep(1)
         logger.info(taglist)
@@ -275,12 +276,14 @@ class RecordPage(BasePage):
     # 控制云台的变焦
     def PTZ_focusing(self):
         logger.info("控制云台拉近聚焦")
-        self.scroll_to_element(self.addbtn)
+        # self.scroll_to_element(self.addbtn)
+        self.scroll_to_down()
         sleep(1)
         self.long_click(self.addbtn)
         sleep(2)
         logger.info("控制云台拉远聚焦")
-        self.scroll_to_element(self.recordbtn)
+        # self.scroll_to_element(self.recordbtn)
+        self.scroll_to_down()
         sleep(1)
         self.long_click(self.reducebtn)
         sleep(2)
