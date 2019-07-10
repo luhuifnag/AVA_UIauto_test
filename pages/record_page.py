@@ -259,26 +259,26 @@ class RecordPage(BasePage):
     # 控制云台的方位转动
     def PTZ_turning(self):
         logger.info("控制云台上下左右转动")
-        self.move_to_element(self.up)
+        self.scroll_to_element(self.up)
         self.long_click(self.up)
         sleep(2)
-        self.move_to_element(self.down)
+        self.scroll_to_element(self.down)
         self.long_click(self.down)
         sleep(2)
-        self.move_to_element(self.left)
+        self.scroll_to_element(self.left)
         self.long_click(self.left)
         sleep(2)
-        self.move_to_element(self.right)
+        self.scroll_to_element(self.right)
         self.long_click(self.right)
         sleep(2)
 
     # 控制云台的变焦
     def PTZ_focusing(self):
         logger.info("控制云台聚焦")
-        self.move_to_element(self.addbtn)
+        self.scroll_to_element(self.addbtn)
         self.long_click(self.addbtn)
         sleep(10)
-        self.move_to_element(self.recordbtn)
+        self.scroll_to_element(self.recordbtn)
         self.long_click(self.reducebtn)
         sleep(10)
 
