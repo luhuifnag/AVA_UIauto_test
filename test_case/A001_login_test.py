@@ -28,7 +28,9 @@ class LoginTest(MyTest,LoginPage):
     def setUp(self):
         logger.info(u"******************测试开始******************")
         # self.driver = webdriver.Firefox()
-        self.driver = webdriver.Chrome()
+        option = webdriver.ChromeOptions()
+        option.add_argument("headless")
+        self.driver = webdriver.Chrome(chrome_options=option)
         self.driver.get(readconfig.url)
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
