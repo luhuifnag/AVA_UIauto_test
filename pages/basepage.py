@@ -147,3 +147,10 @@ class BasePage(object):
         #不可编辑属性测试
         jp = "$('#frmVideoEdit > div:nth-child(23) > div > label > select').attr('disabled')"
         return self.driver.execute_script(jp)
+
+    def set_viewport_size(self,driver, width, height):
+        window_size = self.driver.execute_script("""
+            return [window.outerWidth - window.innerWidth + arguments[0],
+            window.outerHeight - window.innerHeight + arguments[1]];
+            """, width, height)
+        self.driver.set_window_size(*window_size)

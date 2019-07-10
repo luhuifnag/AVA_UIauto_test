@@ -275,16 +275,13 @@ class RecordPage(BasePage):
 
     # 控制云台的变焦
     def PTZ_focusing(self):
+        self.set_viewport_size(self.driver,1920, 1080)
         logger.info("控制云台拉近聚焦")
-        # self.scroll_to_element(self.addbtn)
-        self.scroll_to_down()
-        sleep(1)
+        self.scroll_to_element(self.addbtn)
         self.long_click(self.addbtn)
         sleep(2)
         logger.info("控制云台拉远聚焦")
-        # self.scroll_to_element(self.recordbtn)
-        self.scroll_to_down()
-        sleep(1)
+        self.scroll_to_element(self.recordbtn)
         self.long_click(self.reducebtn)
         sleep(2)
 
