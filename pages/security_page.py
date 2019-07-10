@@ -20,7 +20,7 @@ class Security(BasePage):
     # 安全验证签按钮
     securitybtn = (By.PARTIAL_LINK_TEXT, "安全认证")
     # 启用安全验证勾选框
-    radio = (By.XPATH, "/html/body/div/div/div[2]/div[1]/label")
+    radio = (By.XPATH, "//*[@id='enable']/..") 
     # 秘钥显示框
     safetyCheckCode = (By.ID, "safetyCheckCode")
     # 生成秘钥按钮
@@ -32,7 +32,8 @@ class Security(BasePage):
     def start_security(self):
         home = HomePage(self.driver)
         home.swich_to_system_label(self.securitybtn, "安全验证")
-        if self.getAttribute(self.radio, "class") == "g_checkbox  g_checkbox-checked":
+        sleep(1)
+        if self.getAttribute(self.radio, "class") == "g_checkbox g_checkbox-checked":
             logger.info("已启用安全验证")
         else:
             self.click(self.radio)
@@ -47,7 +48,8 @@ class Security(BasePage):
     def off_security(self):
         home = HomePage(self.driver)
         home.swich_to_system_label(self.securitybtn, "安全验证")
-        if self.getAttribute(self.radio, "class") == "g_checkbox  g_checkbox-checked":
+        sleep(1)
+        if self.getAttribute(self.radio, "class") == "g_checkbox g_checkbox-checked":
             self.click(self.radio)
             logger.info("不启用安全验证")
         else:

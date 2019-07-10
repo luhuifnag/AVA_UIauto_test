@@ -41,7 +41,10 @@ class SecurityTest(MyTest, Security):
         try:
             logger.info("启用安全验证测试")
             self.start_security()
-            sleep(1)
+            sleep(2)
+            self.driver.refresh()
+            sleep(3)
+            self.driver.switch_to.frame("content")
             self.assertNotEqual(self.getValuetext(self.safetyCheckCode),"")
         except Exception as msg:
             logger.error(u"异常原因：%s" % msg)
@@ -53,6 +56,7 @@ class SecurityTest(MyTest, Security):
         try:
             logger.info("不启用安全验证测试")
             self.off_security()
+            sleep(2)
             self.driver.refresh()
             sleep(3)
             self.driver.switch_to.frame("content")

@@ -105,7 +105,7 @@ class HomePage(BasePage):
         self.click_application_settings()
         sleep(3)
         self.click(labelname)
-        sleep(1)
+        sleep(2)
         logger.info(u"点击%s标签" % text)
         self.driver.switch_to.frame("content")    
 
