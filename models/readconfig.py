@@ -38,6 +38,7 @@ defaulturl = conf.get("platform", "defaulturl")
 url = conf.get("platform", "url")
 newurl = conf.get("platform", "newurl")
 multiurl = conf.get("platform", "multiurl")
+liveurl = conf.get("platform", "liveurl")
 
 #rserver注册的相关参数
 rserverip = conf.get("rserver", "rserverip")

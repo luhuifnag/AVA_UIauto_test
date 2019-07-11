@@ -58,7 +58,6 @@ class RecordSet(BasePage):
     ftpIp = (By.ID,"ftpIp")
     # 端口输入框
     ftpPort = (By.ID,"ftpPort")
-
     #页面确认按钮
     sure = (By.XPATH,"/html/body/div[1]/div[3]/input")
 
