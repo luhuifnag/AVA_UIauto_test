@@ -763,3 +763,88 @@
 2019-07-10 19:45:13,071 - framework - INFO - 勾选 记住密码
 2019-07-10 19:45:13,127 - framework - INFO - 点击 登录  按钮
 2019-07-10 19:45:13,586 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-11 09:08:18,646 - framework - INFO - ******************测试开始******************
+2019-07-11 09:08:26,647 - framework - INFO - 输入用户名：admin
+2019-07-11 09:08:26,728 - framework - INFO - 输入密码：admin
+2019-07-11 09:08:26,777 - framework - INFO - 点击 登录  按钮
+2019-07-11 09:08:35,915 - framework - INFO - ******************测试开始******************
+2019-07-11 09:08:43,708 - framework - INFO - 输入用户名：admin
+2019-07-11 09:08:43,791 - framework - INFO - 输入密码：admin
+2019-07-11 09:08:43,840 - framework - INFO - 点击 登录  按钮
+2019-07-11 09:08:52,985 - framework - INFO - ******************测试开始******************
+2019-07-11 09:09:00,778 - framework - INFO - 输入用户名：admin
+2019-07-11 09:09:00,862 - framework - INFO - 输入密码：admin
+2019-07-11 09:09:00,907 - framework - INFO - 点击 登录  按钮
+2019-07-11 09:09:10,048 - framework - INFO - ******************测试开始******************
+2019-07-11 09:09:18,310 - framework - INFO - 输入用户名：admin
+2019-07-11 09:09:18,392 - framework - INFO - 输入密码：admin
+2019-07-11 09:09:18,436 - framework - INFO - 点击 登录  按钮
+2019-07-11 09:09:27,577 - framework - INFO - ******************测试开始******************
+2019-07-11 09:09:35,615 - framework - INFO - 输入用户名：admin
+2019-07-11 09:09:35,693 - framework - INFO - 输入密码：admin
+2019-07-11 09:09:35,739 - framework - INFO - 点击 登录  按钮
+2019-07-11 09:09:44,884 - framework - INFO - ******************测试开始******************
+2019-07-11 09:12:19,174 - framework - INFO - ******************测试开始******************
+2019-07-11 09:12:26,898 - framework - INFO - 输入用户名：admin
+2019-07-11 09:12:26,973 - framework - INFO - 输入密码：admin
+2019-07-11 09:12:27,014 - framework - INFO - 点击 登录  按钮
+2019-07-11 09:12:36,150 - framework - INFO - ******************测试开始******************
+2019-07-11 09:12:44,040 - framework - INFO - 输入用户名：admin
+2019-07-11 09:12:44,118 - framework - INFO - 输入密码：admin
+2019-07-11 09:12:44,160 - framework - INFO - 点击 登录  按钮
+2019-07-11 09:15:00,020 - framework - INFO - ******************测试开始******************
+2019-07-11 09:15:07,738 - framework - INFO - 输入用户名：admin
+2019-07-11 09:15:07,818 - framework - INFO - 输入密码：admin
+2019-07-11 09:15:07,858 - framework - INFO - 点击 登录  按钮
+2019-07-11 09:15:11,930 - framework - INFO - 关闭蜂鸣器的测试
+2019-07-11 09:15:11,931 - framework - INFO - 点击系统设置按钮
+2019-07-11 09:15:32,009 - framework - ERROR - 异常原因：Message: element not interactable
+  (Session info: headless chrome=74.0.3729.131)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+
+2019-07-11 09:15:32,251 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-11 09:15:34,308 - framework - INFO - ******************测试开始******************
+2019-07-11 09:15:42,074 - framework - INFO - 输入用户名：admin
+2019-07-11 09:15:42,154 - framework - INFO - 输入密码：admin
+2019-07-11 09:15:42,197 - framework - INFO - 点击 登录  按钮
+2019-07-11 09:15:46,265 - framework - INFO - 关闭蜂鸣器的测试
+2019-07-11 09:15:46,266 - framework - INFO - 点击系统设置按钮
+2019-07-11 09:16:06,306 - framework - ERROR - 异常原因：Message: element not interactable
+  (Session info: headless chrome=74.0.3729.131)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+
+2019-07-11 09:16:06,552 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-11 09:18:49,749 - framework - INFO - ******************测试开始******************
+2019-07-11 09:18:57,679 - framework - INFO - 输入用户名：admin
+2019-07-11 09:18:57,784 - framework - INFO - 输入密码：admin
+2019-07-11 09:18:57,841 - framework - INFO - 点击 登录  按钮
+2019-07-11 09:19:01,915 - framework - INFO - 关闭蜂鸣器的测试
+2019-07-11 09:19:01,915 - framework - INFO - 点击系统设置按钮
+2019-07-11 09:19:04,327 - framework - INFO - 点击基本设置
+2019-07-11 09:19:06,809 - framework - INFO - 点击关闭蜂蜜器
+2019-07-11 09:19:10,458 - framework - INFO - 
+            是否关闭蜂鸣器？
+        
+2019-07-11 09:19:10,466 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-11 09:19:41,486 - framework - INFO - ******************测试开始******************
+2019-07-11 09:19:49,457 - framework - INFO - 输入用户名：admin
+2019-07-11 09:19:49,535 - framework - INFO - 输入密码：admin
+2019-07-11 09:19:49,576 - framework - INFO - 点击 登录  按钮
+2019-07-11 09:19:53,649 - framework - INFO - 关闭蜂鸣器的测试
+2019-07-11 09:19:53,651 - framework - INFO - 点击系统设置按钮
+2019-07-11 09:20:13,725 - framework - ERROR - 异常原因：Message: element not interactable
+  (Session info: headless chrome=74.0.3729.131)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+
+2019-07-11 09:20:13,998 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-11 09:20:16,057 - framework - INFO - ******************测试开始******************
+2019-07-11 09:20:23,839 - framework - INFO - 输入用户名：admin
+2019-07-11 09:20:23,918 - framework - INFO - 输入密码：admin
+2019-07-11 09:20:23,963 - framework - INFO - 点击 登录  按钮
+2019-07-11 09:20:28,037 - framework - INFO - 关闭蜂鸣器的测试
+2019-07-11 09:20:28,038 - framework - INFO - 点击系统设置按钮
+2019-07-11 09:20:48,092 - framework - ERROR - 异常原因：Message: element not interactable
+  (Session info: headless chrome=74.0.3729.131)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+
+2019-07-11 09:20:48,340 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~

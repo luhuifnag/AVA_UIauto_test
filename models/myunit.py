@@ -23,6 +23,9 @@ class MyTest(unittest.TestCase):
     def setUp(self):
         logger.info(u"******************测试开始******************")
         # self.driver = webdriver.Firefox()
+        option = webdriver.ChromeOptions()
+        option.add_argument("headless")
+        # self.driver = webdriver.Chrome(chrome_options=option)
         self.driver = webdriver.Chrome()
         sleep(4)
         self.driver.maximize_window()
