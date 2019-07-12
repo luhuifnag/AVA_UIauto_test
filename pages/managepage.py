@@ -21,10 +21,6 @@ class Manage(BasePage):
 
     #关机按钮
     shutdownbtn = (By.XPATH, "//*[@id='shutdown']")
-    # 确认按钮
-    # sure = (By.XPATH, "/html/body/div[3]/div[3]/a[1]") 
-    sure = (By.XPATH, "//*[@class='layui-layer-btn0']") 
-
     #用户按钮
     userbtn = (By.ID, "user")
     #用户名信息
@@ -33,11 +29,12 @@ class Manage(BasePage):
     user_type = (By.XPATH, "//*[@id='userInfo']/div/div/div[3]/div[2]")
     #登录时间
     logtime = (By.XPATH, "//*[@id='userInfo']/div/div/div[4]/div[2]")
-
     # 录播按钮
     recordbtn = (By.XPATH,"//*[@id='content']/div[1]/a[1]")
     # 互动按钮
     interactionbtn = (By.XPATH,"//*[@id='content']/div[1]/a[2]")
+    # 确认按钮
+    sure = (By.XPATH, "//*[@class='layui-layer-btn0']") 
 
 
     #退出系统
@@ -113,7 +110,7 @@ class Manage(BasePage):
         self.click(self.recordbtn)
         sleep(1)
         recordpage = RecordPage(self.driver)
-        recordpage.start_or_stop_live()
+        recordpage.start_live()
         recordpage.back()
         sleep(2)
         self.click(recordpage.recording_back_conmit)

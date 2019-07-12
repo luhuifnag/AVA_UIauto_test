@@ -107,7 +107,7 @@ class ManageTest(MyTest,Manage):
             self.click(self.recordbtn)
             sleep(1)
             recordpage = RecordPage(self.driver)
-            recordpage.start_or_stop_live()
+            recordpage.stop_live()
 
 
 

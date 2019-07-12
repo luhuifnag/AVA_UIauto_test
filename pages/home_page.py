@@ -17,22 +17,26 @@ class HomePage(BasePage):
     def click_record(self):
         logger.info (u"点击录播按钮")
         record = (By.XPATH,"//*[@id='content']/div[1]/a[1]")
-        self.click(record)  
+        self.click(record)
+        sleep(2)  
 
     def click_record_black(self):
         logger.info(u"点击录播页面返回按钮")
         backbtn = (By.ID,"back")
         self.click(backbtn)
+        sleep(2) 
     
     def click_interaction(self):
         logger.info(u"点击互动按钮")
         interaction = (By.XPATH,"//*[@id='content']/div[1]/a[2]")
         self.click(interaction)
+        sleep(2) 
 
     def click_interaction_black(self):
         logger.info(u"点击互动页面返回按钮")
         backbtn = (By.ID,"back")
         self.click(backbtn)
+        sleep(2) 
 
     def click_video_managemen(self):
         logger.info (u"点击录像管理按钮")  
@@ -42,6 +46,7 @@ class HomePage(BasePage):
         logger.info (u"点击录像管理页面返回按钮")
         backbtn = (By.ID,"back")
         self.click(backbtn)
+        sleep(2) 
 
     def click_plug(self):
         logger.info(u"点击插件管理按钮")
@@ -52,6 +57,7 @@ class HomePage(BasePage):
         logger.info(u"点击插件管理页面返回按钮")
         backbtn = (By.XPATH,"//*[@id='back']")
         self.click(backbtn)
+        sleep(2) 
 
     def click_system_setup(self):
         logger.info(u"点击系统设置按钮")
@@ -62,6 +68,7 @@ class HomePage(BasePage):
         logger.info(u"点击系统设置页面返回按钮")
         backbtn = (By.ID,"back")
         self.click(backbtn)
+        sleep(2) 
 
     def click_application_settings(self):
         logger.info(u"点击应用设置")

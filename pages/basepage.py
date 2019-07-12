@@ -151,8 +151,8 @@ class BasePage(object):
     def is_selected_value(self,loc):
         return self.find_element(loc).is_selected()
     
-    def get_element_att(self,loc):
-        #不可编辑属性测试
+    #不可编辑属性测试
+    def get_element_att(self,loc):     
         jp = "$('#frmVideoEdit > div:nth-child(23) > div > label > select').attr('disabled')"
         return self.driver.execute_script(jp)
 

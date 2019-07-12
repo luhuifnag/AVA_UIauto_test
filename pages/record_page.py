@@ -81,13 +81,6 @@ class RecordPage(BasePage):
     logoRange = (By.ID,"logoRange")
     # 位置框内的logo
     logoDrag = (By.ID,"logoDrag")
-    # logo上成功提示
-    def success_message(self):
-        divs = self.driver.find_elements_by_xpath("//*[@id='sysVersion']/div")
-        num = len(divs)
-        message = (By.XPATH, "//*[@id='sysVersion']/div[%s]" % str(num-1))
-        print(self.getAttribute(message,"textContent"))
-        return self.getAttribute(message,"textContent")
 
     # 字幕
     subtitlebtn = (By.ID, "subtitleMenu")
@@ -205,11 +198,24 @@ class RecordPage(BasePage):
         self.click(sure)
         sleep(5)
     
-    # 开始/停止直播
-    def start_or_stop_live(self):
-        logger.info(u"点击直播按钮")
-        self.click(self.livebtn)
-        sleep(2)
+    # 开启直播
+    def start_live(self):
+        
+        if self.getAttribute(self.livebtn, "title") == "直播":
+            logger.info(u"开启直播")
+            self.click(self.livebtn)
+            sleep(2)
+        else:
+            pass
+
+    # 关闭直播
+    def stop_live(self):
+        if self.getAttribute(self.livebtn, "title") == "停止直播":
+            logger.info(u"停止直播")
+            self.click(self.livebtn)
+            sleep(2)
+        else:
+            pass        
 
     # 点击全自动按钮
     def click_autobtn(self):
@@ -241,6 +247,13 @@ class RecordPage(BasePage):
         windows_tags2 = (By.XPATH,"//*[@id='videoLists']/li[%d]/div[1]/div[1]" % num)   
         self.click(windows_tags2)
     
+     # logo上成功提示
+    def success_message(self):
+        divs = self.driver.find_elements_by_xpath("//*[@id='sysVersion']/div")
+        num = len(divs)
+        message = (By.XPATH, "//*[@id='sysVersion']/div[%s]" % str(num-1))
+        print(self.getAttribute(message,"textContent"))
+        return self.getAttribute(message,"textContent")
 
     #点击云台四个变焦按钮
     def PTZ_fast_focusing(self):
