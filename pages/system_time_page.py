@@ -45,6 +45,7 @@ class SystemTime(BasePage):
 
     # 不勾选自动同步网络时间
     def uncheck_automaticbtn(self):
+        logger.info("去勾选自动同步网络时间")
         if self.getAttribute(self.automaticbtn, "class")=="checkbox g_checkbox":
             pass
         else:
@@ -63,16 +64,13 @@ class SystemTime(BasePage):
             home = HomePage(self.driver)
             home.swich_to_basic_label(self.systemTimebtn,"系统时间")
             sleep(2)
-            unittest.assertIn("有效期：", self.gettext(self.Term))
+            self.assertIn("有效期", self.gettext(self.Term))      
             return True
         except:
             return False
 
     # 手动修改系统时间
     def manual_change_time(self):
-        home = HomePage(self.driver)
-        home.swich_to_basic_label(self.systemTimebtn,"系统时间")
-        sleep(2)
         self.uncheck_automaticbtn()
         Select(self.find_element(self.year)).select_by_visible_text("1970")
         Select(self.find_element(self.month)).select_by_visible_text("10")

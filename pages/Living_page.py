@@ -19,6 +19,10 @@ class Living(BasePage):
 
     #录制参数标签按钮
     livebtn = (By.PARTIAL_LINK_TEXT, "直播参数")
+    # 主码流编码方式下拉按钮
+    main_H = (By.XPATH, "//*[@id='h265_enable_main-button']/span[1]")
+    # 子码流编码方式下拉按钮
+    sub_H = (By.XPATH, "//*[@id='h265_enable_sub-button']/span[1]")
     # 主码流选择按钮
     mainbtn = (By.XPATH,"//*[@id='main_quality']/a[1]/label")
     # 主码流质量下拉按钮
@@ -40,6 +44,39 @@ class Living(BasePage):
         home = HomePage(self.driver)
         home.swich_to_system_label(self.livebtn,"直播参数") 
         sleep(2)
+
+     # 判断是否有H265    
+    def get_status(self):
+        try:
+            self.getin_live()
+            self.find_element(self.main_H)
+            return True
+        except:
+            return False
+
+    # 选择主码流的编码方式
+    def set_main_H(self, num=1):
+        self.click(self.main_H)
+        sleep(1)
+        if num == 1:   
+            logger.info(u"选择主码流编码方式为:h265")
+        else:
+             logger.info(u"选择主码流编码方式为:h264")
+        main_code = (By.XPATH,"//*[@id='h265_enable_main-menu']/li[%d]" % num)  #%d取值1、2分别对应的码流编码方式为H264\H265
+        self.move_to_element(main_code)
+        self.click(main_code) 
+
+    # 选择子码流的编码方式
+    def set_sub_H(self, num=1):
+        self.click(self.sub_H)
+        sleep(1)
+        if num == 1:   
+            logger.info(u"选择子码流编码方式为:h265")
+        else:
+             logger.info(u"选择子码流编码方式为:h264")
+        sub_code = (By.XPATH,"//*[@id='h265_enable_sub-menu']/li[%d]" % num)  #%d取值1、2分别对应的码流编码方式为H264\H265
+        self.move_to_element(sub_code)  
+        self.click(sub_code) 
 
     # 选择主码流质量
     def set_main_quality(self,num,quality="1080p"):
@@ -85,7 +122,7 @@ class Living(BasePage):
     # 推流地址的不可编辑状态
     def able_liveurl(self, num=0):  #num=0 时表示第一路推流地址
         live_input = (By.ID, "rtmpUrl_%s" % str(num))
-        return (self.get_element_att(live_input))
+        return (self.getAttribute(live_input,"disabled"))
 
     # 打开推流的锁
     def open_lock(self, num=3): #num=3 时表示第一路
@@ -149,7 +186,6 @@ class Living(BasePage):
 
     # 设置一路主码流和一路子码流的推流地址，并开启直播自动推流，且关闭集控推流
     def set_living(self):
-        self.getin_live()
         self.auto_push()
         self.input_liveurl()
         self.select_live_type("主码流")

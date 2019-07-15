@@ -1,34 +1,26 @@
-#coding:utf-8
-'''
-Created on 2019年04月16日
-
-@author: Aloe
-'''
-
-import time
 import unittest
-from time import sleep
+import functools
+class test000(unittest.TestCase):
 
-from selenium import webdriver
+    def skipTest(self,value):
+        def deco(function):
+            def wrapper(self, *args, **kwargs):
+                if not getattr(self, value):
+                    self.skipTest('跳过用例')
+                else:
+                    function(self, *args, **kwargs)
+            return wrapper
+        return deco
 
-class MyTest(unittest.TestCase):
+    def test0(self):
+        try:
+            2<3
+        except:
+            pass
 
-    def setUp(self):
-        # self.driver = webdriver.Firefox()
-        self.driver = webdriver.Chrome()
-        sleep(4)
-        self.driver.maximize_window()
-        self.driver.get("https://www.baidu.com/")
-        self.driver.implicitly_wait(20)
-  
-        
-   
-    def tearDown(self):
-        self.driver.quit()
-
-    def test1(self):
-        print("测试成功")
+    @skipTest("test0")
+    def test2(self):
+        print("123456")
             
-        
 if __name__ == "__main__":
    unittest.main()

@@ -23,10 +23,13 @@ from utils.log import logger
 class LivingTest(MyTest, Living):
     '''直播相关测试'''
 
+
+
     def test_main_sub_living(self):
         '''主码流和子码流的直播推流测试'''
         try:
             logger.info("主码流和子码流的直播推流测试")
+            self.getin_live()
             self.set_living()
             home = HomePage(self.driver)
             home.click_system_setup_blck()
@@ -47,10 +50,45 @@ class LivingTest(MyTest, Living):
             recordpage = RecordPage(self.driver)
             recordpage.stop_live()
 
-    def test_Living_change(self):
+    def test2_Living_change1(self):
+        '''在直播过程中更改主码流和子码流编码方式'''
+        if self.get_status(): 
+            try:
+                logger.info("在直播过程中更改主码流和子码流编码方式")
+                self.set_living()
+                home = HomePage(self.driver)
+                home.click_system_setup_blck()
+                mange = Manage(self.driver)
+                mange.interaction_constraints2() # 在直播过程中回到主页
+                self.getin_live()
+                for i in range(1,3):
+                    self.set_main_H(i)
+                    self.ensure()
+                    self.driver.switch_to.frame("content")
+                    self.assertEqual(self.check_live_state(3),"已开启")
+                for i in range(1,3):
+                    self.set_sub_H(i)
+                    self.ensure()
+                    self.driver.switch_to.frame("content")
+                    self.assertEqual(self.check_live_state(4),"已开启")
+            except Exception as msg:
+                logger.error(u"异常原因：%s"%msg)
+                self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_Living_change1.png'))
+                raise Exception("false")
+            finally:
+                self.driver.switch_to.default_content()
+                home.click_system_setup_blck()
+                home.click_record()
+                recordpage = RecordPage(self.driver)
+                recordpage.stop_live()
+        else:
+            pass
+
+    def test_Living_change2(self):
         '''在直播过程中更改主码流和子码流的质量'''
         try:
             logger.info("在直播过程中更改主码流和子码流的质量")
+            self.getin_live()
             self.set_living()
             home = HomePage(self.driver)
             home.click_system_setup_blck()
@@ -69,7 +107,7 @@ class LivingTest(MyTest, Living):
                 self.assertEqual(self.check_live_state(4),"已开启")
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_Living_change.png'))
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_Living_change2.png'))
             raise Exception("false")
         finally:
             self.driver.switch_to.default_content()
@@ -78,10 +116,11 @@ class LivingTest(MyTest, Living):
             recordpage = RecordPage(self.driver)
             recordpage.stop_live()
 
-    def test_Living_change2(self):
+    def test_Living_change3(self):
         '''在直播过程中更改推流类型'''
         try:
             logger.info("在直播过程中更改推流类型")
+            self.getin_live()
             self.set_living()
             home = HomePage(self.driver)
             home.click_system_setup_blck()
@@ -113,18 +152,18 @@ class LivingTest(MyTest, Living):
             recordpage = RecordPage(self.driver)
             recordpage.stop_live()
 
-    # def test_living_lock(self):
-    #     '''锁住后推流地址不可编辑的测试'''
-    #     try:
-    #         logger.info("在直播过程中更改推流类型")
-    #         self.getin_live()
-    #         self.off_lock()
-    #         sleep(1)
-    #         self.assertTrue(self.able_liveurl())
-    #     except Exception as msg:
-    #         logger.error(u"异常原因：%s"%msg)
-    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_living_lock.png'))
-    #         raise Exception("false")
+    def test_living_lock(self):
+        '''锁住后推流地址不可编辑的测试'''
+        try:
+            logger.info("在直播过程中更改推流类型")
+            self.getin_live()
+            self.off_lock()
+            sleep(1)
+            self.assertTrue(self.able_liveurl())
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_living_lock.png'))
+            raise Exception("false")
 
 
 

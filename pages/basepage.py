@@ -153,7 +153,6 @@ class BasePage(object):
     
     #不可编辑属性测试
     def get_element_att(self,loc):     
-        jp = "$('#frmVideoEdit > div:nth-child(23) > div > label > select').attr('disabled')"
-        return self.driver.execute_script(jp)
+        return self.getAttribute(loc,"disabled")  #d返回ture表示不可编辑
 
     
