@@ -21,7 +21,7 @@ class RecordOperation(RecordPage):
         home = HomePage(self.driver)
         home.click_record() 
         sleep(1)                
-        self.start_or_stop_live()
+        self.start_live()
         sleep(4)
         home.click_record_black()
         sleep(2)

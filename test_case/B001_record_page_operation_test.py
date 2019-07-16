@@ -31,7 +31,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path, 'test_living_back.png'))
             raise Exception("false")
         finally:
-            self.start_or_stop_live()
+            self.stop_live()
 
     def test2_select_auto(self):
         '''点击全自动按钮布局与变焦置灰的测试'''
