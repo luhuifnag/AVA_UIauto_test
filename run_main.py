@@ -33,6 +33,6 @@ if __name__ == '__main__':
     filename = report_path+'\\'+now+'result.html'
     with open(filename,'wb') as fp:
         runner = HTMLTestRunner.HTMLTestRunner(stream=fp,title='云互动UI自动化测试报告',description='环境：win10，firefox')
-        discover = unittest.defaultTestLoader.discover("test_case",pattern="B001*test.py",top_level_dir=None)
+        discover = unittest.defaultTestLoader.discover("test_case",pattern="B*test.py",top_level_dir=None)
         runner.run(discover)
         fp.close()

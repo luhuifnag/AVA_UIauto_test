@@ -79,10 +79,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_adjust_subtitles.png'))
             raise Exception("false")
         finally:
-            if self.getAttribute(self.recordbtn,"style")==self.stop_record_style():
-                pass
-            else:
-                self.stop_recording()
+            self.stop_recording()
 
     def test5_switching_layout(self):
         '''录制一段切换布局的视频'''  
@@ -95,10 +92,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_adjust_subtitles.png'))
             raise Exception("false")
         finally:
-            if self.getAttribute(self.recordbtn,"style")==self.stop_record_style():
-                pass
-            else:
-                self.stop_recording()
+            self.stop_recording()
 
     def test6_upload_logo(self):
         '''成功上传logo的测试'''
@@ -135,10 +129,7 @@ class RecordOperationTest(MyTest, RecordOperation):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_adjust_subtitles.png'))
             raise Exception("false")
         finally:
-            if self.getAttribute(self.recordbtn,"style")==self.stop_record_style():
-                pass
-            else:
-                self.stop_recording()
+            self.stop_recording()
  
             
 

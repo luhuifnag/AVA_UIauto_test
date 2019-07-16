@@ -30,7 +30,7 @@ class RecordPage(BasePage):
     recordbtn = (By.ID, "video_rec")
     #停止录制的style属性值
     def stop_record_style(self):
-        return "background: rgba(0, 0, 0, 0) url(\"/assets/images/main/ic_stop.png\") repeat scroll 0% 0%;"
+        return "ic_stop.png"
     #暂停录制按钮
     pausebtn = (By.ID, "video_pause")
     #录制时返回主页面的提示信息
@@ -192,11 +192,15 @@ class RecordPage(BasePage):
     #停止录制
     def stop_recording(self):
         logger.info(u"点击停止录制按钮")
-        self.click(self.recordbtn)
-        sleep(2)
-        sure = (By.XPATH, "//*[@class='layui-layer layui-layer-dialog']/div[3]/a[1]")
-        self.click(sure)
-        sleep(5)
+        # self.click(self.recordbtn)
+        if "ic_stop.png" in self.getAttribute(self.recordbtn,"style"):
+            pass
+        else:
+            self.click(self.recordbtn)
+            sleep(2)
+            sure = (By.XPATH, "//*[@class='layui-layer layui-layer-dialog']/div[3]/a[1]")
+            self.click(sure)
+            sleep(5)
     
     # 开启直播
     def start_live(self):

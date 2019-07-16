@@ -59,10 +59,7 @@ class Recorder(MyTest,Records,RecordPage):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_pause_recording1.png'))
             raise Exception("false")
         finally:
-            if self.getAttribute(self.recordbtn,"style")==self.stop_record_style():
-                pass
-            else:
-                self.stop_recording()
+            self.stop_recording()
 
     def test3_resume_recording(self):
         '''暂停后恢复录制测试'''
@@ -81,10 +78,7 @@ class Recorder(MyTest,Records,RecordPage):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_resume_recording.png'))
             raise Exception("false")
         finally:
-            if self.getAttribute(self.recordbtn,"style")==self.stop_record_style():
-                pass
-            else:
-                self.stop_recording()
+            self.stop_recording()
 
     def test4_recording_back(self):
         '''测试在录制过程中点击录播页面返回按钮，验证是否有提示信息''' 
@@ -99,10 +93,7 @@ class Recorder(MyTest,Records,RecordPage):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_recording_back.png'))
             raise Exception("false")
         finally:
-            if self.getAttribute(self.recordbtn,"style")==self.stop_record_style():
-                pass
-            else:
-                self.stop_recording()
+            self.stop_recording()
 
     def test5_main_1080p_and_sub_720p(self):
         '''主码流为1080p，子码流为720p的录制测试'''  
@@ -218,10 +209,7 @@ class Recorder(MyTest,Records,RecordPage):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_strat_auacking.png'))
             raise Exception("false")
         finally:
-            if self.getAttribute(self.recordbtn,"style")==self.stop_record_style():
-                pass
-            else:
-                self.stop_recording()
+           self.stop_recording()
 
     def test_record_teacher_act(self):
         '''教师行为分析文件的测试'''
