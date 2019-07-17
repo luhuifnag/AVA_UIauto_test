@@ -106,7 +106,6 @@ class InteractionTest2(MyTest, InteractionHmoe, IterTeaching):
             sleep(2)
             alist.append(self.gettext(self.meeting_no)[-8:])#截取会议号
             alist.append(re.sub(r"\D", "", self.gettext(self.meeting_pwd)))   #只保留数字
-            # print(alist)
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test2_join_meeting_meeting1.png'))
@@ -187,6 +186,8 @@ class InteractionTest2(MyTest, InteractionHmoe, IterTeaching):
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test4_join_failed.png'))
             raise Exception("false")
+
+
 
 if __name__ == "__main__":
 
