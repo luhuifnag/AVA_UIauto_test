@@ -37,6 +37,7 @@ date_path = os.path.join(BASE_PATH, 'date')
 defaulturl = conf.get("platform", "defaulturl")
 url = conf.get("platform", "url")
 newurl = conf.get("platform", "newurl")
+mainurl = conf.get("platform", "mainurl")
 multiurl = conf.get("platform", "multiurl")
 liveurl = conf.get("platform", "liveurl")
 

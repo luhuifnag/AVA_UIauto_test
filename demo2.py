@@ -1,16 +1,40 @@
+#coding:utf-8
+'''
+Created on 2019年04月16日
+
+@author: Aloe
+'''
+
+import time
 import unittest
-class A(unittest.TestCase):
+from time import sleep
 
-    _result = {}
+from selenium import webdriver
+from selenium.webdriver.support import expected_conditions as ES
+from selenium.webdriver.support.ui import WebDriverWait
 
-    def test_001(self):
-        self.x = 1
-        if self.x >= 0:
-            self._result['test_001'] = 'pass'
+from models import readconfig
+from pages.home_page import HomePage
+from pages.loginpage import LoginPage
+from utils.log import logger
 
-    @unittest.skipIf(_result['test_001'] == 'pass', '跳过')
-    def test_002(self):
-        pass
+class MyTest(unittest.TestCase):
 
-if __name__ == 'main':
+    def setUp(self):
+        logger.info(u"******************测试开始******************")
+        self.driver = webdriver.Firefox()
+        sleep(4)
+        self.driver.maximize_window()
+        self.driver.get("http://192.168.13.120/")
+        self.driver.implicitly_wait(20)
+        login = LoginPage(self.driver)
+        login.login_sys(readconfig.username, readconfig.password)
+        sleep(2)
+        WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统")) 
+    
+
+            
+if __name__ == "__main__":
+
     unittest.main()
+        

@@ -56,6 +56,21 @@ class InteractionHmoe(BasePage):
     # 取消按钮
     createMeetingCancel = (By.ID, "createMeetingCancel")
 
+    # 加入会议标签
+    join_metbtn = (By.PARTIAL_LINK_TEXT, "加入会议")
+    # 会议号输入框
+    join_confNumber = (By.ID, "join_confNumber")
+    # 密码输入框
+    join_confPass = (By.ID, "join_confPass")
+    # 加入会议下拉框
+    join_type = (By.XPATH, "//*[@id='join_type-button']/span[1]") 
+    # 确定按钮
+    joinBtn = (By.ID, "joinBtn")
+    # 加入会议失败的提示框文字
+    alert_text = (By.XPATH, "//*[@id='layui-layer2']/div[2]") 
+    # 加入会议失败的提示框确定按钮
+    alert_sure = (By.XPATH, "//*[@id='layui-layer2']/div[3]/a") 
+
     # 进入到互动页面
     def getin_interaction(self):
         home = HomePage(self.driver)
@@ -121,7 +136,6 @@ class InteractionHmoe(BasePage):
             self.input_text(callinput, ";")
             sleep(2)
 
-
     # 输入会议主题和密码
     def input_confName_confpasswd(self,name='',pwd='123456'):
         self.input_text(self.confName, name)
@@ -169,6 +183,15 @@ class InteractionHmoe(BasePage):
         self.input_call(*calls)
         self.click(self.callbtn)
         sleep(1)
+
+    # 加入会议协议选择
+    def selection_protocol(self, num=1):  #num=1、2、3分别表示ava、sip、h323协议
+        self.click(self.join_type)
+        sleep(1)
+        logger.info("选择互动协议")
+        type_option = (By.XPATH, "//*[@id='join_type-menu']/li[%d]" % num)  
+        self.move_to_element(type_option)
+        self.click(type_option)
 
 ############测试用例步骤#################
     # 创建一个没有主题和密码的授课模式的会议
@@ -268,3 +291,17 @@ class InteractionHmoe(BasePage):
         self.click(self.link)
         logger.info("转跳至系统设置-注册服务")
         sleep(2)
+
+    # 加入会议
+    def join_metting(self, connum, conppwd, num=1):
+        self.getin_interaction()
+        logger.info("点击加入会议")
+        self.click(self.join_metbtn)
+        logger.info("输入会议号：%s" % connum)
+        self.input_text(self.join_confNumber, connum)
+        logger.info("输入会议密码：%s" % conppwd)
+        self.input_text(self.join_confPass, conppwd)
+        self.selection_protocol(num)
+        sleep(1)
+        self.click(self.joinBtn)
+        sleep(10)
