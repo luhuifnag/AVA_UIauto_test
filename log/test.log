@@ -1778,3 +1778,73 @@
 2019-07-17 13:39:17,668 - framework - INFO - 点击 登录  按钮
 2019-07-17 13:39:22,184 - framework - INFO - 结束互动会议
 2019-07-17 13:39:27,658 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-17 14:17:11,204 - framework - INFO - ******************测试开始******************
+2019-07-17 14:17:29,093 - framework - INFO - 输入用户名：admin
+2019-07-17 14:17:29,143 - framework - INFO - 输入密码：admin
+2019-07-17 14:17:29,174 - framework - INFO - 点击 登录  按钮
+2019-07-17 14:17:33,565 - framework - INFO - 上电模式测试
+2019-07-17 14:17:33,567 - framework - INFO - 点击系统设置按钮
+2019-07-17 14:17:35,852 - framework - INFO - 点击基本设置
+2019-07-17 14:17:40,480 - framework - INFO - 点击系统时间标签
+2019-07-17 14:17:42,515 - framework - ERROR - 异常原因：Message: Element <input id="mode1" name="poweOnMode" type="radio"> could not be scrolled into view
+
+2019-07-17 14:17:42,584 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-17 14:17:44,514 - framework - INFO - ******************测试开始******************
+2019-07-17 14:17:57,886 - framework - INFO - 输入用户名：admin
+2019-07-17 14:17:57,958 - framework - INFO - 输入密码：admin
+2019-07-17 14:17:57,987 - framework - INFO - 点击 登录  按钮
+2019-07-17 14:18:02,441 - framework - INFO - 上电模式测试
+2019-07-17 14:18:02,442 - framework - INFO - 点击系统设置按钮
+2019-07-17 14:18:04,891 - framework - INFO - 点击基本设置
+2019-07-17 14:18:09,458 - framework - INFO - 点击系统时间标签
+2019-07-17 14:18:11,492 - framework - ERROR - 异常原因：Message: Element <input id="mode1" name="poweOnMode" type="radio"> could not be scrolled into view
+
+2019-07-17 14:18:11,541 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-17 14:22:33,776 - framework - INFO - ******************测试开始******************
+2019-07-17 14:22:47,168 - framework - INFO - 输入用户名：admin
+2019-07-17 14:22:47,231 - framework - INFO - 输入密码：admin
+2019-07-17 14:22:47,277 - framework - INFO - 点击 登录  按钮
+2019-07-17 14:22:51,693 - framework - INFO - 上电模式测试
+2019-07-17 14:22:51,694 - framework - INFO - 点击系统设置按钮
+2019-07-17 14:22:54,004 - framework - INFO - 点击基本设置
+2019-07-17 14:22:58,559 - framework - INFO - 点击上电模式标签
+2019-07-17 14:23:01,577 - framework - INFO - 选择上电模式
+2019-07-17 14:23:01,605 - framework - ERROR - 异常原因：Message: Element <input id="mode1" name="poweOnMode" type="radio"> could not be scrolled into view
+
+2019-07-17 14:23:01,664 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-17 14:23:03,794 - framework - INFO - ******************测试开始******************
+2019-07-17 14:23:17,686 - framework - INFO - 输入用户名：admin
+2019-07-17 14:23:17,737 - framework - INFO - 输入密码：admin
+2019-07-17 14:23:17,760 - framework - INFO - 点击 登录  按钮
+2019-07-17 14:23:22,235 - framework - INFO - 上电模式测试
+2019-07-17 14:23:22,236 - framework - INFO - 点击系统设置按钮
+2019-07-17 14:23:24,502 - framework - INFO - 点击基本设置
+2019-07-17 14:23:29,075 - framework - INFO - 点击上电模式标签
+2019-07-17 14:23:32,117 - framework - INFO - 选择上电模式
+2019-07-17 14:23:32,187 - framework - ERROR - 异常原因：Message: Element <input id="mode1" name="poweOnMode" type="radio"> could not be scrolled into view
+
+2019-07-17 14:23:32,287 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-17 14:24:21,870 - framework - INFO - ******************测试开始******************
+2019-07-17 14:24:35,241 - framework - INFO - 输入用户名：admin
+2019-07-17 14:24:35,305 - framework - INFO - 输入密码：admin
+2019-07-17 14:24:35,344 - framework - INFO - 点击 登录  按钮
+2019-07-17 14:24:40,128 - framework - INFO - 上电模式测试
+2019-07-17 14:24:40,129 - framework - INFO - 点击系统设置按钮
+2019-07-17 14:24:42,427 - framework - INFO - 点击基本设置
+2019-07-17 14:24:46,991 - framework - INFO - 点击上电模式标签
+2019-07-17 14:24:50,007 - framework - INFO - 选择上电模式
+2019-07-17 14:24:53,618 - framework - INFO - 选择上电模式
+2019-07-17 14:24:57,238 - framework - INFO - 选择上电模式
+2019-07-17 14:25:00,832 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-07-17 14:37:53,578 - framework - INFO - ******************测试开始******************
+2019-07-17 14:38:06,946 - framework - INFO - 输入用户名：admin
+2019-07-17 14:38:07,005 - framework - INFO - 输入密码：admin
+2019-07-17 14:38:07,044 - framework - INFO - 点击 登录  按钮
+2019-07-17 14:38:11,477 - framework - INFO - 上电模式测试
+2019-07-17 14:38:11,478 - framework - INFO - 点击系统设置按钮
+2019-07-17 14:38:13,753 - framework - INFO - 点击基本设置
+2019-07-17 14:38:18,330 - framework - INFO - 点击上电模式标签
+2019-07-17 14:38:21,347 - framework - INFO - 选择关机模式
+2019-07-17 14:38:24,978 - framework - INFO - 选择休眠模式
+2019-07-17 14:38:28,595 - framework - INFO - 选择上电模式
+2019-07-17 14:38:32,187 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~

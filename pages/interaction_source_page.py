@@ -41,9 +41,6 @@ class TnteractionSource(BasePage):
 
     # 选择互动视频源
     def choose_source(self, num=1):
-        # home = HomePage(self.driver)
-        # home.swich_to_system_label(self.Sourcebtn, "互动视频源")
-        # sleep(3)
         source_name = (By.XPATH, "//*[@id='classList']/li[%d]/label"  % num) #num=1时表示第一个互动视频源
         names = self.gettext(source_name)
         logger.info("勾选%s互动视频源" % names)

@@ -79,6 +79,7 @@ class TnteractionSourceTest(MyTest, InteractionHmoe, IterTeaching, TnteractionSo
         '''互动视频源的测试'''
         try:
             self.resetUp2()
+            logger.info("互动视频源的测试")
             home = HomePage(self.driver)
             home.swich_to_system_label(self.Sourcebtn, "互动视频源")
             sleep(3)
@@ -104,7 +105,6 @@ class TnteractionSourceTest(MyTest, InteractionHmoe, IterTeaching, TnteractionSo
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_intrsource2.png'))
             raise Exception("false")
         finally:
-            # self.stop_meeting()
             self.driver.get(readconfig.mainurl)
             self.driver.implicitly_wait(20)
             login = LoginPage(self.driver)
