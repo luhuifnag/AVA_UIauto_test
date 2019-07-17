@@ -51,6 +51,7 @@ machineName = conf.get("rserver", "machineName")
 Attendant1 = conf.get("Attendant", "Attendant1")
 Attendant2 = conf.get("Attendant", "Attendant2")
 Attendant3 = conf.get("Attendant", "Attendant3")
+offAttendant1 = conf.get("Attendant", "offAttendant1")
 
 # 更改前的网络参数
 netaddr1 = conf.get("network","netaddr1")

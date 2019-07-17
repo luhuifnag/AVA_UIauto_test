@@ -1,11 +1,5 @@
-alist = [] 
+alist = ["123","456"] 
+def a (*s):
+    print("nadakdp%s" % (s,))
 
-def a():
-    global alist
-    alist = [] 
-    alist.append("10")
-
-def b():
-    print(alist)
-a()
-b()
+a("123","dada")

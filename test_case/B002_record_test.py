@@ -300,6 +300,11 @@ class Recorder(MyTest,Records,RecordPage):
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_localmulti.png'))
             raise Exception("false")
+        finally:
+            try:
+                self.stop_recording()
+            except:
+                pass
 
             
         

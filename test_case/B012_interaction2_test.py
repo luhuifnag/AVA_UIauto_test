@@ -22,7 +22,7 @@ from utils.log import logger
 from pages.home_page import HomePage
 from pages.loginpage import LoginPage
 
-class InteractionTest2(MyTest, InteractionHmoe, IterTeaching):
+class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
     '''互动页面的测试'''
     
     def setUp(self):

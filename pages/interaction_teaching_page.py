@@ -29,11 +29,38 @@ class IterTeaching(BasePage):
     doubletag = (By.XPATH, "//*[@id='baseController']/div[1]/div[1]/label")
     # 返回按钮
     backbtn = (By.XPATH, "//*[@id='header']/div[2]")
+    # 全场禁言按钮
+    conferenceAllMute = (By.ID,"conferenceAllMute")
+    # 添加用户按钮
+    addInteractUser = (By.ID,"addInteractUser")
     # 退出会议按钮
     intera_stop = (By.ID, "intera_stop")
     # 退出会议的确定按钮
-    sure2 = (By.XPATH, "//*[@id='layui-layer1']/div[3]/a[1]")
+    sure2 = (By.PARTIAL_LINK_TEXT, "确定")
+    # 添加用户输入框
+    callinput = (By.XPATH, "//*[@id='callinput']/div/input")
+    # 添加按钮
+    addNew = (By.ID, "addNew")
 
+    # 获取用户列表的数量
+    def get_usernum(self):
+        users = self.driver.find_elements_by_xpath("//*[@id='interactUserList']/li")
+        usernum = len(users)
+        return int(usernum)
+
+    # 获取听课的昵称
+    def get_username(self, num=1):
+        names = (By.XPATH, "//*[@id='interactUserList']/li[%d]/div" % num)
+        return self.getInnerHTML(names)
+
+    # 判断听课用户是被成功添加
+    def judge_Success_added(self, num=2):
+        try:
+           names = (By.XPATH, "//*[@id='interactUserList']/li[%d]/div/span" % num)
+           self.find_element(names) 
+           return True
+        except:
+            return False
 
     # 获取预览视窗的个数
     def get_preview_num(self):
@@ -58,3 +85,32 @@ class IterTeaching(BasePage):
         sleep(2)
         self.click(self.sure2)
         sleep(3)
+
+    #添加听课
+    def addlistener(self, listener):
+        self.click(self.addInteractUser)
+        sleep(2)
+        self.driver.switch_to.frame("layui-layer-iframe1")
+        logger.info("添加听课：%s"% listener)
+        self.input_text(self.callinput, listener)
+        sleep(1)
+        self.click(self.addNew)
+        WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
+        self.accept_alert()
+        self.driver.switch_to.default_content()
+
+    # 移除听课
+    def remove_listener(self, num=2):
+        logger.info("移除第%s个听课" % str(num-1))
+        removebtn = (By.XPATH, "//*[@id='interactUserList']/li[%d]/div/i[2]" % num)
+        self.click(removebtn)
+        sleep(2)
+
+    # 彻底删除听课
+    def del_listener(self, num=2):
+        logger.info("删除第%s个听课" % str(num-1))
+        removebtn = (By.XPATH, "//*[@id='interactUserList']/li[%d]/div/i[2]" % num)
+        self.click(removebtn)
+        sleep(2)
+        self.click(removebtn)
+        sleep(2)

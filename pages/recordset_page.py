@@ -148,6 +148,7 @@ class RecordSet(BasePage):
     def check_a_allmuti(self, i):
         multi_name = (By.XPATH, "//*[@id='multi_streams_con']/div[%s]/label" % str(i+1)) #i==1时表示第一个多流录制标签名
         names = self.gettext(multi_name)
+        self.off_sub_stream()
         self.uncheck_allmuti()
         mulsti = (By.XPATH, "//*[@id='multi_streams_con']/div[%s]/label" % str(i+1))
         logger.info("勾选%s多流录制按钮" % names)

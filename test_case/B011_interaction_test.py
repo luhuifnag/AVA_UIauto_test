@@ -21,7 +21,7 @@ from pages.sys_register_page import Register
 from utils.log import logger
 from pages.home_page import HomePage
 
-class InteractionTest(MyTest, InteractionHmoe, IterTeaching):
+class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
     '''互动页面的测试'''
 
     def test_create_teaching_meeting(self):
@@ -80,9 +80,7 @@ class InteractionTest(MyTest, InteractionHmoe, IterTeaching):
     #     '''创建一个有三个在线听课的授课模式的会议测试''' 
     #     try:
     #         logger.info("创建一个有三个在线听课的授课模式的会议测")
-    #         # self.create_teaching_meeting(readconfig.Attendant1+";"+readconfig.Attendant2+";"+readconfig.Attendant3)
-    #         Attendants = ["auto01","auto02","auto03"]
-    #         self.create_teaching_meeting(Attendants)
+    #         self.create_teaching_meeting("auto01","45646")
     #         sleep(2)
     #         self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
     #         self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "%s_CONF" % readconfig.name)

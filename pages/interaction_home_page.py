@@ -14,6 +14,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from pages.basepage import BasePage
 from pages.home_page import HomePage
 from utils.log import logger
+from selenium.webdriver.common.keys import Keys
 
 class InteractionHmoe(BasePage):
 
@@ -125,16 +126,23 @@ class InteractionHmoe(BasePage):
         else:
             logger.info("未注册rserver")
 
-    # 输入听课设备
+    # # 输入听课设备
     def input_call(self, *calls):
-        logger.info("输入已选用户%s" % (calls,) )
-        blist = list(*calls)
-        num = len(*calls)
-        for i in range(1, num):
+        logger.info("输入已选用户%s" % (calls,))
+        num = len(calls)
+        for i in range(1, num+1):
             callinput = (By.XPATH, "//*[@id='callinput']/div[%d]/input" % i) 
-            self.input_text(callinput, blist[i-1])
+            self.click(callinput)
+            self.find_element(callinput).send_keys(Keys.ENTER)  
+            self.input_text(callinput, calls[i-1])
             self.input_text(callinput, ";")
-            sleep(2)
+            sleep(1)
+
+    # def input_call(self, *calls):
+    #     logger.info("输入已选用户%s" % (calls,) )
+    #     callinput = (By.XPATH, "//*[@id='callinput']/div[1]/input") 
+    #     self.input_text(callinput, *calls)
+      
 
     # 输入会议主题和密码
     def input_confName_confpasswd(self,name='',pwd='123456'):
