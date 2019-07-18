@@ -195,7 +195,7 @@ class InteractionHmoe(BasePage):
     # 加入会议协议选择
     def selection_protocol(self, num=1):  #num=1、2、3分别表示ava、sip、h323协议
         self.click(self.join_type)
-        sleep(1)
+        sleep(2)
         logger.info("选择互动协议")
         type_option = (By.XPATH, "//*[@id='join_type-menu']/li[%d]" % num)  
         self.move_to_element(type_option)
@@ -312,4 +312,4 @@ class InteractionHmoe(BasePage):
         self.selection_protocol(num)
         sleep(1)
         self.click(self.joinBtn)
-        sleep(10)
+        sleep(15)
