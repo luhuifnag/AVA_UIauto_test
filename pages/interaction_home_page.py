@@ -311,5 +311,12 @@ class InteractionHmoe(BasePage):
         self.input_text(self.join_confPass, conppwd)
         self.selection_protocol(num)
         sleep(1)
+        logger.info("点击加入会议")
         self.click(self.joinBtn)
-        sleep(15)
+        self.driver.implicitly_wait(15)
+        try:
+            WebDriverWait(self.driver,5,0.5).until(ES.presence_of_element_located(self.alert_text)) 
+            logger.info(self.gettext(self.alert_text))
+            self.click(self.alert_sure)
+        except:
+            pass
