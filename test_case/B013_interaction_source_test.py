@@ -97,6 +97,7 @@ class TnteractionSourceTest(MyTest, InteractionHmoe, IterTeaching, TnteractionSo
                 sleep(1)
                 self.join_metting(alist[0], alist[1])
                 sleep(2)
+                self.set_viewport_size(self.driver,1920, 1080)
                 listen = IterListening(self.driver)
                 self.assertEqual(self.gettext(listen.lissource), sourcename)
                 self.stop_meeting()
@@ -105,12 +106,7 @@ class TnteractionSourceTest(MyTest, InteractionHmoe, IterTeaching, TnteractionSo
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_intrsource2.png'))
             raise Exception("false")
         finally:
-            self.driver.get(readconfig.mainurl)
-            self.driver.implicitly_wait(20)
-            login = LoginPage(self.driver)
-            login.login_sys(readconfig.username, readconfig.password)
-            sleep(2)
-            self.stop_meeting()  #把主讲的会议给退出来
+            self.stop_two_meeting()
 
             
         

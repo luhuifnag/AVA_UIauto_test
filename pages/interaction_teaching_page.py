@@ -14,6 +14,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from pages.basepage import BasePage
 from pages.home_page import HomePage
 from utils.log import logger
+from pages.loginpage import LoginPage
+from models import readconfig
 
 class IterTeaching(BasePage):
 
@@ -85,6 +87,19 @@ class IterTeaching(BasePage):
         sleep(2)
         self.click(self.sure2)
         sleep(3)
+
+    def stop_two_meeting(self):
+        try:
+            self.stop_meeting()  #把听课的会议给退出来
+        except:
+            logger.info("结束会议失败")
+        finally:
+            self.driver.get(readconfig.mainurl)
+            self.driver.implicitly_wait(20)
+            login = LoginPage(self.driver)
+            login.login_sys(readconfig.username, readconfig.password)
+            sleep(2)
+            self.stop_meeting()  #把主讲的会议给退出来
 
     #添加听课
     def addlistener(self, listener):

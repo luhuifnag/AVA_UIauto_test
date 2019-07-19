@@ -55,19 +55,6 @@ class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
 
     alist = [] #创建一个全局变量来存放主讲的会议号和密码
 
-    def stop_two_meeting(self):
-        try:
-            self.stop_meeting()  #把听课的会议给退出来
-        except:
-            logger.info("结束会议失败")
-        finally:
-            self.driver.get(readconfig.mainurl)
-            self.driver.implicitly_wait(20)
-            login = LoginPage(self.driver)
-            login.login_sys(readconfig.username, readconfig.password)
-            sleep(2)
-            self.stop_meeting()  #把主讲的会议给退出来
-
     def test1_join_teaching_meeting1(self): 
         '''创建一个被加入的授课模式会议'''
         global alist

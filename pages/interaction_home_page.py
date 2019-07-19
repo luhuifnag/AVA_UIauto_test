@@ -16,6 +16,7 @@ from pages.home_page import HomePage
 from utils.log import logger
 from selenium.webdriver.common.keys import Keys
 
+
 class InteractionHmoe(BasePage):
 
     # 已选用户输入框
@@ -320,3 +321,5 @@ class InteractionHmoe(BasePage):
             self.click(self.alert_sure)
         except:
             pass
+
+    
