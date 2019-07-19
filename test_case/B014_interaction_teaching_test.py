@@ -41,53 +41,53 @@ class IterTeachingTest(MyTest, InteractionHmoe, IterTeaching):
         finally:
             self.stop_meeting()
 
-    # def test2_offline_addlistener(self):
-    #     '''在会议中添加一个不在线的听课'''
-    #     try:
-    #         logger.info("在会议中添加一个不在线的听课")
-    #         self.create_teaching_meeting("")
-    #         sleep(2)
-    #         self.addlistener("offline")
-    #         sleep(5)
-    #         self.assertEqual(self.get_usernum(), 2)
-    #         self.assertFalse(self.judge_Success_added())
-    #     except Exception as msg:
-    #         logger.error(u"异常原因：%s"%msg)
-    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_offline_addlistener.png'))
-    #         raise Exception("false")
-    #     finally:
-    #         self.stop_meeting()
+    def test2_offline_addlistener(self):
+        '''在会议中添加一个不在线的听课'''
+        try:
+            logger.info("在会议中添加一个不在线的听课")
+            self.create_teaching_meeting("")
+            sleep(2)
+            self.addlistener("offline")
+            sleep(5)
+            self.assertEqual(self.get_usernum(), 2)
+            self.assertFalse(self.judge_Success_added())
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_offline_addlistener.png'))
+            raise Exception("false")
+        finally:
+            self.stop_meeting()
 
-    # def test3_remove_listener(self):
-    #     '''移除听课的测试'''
-    #     try:
-    #         logger.info("移除听课的测试")
-    #         self.create_teaching_meeting(readconfig.Attendant1)
-    #         sleep(2)
-    #         self.remove_listener()
-    #         self.assertEqual(self.get_usernum(), 2)
-    #         self.assertFalse(self.judge_Success_added())
-    #     except Exception as msg:
-    #         logger.error(u"异常原因：%s"%msg)
-    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_remove_listener.png'))
-    #         raise Exception("false")
-    #     finally:
-    #         self.stop_meeting()
+    def test3_remove_listener(self):
+        '''移除听课的测试'''
+        try:
+            logger.info("移除听课的测试")
+            self.create_teaching_meeting(readconfig.Attendant1)
+            sleep(2)
+            self.remove_listener()
+            self.assertEqual(self.get_usernum(), 2)
+            self.assertFalse(self.judge_Success_added())
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_remove_listener.png'))
+            raise Exception("false")
+        finally:
+            self.stop_meeting()
 
-    # def test4_del_listener(self):
-    #     '''删除在线的听课的测试'''
-    #     try:
-    #         logger.info("删除在线的听课的测试")
-    #         self.create_teaching_meeting(readconfig.Attendant1)
-    #         sleep(2)
-    #         self.del_listener()
-    #         self.assertEqual(self.get_usernum(), 1)
-    #     except Exception as msg:
-    #         logger.error(u"异常原因：%s"%msg)
-    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_del_listener.png'))
-    #         raise Exception("false")
-    #     finally:
-    #         self.stop_meeting()
+    def test4_del_listener(self):
+        '''删除在线的听课的测试'''
+        try:
+            logger.info("删除在线的听课的测试")
+            self.create_teaching_meeting(readconfig.Attendant1)
+            sleep(2)
+            self.del_listener()
+            self.assertEqual(self.get_usernum(), 1)
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_del_listener.png'))
+            raise Exception("false")
+        finally:
+            self.stop_meeting()
 
 if __name__ == "__main__":
 
