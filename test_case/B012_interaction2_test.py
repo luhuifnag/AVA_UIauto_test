@@ -55,84 +55,85 @@ class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
 
     alist = [] #创建一个全局变量来存放主讲的会议号和密码
 
-    # def test1_join_teaching_meeting1(self): 
-    #     '''创建一个被加入的授课模式会议'''
-    #     global alist
-    #     alist = [] 
-    #     try:
-    #         self.resetUp1()
-    #         logger.info("创建一个被加入的授课模式会议")
-    #         self.create_teaching_meeting("")
-    #         sleep(2)
-    #         alist.append(self.gettext(self.meeting_no)[-8:])#截取会议号
-    #         alist.append(re.sub(r"\D", "", self.gettext(self.meeting_pwd)))   #只保留数字
-    #         print(alist)
-    #     except Exception as msg:
-    #         logger.error(u"异常原因：%s"%msg)
-    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_join_teaching_meeting1.png'))
-    #         raise Exception("false")
+    def stop_two_meeting(self):
+        try:
+            self.stop_meeting()  #把听课的会议给退出来
+        except:
+            logger.info("结束会议失败")
+        finally:
+            self.driver.get(readconfig.mainurl)
+            self.driver.implicitly_wait(20)
+            login = LoginPage(self.driver)
+            login.login_sys(readconfig.username, readconfig.password)
+            sleep(2)
+            self.stop_meeting()  #把主讲的会议给退出来
 
-    # def test1_join_teaching_meeting2(self):
-    #     '''加入一个授课模式会议'''
-    #     try:
-    #         self.resetUp2()
-    #         logger.info("加入一个授课模式会议")
-    #         self.join_metting(alist[0], alist[1])
-    #         sleep(2)
-    #         self.assertEqual(self.gettext(self.meeting_typle), "听课模式")
-    #         self.assertIn(alist[0], self.gettext(self.meeting_no))
-    #         self.assertIn(alist[1], self.gettext(self.meeting_pwd))
-    #     except Exception as msg:
-    #         logger.error(u"异常原因：%s"%msg)
-    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_join_teaching_meeting2.png'))
-    #         raise Exception("false")
-    #     finally:
-    #         self.stop_meeting()
-    #         self.driver.get(readconfig.mainurl)
-    #         self.driver.implicitly_wait(20)
-    #         login = LoginPage(self.driver)
-    #         login.login_sys(readconfig.username, readconfig.password)
-    #         sleep(2)
-    #         self.stop_meeting()  #把主讲的会议给退出来
+    def test1_join_teaching_meeting1(self): 
+        '''创建一个被加入的授课模式会议'''
+        global alist
+        alist = [] 
+        try:
+            self.resetUp1()
+            logger.info("创建一个被加入的授课模式会议")
+            self.create_teaching_meeting("")
+            sleep(2)
+            alist.append(self.gettext(self.meeting_no)[-8:])#截取会议号
+            alist.append(re.sub(r"\D", "", self.gettext(self.meeting_pwd)))   #只保留数字
+            print(alist)
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_join_teaching_meeting1.png'))
+            raise Exception("false")
 
-    # def test2_join_meeting_meeting1(self): 
-    #     '''创建一个被加入的会议模式会议'''
-    #     global alist
-    #     alist = [] 
-    #     try:
-    #         self.resetUp1()
-    #         logger.info("创建一个被加入的会议模式会议")
-    #         self.create_meeting_meeting("")
-    #         sleep(2)
-    #         alist.append(self.gettext(self.meeting_no)[-8:])#截取会议号
-    #         alist.append(re.sub(r"\D", "", self.gettext(self.meeting_pwd)))   #只保留数字
-    #     except Exception as msg:
-    #         logger.error(u"异常原因：%s"%msg)
-    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test2_join_meeting_meeting1.png'))
-    #         raise Exception("false")
+    def test1_join_teaching_meeting2(self):
+        '''加入一个授课模式会议'''
+        try:
+            self.resetUp2()
+            logger.info("加入一个授课模式会议")
+            self.join_metting(alist[0], alist[1])
+            sleep(2)
+            self.assertEqual(self.gettext(self.meeting_typle), "听课模式")
+            self.assertIn(alist[0], self.gettext(self.meeting_no))
+            self.assertIn(alist[1], self.gettext(self.meeting_pwd))
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_join_teaching_meeting2.png'))
+            raise Exception("false")
+        finally:
+            self.stop_two_meeting()
 
-    # def test2_join_meeting_meeting2(self):
-    #     '''加入一个会议模式会议'''
-    #     try:
-    #         self.resetUp2()
-    #         logger.info("加入一个会议模式会议")
-    #         self.join_metting(alist[0], alist[1])
-    #         sleep(2)
-    #         self.assertEqual(self.gettext(self.meeting_typle), "听课模式")
-    #         self.assertIn(alist[0], self.gettext(self.meeting_no))
-    #         self.assertIn(alist[1], self.gettext(self.meeting_pwd))
-    #     except Exception as msg:
-    #         logger.error(u"异常原因：%s"%msg)
-    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test2_join_meeting_meeting2.png'))
-    #         raise Exception("false")
-    #     finally:
-    #         self.stop_meeting()
-    #         self.driver.get(readconfig.mainurl)
-    #         self.driver.implicitly_wait(20)
-    #         login = LoginPage(self.driver)
-    #         login.login_sys(readconfig.username, readconfig.password)
-    #         sleep(2)
-    #         self.stop_meeting()  #把主讲的会议给退出来
+    def test2_join_meeting_meeting1(self): 
+        '''创建一个被加入的会议模式会议'''
+        global alist
+        alist = [] 
+        try:
+            self.resetUp1()
+            logger.info("创建一个被加入的会议模式会议")
+            self.create_meeting_meeting("")
+            sleep(2)
+            alist.append(self.gettext(self.meeting_no)[-8:])#截取会议号
+            alist.append(re.sub(r"\D", "", self.gettext(self.meeting_pwd)))   #只保留数字
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test2_join_meeting_meeting1.png'))
+            raise Exception("false")
+
+    def test2_join_meeting_meeting2(self):
+        '''加入一个会议模式会议'''
+        try:
+            self.resetUp2()
+            logger.info("加入一个会议模式会议")
+            self.join_metting(alist[0], alist[1])
+            sleep(2)
+            self.assertEqual(self.gettext(self.meeting_typle), "听课模式")
+            self.assertIn(alist[0], self.gettext(self.meeting_no))
+            self.assertIn(alist[1], self.gettext(self.meeting_pwd))
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test2_join_meeting_meeting2.png'))
+            raise Exception("false")
+        finally:
+            self.stop_two_meeting()
     
     def test3_join_cloud_meeting1(self): 
         '''创建一个被加入的内置云会议'''
@@ -165,27 +166,21 @@ class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test4_join_meeting_meeting2.png'))
             raise Exception("false")
         finally:
-            self.stop_meeting()
-            self.driver.get(readconfig.mainurl)
-            self.driver.implicitly_wait(20)
-            login = LoginPage(self.driver)
-            login.login_sys(readconfig.username, readconfig.password)
-            sleep(2)
-            self.stop_meeting()  #把主讲的会议给退出来
+            self.stop_two_meeting()
 
-    # def test4_join_failed(self):
-    #     '''加入会议失败的测试'''
-    #     try:
-    #         self.resetUp2() 
-    #         logger.info("加入会议失败的测试")
-    #         self.join_metting("123456", "123456")
-    #         WebDriverWait(self.driver,5,0.5).until(ES.presence_of_element_located(self.alert_text)) 
-    #         self.assertEqual(self.gettext(self.alert_text), u"加入失败！")
-    #         self.click(self.alert_sure)
-    #     except Exception as msg:
-    #         logger.error(u"异常原因：%s"%msg)
-    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test4_join_failed.png'))
-    #         raise Exception("false")
+    def test4_join_failed(self):
+        '''加入会议失败的测试'''
+        try:
+            self.resetUp2() 
+            logger.info("加入会议失败的测试")
+            self.join_metting("123456", "123456")
+            WebDriverWait(self.driver,5,0.5).until(ES.presence_of_element_located(self.alert_text)) 
+            self.assertEqual(self.gettext(self.alert_text), u"加入失败！")
+            self.click(self.alert_sure)
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test4_join_failed.png'))
+            raise Exception("false")
 
 
 
