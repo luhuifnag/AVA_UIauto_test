@@ -105,6 +105,7 @@ class IterTeaching(BasePage):
     def addlistener(self, listener):
         self.click(self.addInteractUser)
         sleep(2)
+        self.set_viewport_size(self.driver,1920, 1080)
         self.driver.switch_to.frame("layui-layer-iframe1")
         try:
             logger.info("添加听课：%s"% listener)
