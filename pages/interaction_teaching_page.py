@@ -106,13 +106,17 @@ class IterTeaching(BasePage):
         self.click(self.addInteractUser)
         sleep(2)
         self.driver.switch_to.frame("layui-layer-iframe1")
-        logger.info("添加听课：%s"% listener)
-        self.input_text(self.callinput, listener)
-        sleep(1)
-        self.click(self.addNew)
-        WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
-        self.accept_alert()
-        self.driver.switch_to.default_content()
+        try:
+            logger.info("添加听课：%s"% listener)
+            self.input_text(self.callinput, listener)
+            sleep(1)
+            self.click(self.addNew)
+            WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
+            self.accept_alert()
+        except:
+            logger.info("添加听课失败")
+        finally:
+            self.driver.switch_to.default_content()
 
     # 移除听课
     def remove_listener(self, num=2):

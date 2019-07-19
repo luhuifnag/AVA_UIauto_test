@@ -136,7 +136,7 @@ class InteractionHmoe(BasePage):
             self.click(callinput)
             self.find_element(callinput).send_keys(Keys.ENTER)  
             self.input_text(callinput, calls[i-1])
-            self.input_text(callinput, ";")
+            # self.input_text(callinput, ";")
             sleep(1)
 
     # def input_call(self, *calls):
