@@ -319,7 +319,7 @@ class InteractionHmoe(BasePage):
             WebDriverWait(self.driver,5,0.5).until(ES.presence_of_element_located(self.alert_text)) 
             alert_text = self.gettext(self.alert_text)
             logger.info(self.gettext(self.alert_text))
-            sleep(2)
+            sleep(3)
             self.click(self.alert_sure)
             return alert_text
         except:

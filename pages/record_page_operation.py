@@ -49,7 +49,10 @@ class RecordOperation(RecordPage):
         self.select_windows()
         self.start_recording("云台控制录制")
         sleep(2)
-        self.click(self.manualbtn)
+        try:
+            self.click(self.manualbtn)  #有的设备没有手动按钮，所以这一步要try起来
+        except:
+            pass
         sleep(1)
         self.PTZ_turning()
         self.PTZ_focusing() 
@@ -62,7 +65,10 @@ class RecordOperation(RecordPage):
         home.click_record() 
         sleep(1)
         self.start_recording("切换布局录制")
-        self.click(self.manualbtn)
+        try:
+            self.click(self.manualbtn)  #有的设备没有手动按钮，所以这一步要try起来
+        except:
+            pass
         logger.info(u"切换预览的视窗")
         num = self.get_preview_num()
         for i in range(1, num-1):

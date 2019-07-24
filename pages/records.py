@@ -79,8 +79,9 @@ class Records(RecordPage,RecordSet):
     def record_custom_quality(self):
         home = HomePage(self.driver)
         home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        self.uncheck_allmuti()
         self.custom_quality()
-        sleep(1)
+        sleep(1) 
         self.ensure()
         home.click_system_setup_blck()
         sleep(1)
@@ -128,7 +129,10 @@ class Records(RecordPage,RecordSet):
             sleep(1)
             inputoutput = InputOutput(self.driver)
             inputoutput.getin_outin()
-            inputoutput.set_localmulti(i)
+            try:
+                inputoutput.set_localmulti(i)  #有的输入是没有本地多流的
+            except:
+                continue
             self.driver.switch_to.default_content()
             home.click_system_setup_blck()
             sleep(1)
