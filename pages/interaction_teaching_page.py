@@ -72,6 +72,7 @@ class IterTeaching(BasePage):
 
      # 获取预览视窗的名称
     def get_preview_tag(self):
+        self.set_viewport_size(self.driver,1920, 1080)
         num = self.get_preview_num()
         taglist = []
         for i in range(num):

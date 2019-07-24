@@ -38,7 +38,7 @@ class InputOutputTest(MyTest, InputOutput):
             self.getin_outin()
             self.set_all_netmulti()
             logger.info("勾选本地多流")
-            self.click(self.local)
+            self.set_localmulti(1)
             sleep(1)
             self.assertTrue(self.getAttribute(self.urlinput, "disabled"))
         except Exception as msg:
