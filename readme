@@ -28,6 +28,9 @@ name = 注册名
 pwd = 密码
 machineName = 昵称
 
+[Attendant]
+Attendant1 ：辅助设备的rserver用户名
+
 [network] 此处的参数与 上面的url保持一致
 [network2] 此处的参数与 上面的newurl保持一致
 
