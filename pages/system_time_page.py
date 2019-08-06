@@ -20,7 +20,7 @@ class SystemTime(BasePage):
     # 系统时间标签按钮
     systemTimebtn = (By.PARTIAL_LINK_TEXT,"系统时间")
     # 自动同步网络时间按钮  
-    automaticbtn = (By.XPATH,"/html/body/div/div/div[2]/div[1]/label") 
+    automaticbtn = (By.XPATH,"//*[@id='synctime']/..")
     # 当前日期、年、月、日
     year = (By.ID,"year")
     month = (By.ID,"month")

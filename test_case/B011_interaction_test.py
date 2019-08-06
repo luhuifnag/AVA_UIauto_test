@@ -31,7 +31,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
             self.create_teaching_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
-            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "%s_CONF" % readconfig.name)
+            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "unDefined")
             self.assertNotEqual(self.gettext(self.meeting_no), "")
             self.assertNotEqual(self.gettext(self.meeting_pwd), "")
         except Exception as msg:
@@ -65,7 +65,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
             self.create_Double_teaching_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
-            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "%s_CONF" % readconfig.name)
+            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "unDefined")
             self.assertNotEqual(self.gettext(self.meeting_no), "")
             self.assertNotEqual(self.gettext(self.meeting_pwd), "")
             self.assertEqual(self.gettext(self.doubletag), "双流")
@@ -98,7 +98,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
             self.create_meeting_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "会议模式")
-            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "%s_CONF" % readconfig.name)
+            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "unDefined")
             self.assertNotEqual(self.gettext(self.meeting_no), "")
             self.assertNotEqual(self.gettext(self.meeting_pwd), "")
         except Exception as msg:
@@ -132,7 +132,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
             self.create_Double_meeting_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "会议模式")
-            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "%s_CONF" % readconfig.name)
+            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "unDefined")
             self.assertNotEqual(self.gettext(self.meeting_no), "")
             self.assertNotEqual(self.gettext(self.meeting_pwd), "")
             self.assertEqual(self.gettext(self.doubletag), "双流")
@@ -150,7 +150,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
             self.create_cloud_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
-            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "%s_Conference" % readconfig.name)
+            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "unDefined")
             self.assertNotEqual(self.gettext(self.meeting_no), "")
             self.assertNotEqual(self.gettext(self.meeting_pwd), "")
         except Exception as msg:
@@ -184,7 +184,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
             self.create_Double_cloud_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
-            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "%s_Conference" % readconfig.name)
+            self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "unDefined")
             self.assertNotEqual(self.gettext(self.meeting_no), "")
             self.assertNotEqual(self.gettext(self.meeting_pwd), "")
         except Exception as msg:

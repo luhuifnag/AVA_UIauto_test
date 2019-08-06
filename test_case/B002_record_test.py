@@ -211,6 +211,25 @@ class Recorder(MyTest,Records,RecordPage):
         finally:
            self.stop_recording()
 
+    def test9_record_strat_living(self):
+        '''录制时自动启动直播（录播模式下）'''
+        try:
+            logger.info("测试录制时自动启动直播（录播模式下）")
+            records = Records(self.driver)
+            living_status = records.record_strat_living()   
+            self.assertEqual(living_status,"ava-btn ava-btn-normal ava-btn-md video_live ava-btn-primary")   
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test9_record_strat_living.png'))
+            raise Exception("false")
+        finally:
+            self.back()
+            sleep(2)
+            home = HomePage(self.driver)
+            home.swich_to_system_label(self.recordsetbtn,"录制参数")
+            self.off_au_living()
+            self.ensure()
+
     def test_record_teacher_act(self):
         '''教师行为分析文件的测试'''
         try:

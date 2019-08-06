@@ -54,7 +54,7 @@ class Network(BasePage):
     dnsb4= (By.ID,"backup_dns_4")
 
     #确认按钮
-    sure = (By.XPATH,"//*[@id='local_panel']/div[2]/input")
+    sure = (By.XPATH,"//*[@id='local_panel_ipv4']/div[2]/input")
 
 
     #更改IP和对应网关

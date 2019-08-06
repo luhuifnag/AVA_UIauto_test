@@ -41,13 +41,15 @@ class RecordSet(BasePage):
     #子码流质量选择下拉框
     sub_stream = (By.XPATH,"//*[@id='multi_quality-button']/span[1]") 
     # 启动子码流录制复选框
-    sub_stream5 = (By.XPATH,"//*[@id='autoRec']/..") 
+    sub_stream5 = (By.XPATH,"//*[@id='autoRec']/..")
+    # 录制时自动启动直播
+    au_living = (By.XPATH,"//*[@id='autoStartLive']/..") 
     # 启动全自动跟踪按钮
-    au_racking = (By.XPATH,"//*[@id='startOption']/div/label[2]/i")   
+    au_racking = (By.XPATH,"//*[@id='autoStartAutoTrack']/..")   
     # 教师行为分析文件
-    teacher_act = (By.XPATH, "//*[@id='startOption']/div/label[5]")   
+    teacher_act = (By.XPATH, "//*[@id='makeTeaFile']/..")   
     # ftp上传按钮
-    ftpbtn = (By.XPATH,"//*[@id='autoUpload']/div[2]/div[1]/label")
+    ftpbtn = (By.XPATH,"//*[@id='startUpload']/..")
     # 用户输入框
     ftpUser = (By.ID,"ftpUser")
     # 密码输出框
@@ -161,7 +163,23 @@ class RecordSet(BasePage):
             logger.info(u"已勾选启动自动跟踪") 
         else:
             self.click(self.au_racking)
-            logger.info(u"勾选启动自动跟踪") 
+            logger.info(u"勾选启动自动跟踪")
+
+    #勾选录制时自动启动直播
+    def strat_au_living(self):
+        if self.getAttribute(self.au_living,"class") =="checkbox g_checkbox g_checkbox-checked":
+            logger.info(u"勾选录制时自动启动直播") 
+        else:
+            self.click(self.au_living)
+            logger.info(u"勾选录制时自动启动直播")
+
+    #去勾选录制时自动启动直播
+    def off_au_living(self):
+        if self.getAttribute(self.au_living,"class") =="checkbox g_checkbox g_checkbox-checked":
+            self.click(self.au_living)
+            logger.info(u"不勾选录制时自动启动直播") 
+        else:
+            pass  
 
     # 勾选教师行为分析文件按钮
     def start_teacher_act(self):

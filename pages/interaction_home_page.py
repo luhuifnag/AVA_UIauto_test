@@ -316,7 +316,8 @@ class InteractionHmoe(BasePage):
         self.click(self.joinBtn)
         self.driver.implicitly_wait(15)
         try:
-            WebDriverWait(self.driver,5,0.5).until(ES.presence_of_element_located(self.alert_text)) 
+            WebDriverWait(self.driver,5,0.5).until(ES.presence_of_element_located(self.alert_text))
+            sleep(1) 
             alert_text = self.gettext(self.alert_text)
             logger.info(self.gettext(self.alert_text))
             sleep(3)

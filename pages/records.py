@@ -157,6 +157,22 @@ class Records(RecordPage,RecordSet):
         auto_status = self.getAttribute(self.autobtn, "class")
         self.stop_recording()
         return auto_status
+    
+    #录制时自动启动直播
+    def record_strat_living(self):
+        home = HomePage(self.driver)
+        home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        self.strat_au_living()
+        self.ensure()
+        home.click_system_setup_blck()
+        sleep(1)
+        home.click_record()
+        self.start_recording()
+        sleep(5)
+        living_status = self.getAttribute(self.livebtn, "class")
+        self.stop_recording()
+        self.stop_live()
+        return living_status
 
     # 录制一段带有教师行为分析文件的视频
     def record_teacher_act(self):
