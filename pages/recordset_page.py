@@ -43,9 +43,9 @@ class RecordSet(BasePage):
     # 启动子码流录制复选框
     sub_stream5 = (By.XPATH,"//*[@id='autoRec']/..") 
     # 启动全自动跟踪按钮
-    au_racking = (By.XPATH,"//*[@id='startOption']/div/label[2]/i")
+    au_racking = (By.XPATH,"//*[@id='startOption']/div/label[2]/i")   
     # 教师行为分析文件
-    teacher_act = (By.XPATH, "//*[@id='startOption']/div/label[5]") 
+    teacher_act = (By.XPATH, "//*[@id='startOption']/div/label[5]")   
     # ftp上传按钮
     ftpbtn = (By.XPATH,"//*[@id='autoUpload']/div[2]/div[1]/label")
     # 用户输入框
