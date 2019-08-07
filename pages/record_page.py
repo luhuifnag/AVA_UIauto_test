@@ -180,7 +180,7 @@ class RecordPage(BasePage):
         self.input_topic(themes)
         sleep(1)
         self.input_speaker(speaker)
-        sleep(1)
+        sleep(2)
         logger.info(u"点击开始录制")
         self.click(self.recordbtn)
 

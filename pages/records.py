@@ -72,7 +72,7 @@ class Records(RecordPage,RecordSet):
         sleep(1)
         home.click_record()
         self.start_recording(thems)
-        sleep(10)
+        sleep(30)
         self.stop_recording()
 
     # #录制一段自定义的主码流质量的视频
