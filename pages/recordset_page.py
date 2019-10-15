@@ -61,8 +61,8 @@ class RecordSet(BasePage):
     # 端口输入框
     ftpPort = (By.ID,"ftpPort")
     #页面确认按钮
-    sure = (By.XPATH,"/html/body/div[1]/div[3]/input")
-
+    sure = (By.XPATH,"/html/body/div[1]/div[4]/input")
+ 
 
     # 进入录制参数页面后判断设备类型
     def getinto_recordset(self):
