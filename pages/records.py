@@ -87,7 +87,7 @@ class Records(RecordPage,RecordSet):
         sleep(1)
         home.click_record()
         self.start_recording("自定义码流质量录制")
-        sleep(10)
+        sleep(30)
         self.stop_recording()
 
     # 录制所有的网络多流
@@ -107,7 +107,7 @@ class Records(RecordPage,RecordSet):
         sleep(1)
         home.click_record()
         self.start_recording("所有网络多流录制")
-        sleep(10)
+        sleep(30)
         self.stop_recording()
 
     
@@ -138,7 +138,7 @@ class Records(RecordPage,RecordSet):
             sleep(1)
             home.click_record()
             self.start_recording("%s本地多流录制" % theme)
-            sleep(10)
+            sleep(30)
             self.stop_recording()
             self.back()
             sleep(1)

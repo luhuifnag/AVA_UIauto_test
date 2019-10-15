@@ -344,3 +344,203 @@ JavaScript warning: http://192.168.13.74/admin/playguide/playguide.1.js?_=0.4338
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1571108331617	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.HSc0X4QV9c8o"
+1571108333913	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1571108333914	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1571108333914	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1571108333914	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+[Parent 16476, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1570640083/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 20732, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1570640083/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 20732, Chr1571108345400	Marionette	INFO	Listening on port 6634
+1571108345714	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.9594753027532135, line 469: unreachable code after return statement
+1571108371255	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1571108374029	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1571108375020	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+openRemotePrompt@resource://gre/modules/Prompter.jsm:634:15
+openPrompt@resource://gre/modules/Prompter.jsm:673:9
+alert@resource://gre/modules/Prompter.jsm:747:10
+recOptionSaveAfter/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.9657083730153811:1089:25
+recOptionSaveAfter@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.9657083730153811:1103:13
+recOptionSave/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.9657083730153811:1014:21
+recOptionSave@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.9657083730153811:1019:13
+onclick@http://192.168.13.125/admin/system/recOptioncfg.1.html?_=0.9459020707863951:1:1
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:213:14
+webdriverClickElement@chrome://marionette/content/interaction.js:192:11
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8534853108031492, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8534853108031492, line 1276: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8534853108031492, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8534853108031492, line 3365: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8534853108031492, line 7166: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8534853108031492, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8534853108031492, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8534853108031492, line 1276: unreachable code after return statement
+1571108438111	Marionette	INFO	Stopped listening on port 6634
+[Parent 16476, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1570640083/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 16476, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1570640083/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 20864, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1570640083/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 20864, Chrome_ChildThread] WARNING:[Child 21020, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1570640083/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 21020, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1570640083/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 16476, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1570640083/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 21348, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1570640083/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 21348, Chrome
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1571124603339	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.rtgzz8Zb0ZFI"
+1571124604348	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1571124604349	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1571124604349	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1571124604349	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1571124607737	Marionette	INFO	Listening on port 7281
+1571124607801	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.5188308849298285, line 469: unreachable code after return statement
+1571124626206	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+openRemotePrompt@resource://gre/modules/Prompter.jsm:634:15
+openPrompt@resource://gre/modules/Prompter.jsm:673:9
+alert@resource://gre/modules/Prompter.jsm:747:10
+recOptionSaveAfter/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.05715305021900485:1089:25
+recOptionSaveAfter@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.05715305021900485:1103:13
+recOptionSave/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.05715305021900485:1014:21
+recOptionSave@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.05715305021900485:1019:13
+onclick@http://192.168.13.125/admin/system/recOptioncfg.1.html?_=0.9019224286575075:1:1
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:213:14
+webdriverClickElement@chrome://marionette/content/interaction.js:192:11
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.9139114940074873, line 469: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/assets/libs/regular/regular.js, line 766: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.2274769219704258, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.2274769219704258, line 1276: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.2274769219704258, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.2274769219704258, line 3365: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.2274769219704258, line 7166: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.2274769219704258, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.2274769219704258, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.2274769219704258, line 1276: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.6810297197416931, line 469: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/assets/libs/regular/regular.js, line 766: unreachable code after return statement
+1571124698405	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+openRemotePrompt@resource://gre/modules/Prompter.jsm:634:15
+openPrompt@resource://gre/modules/Prompter.jsm:673:9
+alert@resource://gre/modules/Prompter.jsm:747:10
+recOptionSaveAfter/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.656138213190866:1089:25
+recOptionSaveAfter@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.656138213190866:1103:13
+recOptionSave/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.656138213190866:1014:21
+recOptionSave@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.656138213190866:1019:13
+onclick@http://192.168.13.125/admin/system/recOptioncfg.1.html?_=0.08753160042777242:1:1
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:213:14
+webdriverClickElement@chrome://marionette/content/interaction.js:192:11
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.4311029232315694, line 469: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/assets/libs/regular/regular.js, line 766: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.4854635717841729, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.4854635717841729, line 1276: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.4854635717841729, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.4854635717841729, line 3365: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.4854635717841729, line 7166: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.4854635717841729, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.4854635717841729, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.4854635717841729, line 1276: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.27724983678923787, line 469: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/assets/libs/regular/regular.js, line 766: unreachable code after return statement
+1571124770943	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+openRemotePrompt@resource://gre/modules/Prompter.jsm:634:15
+openPrompt@resource://gre/modules/Prompter.jsm:673:9
+alert@resource://gre/modules/Prompter.jsm:747:10
+recOptionSaveAfter/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.4390485292687676:1089:25
+recOptionSaveAfter@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.4390485292687676:1103:13
+recOptionSave/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.4390485292687676:1014:21
+recOptionSave@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.4390485292687676:1019:13
+onclick@http://192.168.13.125/admin/system/recOptioncfg.1.html?_=0.4443429849237184:1:1
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:213:14
+webdriverClickElement@chrome://marionette/content/interaction.js:192:11
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.5745781750801746, line 469: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.28100921533592116, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.28100921533592116, line 1276: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.28100921533592116, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.28100921533592116, line 3365: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.28100921533592116, line 7166: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.28100921533592116, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.28100921533592116, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.28100921533592116, line 1276: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.7063774742924048, line 469: unreachable code after return statement
+1571124843174	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+openRemotePrompt@resource://gre/modules/Prompter.jsm:634:15
+openPrompt@resource://gre/modules/Prompter.jsm:673:9
+alert@resource://gre/modules/Prompter.jsm:747:10
+recOptionSaveAfter/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.28079474669621485:1089:25
+recOptionSaveAfter@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.28079474669621485:1103:13
+recOptionSave/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.28079474669621485:1014:21
+recOptionSave@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.28079474669621485:1019:13
+onclick@http://192.168.13.125/admin/system/recOptioncfg.1.html?_=0.27279774830978054:1:1
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:213:14
+webdriverClickElement@chrome://marionette/content/interaction.js:192:11
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.8541112348330747, line 469: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8893650446946016, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8893650446946016, line 1276: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8893650446946016, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8893650446946016, line 3365: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8893650446946016, line 7166: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8893650446946016, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8893650446946016, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.8893650446946016, line 1276: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.5818894382882065, line 469: unreachable code after return statement
+1571124916284	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+openRemotePrompt@resource://gre/modules/Prompter.jsm:634:15
+openPrompt@resource://gre/modules/Prompter.jsm:673:9
+alert@resource://gre/modules/Prompter.jsm:747:10
+recOptionSaveAfter/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.2909222962810786:1089:25
+recOptionSaveAfter@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.2909222962810786:1103:13
+recOptionSave/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.2909222962810786:1014:21
+recOptionSave@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.2909222962810786:1019:13
+onclick@http://192.168.13.125/admin/system/recOptioncfg.1.html?_=0.32280990686714395:1:1
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:213:14
+webdriverClickElement@chrome://marionette/content/interaction.js:192:11
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.3635948919429791, line 469: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.9461729921274513, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.9461729921274513, line 1276: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.9461729921274513, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.9461729921274513, line 3365: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.9461729921274513, line 7166: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.9461729921274513, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.9461729921274513, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.9461729921274513, line 1276: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.8055910034084311, line 469: unreachable code after return statement
+1571124988945	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+openRemotePrompt@resource://gre/modules/Prompter.jsm:634:15
+openPrompt@resource://gre/modules/Prompter.jsm:673:9
+alert@resource://gre/modules/Prompter.jsm:747:10
+recOptionSaveAfter/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.12869902902010655:1089:25
+recOptionSaveAfter@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.12869902902010655:1103:13
+recOptionSave/request.onreadystatechange@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.12869902902010655:1014:21
+recOptionSave@http://192.168.13.125/admin/system/recOptioncfg.1.js?_=0.12869902902010655:1019:13
+onclick@http://192.168.13.125/admin/system/recOptioncfg.1.html?_=0.17192500836422753:1:1
+event.synthesizeMouseAtPoint@chrome://marionette/content/event.js:213:14
+webdriverClickElement@chrome://marionette/content/interaction.js:192:11
+JavaScript warning: http://192.168.13.125/admin/system/sysConfigure.js?_=0.4195764358286259, line 469: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.40460692796325903, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.40460692796325903, line 1276: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.40460692796325903, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.40460692796325903, line 3365: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.40460692796325903, line 7166: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.40460692796325903, line 3152: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.40460692796325903, line 546: unreachable code after return statement
+JavaScript warning: http://192.168.13.125/admin/playguide/playguide.1.js?_=0.40460692796325903, line 1276: unreachable code after return statement
+1571125072514	Marionette	INFO	Stopped listening on port 7281
+[Child 18400, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1570640083/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 18400, Chrome_ChildThread] WARNING: pipe error: 109: file [Child 14400, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1570640083/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[[Parent 21156, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1570640083/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

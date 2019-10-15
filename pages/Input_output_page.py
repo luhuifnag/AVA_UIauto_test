@@ -32,7 +32,7 @@ class InputOutput(BasePage):
     # POC供电状态
     poc_state = (By.XPATH, "//*[@id='connectState']/span")
     # 确认按钮
-    sure = (By.XPATH, "//*[@id='inputdevicePanel']/div[4]/button") 
+    sure = (By.XPATH, "//*[@id='inputdevicePanel']/div[3]/button")
 
     # 进入输入输出设置页面
     def getin_outin(self):
