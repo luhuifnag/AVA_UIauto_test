@@ -51,7 +51,7 @@ class ModifyingNetworkTest2(MyTest):
             login = LoginPage(self.driver)
             login.login_sys(readconfig.username, readconfig.password)
             sleep(2)
-            self.assertEqual(new_url,"%slogin.html" % readconfig.url)
+            self.assertEqual(new_url,"%s/login.html" % readconfig.url)
             self.assertEqual(self.driver.title, u"录播管理系统")
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
