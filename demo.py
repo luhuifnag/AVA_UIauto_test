@@ -58,7 +58,7 @@ class Recorder(MyTest,Records,RecordPage):
             self.getinto_recordset()
             self.record_main_and_sub(3,3,"标清","流畅","主码流标清和子码流流畅")
         except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
+            logger.error(u"异常原因：%s"%msg) #1236
 
 
             
