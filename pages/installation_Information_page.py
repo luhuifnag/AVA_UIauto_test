@@ -109,6 +109,7 @@ class InstallInfor(BasePage):
         self.input_mail(mail1)
         self.click(self.machineAddInstallSave)
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
+        sleep(2)
         self.accept_alert()
         sleep(1)
         self.driver.switch_to.default_content() 
