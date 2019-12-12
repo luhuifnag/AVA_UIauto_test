@@ -25,6 +25,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
         ''' 服务器地址为空的rsever注册测试'''
         try:
             logger.info("服务器地址为空的rsever注册测试")
+            self.login()
             self.register_rserver("",readconfig.name,readconfig.pwd,readconfig.machineName)
             sleep(3)
             self.assertEqual(self.error_hint(), u"服务器地址不能为空！") 
@@ -41,6 +42,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
         ''' 服务账号为空的rsever注册测试'''  
         try:
             logger.info("服务账号为空的rsever注册测试")
+            self.login()
             self.register_rserver(readconfig.rserverip,"",readconfig.pwd,readconfig.machineName)
             sleep(3)
             self.assertEqual(self.error_hint(), u"用户账号不能为空！") 
@@ -57,6 +59,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
         ''' 服务昵称为空的rsever注册测试'''   
         try:
             logger.info("服务昵称为空的rsever注册测试")
+            self.login()
             self.register_rserver(readconfig.rserverip,readconfig.name,readconfig.pwd,"")
             sleep(3)
             self.assertEqual(self.error_hint(), u"用户昵称不能为空！") 
@@ -72,6 +75,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
         ''' 非白名单的用户注册'''   
         try:
             logger.info("非白名单的用户注册")
+            self.login()
             self.register_rserver(readconfig.rserverip,"djicnf",readconfig.pwd,readconfig.machineName)
             sleep(20)
             base = BasePage(self.driver)
@@ -86,6 +90,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
         ''' 使用备用服务器成功注册rserver'''
         try:
             logger.info("使用备用服务器成功注册rserver")
+            self.login()
             self.register_rserver("123",readconfig.name,readconfig.pwd,readconfig.machineName,readconfig.rserverip)
             sleep(15)
             base = BasePage(self.driver)
@@ -102,6 +107,7 @@ class ConfigureRegisterTest(MyTest,ConfigureRegister):
         ''' 成功注册rserver'''    
         try:
             logger.info("成功注册rserver")
+            self.login()
             self.register_rserver(readconfig.rserverip,readconfig.name,readconfig.pwd,readconfig.machineName)
             sleep(20)
             base = BasePage(self.driver)

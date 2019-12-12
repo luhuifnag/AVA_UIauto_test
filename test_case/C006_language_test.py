@@ -23,6 +23,7 @@ class LanguagesTest(MyTest, Languages):
         '''切换成英文'''
         try:
             logger.info("切换成英文测试")
+            self.login()
             self.switch_english()
             self.driver.refresh()
             sleep(5)  
@@ -40,6 +41,7 @@ class LanguagesTest(MyTest, Languages):
         '''切换成中文'''
         try:
             logger.info("切换成中文测试")
+            self.login()
             self.switch_Chinese()
             self.driver.refresh()
             sleep(5)

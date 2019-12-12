@@ -23,6 +23,7 @@ class InputOutputTest(MyTest, InputOutput):
         '''更改poc供电状态测试'''
         try:
             logger.info("更改poc供电状态测试'")
+            self.login()
             self.getin_outin()
             state = self.change_poc_state()
             self.assertEqual(state, ('PoC未连接', 'PoC已连接'))
@@ -35,6 +36,7 @@ class InputOutputTest(MyTest, InputOutput):
         '''选择本地多流时，URL不可编辑'''
         try:
             logger.info("选择本地多流时，URL不可编辑'")
+            self.login()
             self.getin_outin()
             self.set_all_netmulti()
             logger.info("勾选本地多流")

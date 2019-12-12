@@ -28,6 +28,7 @@ class IterTeachingTest(MyTest, InteractionHmoe, IterTeaching):
         '''在会议中成功添加一个在在线的听课'''
         try:
             logger.info("在会议中成功添加一个在线的听课")
+            self.login()
             self.create_teaching_meeting("")
             sleep(2)
             self.addlistener(readconfig.Attendant1)
@@ -45,6 +46,7 @@ class IterTeachingTest(MyTest, InteractionHmoe, IterTeaching):
         '''在会议中添加一个不在线的听课'''
         try:
             logger.info("在会议中添加一个不在线的听课")
+            self.login()
             self.create_teaching_meeting("")
             sleep(2)
             self.addlistener("offline")
@@ -62,6 +64,7 @@ class IterTeachingTest(MyTest, InteractionHmoe, IterTeaching):
         '''移除听课的测试'''
         try:
             logger.info("移除听课的测试")
+            self.login()
             self.create_teaching_meeting(readconfig.Attendant1)
             sleep(2)
             self.remove_listener()
@@ -78,6 +81,7 @@ class IterTeachingTest(MyTest, InteractionHmoe, IterTeaching):
         '''删除在线的听课的测试'''
         try:
             logger.info("删除在线的听课的测试")
+            self.login()
             self.create_teaching_meeting(readconfig.Attendant1)
             sleep(2)
             self.del_listener()

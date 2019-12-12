@@ -98,8 +98,7 @@ class BasePage(object):
 
     #接受alert
     def accept_alert(self):
-        # self.driver.switch_to.alert.accept()
-        self.driver.SwitchTo().Alert().Accept()
+        self.driver.switch_to.alert.accept()
 
     #取消alert
     def dismiss_alert(self):

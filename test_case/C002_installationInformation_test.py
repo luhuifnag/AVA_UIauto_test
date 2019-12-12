@@ -22,6 +22,7 @@ class InstallInforTest(MyTest,InstallInfor):
         '''安装信息测试'''
         try:
             logger.info("安装信息测试")
+            self.login()
             self.installInfor(3,2,6,"广州奥威亚电子科技有限公司","科汇金谷2街15号","张先生","18902567940","123456@163.com")
             self.driver.switch_to.frame("content")
             self.assertEqual(self.getInnerHTML(self.province_result), "河北省")

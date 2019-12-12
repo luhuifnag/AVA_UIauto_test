@@ -26,6 +26,7 @@ class ModifyingNetworkTest(MyTest):
         '''当勾选自动获取IP试，网络参数等输入框不可编辑'''
         try:
             logger.info("当勾选自动获取IP试，网络参数等输入框不可编辑")
+            self.login()
             home = HomePage(self.driver)
             gnetwork = ConfigureNetwork(self.driver)
             home.swich_to_configure_label(gnetwork.networkbtn, "网络参数")
@@ -44,6 +45,7 @@ class ModifyingNetworkTest(MyTest):
         '''在快速配置中,勾选百兆/千兆网口自适应测试'''
         try: 
             logger.info("快速配置中,勾选百兆/千兆网口自适应测试")
+            self.login()
             gnetwork = ConfigureNetwork(self.driver)
             gnetwork.select_self_adaption()
             self.driver.refresh()
@@ -61,6 +63,7 @@ class ModifyingNetworkTest(MyTest):
         '''在快速配置中,修改首选dns测试'''  
         try:
             logger.info("在快速配置中,修改首选dns测试")
+            self.login()
             gnetwork = ConfigureNetwork(self.driver)
             gnetwork.modifying_dnsa1()
             base = BasePage(self.driver) 
@@ -75,6 +78,7 @@ class ModifyingNetworkTest(MyTest):
         '''在快速配置中,修改备选dns测试'''
         try:
             logger.info("在快速配置中,修改备选dns测试")
+            self.login()
             gnetwork = ConfigureNetwork(self.driver)
             gnetwork.modifying_dnsb1()
             base = BasePage(self.driver)  
@@ -89,6 +93,7 @@ class ModifyingNetworkTest(MyTest):
         '''在快速配置中更改IP测试'''  
         try:
             logger.info("在快速配置中更改IP测试")
+            self.login()
             gnetwork = ConfigureNetwork(self.driver)
             gnetwork.select_manual_ip(readconfig.new_netaddr1,readconfig.new_netaddr2,readconfig.new_netaddr3,readconfig.new_netaddr4,\
             readconfig.new_gateway1,readconfig.new_gateway2,readconfig.new_gateway3,readconfig.new_gateway4)

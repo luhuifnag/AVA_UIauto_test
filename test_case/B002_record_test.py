@@ -29,6 +29,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''基本录制测试,检验录制的视频详细信息与输入的主题主讲人是否一致''' 
         try:
             logger.info("基本录制测试,检验录制的视频详细信息与输入的主题主讲人是否一致")
+            self.login()
             home = HomePage(self.driver)
             video = VideoManagemen(self.driver)
             self.basic_recording()
@@ -47,6 +48,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''暂停录制测试'''
         try:
             logger.info("暂停录制测试")
+            self.login()
             self.pause_record()
             #判断暂停过了3秒后时间录制的时间有没有变化
             pause_time1 = self.find_element(self.timer).text
@@ -65,6 +67,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''暂停后恢复录制测试'''
         try:
             logger.info("暂停后恢复录制测试")
+            self.login()
             self.resume_recording()
             #判断恢复录制20秒后录制的时间有没有变化
             pause_time1 = self.find_element(self.timer).text
@@ -84,6 +87,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''测试在录制过程中点击录播页面返回按钮，验证是否有提示信息''' 
         try:
             logger.info("测试在录制过程中点击录播页面返回按钮，验证是否有提示信息'")
+            self.login()
             self.recording_back()
             tips = self.gettext(self.recording_back_tips)
             self.click(self.recording_back_cancel)    
@@ -99,6 +103,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''主码流为1080p，子码流为720p的录制测试'''  
         try:
             logger.info("主码流为1080p，子码流为720p的录制测试")
+            self.login()
             home = HomePage(self.driver)
             video = VideoManagemen(self.driver)
             self.getinto_recordset()
@@ -133,6 +138,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''主码流为720p，子码流为标清的录制测试'''  
         try:
             logger.info("主码流为720p，子码流为标清的录制测试")
+            self.login()
             home = HomePage(self.driver)
             video = VideoManagemen(self.driver)
             self.getinto_recordset()
@@ -167,6 +173,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''主码流为标清，子码流为流畅的录制测试'''  
         try:
             logger.info("主码流为标清，子码流为流畅的录制测试")
+            self.login()
             home = HomePage(self.driver)
             video = VideoManagemen(self.driver)
             self.getinto_recordset()
@@ -201,6 +208,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''录制时启用全自动跟踪（录播模式下）'''
         try:
             logger.info("测试录制时启用全自动跟踪（录播模式下）")
+            self.login()
             records = Records(self.driver)
             auto_status = records.record_strat_auacking()   
             self.assertEqual(auto_status,"ava-btn ava-btn-md ava-btn-normal ava-btn-primary")   
@@ -215,6 +223,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''录制时自动启动直播（录播模式下）'''
         try:
             logger.info("测试录制时自动启动直播（录播模式下）")
+            self.login()
             records = Records(self.driver)
             living_status = records.record_strat_living()   
             self.assertEqual(living_status,"ava-btn ava-btn-normal ava-btn-md video_live ava-btn-primary")   
@@ -234,6 +243,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''教师行为分析文件的测试'''
         try:
             logger.info("教师行为分析文件的测试")
+            self.login()
             records = Records(self.driver)
             records.record_teacher_act() 
             self.back()
@@ -252,6 +262,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''录制期间无法更改录制管理中的设置'''
         try:
             logger.info("录制期间无法更改录制管理中的设置")
+            self.login()
             records = Records(self.driver)
             records.modify_limit()
             WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
@@ -274,6 +285,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''录制所有的网络多流'''
         try:
             logger.info("录制所有的网络多流")
+            self.login()
             records = Records(self.driver)
             records.record_all_netmulti(readconfig.multiurl)
             logger.info("录制成功")
@@ -286,6 +298,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''自定义码流质量的录制'''
         try:
             logger.info("自定义码流质量的录制")
+            self.login()
             records = Records(self.driver)
             records.record_custom_quality()
             logger.info("录制成功")
@@ -298,6 +311,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''启动ftp上传录制测试'''
         try:
             logger.info("启动ftp上传录制测试")
+            self.login()
             records = Records(self.driver)
             records.record_start_ftp()
             logger.info("录制成功")
@@ -312,6 +326,7 @@ class Recorder(MyTest,Records,RecordPage):
         '''本地多流录制'''
         try:
             logger.info("本地多流录制")
+            self.login()
             records = Records(self.driver)
             records.record_localmulti()
             logger.info("录制成功")

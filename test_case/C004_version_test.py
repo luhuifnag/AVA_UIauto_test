@@ -25,6 +25,7 @@ class VersionTest(MyTest):
         '''比较快速配置与系统设置的版本信息是否一致的测试'''    
         try:
             logger.info("比较快速配置与系统设置的版本信息是否一致的测试")
+            self.login()
             version = Version(self.driver)
             version1 = version.get_versions()
             home = HomePage(self.driver)

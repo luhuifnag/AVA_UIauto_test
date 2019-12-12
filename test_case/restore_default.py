@@ -23,6 +23,7 @@ class Restore_tests(MyTest,Restore):
         '''恢复默认操作测试'''
         try:
             logger.info("恢复默认操作测试")
+            self.login()
             self.restore()      
             self.assertEqual(self.driver.title, u"录播管理系统")
         except Exception as msg:

@@ -20,6 +20,7 @@ class BuzzerTest(MyTest,Buzzer):
         '''关闭蜂鸣器的测试'''
         try:
             logger.info("关闭蜂鸣器的测试")
+            self.login()
             self.close_buzzer()
             self.driver.switch_to.frame("content")
             logger.info(self.getInnerHTML(self.text))

@@ -34,6 +34,7 @@ class DiskManagementTest(MyTest, DiskManagement):
         '''文件整理测试'''
         try:
             logger.info("文件整理测试")
+            self.login()
             result = self.file_arrangement()
             self.assertEqual(result, "保存成功！")   
         except Exception as msg:
@@ -45,6 +46,7 @@ class DiskManagementTest(MyTest, DiskManagement):
         '''辅助软件上传测试'''
         try:
             logger.info("辅助软件上传测试")
+            self.login()
             self.software_upload(readconfig.date_path+"\\Auxiliary_software.zip")
             self.find_element(self.success)
             print(self.getAttribute(self.success,"textContent")) #获取 layer.msg 弹窗的信息
@@ -58,6 +60,7 @@ class DiskManagementTest(MyTest, DiskManagement):
         '''硬盘格式化测试'''
         try:
             logger.info("硬盘格式化测试")
+            self.login()
             result = self.disk_format()
             self.assertIn("硬盘格式化成功" ,result)  
         except Exception as msg:

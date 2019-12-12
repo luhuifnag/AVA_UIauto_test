@@ -29,6 +29,7 @@ class LivingTest(MyTest, Living):
         '''主码流和子码流的直播推流测试'''
         try:
             logger.info("主码流和子码流的直播推流测试")
+            self.login()
             self.getin_live()
             self.set_living()
             home = HomePage(self.driver)
@@ -55,6 +56,7 @@ class LivingTest(MyTest, Living):
         if self.get_status(): 
             try:
                 logger.info("在直播过程中更改主码流和子码流编码方式")
+                self.login()
                 self.set_living()
                 home = HomePage(self.driver)
                 home.click_system_setup_blck()
@@ -88,6 +90,7 @@ class LivingTest(MyTest, Living):
         '''在直播过程中更改主码流和子码流的质量'''
         try:
             logger.info("在直播过程中更改主码流和子码流的质量")
+            self.login()
             self.getin_live()
             self.set_living()
             home = HomePage(self.driver)
@@ -120,6 +123,7 @@ class LivingTest(MyTest, Living):
         '''在直播过程中更改推流类型'''
         try:
             logger.info("在直播过程中更改推流类型")
+            self.login()
             self.getin_live()
             self.set_living()
             home = HomePage(self.driver)
@@ -156,6 +160,7 @@ class LivingTest(MyTest, Living):
         '''锁住后推流地址不可编辑的测试'''
         try:
             logger.info("在直播过程中更改推流类型")
+            self.login()
             self.getin_live()
             self.off_lock()
             sleep(1)

@@ -28,6 +28,7 @@ class PresetSubitlesTest(MyTest, PresetSubitles):
         '''预设字幕的测试'''
         try:
             logger.info("预设字幕的测试")
+            self.login()
             self.set_preosd()
             home = HomePage(self.driver)
             home.click_system_setup_blck()

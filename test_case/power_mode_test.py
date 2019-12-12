@@ -23,6 +23,7 @@ class PowerModeTest(MyTest,PowerMode):
         '''上电模式测试'''
         try:
             logger.info("上电模式测试")
+            self.login()
             home = HomePage(self.driver)
             home.swich_to_basic_label(self.powermodebtn,"上电模式")
             sleep(3)

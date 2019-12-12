@@ -25,9 +25,8 @@ class LoginTest(MyTest,LoginPage):
     '''登录测试'''
 
 
-    def setUp(self):
+    def login(self):
         logger.info(u"******************测试开始******************")
-        self.driver = webdriver.Firefox()
         self.driver.get(readconfig.url)
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
@@ -104,6 +103,7 @@ class LoginTest(MyTest,LoginPage):
         '''记住密码的登录测试'''
         try:
             logger.info("记住密码的登录测")
+            self.login()
             self.rememberlogin_sys(readconfig.username, readconfig.password)
             WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统")) 
             self.assertEqual(self.driver.title, u"录播管理系统")

@@ -22,6 +22,7 @@ class RecordOperationTest(MyTest, RecordOperation):
         '''测试在直播过程中点击录播页面返回按钮，验证是否有提示信息'''   
         try:
             logger.info("测试在直播过程中点击录播页面返回按钮，验证是否有提示信息")
+            self.login()
             self.living_back()
             tips = self.gettext(self.recording_back_tips)
             self.click(self.recording_back_cancel)
@@ -37,6 +38,7 @@ class RecordOperationTest(MyTest, RecordOperation):
         '''点击全自动按钮布局与变焦置灰的测试'''
         try:
             logger.info("点击全自动按钮布局与变焦置灰的测试")
+            self.login()
             self.select_auto()
             self.assertFalse(self.is_enabled(self.blendmodebtn))
             try:
@@ -55,6 +57,7 @@ class RecordOperationTest(MyTest, RecordOperation):
         '''点击半自动按钮变焦置灰的测试''' 
         try:
             logger.info("点击半自动按钮变焦置灰的测试'")
+            self.login()
             self.select_semiauto()
             try:
                 self.assertFalse(self.is_enabled(self.ptzbtn1))
@@ -72,6 +75,7 @@ class RecordOperationTest(MyTest, RecordOperation):
         '''录制一段控制云台的视频'''
         try:
             logger.info("录制一段控制云台的视频")
+            self.login()
             self.PTZ_control_record()
             logger.info(u"录制成功")
         except Exception as msg:
@@ -85,6 +89,7 @@ class RecordOperationTest(MyTest, RecordOperation):
         '''录制一段切换布局的视频'''  
         try:
             logger.info("录制一段切换布局的视频")
+            self.login()
             self.switching_layout()
             logger.info(u"录制成功")
         except Exception as msg:
@@ -98,6 +103,7 @@ class RecordOperationTest(MyTest, RecordOperation):
         '''成功上传logo的测试'''
         try:
             logger.info("成功上传logo的测试")
+            self.login()
             self.upload_logo(readconfig.date_path+"\\logo_sun.bmp")
             message = self.success_message()
             self.assertEqual(message,"LOGO上传成功!")
@@ -110,6 +116,7 @@ class RecordOperationTest(MyTest, RecordOperation):
         '''上传logo失败的测试'''  
         try:
             logger.info("上传logo失败的测试")
+            self.login()
             self.upload_logo(readconfig.date_path+"\\logo_fail.bmp")
             message = self.success_message()
             self.assertTrue(message == "LOGO文件尺寸过大!" or message == "LOGO文件格式错误!")       
@@ -122,6 +129,7 @@ class RecordOperationTest(MyTest, RecordOperation):
         '''录制一段操作字幕的视频 '''
         try:
             logger.info("录制一段操作字幕的视频")
+            self.login()
             self.adjust_subtitles()
             logger.info(u"录制成功")
         except Exception as msg:

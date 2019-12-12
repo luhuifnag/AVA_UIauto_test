@@ -22,6 +22,7 @@ class SystemTimerTest(MyTest,SystemTime):
 
     def test1_no_change_time(self):
         '''手动更改设备系统时间不可测试'''
+        self.login()
         if self.try_get_Term():
             try:
                 logger.info("有效期设备系统时间不可手动更改测试")
@@ -54,6 +55,7 @@ class SystemTimerTest(MyTest,SystemTime):
         '''自动同步网络时间测试'''
         try:
             logger.info("自动同步网络时间测试")
+            self.login()
             datelist = self.automatic_change_time()
             self.assertEqual(self.getValuetext(self.year), datelist[0])
             self.assertEqual(self.getValuetext(self.month), datelist[1])

@@ -25,14 +25,11 @@ from pages.loginpage import LoginPage
 class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
     '''互动页面的测试'''
     
-    def setUp(self):
+    def login(self):
         pass
 
-    def resetUp1(self):
+    def relogin1(self):
         logger.info(u"******************测试开始******************")
-        self.driver = webdriver.Firefox()
-        sleep(4)
-        self.driver.maximize_window()
         self.driver.get(readconfig.mainurl)
         self.driver.implicitly_wait(20)
         login = LoginPage(self.driver)
@@ -40,18 +37,15 @@ class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
         sleep(2)
         WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统")) 
     
-    def resetUp2(self):
+    def relogin2(self):
         logger.info(u"******************测试开始******************")
-        self.driver = webdriver.Firefox()
-        sleep(4)
-        self.driver.maximize_window()
         self.driver.get(readconfig.url)
         self.driver.implicitly_wait(20)
         login = LoginPage(self.driver)
         login.login_sys(readconfig.username, readconfig.password)
         sleep(2)
         WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统")) 
-    ########################此处重写两个新的setUp()方法######################
+    ########################此处重写两个新的login()方法######################
 
     alist = [] #创建一个全局变量来存放主讲的会议号和密码
 
@@ -60,7 +54,7 @@ class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
         global alist
         alist = [] 
         try:
-            self.resetUp1()
+            self.relogin1()
             logger.info("创建一个被加入的授课模式会议")
             self.create_teaching_meeting("")
             sleep(2)
@@ -75,7 +69,7 @@ class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
     def test1_join_teaching_meeting2(self):
         '''加入一个授课模式会议'''
         try:
-            self.resetUp2()
+            self.relogin2()
             logger.info("加入一个授课模式会议")
             self.join_metting(alist[0], alist[1])
             sleep(2)
@@ -94,7 +88,7 @@ class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
         global alist
         alist = [] 
         try:
-            self.resetUp1()
+            self.relogin1()
             logger.info("创建一个被加入的会议模式会议")
             self.create_meeting_meeting("")
             sleep(2)
@@ -108,7 +102,7 @@ class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
     def test2_join_meeting_meeting2(self):
         '''加入一个会议模式会议'''
         try:
-            self.resetUp2()
+            self.relogin2()
             logger.info("加入一个会议模式会议")
             self.join_metting(alist[0], alist[1])
             sleep(2)
@@ -127,7 +121,7 @@ class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
         global alist
         alist = [] 
         try:
-            self.resetUp1()
+            self.relogin1()
             logger.info("创建一个被加入的内置云会议")
             self.create_cloud_meeting("")
             sleep(2)
@@ -141,7 +135,7 @@ class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
     def test3_join_cloud_meeting2(self):
         '''加入一个内置云会议'''
         try:
-            self.resetUp2()
+            self.relogin2()
             logger.info("加入一个内置云会议")
             self.join_metting(alist[0], alist[1])
             sleep(2)
@@ -158,7 +152,7 @@ class InteractionHomeTest2(MyTest, InteractionHmoe, IterTeaching):
     def test4_join_failed(self):
         '''加入会议失败的测试'''
         try:
-            self.resetUp2() 
+            self.relogin2() 
             logger.info("加入会议失败的测试")
             text = self.join_metting("123456", "123456")
             self.assertEqual(text, u"加入失败！")

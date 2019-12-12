@@ -26,6 +26,7 @@ class VideoTagTest(MyTest, VideoTag):
         '''选择自定义标签测试（录播模式）'''
         try:
             logger.info("选择自定义标签测试（录播模式）")
+            self.login()
             a = self.input_custom_label()
             home = HomePage(self.driver)
             home.click_system_setup_blck()
@@ -44,6 +45,7 @@ class VideoTagTest(MyTest, VideoTag):
         '''选择自定义标签测试（互动模式）'''
         try:
             logger.info("选择自定义标签测试（互动模式）")
+            self.login()
             a = self.input_custom_label()
             home = HomePage(self.driver)
             home.click_system_setup_blck()
@@ -63,6 +65,7 @@ class VideoTagTest(MyTest, VideoTag):
         '''选择默认标签测试'''
         try:
             logger.info("选择默认标签测试")
+            self.login()
             a = self.input_custom_label()
             self.driver.switch_to.frame("content")  
             self.C_default()   

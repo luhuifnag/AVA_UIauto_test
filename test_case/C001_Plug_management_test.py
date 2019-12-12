@@ -23,6 +23,7 @@ class PlugTest(MyTest, PlugManagement):
         '''下载windows播放器插件1'''
         try:
             logger.info("下载windows播放器插件1")
+            self.login()
             self.click_download(1)
             handles = self.driver.window_handles  #获取当前打开的所有窗口的句柄
             self.driver.switch_to.window(handles[1])  #切换到第二个窗口的句柄
@@ -36,6 +37,7 @@ class PlugTest(MyTest, PlugManagement):
         '''下载windows播放器插件2(support H265)'''
         try:
             logger.info("下载windows播放器插件2(support H265)")
+            self.login()
             self.click_download(2)
             handles = self.driver.window_handles  #获取当前打开的所有窗口的句柄
             self.driver.switch_to.window(handles[1])  #切换到第二个窗口的句柄
@@ -50,6 +52,7 @@ class PlugTest(MyTest, PlugManagement):
         '''下载MAC版播放器插件'''
         try:
             logger.info("下载MAC版播放器插件")
+            self.login()
             self.click_download(3)
             handles = self.driver.window_handles  #获取当前打开的所有窗口的句柄
             self.driver.switch_to.window(handles[1])  #切换到第二个窗口的句柄

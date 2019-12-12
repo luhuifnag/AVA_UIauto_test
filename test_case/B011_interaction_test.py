@@ -28,6 +28,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
         '''创建一个不带主题和密码的授课模式空会议测试''' 
         try:
             logger.info("创建一个不带主题和密码的授课模式空会议测试")
+            self.login()
             self.create_teaching_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
@@ -45,6 +46,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
         '''创建一个自定义主题和密码的授课模式的会议测试''' 
         try:
             logger.info("创建一个自定义主题和密码的授课模式的会议测试")
+            self.login()
             self.create_teaching_meeting2("自动化授课", "516896", "")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
@@ -62,6 +64,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
         '''创建一个双流的授课模式空会议测试''' 
         try:
             logger.info("创建一个双流的授课模式空会议测试")
+            self.login()
             self.create_Double_teaching_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
@@ -80,6 +83,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
     #     '''创建一个有三个在线听课的授课模式的会议测试''' 
     #     try:
     #         logger.info("创建一个有三个在线听课的授课模式的会议测")
+            # self.login()
     #         self.create_teaching_meeting("auto01","45646")
     #         sleep(2)
     #         self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
@@ -95,6 +99,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
         '''创建一个不带主题和密码的会议式空会议测试''' 
         try:
             logger.info("创建一个不带主题和密码的会议式空会议测试")
+            self.login()
             self.create_meeting_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "会议模式")
@@ -112,6 +117,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
         '''创建一个自定义主题和密码的会议模式的会议测试''' 
         try:
             logger.info("创建一个自定义主题和密码的会议模式的会议测试")
+            self.login()
             self.create_meeting_meeting2("自动化会议", "516896", "")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "会议模式")
@@ -129,6 +135,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
         '''创建一个双流的会议模式空会议测试''' 
         try:
             logger.info("创建一个双流的会议模式空会议测试")
+            self.login()
             self.create_Double_meeting_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "会议模式")
@@ -147,6 +154,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
         '''创建一个不带主题和密码的内置云会议测试''' 
         try:
             logger.info("创建一个不带主题和密码的内置云会议测试")
+            self.login()
             self.create_cloud_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
@@ -164,6 +172,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
         '''创建一个自定义主题和密码的内置云会议的测试''' 
         try:
             logger.info("创建一个自定义主题和密码的内置云会议的测试")
+            self.login()
             self.create_cloud_meeting2("自动化内置云会议", "516896", "")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
@@ -181,6 +190,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
         '''创建一个双流的内置云会议测试''' 
         try:
             logger.info("'创建一个双流的内置云会议测试")
+            self.login()
             self.create_Double_cloud_meeting("")
             sleep(2)
             self.assertEqual(self.gettext(self.meeting_typle), "授课模式")
@@ -198,6 +208,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
         '''互动设置转跳系统设置-注册服务测试'''
         try:
             logger.info("互动设置转跳系统设置-注册服务测试")
+            self.login()
             self.link_jump()
             self.driver.switch_to.default_content() 
             register = Register(self.driver)
@@ -213,6 +224,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
         '''互动过程中限制进入录制管理模块'''
         try:
             logger.info("互动过程中限制进入录制管理模块")
+            self.login()
             self.create_teaching_meeting("")
             sleep(3)
             self.click(self.backbtn)

@@ -28,6 +28,7 @@ class ManageTest(MyTest,Manage):
         '''测试登录用户的信息是否正确'''
         try:
             logger.info("测试登录用户的信息是否正确")
+            self.login()
             self.click(self.userbtn)
             self.assertEqual(self.gettext(self.user_name),"admin")
             self.assertEqual(self.gettext(self.user_type),"管理员")
@@ -41,6 +42,7 @@ class ManageTest(MyTest,Manage):
         '''退出系统测试''' 
         try:
             logger.info("退出系统测试")
+            self.login()
             self.logout()
             self.assertEqual(self.driver.title,"登录页面")
         except Exception as msg:
@@ -56,6 +58,7 @@ class ManageTest(MyTest,Manage):
         '''休眠唤醒测试'''
         try:
             logger.info("休眠唤醒测试")
+            self.login()
             self.dormancy()
             self.assertEqual(self.driver.title, u"录播管理系统")
         except Exception as msg:
@@ -68,6 +71,7 @@ class ManageTest(MyTest,Manage):
         '''重启设备测试''' 
         try:
             logger.info("重启设备测试")
+            self.login()
             self.reboot()
             self.assertEqual(self.driver.title, u"录播管理系统")
         except Exception as msg:
@@ -80,6 +84,7 @@ class ManageTest(MyTest,Manage):
         '''在录制过程中限制进入互动模块的测试'''
         try:
             logger.info("在录制过程中限制进入互动模块的测试")
+            self.login()
             self.interaction_constraints1()
             self.assertFalse(self.is_enabled(self.interactionbtn))
         except Exception as msg:
@@ -97,6 +102,7 @@ class ManageTest(MyTest,Manage):
         '''在直播过程中限制进入互动模块的测试'''
         try:
             logger.info("在直播过程中限制进入互动模块的测试")
+            self.login()
             self.interaction_constraints2()
             self.assertFalse(self.is_enabled(self.interactionbtn))
         except Exception as msg:

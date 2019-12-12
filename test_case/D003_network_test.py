@@ -25,11 +25,9 @@ from utils.log import logger
 class ModifyingNetworkTest2(MyTest):
     '''在系统设置中更改IP测试'''
     
-    def setUp(self):
+    def login(self):
         logger.info(u"******************测试开始******************")
-        self.driver = webdriver.Firefox()
         self.driver.get(readconfig.newurl)
-        self.driver.maximize_window()
         self.driver.implicitly_wait(10)
         login = LoginPage(self.driver)
         login.login_sys(readconfig.username, readconfig.password)
@@ -41,6 +39,7 @@ class ModifyingNetworkTest2(MyTest):
         '''在系统设置中更改IP测试'''
         try:
             logger.info("在系统设置中更改IP测试")
+            self.login()
             network = Network(self.driver) 
             network.change_ip(readconfig.netaddr1,readconfig.netaddr2,readconfig.netaddr3,readconfig.netaddr4,\
             readconfig.gateway1,readconfig.gateway2,readconfig.gateway3,readconfig.gateway4) 

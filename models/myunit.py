@@ -26,16 +26,17 @@ class MyTest(unittest.TestCase):
         # self.driver = webdriver.PhantomJS(executable_path="D:\\phantomjs\\phantomjs-2.1.1-windows\\bin\\Phantomjs")  #使用无头浏览器跑脚本
         sleep(4)
         self.driver.maximize_window()
+
+   
+    def tearDown(self):
+        logger.info(u"~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~")
+        self.driver.quit()
+
+
+    def login (self):
         self.driver.get(readconfig.url)
         self.driver.implicitly_wait(20)
         login = LoginPage(self.driver)
         login.login_sys(readconfig.username, readconfig.password)
         sleep(2)
         WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统")) 
-        
-   
-    def tearDown(self):
-        logger.info(u"~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~")
-        self.driver.quit()
-        
-

@@ -28,14 +28,11 @@ from pages.interaction_listening_page import IterListening
 class TnteractionSourceTest(MyTest, InteractionHmoe, IterTeaching, TnteractionSource):
     '''互动视频源的测试'''
 
-    def setUp(self):
+    def login(self):
         pass
 
-    def resetUp1(self):
+    def relogin1(self):
         logger.info(u"******************测试开始******************")
-        self.driver = webdriver.Firefox()
-        sleep(4)
-        self.driver.maximize_window()
         self.driver.get(readconfig.mainurl)
         self.driver.implicitly_wait(20)
         login = LoginPage(self.driver)
@@ -43,18 +40,15 @@ class TnteractionSourceTest(MyTest, InteractionHmoe, IterTeaching, TnteractionSo
         sleep(2)
         WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统")) 
     
-    def resetUp2(self):
+    def relogin2(self):
         logger.info(u"******************测试开始******************")
-        self.driver = webdriver.Firefox()
-        sleep(4)
-        self.driver.maximize_window()
         self.driver.get(readconfig.url)
         self.driver.implicitly_wait(20)
         login = LoginPage(self.driver)
         login.login_sys(readconfig.username, readconfig.password)
         sleep(2)
         WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统")) 
-    ########################此处重写两个新的setUp()方法######################
+    ########################此处重写两个新的login()方法######################
 
     alist = [] #创建一个全局变量来存放主讲的会议号和密码
 
@@ -63,7 +57,7 @@ class TnteractionSourceTest(MyTest, InteractionHmoe, IterTeaching, TnteractionSo
         global alist
         alist = [] 
         try:
-            self.resetUp1()
+            self.relogin1()
             logger.info("创建一个被加入的授课模式会议")
             self.create_teaching_meeting("")
             sleep(2)
@@ -78,7 +72,7 @@ class TnteractionSourceTest(MyTest, InteractionHmoe, IterTeaching, TnteractionSo
     def test_intrsource2(self):
         '''互动视频源的测试'''
         try:
-            self.resetUp2()
+            self.relogin2()
             logger.info("互动视频源的测试")
             home = HomePage(self.driver)
             home.swich_to_system_label(self.Sourcebtn, "互动视频源")

@@ -26,6 +26,7 @@ class UserMangeTest1(MyTest,UserMange):
         '''更改管理员密码'''
         try:
             logger.info("更改管理员密码")
+            self.login()
             self.change_admin_pwd("123456")
             sleep(2)
             self.driver.refresh()

@@ -30,6 +30,7 @@ class VideoTest(MyTest, VideoManagemen):
         '''删除一个录制文件的测试'''
         try:
             logger.info("删除一个录制文件的测试")
+            self.login()
             video = VideoManagemen(self.driver)
             video.check_recorder_massage()
             base = BasePage(self.driver)
@@ -50,7 +51,8 @@ class VideoTest(MyTest, VideoManagemen):
     def test2_compare_total_documents(self):
         '''比较快速配置与录像管理的文件总数是否一致的测试'''
         try:  
-            logger.info("比较快速配置与录像管理的文件总数是否一致的测试") 
+            logger.info("比较快速配置与录像管理的文件总数是否一致的测试")
+            self.login() 
             video1 = VideoManagemen(self.driver)
             total1 = video1.check_total_documents()
             home = HomePage(self.driver)
@@ -68,6 +70,7 @@ class VideoTest(MyTest, VideoManagemen):
         '''按主题排序文件'''
         try:
             logger.info("按主题排序文件")
+            self.login()
             self.sortfile(1)
             themeslist1 = self.get_themes()
             themeslist2 = sorted(themeslist1)
@@ -81,6 +84,7 @@ class VideoTest(MyTest, VideoManagemen):
         '''按主讲排序文件'''
         try:
             logger.info("按主讲排序文件")
+            self.login()
             self.sortfile(2)
             speakerlist1 = self.get_themes()
             speakerlist2 = sorted(speakerlist1)
@@ -94,6 +98,7 @@ class VideoTest(MyTest, VideoManagemen):
         '''按时间排序文件'''
         try:
             logger.info("按时间排序文件")
+            self.login()
             self.sortfile(3)
             timelist1 = self.get_themes()
             timelist2 = sorted(timelist1, reverse=True) #降序排序
@@ -107,6 +112,7 @@ class VideoTest(MyTest, VideoManagemen):
         '''按时长排序文件'''
         try:
             logger.info("按时长排序文件")
+            self.login()
             self.sortfile(4)
             longlist1 = self.get_themes()
             longlist1 = list(map(int, longlist1)) # 将列表里的字符串转化为int再排序
@@ -121,6 +127,7 @@ class VideoTest(MyTest, VideoManagemen):
         '''按主题分组显示'''
         try:
             logger.info("按主题分组显示")
+            self.login()
             self.group_display(1)
             self.assertIn("主 题", self.gettext(self.packet_label))
         except Exception as msg:
@@ -132,6 +139,7 @@ class VideoTest(MyTest, VideoManagemen):
         '''按主讲分组显示'''
         try:
             logger.info("按主讲分组显示")
+            self.login()
             self.group_display(2)
             self.assertIn("主讲人", self.gettext(self.packet_label))
         except Exception as msg:
@@ -143,6 +151,7 @@ class VideoTest(MyTest, VideoManagemen):
         '''ftp上传测试'''
         try:
             logger.info("ftp上传测试")
+            self.login()
             home = HomePage(self.driver)
             recordset = RecordSet(self.driver)
             home.swich_to_system_label(recordset.recordsetbtn,"录制参数") #进入到录制参数页面
@@ -166,6 +175,8 @@ class VideoTest(MyTest, VideoManagemen):
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_ftp.png'))
             raise Exception("false")
+
+
 
 if __name__ == "__main__":
    unittest.main()

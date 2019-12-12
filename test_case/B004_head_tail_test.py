@@ -27,6 +27,7 @@ class HeadTailTest(MyTest,HeadTail):
         '''上传片头,片尾等图片测试'''
         try:
             logger.info("上传片头,片尾等图片测试")
+            self.login()
             texts =self.upload()
             self.assertEqual(texts , ['上传文件成功!', '上传文件成功!', '上传文件成功!', '上传文件成功!', '上传文件成功!'])
         except Exception as msg: 
@@ -38,6 +39,7 @@ class HeadTailTest(MyTest,HeadTail):
         '''片头片尾机显示视频信息测试'''
         try:
             logger.info("片头片尾机显示视频信息测试")
+            self.login()
             self.set_title_trailer_time()
             home = HomePage(self.driver)
             home.click_system_setup_blck()
