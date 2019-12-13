@@ -152,7 +152,7 @@ class RecordSet(BasePage):
         names = self.gettext(multi_name)
         self.off_sub_stream()
         self.uncheck_allmuti()
-        mulsti = (By.XPATH, "//*[@id='multi_streams_con']/div[%s]/label" % str(i+1))
+        mulsti = (By.XPATH, "//*[@id='multi_streams_con']/div[%s]/label" % str(i+1))  
         logger.info("勾选%s多流录制按钮" % names)
         self.click(mulsti)
         return names
@@ -198,7 +198,7 @@ class RecordSet(BasePage):
             self.click(self.ftpbtn)
 
     # 填写ftp信息
-    def ftp_input(self, ftpUser="root", ftpPsw="gzava_a4s", ftpUrl="./", ftpIp="192.168.13.245", ftpPort="21"):
+    def ftp_input(self, ftpUser="ava", ftpPsw="ava.com.cn", ftpUrl="./", ftpIp="192.168.8.71", ftpPort="21"):
         self.start_ftp()
         self.clear(self.ftpUser)
         self.input_text(self.ftpUser, ftpUser)

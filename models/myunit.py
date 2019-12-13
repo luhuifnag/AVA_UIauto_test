@@ -24,7 +24,6 @@ class MyTest(unittest.TestCase):
         logger.info(u"******************测试开始******************")
         self.driver = webdriver.Firefox()
         # self.driver = webdriver.PhantomJS(executable_path="D:\\phantomjs\\phantomjs-2.1.1-windows\\bin\\Phantomjs")  #使用无头浏览器跑脚本
-        sleep(4)
         self.driver.maximize_window()
 
    

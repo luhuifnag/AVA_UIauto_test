@@ -38,7 +38,7 @@ class InteractionHmoe(BasePage):
     # 内置云勾选框
     Built_in_cloud = (By.XPATH, "//*[@id='sipModule']/div/div[2]/div[1]/div/div[5]/div/label") 
     # 确认按钮
-    login = (By.ID, "login")
+    yes = (By.ID, "login")
 
     # 创建会议页面
     # 会议主题
@@ -113,7 +113,7 @@ class InteractionHmoe(BasePage):
 
     # 点击互动设置页面的确定按钮
     def register_login(self):
-        self.click(self.login)
+        self.click(self.yes)
         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present())   #显示等待直到alert出现
         self.accept_alert()
         self.driver.switch_to.default_content()
