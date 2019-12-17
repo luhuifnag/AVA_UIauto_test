@@ -3594,3 +3594,15 @@ C:\fakepath(262,1): warning X4000: use of potentially uninitialized variable (f_
 1576549867403	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: http://192.168.13.129/admin/system/sysConfigure.js?_=0.028610925474472193, line 473: unreachable code after return statement
 JavaScript error: http://192.168.13.129/admin/system/interaSourcecfg.js?_=0.05325209375488993, line 118: TypeError: that.cueNamecObj.cueNamecList[(i - 1)] is undefined
+[Parent 17712, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 17712, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16840, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16840, Chrom[Parent 17712, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 20300, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 20300, Chrome1576549998007	Marionette	INFO	Stopped listening on port 29744
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 20072, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
