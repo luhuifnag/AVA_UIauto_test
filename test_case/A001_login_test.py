@@ -39,6 +39,7 @@ class LoginTest(MyTest,LoginPage):
         '''用户名和密码都为空的登录测试'''
         try:
             logger.info("用户名和密码都为空的登录测试")
+            self.login()
             self.user_login()
             WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present())   #显示等待直到alert出现
             self.assertEqual(self.error_hint(), u"用户名或密码不能为空！") #error_hint()方法在LoginPage下
@@ -52,6 +53,7 @@ class LoginTest(MyTest,LoginPage):
         '''用户名为空的登录测试'''
         try:
             logger.info("用户名为空的登录测试")
+            self.login()
             self.user_login(passwd="admin")
             WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
             self.assertEqual(self.error_hint(), u"用户名或密码不能为空！")
@@ -65,6 +67,7 @@ class LoginTest(MyTest,LoginPage):
         '''密码为的登录测试空'''
         try:
             logger.info("密码为的登录测试空")
+            self.login()
             self.user_login(username="admin")
             WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
             self.assertEqual(self.error_hint(),u"用户名或密码不能为空！")   
@@ -78,6 +81,7 @@ class LoginTest(MyTest,LoginPage):
         '''错误密码的登录测试'''
         try:
             logger.info("错误密码的登录测试")
+            self.login()
             self.user_login(username="admin", passwd="123456")
             WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
             self.assertEqual(self.error_hint(), u"用户名不存在或密码错误！")           
@@ -91,6 +95,7 @@ class LoginTest(MyTest,LoginPage):
         '''用户名和密码正确的登录测试'''
         try:
             logger.info("用户名和密码正确的登录测试")
+            self.login()
             self.login_sys(readconfig.username, readconfig.password)  #login_sys方法在LoginPage类下
             WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统"))  #显示等待直到当前开头是否与预期一致
             self.assertEqual(self.driver.title, u"录播管理系统")
