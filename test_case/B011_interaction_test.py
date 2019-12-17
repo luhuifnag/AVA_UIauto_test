@@ -71,7 +71,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
             self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "unDefined")
             self.assertNotEqual(self.gettext(self.meeting_no), "")
             self.assertNotEqual(self.gettext(self.meeting_pwd), "")
-            self.assertEqual(self.gettext(self.doubletag), "双流")
+            self.assertEqual(self.gettext(self.doubletag), "双流画面")
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_create_Doubl_teachinge_meeting.png'))
@@ -142,7 +142,7 @@ class InteractionHomeTest(MyTest, InteractionHmoe, IterTeaching):
             self.assertEqual(self.getAttribute(self.meeting_theam, "title"), "unDefined")
             self.assertNotEqual(self.gettext(self.meeting_no), "")
             self.assertNotEqual(self.gettext(self.meeting_pwd), "")
-            self.assertEqual(self.gettext(self.doubletag), "双流")
+            self.assertEqual(self.gettext(self.doubletag), "双流画面")
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_create_Doubl_meeting_meeting.png'))

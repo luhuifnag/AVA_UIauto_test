@@ -1,0 +1,354 @@
+2019-12-12 09:15:36,898 - framework - INFO - ******************测试开始******************
+2019-12-12 09:16:09,157 - framework - INFO - 记住密码的登录测
+2019-12-12 09:16:09,157 - framework - INFO - ******************测试开始******************
+2019-12-12 09:16:13,501 - framework - INFO - 输入用户名：admin
+2019-12-12 09:16:13,528 - framework - INFO - 输入密码：admin
+2019-12-12 09:16:13,547 - framework - INFO - 勾选 记住密码
+2019-12-12 09:16:13,769 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:16:19,467 - framework - ERROR - 异常原因：Message: 
+
+2019-12-12 09:16:22,514 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:16:27,491 - framework - INFO - ******************测试开始******************
+2019-12-12 09:16:43,944 - framework - INFO - 记住密码的登录测
+2019-12-12 09:16:43,945 - framework - INFO - ******************测试开始******************
+2019-12-12 09:16:48,306 - framework - INFO - 输入用户名：admin
+2019-12-12 09:16:48,333 - framework - INFO - 输入密码：admin
+2019-12-12 09:16:48,381 - framework - INFO - 勾选 记住密码
+2019-12-12 09:16:48,602 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:16:48,939 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:18:14,689 - framework - INFO - ******************测试开始******************
+2019-12-12 09:18:35,580 - framework - INFO - 文件整理测试
+2019-12-12 09:18:39,813 - framework - INFO - 输入用户名：admin
+2019-12-12 09:18:39,840 - framework - INFO - 输入密码：admin
+2019-12-12 09:18:39,861 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:18:44,353 - framework - INFO - 点击系统设置按钮
+2019-12-12 09:18:48,712 - framework - INFO - 点击基本设置
+2019-12-12 09:18:48,938 - framework - ERROR - 异常原因：Message: Element <a class="" href="javascript:void(0)"> is not clickable at point (951,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-12 09:18:49,153 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:18:53,976 - framework - INFO - ******************测试开始******************
+2019-12-12 09:19:10,277 - framework - INFO - 文件整理测试
+2019-12-12 09:19:16,467 - framework - INFO - 输入用户名：admin
+2019-12-12 09:19:16,499 - framework - INFO - 输入密码：admin
+2019-12-12 09:19:16,521 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:19:23,052 - framework - INFO - 点击系统设置按钮
+2019-12-12 09:19:25,457 - framework - INFO - 点击基本设置
+2019-12-12 09:19:25,646 - framework - ERROR - 异常原因：Message: Element <a class="" href="javascript:void(0)"> is not clickable at point (951,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-12 09:19:25,814 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:19:29,801 - framework - INFO - ******************测试开始******************
+2019-12-12 09:19:48,374 - framework - INFO - 辅助软件上传测试
+2019-12-12 09:19:53,003 - framework - INFO - 输入用户名：admin
+2019-12-12 09:19:53,036 - framework - INFO - 输入密码：admin
+2019-12-12 09:19:53,051 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:19:57,471 - framework - INFO - 点击系统设置按钮
+2019-12-12 09:20:01,727 - framework - INFO - 点击基本设置
+2019-12-12 09:20:02,055 - framework - ERROR - 异常原因：Message: Element <a class="" href="javascript:void(0)"> is not clickable at point (951,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-12 09:20:02,267 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:20:06,445 - framework - INFO - ******************测试开始******************
+2019-12-12 09:20:26,429 - framework - INFO - 辅助软件上传测试
+2019-12-12 09:20:30,645 - framework - INFO - 输入用户名：admin
+2019-12-12 09:20:30,677 - framework - INFO - 输入密码：admin
+2019-12-12 09:20:30,694 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:20:35,056 - framework - INFO - 点击系统设置按钮
+2019-12-12 09:20:39,308 - framework - INFO - 点击基本设置
+2019-12-12 09:20:39,481 - framework - ERROR - 异常原因：Message: Element <a class="" href="javascript:void(0)"> is not clickable at point (951,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-12 09:20:39,653 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:20:43,850 - framework - INFO - ******************测试开始******************
+2019-12-12 09:21:03,057 - framework - INFO - 硬盘格式化测试
+2019-12-12 09:21:07,470 - framework - INFO - 输入用户名：admin
+2019-12-12 09:21:07,498 - framework - INFO - 输入密码：admin
+2019-12-12 09:21:07,517 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:21:11,745 - framework - INFO - 点击系统设置按钮
+2019-12-12 09:21:14,431 - framework - INFO - 点击基本设置
+2019-12-12 09:21:14,987 - framework - ERROR - 异常原因：Message: Element <a class="" href="javascript:void(0)"> is not clickable at point (951,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-12 09:21:15,132 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:21:18,500 - framework - INFO - ******************测试开始******************
+2019-12-12 09:21:34,930 - framework - INFO - 硬盘格式化测试
+2019-12-12 09:21:39,172 - framework - INFO - 输入用户名：admin
+2019-12-12 09:21:39,199 - framework - INFO - 输入密码：admin
+2019-12-12 09:21:39,223 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:21:43,603 - framework - INFO - 点击系统设置按钮
+2019-12-12 09:21:47,861 - framework - INFO - 点击基本设置
+2019-12-12 09:21:48,054 - framework - ERROR - 异常原因：Message: Element <a class="" href="javascript:void(0)"> is not clickable at point (951,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-12 09:21:48,240 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:27:32,425 - framework - INFO - ******************测试开始******************
+2019-12-12 09:27:49,241 - framework - INFO - 关闭蜂鸣器的测试
+2019-12-12 09:27:53,640 - framework - INFO - 输入用户名：admin
+2019-12-12 09:27:53,677 - framework - INFO - 输入密码：admin
+2019-12-12 09:27:53,696 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:27:57,928 - framework - INFO - 点击系统设置按钮
+2019-12-12 09:28:02,186 - framework - INFO - 点击基本设置
+2019-12-12 09:28:02,369 - framework - ERROR - 异常原因：Message: Element <a class="" href="javascript:void(0)"> is not clickable at point (951,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-12 09:28:02,523 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:28:07,688 - framework - INFO - ******************测试开始******************
+2019-12-12 09:28:24,711 - framework - INFO - 关闭蜂鸣器的测试
+2019-12-12 09:28:28,911 - framework - INFO - 输入用户名：admin
+2019-12-12 09:28:28,944 - framework - INFO - 输入密码：admin
+2019-12-12 09:28:28,969 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:28:33,665 - framework - INFO - 点击系统设置按钮
+2019-12-12 09:28:37,934 - framework - INFO - 点击基本设置
+2019-12-12 09:28:38,099 - framework - ERROR - 异常原因：Message: Element <a class="" href="javascript:void(0)"> is not clickable at point (951,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-12 09:28:38,267 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:34:37,219 - framework - INFO - ******************测试开始******************
+2019-12-12 09:35:01,941 - framework - INFO - 输入用户名：admin
+2019-12-12 09:35:01,969 - framework - INFO - 输入密码：admin
+2019-12-12 09:35:01,993 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:35:06,479 - framework - INFO - 关闭蜂鸣器的测试
+2019-12-12 09:35:06,480 - framework - INFO - 点击系统设置按钮
+2019-12-12 09:35:10,714 - framework - INFO - 点击基本设置
+2019-12-12 09:35:10,885 - framework - ERROR - 异常原因：Message: Element <a class="" href="javascript:void(0)"> is not clickable at point (951,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-12 09:35:11,082 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:35:15,766 - framework - INFO - ******************测试开始******************
+2019-12-12 09:35:37,311 - framework - INFO - 输入用户名：admin
+2019-12-12 09:35:37,348 - framework - INFO - 输入密码：admin
+2019-12-12 09:35:37,372 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:35:41,820 - framework - INFO - 关闭蜂鸣器的测试
+2019-12-12 09:35:41,821 - framework - INFO - 点击系统设置按钮
+2019-12-12 09:35:46,075 - framework - INFO - 点击基本设置
+2019-12-12 09:35:46,251 - framework - ERROR - 异常原因：Message: Element <a class="" href="javascript:void(0)"> is not clickable at point (951,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-12 09:35:46,413 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:36:29,029 - framework - INFO - ******************测试开始******************
+2019-12-12 09:36:48,927 - framework - INFO - 输入用户名：admin
+2019-12-12 09:36:48,954 - framework - INFO - 输入密码：admin
+2019-12-12 09:36:48,978 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:36:53,571 - framework - INFO - 安装信息测试
+2019-12-12 09:36:53,571 - framework - INFO - 点击系统设置按钮
+2019-12-12 09:36:57,866 - framework - INFO - 点击基本设置
+2019-12-12 09:36:58,036 - framework - ERROR - 异常原因：Message: Element <a class="" href="javascript:void(0)"> is not clickable at point (951,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-12 09:36:58,216 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 09:37:02,996 - framework - INFO - ******************测试开始******************
+2019-12-12 09:37:36,888 - framework - INFO - ******************测试开始******************
+2019-12-12 09:38:04,400 - framework - INFO - 输入用户名：admin
+2019-12-12 09:38:04,479 - framework - INFO - 输入密码：admin
+2019-12-12 09:38:04,497 - framework - INFO - 点击 登录  按钮
+2019-12-12 09:38:08,720 - framework - INFO - 关闭蜂鸣器的测试
+2019-12-12 09:38:08,721 - framework - INFO - 点击系统设置按钮
+2019-12-12 09:38:14,274 - framework - INFO - 点击基本设置
+2019-12-12 09:38:16,557 - framework - INFO - 点击关闭蜂蜜器
+2019-12-12 09:38:19,979 - framework - INFO - 
+            是否关闭蜂鸣器？
+        
+2019-12-12 09:38:19,983 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-12 10:30:53,775 - framework - INFO - ******************测试开始******************
+2019-12-12 10:31:28,411 - framework - INFO - 关闭蜂鸣器的测试
+2019-12-12 10:31:32,825 - framework - INFO - 输入用户名：admin
+2019-12-12 10:31:32,855 - framework - INFO - 输入密码：admin
+2019-12-12 10:31:32,884 - framework - INFO - 点击 登录  按钮
+2019-12-12 10:31:37,507 - framework - INFO - 点击系统设置按钮
+2019-12-12 10:31:39,786 - framework - INFO - 点击基本设置
+2019-12-12 10:31:42,028 - framework - INFO - 点击关闭蜂蜜器
+2019-12-12 10:31:45,388 - framework - INFO - 
+            是否关闭蜂鸣器？
+        
+2019-12-12 10:31:45,393 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 09:44:13,201 - framework - INFO - ******************测试开始******************
+2019-12-13 09:44:47,418 - framework - INFO - 成功注册rserver
+2019-12-13 09:44:51,787 - framework - INFO - 输入用户名：admin
+2019-12-13 09:44:51,815 - framework - INFO - 输入密码：admin
+2019-12-13 09:44:51,838 - framework - INFO - 点击 登录  按钮
+2019-12-13 09:44:56,375 - framework - INFO - 点击快速配置按钮
+2019-12-13 09:44:59,165 - framework - INFO - 进入到快速配置的注册服务页面
+2019-12-13 09:45:02,218 - framework - INFO - 输入服务器地址：192.168.13.105
+2019-12-13 09:45:02,271 - framework - INFO - 输入账号：LU_B3
+2019-12-13 09:45:02,328 - framework - INFO - 输入备用服务器地址：
+2019-12-13 09:45:02,363 - framework - INFO - 输入密码：123456
+2019-12-13 09:45:02,407 - framework - INFO - 输入昵称：LU_B3的昵称
+2019-12-13 09:45:02,450 - framework - INFO - 输入本地端口：554
+2019-12-13 09:45:02,495 - framework - INFO - 输入udp端口：32768
+2019-12-13 09:45:22,778 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 09:45:59,751 - framework - INFO - ******************测试开始******************
+2019-12-13 09:46:39,169 - framework - INFO - 非白名单的用户注册
+2019-12-13 09:46:43,407 - framework - INFO - 输入用户名：admin
+2019-12-13 09:46:43,459 - framework - INFO - 输入密码：admin
+2019-12-13 09:46:43,475 - framework - INFO - 点击 登录  按钮
+2019-12-13 09:46:47,966 - framework - INFO - 点击快速配置按钮
+2019-12-13 09:46:52,312 - framework - INFO - 进入到快速配置的注册服务页面
+2019-12-13 09:46:55,333 - framework - INFO - 输入服务器地址：192.168.13.105
+2019-12-13 09:46:55,380 - framework - INFO - 输入账号：djicnf
+2019-12-13 09:46:55,450 - framework - INFO - 输入备用服务器地址：
+2019-12-13 09:46:55,483 - framework - INFO - 输入密码：123456
+2019-12-13 09:46:55,544 - framework - INFO - 输入昵称：LU_B3的昵称
+2019-12-13 09:46:55,596 - framework - INFO - 输入本地端口：554
+2019-12-13 09:46:55,662 - framework - INFO - 输入udp端口：32768
+2019-12-13 09:47:15,946 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 09:47:18,327 - framework - INFO - ******************测试开始******************
+2019-12-13 09:47:38,569 - framework - INFO - 成功注册rserver
+2019-12-13 09:47:44,817 - framework - INFO - 输入用户名：admin
+2019-12-13 09:47:44,849 - framework - INFO - 输入密码：admin
+2019-12-13 09:47:44,875 - framework - INFO - 点击 登录  按钮
+2019-12-13 09:47:49,362 - framework - INFO - 点击快速配置按钮
+2019-12-13 09:47:55,831 - framework - INFO - 进入到快速配置的注册服务页面
+2019-12-13 09:47:58,841 - framework - INFO - 输入服务器地址：192.168.13.105
+2019-12-13 09:47:58,871 - framework - INFO - 输入账号：LU_B3
+2019-12-13 09:47:58,897 - framework - INFO - 输入备用服务器地址：
+2019-12-13 09:47:58,920 - framework - INFO - 输入密码：123456
+2019-12-13 09:47:58,951 - framework - INFO - 输入昵称：LU_B3的昵称
+2019-12-13 09:47:58,983 - framework - INFO - 输入本地端口：554
+2019-12-13 09:47:59,013 - framework - INFO - 输入udp端口：32768
+2019-12-13 09:48:19,279 - framework - ERROR - 异常原因：'用户名被占用' != '注册成功'
+- 用户名被占用
++ 注册成功
+
+2019-12-13 09:48:19,560 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 09:48:21,838 - framework - INFO - ******************测试开始******************
+2019-12-13 09:48:37,952 - framework - INFO - 成功注册rserver
+2019-12-13 09:48:44,181 - framework - INFO - 输入用户名：admin
+2019-12-13 09:48:44,215 - framework - INFO - 输入密码：admin
+2019-12-13 09:48:44,237 - framework - INFO - 点击 登录  按钮
+2019-12-13 09:48:50,700 - framework - INFO - 点击快速配置按钮
+2019-12-13 09:48:55,139 - framework - INFO - 进入到快速配置的注册服务页面
+2019-12-13 09:48:58,149 - framework - INFO - 输入服务器地址：192.168.13.105
+2019-12-13 09:48:58,227 - framework - INFO - 输入账号：LU_B3
+2019-12-13 09:48:58,281 - framework - INFO - 输入备用服务器地址：
+2019-12-13 09:48:58,312 - framework - INFO - 输入密码：123456
+2019-12-13 09:48:58,373 - framework - INFO - 输入昵称：LU_B3的昵称
+2019-12-13 09:48:58,426 - framework - INFO - 输入本地端口：554
+2019-12-13 09:48:58,466 - framework - INFO - 输入udp端口：32768
+2019-12-13 09:49:18,744 - framework - ERROR - 异常原因：'RServer连接中' != '注册成功'
+- RServer连接中
++ 注册成功
+
+2019-12-13 09:49:18,880 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 10:07:26,214 - framework - INFO - ******************测试开始******************
+2019-12-13 10:07:55,161 - framework - INFO - 本地多流录制
+2019-12-13 10:07:59,610 - framework - INFO - 输入用户名：admin
+2019-12-13 10:07:59,638 - framework - INFO - 输入密码：admin
+2019-12-13 10:07:59,661 - framework - INFO - 点击 登录  按钮
+2019-12-13 10:08:04,181 - framework - INFO - 点击系统设置按钮
+2019-12-13 10:08:08,572 - framework - INFO - 点击应用设置
+2019-12-13 10:08:08,882 - framework - ERROR - 异常原因：Message: Element <a class="active" href="javascript:void(0);"> is not clickable at point (840,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-13 10:08:09,023 - framework - INFO - 点击停止录制按钮
+2019-12-13 10:08:29,029 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 10:08:30,954 - framework - INFO - ******************测试开始******************
+2019-12-13 10:13:32,697 - framework - INFO - ******************测试开始******************
+2019-12-13 10:13:59,943 - framework - INFO - 本地多流录制
+2019-12-13 10:14:04,183 - framework - INFO - 输入用户名：admin
+2019-12-13 10:14:04,212 - framework - INFO - 输入密码：admin
+2019-12-13 10:14:04,234 - framework - INFO - 点击 登录  按钮
+2019-12-13 10:14:08,690 - framework - INFO - 点击系统设置按钮
+2019-12-13 10:14:11,081 - framework - INFO - 点击应用设置
+2019-12-13 10:14:18,447 - framework - INFO - 点击录制参数标签
+2019-12-13 10:14:18,476 - framework - INFO - ~~~~~~开始新的本地多流录制~~~~~~~
+2019-12-13 10:14:18,526 - framework - INFO - 不勾选所有多流录制按钮
+2019-12-13 10:14:18,555 - framework - INFO - 勾选多流录制按钮
+2019-12-13 10:14:18,567 - framework - ERROR - 异常原因：Message: Element <label class="checkbox g_checkbox"> could not be scrolled into view
+
+2019-12-13 10:14:19,324 - framework - INFO - 点击停止录制按钮
+2019-12-13 10:14:39,336 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 10:14:41,530 - framework - INFO - ******************测试开始******************
+2019-12-13 10:15:03,772 - framework - INFO - 本地多流录制
+2019-12-13 10:15:10,048 - framework - INFO - 输入用户名：admin
+2019-12-13 10:15:10,082 - framework - INFO - 输入密码：admin
+2019-12-13 10:15:10,107 - framework - INFO - 点击 登录  按钮
+2019-12-13 10:15:14,600 - framework - INFO - 点击系统设置按钮
+2019-12-13 10:15:18,954 - framework - INFO - 点击应用设置
+2019-12-13 10:15:19,156 - framework - ERROR - 异常原因：Message: Element <a class="active" href="javascript:void(0);"> is not clickable at point (840,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-13 10:15:19,319 - framework - INFO - 点击停止录制按钮
+2019-12-13 10:15:39,326 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 10:18:51,094 - framework - INFO - ******************测试开始******************
+2019-12-13 10:19:11,041 - framework - INFO - 本地多流录制
+2019-12-13 10:19:15,300 - framework - INFO - 输入用户名：admin
+2019-12-13 10:19:15,327 - framework - INFO - 输入密码：admin
+2019-12-13 10:19:15,347 - framework - INFO - 点击 登录  按钮
+2019-12-13 10:19:19,816 - framework - INFO - 点击系统设置按钮
+2019-12-13 10:19:22,154 - framework - INFO - 点击应用设置
+2019-12-13 10:19:22,420 - framework - ERROR - 异常原因：Message: Element <a class="active" href="javascript:void(0);"> is not clickable at point (840,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-13 10:19:22,611 - framework - INFO - 点击停止录制按钮
+2019-12-13 10:19:42,626 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 10:19:45,379 - framework - INFO - ******************测试开始******************
+2019-12-13 10:20:01,621 - framework - INFO - 本地多流录制
+2019-12-13 10:20:05,821 - framework - INFO - 输入用户名：admin
+2019-12-13 10:20:05,848 - framework - INFO - 输入密码：admin
+2019-12-13 10:20:05,877 - framework - INFO - 点击 登录  按钮
+2019-12-13 10:20:10,310 - framework - INFO - 点击系统设置按钮
+2019-12-13 10:20:14,699 - framework - INFO - 点击应用设置
+2019-12-13 10:20:14,934 - framework - ERROR - 异常原因：Message: Element <a class="active" href="javascript:void(0);"> is not clickable at point (840,60) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+
+2019-12-13 10:20:15,135 - framework - INFO - 点击停止录制按钮
+2019-12-13 10:20:35,149 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 10:23:44,201 - framework - INFO - ******************测试开始******************
+2019-12-13 10:24:03,959 - framework - INFO - 本地多流录制
+2019-12-13 10:24:08,198 - framework - INFO - 输入用户名：admin
+2019-12-13 10:24:08,234 - framework - INFO - 输入密码：admin
+2019-12-13 10:24:08,259 - framework - INFO - 点击 登录  按钮
+2019-12-13 10:24:12,735 - framework - INFO - 点击系统设置按钮
+2019-12-13 10:24:17,113 - framework - INFO - 点击应用设置
+2019-12-13 10:24:22,639 - framework - INFO - 点击录制参数标签
+2019-12-13 10:24:22,653 - framework - INFO - ~~~~~~开始新的本地多流录制~~~~~~~
+2019-12-13 10:24:22,683 - framework - INFO - 不勾选所有多流录制按钮
+2019-12-13 10:24:22,713 - framework - INFO - 勾选多流录制按钮
+2019-12-13 10:24:22,723 - framework - ERROR - 异常原因：Message: Element <label class="checkbox g_checkbox"> could not be scrolled into view
+
+2019-12-13 10:24:22,915 - framework - INFO - 点击停止录制按钮
+2019-12-13 10:24:42,922 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 10:24:44,770 - framework - INFO - ******************测试开始******************
+2019-12-13 10:25:06,838 - framework - INFO - 本地多流录制
+2019-12-13 10:25:13,117 - framework - INFO - 输入用户名：admin
+2019-12-13 10:25:13,145 - framework - INFO - 输入密码：admin
+2019-12-13 10:25:13,164 - framework - INFO - 点击 登录  按钮
+2019-12-13 10:25:17,635 - framework - INFO - 点击系统设置按钮
+2019-12-13 10:25:23,949 - framework - INFO - 点击应用设置
+2019-12-13 10:25:29,486 - framework - INFO - 点击录制参数标签
+2019-12-13 10:25:29,503 - framework - INFO - ~~~~~~开始新的本地多流录制~~~~~~~
+2019-12-13 10:25:29,533 - framework - INFO - 不勾选所有多流录制按钮
+2019-12-13 10:25:29,570 - framework - INFO - 勾选多流录制按钮
+2019-12-13 10:25:29,587 - framework - ERROR - 异常原因：Message: Element <label class="checkbox g_checkbox"> could not be scrolled into view
+
+2019-12-13 10:25:29,800 - framework - INFO - 点击停止录制按钮
+2019-12-13 10:25:49,809 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 10:43:05,463 - framework - INFO - ******************测试开始******************
+2019-12-13 10:43:21,989 - framework - INFO - 创建一个不带主题和密码的授课模式空会议测试
+2019-12-13 10:43:26,228 - framework - INFO - 输入用户名：admin
+2019-12-13 10:43:26,267 - framework - INFO - 输入密码：admin
+2019-12-13 10:43:26,292 - framework - INFO - 点击 登录  按钮
+2019-12-13 10:43:30,738 - framework - INFO - 点击互动按钮
+2019-12-13 10:43:35,142 - framework - INFO - 进入到互动页面
+2019-12-13 10:43:39,669 - framework - INFO - 注册成功 192.168.13.129
+2019-12-13 10:43:39,680 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-12-13 10:43:39,873 - framework - INFO - 结束互动会议
+2019-12-13 10:43:59,887 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 10:44:02,162 - framework - INFO - ******************测试开始******************
+2019-12-13 10:44:23,877 - framework - INFO - 创建一个不带主题和密码的授课模式空会议测试
+2019-12-13 10:44:28,124 - framework - INFO - 输入用户名：admin
+2019-12-13 10:44:28,153 - framework - INFO - 输入密码：admin
+2019-12-13 10:44:28,177 - framework - INFO - 点击 登录  按钮
+2019-12-13 10:44:32,668 - framework - INFO - 点击互动按钮
+2019-12-13 10:44:34,991 - framework - INFO - 进入到互动页面
+2019-12-13 10:44:39,270 - framework - INFO - 注册成功 192.168.13.129
+2019-12-13 10:44:39,285 - framework - ERROR - 异常原因：catching classes that do not inherit from BaseException is not allowed
+2019-12-13 10:44:39,486 - framework - INFO - 结束互动会议
+2019-12-13 10:44:59,499 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 10:52:06,183 - framework - INFO - ******************测试开始******************
+2019-12-13 10:52:40,360 - framework - INFO - 创建一个不带主题和密码的授课模式空会议测试
+2019-12-13 10:52:45,086 - framework - INFO - 输入用户名：admin
+2019-12-13 10:52:45,113 - framework - INFO - 输入密码：admin
+2019-12-13 10:52:45,133 - framework - INFO - 点击 登录  按钮
+2019-12-13 10:52:49,529 - framework - INFO - 点击互动按钮
+2019-12-13 10:52:53,872 - framework - INFO - 进入到互动页面
+2019-12-13 10:52:58,183 - framework - INFO - 注册成功 192.168.13.129
+2019-12-13 10:53:01,765 - framework - INFO - 输入已选用户('',)
+2019-12-13 10:53:06,672 - framework - INFO - 不勾选双流
+2019-12-13 10:53:06,673 - framework - INFO - 创建授课模式会议
+2019-12-13 10:53:16,519 - framework - INFO - 结束互动会议
+2019-12-13 10:53:21,978 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~
+2019-12-13 10:54:24,213 - framework - INFO - ******************测试开始******************
+2019-12-13 10:54:41,360 - framework - INFO - 记住密码的登录测
+2019-12-13 10:54:41,363 - framework - INFO - ******************测试开始******************
+2019-12-13 10:54:45,730 - framework - INFO - 输入用户名：admin
+2019-12-13 10:54:45,755 - framework - INFO - 输入密码：admin
+2019-12-13 10:54:45,786 - framework - INFO - 勾选 记住密码
+2019-12-13 10:54:46,016 - framework - INFO - 点击 登录  按钮
+2019-12-13 10:54:46,702 - framework - INFO - ~~~~~~~~~~~~~~关闭浏览器~~~~~~~~~~~~~~~~~~~

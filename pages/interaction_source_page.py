@@ -44,7 +44,7 @@ class TnteractionSource(BasePage):
         source_name = (By.XPATH, "//*[@id='classList']/li[%d]/label"  % num) #num=1时表示第一个互动视频源
         names = self.gettext(source_name)
         logger.info("勾选%s互动视频源" % names)
-        sourcestag = (By.XPATH, "//*[@id='classList']/li[%d]/label/i" % num)
+        sourcestag = (By.XPATH, "//*[@id='classList']/li[%d]/label" % num)
         self.click(sourcestag)
         self.ensure()
         return names
