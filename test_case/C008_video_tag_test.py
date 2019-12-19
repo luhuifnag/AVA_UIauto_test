@@ -54,8 +54,9 @@ class VideoTagTest(MyTest, VideoTag):
             interhmoe.create_teaching_meeting("")
             interteach = IterTeaching(self.driver)
             b = interteach.get_preview_tag()
-            interteach.stop_meeting()
+            sleep(3)
             self.assertEqual(a, b)
+            interteach.stop_meeting()          
         except Exception as msg:
             logger.error(u"异常原因：%s"%msg)
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test2_input_custom_label.png'))
