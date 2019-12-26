@@ -4,64 +4,11 @@ Created on 2019年05月08日
 
 @author: Aloe
 '''
-import os
-import unittest
-from time import sleep
+import csv
 
-from selenium.webdriver.support import expected_conditions as ES
-from selenium.webdriver.support.ui import WebDriverWait
+my_dict = {10: 'E3M12804', 11: 'E3M12798', 12: 'E3M12740', 13: 'E3M13393', 14: 'E3M12402', 15: 'E3M13324', 16: 'E3M12855', 17: 'E3M12971', 18: 'E3M12871', 19: 'E3M13011', 20: 'E3M13418', 21: 'E3M12775', 22: 'E3M12886', 23: 'E3M12994', 24: 'E3M7566', 25: 'E3M12975', 26: 'E3M13405', 27: 'E3M13443', 28: 'E3M12817', 29: 'E3M12771', 30: 'E3M13373', 31: 'E3M12868', 32: 'E3M12767', 33: 'E3M12862', 34: 'E3M12851', 35: 'E3M5014', 36: 'E3M12996', 37: 'E3M11563', 38: 'E3M12756', 39: 'E3M12793', 40: 'E3M13438'}
 
-from models import readconfig
-from models.myunit import MyTest
-from pages.home_page import HomePage
-from pages.Input_output_page import InputOutput
-from pages.loginpage import LoginPage
-from pages.record_page import RecordPage
-from pages.records import Records
-from pages.video_managemen import VideoManagemen
-from utils.log import logger
-
-
-class Recorder(MyTest,Records,RecordPage):
-    '''录制相关测试'''
-            
-
-    def test5_main_1080p_and_sub_720p(self):
-        '''主码流为1080p，子码流为720p的录制测试'''
-        try:
-            logger.info("主码流为1080p，子码流为720p的录制测试")
-            home = HomePage(self.driver)
-            video = VideoManagemen(self.driver)
-            self.getinto_recordset()
-            self.record_main_and_sub(1,1,"1080p","720p","主码流1080p和子码流720p")
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-
-
-    def test6_main_720p_and_sub_540p(self):
-        '''主码流为720p，子码流为标清的录制测试'''  
-        try:
-            logger.info("主码流为720p，子码流为标清的录制测试")
-            home = HomePage(self.driver)
-            video = VideoManagemen(self.driver)
-            self.getinto_recordset()
-            self.record_main_and_sub(2,2,"720p","标清","主码流720p和子码流标清")
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-
-    def test7_main_540p_and_sub_360p(self):
-        '''主码流为标清，子码流为流畅的录制测试'''  
-        try:
-            logger.info("主码流为标清，子码流为流畅的录制测试")
-            home = HomePage(self.driver)
-            video = VideoManagemen(self.driver)
-            self.getinto_recordset()
-            self.record_main_and_sub(3,3,"标清","流畅","主码流标清和子码流流畅")
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg) #1236
-
-
-            
-        
-if __name__ == "__main__":
-   unittest.main()
+with open('mycsvfile.csv', 'w') as f:  # Just use 'w' mode in 3.x
+    w = csv.DictWriter(f, my_dict.keys())
+    w.writeheader()
+    w.writerow(my_dict)

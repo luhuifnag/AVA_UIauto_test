@@ -54,30 +54,30 @@ class ManageTest(MyTest,Manage):
             sleep(2)
 
 
-    def test3_dormancy(self):
-        '''休眠唤醒测试'''
-        try:
-            logger.info("休眠唤醒测试")
-            self.login()
-            self.dormancy()
-            self.assertEqual(self.driver.title, u"录播管理系统")
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_dormancy.png'))
-            raise Exception("false")
+    # def test3_dormancy(self):
+    #     '''休眠唤醒测试'''
+    #     try:
+    #         logger.info("休眠唤醒测试")
+    #         self.login()
+    #         self.dormancy()
+    #         self.assertEqual(self.driver.title, u"录播管理系统")
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_dormancy.png'))
+    #         raise Exception("false")
 
 
-    def test4_reboot(self):
-        '''重启设备测试''' 
-        try:
-            logger.info("重启设备测试")
-            self.login()
-            self.reboot()
-            self.assertEqual(self.driver.title, u"录播管理系统")
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_reboot.png'))
-            raise Exception("false")
+    # def test4_reboot(self):
+    #     '''重启设备测试''' 
+    #     try:
+    #         logger.info("重启设备测试")
+    #         self.login()
+    #         self.reboot()
+    #         self.assertEqual(self.driver.title, u"录播管理系统")
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_reboot.png'))
+    #         raise Exception("false")
 
 
     def test5_interaction_constraints1(self):

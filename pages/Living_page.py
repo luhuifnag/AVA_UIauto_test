@@ -31,6 +31,8 @@ class Living(BasePage):
     sub_dropbtn = (By.XPATH, "//*[@id='multi_quality-button']/span[1]")
     # 集控推流勾选框
     px9push = (By.XPATH, "//*[@id='enablepx9push']/..")
+    # 集控推流输入框
+    px9rtmpUrl = (By.ID, "px9rtmpUrl")
     # 推流类型
     live_type = (By.ID, "rtmpMode_0")
     # 推流总数
@@ -168,6 +170,14 @@ class Living(BasePage):
         state = self.gettext(live_state)
         return state
 
+    # 勾选集控推流
+    def on_px9push(self):
+        if self.getAttribute(self.px9push, "class") == "m_r-5 g_checkbox g_checkbox-checked":
+            logger.info("已打开集控推流")
+        else:
+            self.click(self.px9push)
+            logger.info("打开集控推流")
+
     # 去勾选集控推流
     def off_px9push(self):
         if self.getAttribute(self.px9push, "class") == "m_r-5 g_checkbox g_checkbox-checked":
@@ -175,6 +185,11 @@ class Living(BasePage):
             self.click(self.px9push)
         else:
             logger.info("已关闭集控推流")
+
+    # 在集控推流输入框输出推流地址
+    def input_px9url(self,px9url):
+        self.clear(self.px9rtmpUrl)
+        self.input_text(self.px9rtmpUrl,px9url)
 
     # 点击确定按钮
     def ensure(self):
