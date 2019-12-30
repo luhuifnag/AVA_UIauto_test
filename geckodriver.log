@@ -9835,3 +9835,156 @@ JavaScript warning: http://192.168.13.129/admin/playguide/playguide.1.js?_=0.907
 [GPU 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1577672297553	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.kgK7mxCYhCy2"
+1577672303420	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577672303421	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577672303421	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577672303421	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+[Child 13108, Chrome_ChildThread] WARNING: pipe error: 232: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 502
+[Child 13108, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13108, Chrome_ChildTh1577672323403	Marionette	INFO	Listening on port 4209
+1577672324035	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577672347573	Marionette	INFO	Stopped listening on port 4209
+[Parent 1664, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14432, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14432, Chrome_ChildThread] WARNING:[Parent 1664, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12672, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 12672,[Parent 1664, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[GPU
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1577672355946	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.elpFX1bnKocX"
+1577672357376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577672357376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577672357376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577672357376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577672363203	Marionette	INFO	Listening on port 4284
+1577672363652	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577672385398	Marionette	INFO	Stopped listening on port 4284
+[Parent 14940, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15032, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15032, Chro[Child 4544, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 4544, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/b[Parent 14940, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15076, Chrome_ChildThread] WARNING: pipe error: 109:
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[G
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1577672394821	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.IIXVgVX8Z6eH"
+1577672395833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577672395833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577672395833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577672395833	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577672401199	Marionette	INFO	Listening on port 4335
+1577672401479	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577672423126	Marionette	INFO	Stopped listening on port 4335
+[Parent 14892, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 14892, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15272, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_chann[el_win.cc, line 341
+Child 13[Child 15388, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13388, Chrome_ChildThread] WARNING: pipe error: 1[Child 14412, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14412, Chrome_Chi
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 14724
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1577672430164	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.xRVFjxGz1eEh"
+1577672431424	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577672431424	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577672431425	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577672431425	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577672438120	Marionette	INFO	Listening on port 4381
+1577672438503	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577672460091	Marionette	INFO	Stopped listening on port 4381
+[Child 10532, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 10532, Chro[Parent 15216, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5200, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5200, Chrome_ChildTh[Parent 15216, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 11912, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 11912, Chrome_Child
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1577672918646	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.1bJQKcZESF0v"
+1577672919555	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577672919556	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577672919556	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577672919556	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577672924421	Marionette	INFO	Listening on port 4556
+1577672924854	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577672946619	Marionette	INFO	Stopped listening on port 4556
+[Child 2960, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 2960, C[Child 15308, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15308, Chr[Parent 13688, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13104, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 13104, C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1577672954584	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.UIRWSDSagWV5"
+1577672956637	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577672956638	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577672956638	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577672956638	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+[Child 14604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14604, Chrome_ChildThr1577672966842	Marionette	INFO	Listening on port 4599
+1577672966850	Marionette	WARN	TLS certificate errors will be ignored for this session
+1577673031197	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.SJ85sLaMZ4EJ"
+1577673035025	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577673035026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577673035026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577673035026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+[Parent 16376, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15044, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15044, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1577673046870	Marionette	INFO	Listening on port 4753
+1577673047190	Marionette	WARN	TLS certificate errors will be ignored for this session
+1577673053760	Marionette	INFO	Stopped listening on port 4753
+[Parent 16376, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14164, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 14164, Chrome_Chil[Child 1[Parent 16376, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16380, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 16380, Chrome
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 14
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1577673062505	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\AVAPC~1\\AppData\\Local\\Temp\\rust_mozprofile.5nZAhaNFag6Y"
+1577673063362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1577673063362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1577673063362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1577673063362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1577673068239	Marionette	INFO	Listening on port 4816
+1577673068559	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://192.168.13.120/admin/system/sysConfigure.js?_=0.049081710604726436, line 473: unreachable code after return statement
+1577673086341	Marionette	INFO	Stopped listening on port 4816
+[Parent 15856, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15004, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15004, Chrome_ChildThread] WARNING: pipe error: 109: file[Parent 15856, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15640, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15640, Chrome_ChildThread] WARNI[Parent 15856, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15764, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 15764, Chrome_ChildT
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

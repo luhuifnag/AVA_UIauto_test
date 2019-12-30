@@ -56,6 +56,7 @@ from pages.video_tag_page import VideoTag
 from utils.log import logger
 
 
+
 if __name__ == '__main__':
     report_path = readconfig.report_path
     print(U"测试报告存放位置：%s" % report_path)

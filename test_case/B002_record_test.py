@@ -134,211 +134,211 @@ class Recorder(MyTest,Records,RecordPage):
                 self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test5_main_1080p_and_sub_720p2.png'))
                 raise Exception("false")
 
-    def test6_main_720p_and_sub_540p(self):
-        '''主码流为720p，子码流为标清的录制测试'''  
-        try:
-            logger.info("主码流为720p，子码流为标清的录制测试")
-            self.login()
-            home = HomePage(self.driver)
-            video = VideoManagemen(self.driver)
-            self.getinto_recordset()
-            self.record_main_and_sub(2,2,"720p","标清","主码流720p和子码流标清")
-            home.click_record_black()
-            sleep(1)
-            video.file_detailed(2)       
-            sleep(3)
-            resolv = self.gettext(video.resolving)
-            try:
-                self.assertEqual(resolv,"960x540")   #要判断一下是主码流在前还是子码流在前
-            except:
-                self.assertEqual(resolv,"1280x720")   
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_main_720p_and_sub_540p1.png'))
-            raise Exception("false")
-        finally:
-            sleep(1)
-            video.file_detailed2(3)
-            try:
-                try:
-                    self.assertEqual(resolv,"960x540") 
-                except:
-                    self.assertEqual(resolv,"1280x720")   
-            except Exception as msg:
-                logger.error(u"异常原因：%s"%msg)
-                self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_main_720p_and_sub_540p2.png'))
-                raise Exception("false")
+    # def test6_main_720p_and_sub_540p(self):
+    #     '''主码流为720p，子码流为标清的录制测试'''  
+    #     try:
+    #         logger.info("主码流为720p，子码流为标清的录制测试")
+    #         self.login()
+    #         home = HomePage(self.driver)
+    #         video = VideoManagemen(self.driver)
+    #         self.getinto_recordset()
+    #         self.record_main_and_sub(2,2,"720p","标清","主码流720p和子码流标清")
+    #         home.click_record_black()
+    #         sleep(1)
+    #         video.file_detailed(2)       
+    #         sleep(3)
+    #         resolv = self.gettext(video.resolving)
+    #         try:
+    #             self.assertEqual(resolv,"960x540")   #要判断一下是主码流在前还是子码流在前
+    #         except:
+    #             self.assertEqual(resolv,"1280x720")   
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_main_720p_and_sub_540p1.png'))
+    #         raise Exception("false")
+    #     finally:
+    #         sleep(1)
+    #         video.file_detailed2(3)
+    #         try:
+    #             try:
+    #                 self.assertEqual(resolv,"960x540") 
+    #             except:
+    #                 self.assertEqual(resolv,"1280x720")   
+    #         except Exception as msg:
+    #             logger.error(u"异常原因：%s"%msg)
+    #             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_main_720p_and_sub_540p2.png'))
+    #             raise Exception("false")
 
-    def test7_main_540p_and_sub_360p(self):
-        '''主码流为标清，子码流为流畅的录制测试'''  
-        try:
-            logger.info("主码流为标清，子码流为流畅的录制测试")
-            self.login()
-            home = HomePage(self.driver)
-            video = VideoManagemen(self.driver)
-            self.getinto_recordset()
-            self.record_main_and_sub(3,3,"标清","流畅","主码流标清和子码流流畅")
-            home.click_record_black()
-            sleep(1)
-            video.file_detailed(2)       
-            sleep(3)
-            resolv = self.gettext(video.resolving)
-            try:
-                self.assertEqual(resolv,"960x540")   #要判断一下是主码流在前还是子码流在前
-            except:
-                self.assertEqual(resolv,"640x360")   
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test7_main_540p_and_sub_360p1.png'))
-            raise Exception("false")
-        finally:
-            sleep(1)
-            video.file_detailed2(3)
-            try:
-                try:
-                    self.assertEqual(resolv,"960x540")   
-                except:
-                    self.assertEqual(resolv,"640x360") 
-            except Exception as msg:
-                logger.error(u"异常原因：%s"%msg)
-                self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test7_main_540p_and_sub_360p2.png'))
-                raise Exception("false")
+    # def test7_main_540p_and_sub_360p(self):
+    #     '''主码流为标清，子码流为流畅的录制测试'''  
+    #     try:
+    #         logger.info("主码流为标清，子码流为流畅的录制测试")
+    #         self.login()
+    #         home = HomePage(self.driver)
+    #         video = VideoManagemen(self.driver)
+    #         self.getinto_recordset()
+    #         self.record_main_and_sub(3,3,"标清","流畅","主码流标清和子码流流畅")
+    #         home.click_record_black()
+    #         sleep(1)
+    #         video.file_detailed(2)       
+    #         sleep(3)
+    #         resolv = self.gettext(video.resolving)
+    #         try:
+    #             self.assertEqual(resolv,"960x540")   #要判断一下是主码流在前还是子码流在前
+    #         except:
+    #             self.assertEqual(resolv,"640x360")   
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test7_main_540p_and_sub_360p1.png'))
+    #         raise Exception("false")
+    #     finally:
+    #         sleep(1)
+    #         video.file_detailed2(3)
+    #         try:
+    #             try:
+    #                 self.assertEqual(resolv,"960x540")   
+    #             except:
+    #                 self.assertEqual(resolv,"640x360") 
+    #         except Exception as msg:
+    #             logger.error(u"异常原因：%s"%msg)
+    #             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test7_main_540p_and_sub_360p2.png'))
+    #             raise Exception("false")
 
-    def test8_record_strat_auacking(self):
-        '''录制时启用全自动跟踪（录播模式下）'''
-        try:
-            logger.info("测试录制时启用全自动跟踪（录播模式下）")
-            self.login()
-            records = Records(self.driver)
-            auto_status = records.record_strat_auacking()   
-            self.assertEqual(auto_status,"ava-btn ava-btn-md ava-btn-normal ava-btn-primary")   
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_strat_auacking.png'))
-            raise Exception("false")
-        finally:
-           self.stop_recording()
+    # def test8_record_strat_auacking(self):
+    #     '''录制时启用全自动跟踪（录播模式下）'''
+    #     try:
+    #         logger.info("测试录制时启用全自动跟踪（录播模式下）")
+    #         self.login()
+    #         records = Records(self.driver)
+    #         auto_status = records.record_strat_auacking()   
+    #         self.assertEqual(auto_status,"ava-btn ava-btn-md ava-btn-normal ava-btn-primary")   
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_strat_auacking.png'))
+    #         raise Exception("false")
+    #     finally:
+    #        self.stop_recording()
 
-    def test9_record_strat_living(self):
-        '''录制时自动启动直播（录播模式下）'''
-        try:
-            logger.info("测试录制时自动启动直播（录播模式下）")
-            self.login()
-            records = Records(self.driver)
-            living_status = records.record_strat_living()   
-            self.assertEqual(living_status,"ava-btn ava-btn-normal ava-btn-md video_live ava-btn-primary")   
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test9_record_strat_living.png'))
-            raise Exception("false")
-        finally:
-            self.back()
-            sleep(2)
-            home = HomePage(self.driver)
-            home.swich_to_system_label(self.recordsetbtn,"录制参数")
-            self.off_au_living()
-            self.ensure()
+    # def test9_record_strat_living(self):
+    #     '''录制时自动启动直播（录播模式下）'''
+    #     try:
+    #         logger.info("测试录制时自动启动直播（录播模式下）")
+    #         self.login()
+    #         records = Records(self.driver)
+    #         living_status = records.record_strat_living()   
+    #         self.assertEqual(living_status,"ava-btn ava-btn-normal ava-btn-md video_live ava-btn-primary")   
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test9_record_strat_living.png'))
+    #         raise Exception("false")
+    #     finally:
+    #         self.back()
+    #         sleep(2)
+    #         home = HomePage(self.driver)
+    #         home.swich_to_system_label(self.recordsetbtn,"录制参数")
+    #         self.off_au_living()
+    #         self.ensure()
 
-    def test_record_teacher_act(self):
-        '''教师行为分析文件的测试'''
-        try:
-            logger.info("教师行为分析文件的测试")
-            self.login()
-            records = Records(self.driver)
-            records.record_teacher_act() 
-            self.back()
-            sleep(2)
-            vido = VideoManagemen(self.driver)
-            vido.check_recorder_massage()
-            sleep(2)
-            self.set_viewport_size(self.driver,1920, 1080) 
-            self.assertEqual(self.gettext(vido.sw), "下载SW")
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_teacher_act.png'))
-            raise Exception("false")
+    # def test_record_teacher_act(self):
+    #     '''教师行为分析文件的测试'''
+    #     try:
+    #         logger.info("教师行为分析文件的测试")
+    #         self.login()
+    #         records = Records(self.driver)
+    #         records.record_teacher_act() 
+    #         self.back()
+    #         sleep(2)
+    #         vido = VideoManagemen(self.driver)
+    #         vido.check_recorder_massage()
+    #         sleep(2)
+    #         self.set_viewport_size(self.driver,1920, 1080) 
+    #         self.assertEqual(self.gettext(vido.sw), "下载SW")
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_teacher_act.png'))
+    #         raise Exception("false")
 
-    def test9_modify_limit(self):
-        '''录制期间无法更改录制管理中的设置'''
-        try:
-            logger.info("录制期间无法更改录制管理中的设置")
-            self.login()
-            records = Records(self.driver)
-            records.modify_limit()
-            WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
-            self.assertEqual(self.get_alert_text(), "录制中，无法保存")           
-            self.accept_alert()
-            self.driver.switch_to.default_content()
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test11_modify_limit.png'))
-            raise Exception("false")
-        finally:
-            home = HomePage(self.driver)
-            home.click_system_setup_blck()
-            sleep(1)
-            home.click_record()
-            sleep(2)
-            self.stop_recording()
+    # def test9_modify_limit(self):
+    #     '''录制期间无法更改录制管理中的设置'''
+    #     try:
+    #         logger.info("录制期间无法更改录制管理中的设置")
+    #         self.login()
+    #         records = Records(self.driver)
+    #         records.modify_limit()
+    #         WebDriverWait(self.driver,5,0.5).until(ES.alert_is_present()) 
+    #         self.assertEqual(self.get_alert_text(), "录制中，无法保存")           
+    #         self.accept_alert()
+    #         self.driver.switch_to.default_content()
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test11_modify_limit.png'))
+    #         raise Exception("false")
+    #     finally:
+    #         home = HomePage(self.driver)
+    #         home.click_system_setup_blck()
+    #         sleep(1)
+    #         home.click_record()
+    #         sleep(2)
+    #         self.stop_recording()
 
-    def test_get_multi_num(self):
-        '''录制所有的网络多流'''
-        try:
-            logger.info("录制所有的网络多流")
-            self.login()
-            records = Records(self.driver)
-            records.record_all_netmulti(readconfig.multiurl)
-            logger.info("录制成功")
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test11_modify_limit.png'))
-            raise Exception("false")
+    # def test_get_multi_num(self):
+    #     '''录制所有的网络多流'''
+    #     try:
+    #         logger.info("录制所有的网络多流")
+    #         self.login()
+    #         records = Records(self.driver)
+    #         records.record_all_netmulti(readconfig.multiurl)
+    #         logger.info("录制成功")
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test11_modify_limit.png'))
+    #         raise Exception("false")
         
-    def test_record_custom_quality(self):
-        '''自定义码流质量的录制'''
-        try:
-            logger.info("自定义码流质量的录制")
-            self.login()
-            records = Records(self.driver)
-            records.record_custom_quality()
-            logger.info("录制成功")
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_custom_quality.png'))
-            raise Exception("false")
+    # def test_record_custom_quality(self):
+    #     '''自定义码流质量的录制'''
+    #     try:
+    #         logger.info("自定义码流质量的录制")
+    #         self.login()
+    #         records = Records(self.driver)
+    #         records.record_custom_quality()
+    #         logger.info("录制成功")
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_custom_quality.png'))
+    #         raise Exception("false")
     
-    def test_record_start_ftp(self):
-        '''启动ftp上传录制测试'''
-        try:
-            logger.info("启动ftp上传录制测试")
-            self.login()
-            records = Records(self.driver)
-            records.record_start_ftp()
-            logger.info("录制成功")
-            sleep(5)
-            self.assertEqual(self.gettext(self.ftp_status), "上传完成")
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_start_ftp.png'))
-            raise Exception("false")
+    # def test_record_start_ftp(self):
+    #     '''启动ftp上传录制测试'''
+    #     try:
+    #         logger.info("启动ftp上传录制测试")
+    #         self.login()
+    #         records = Records(self.driver)
+    #         records.record_start_ftp()
+    #         logger.info("录制成功")
+    #         sleep(5)
+    #         self.assertEqual(self.gettext(self.ftp_status), "上传完成")
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_start_ftp.png'))
+    #         raise Exception("false")
     
-    def test_record_localmulti(self):
-        '''本地多流录制'''
-        try:
-            logger.info("本地多流录制")
-            self.login()
-            records = Records(self.driver)
-            records.record_localmulti()
-            logger.info("录制成功")
-        except Exception as msg:
-            logger.error(u"异常原因：%s"%msg)
-            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_localmulti.png'))
-            raise Exception("false")
-        finally:
-            try:
-                self.stop_recording()
-            except:
-                pass
+    # def test_record_localmulti(self):
+    #     '''本地多流录制'''
+    #     try:
+    #         logger.info("本地多流录制")
+    #         self.login()
+    #         records = Records(self.driver)
+    #         records.record_localmulti()
+    #         logger.info("录制成功")
+    #     except Exception as msg:
+    #         logger.error(u"异常原因：%s"%msg)
+    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_record_localmulti.png'))
+    #         raise Exception("false")
+    #     finally:
+    #         try:
+    #             self.stop_recording()
+    #         except:
+    #             pass
 
             
         

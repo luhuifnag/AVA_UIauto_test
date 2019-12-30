@@ -21,7 +21,11 @@ import unittest
 
 import HTMLTestRunner
 from models import readconfig
-
+from test_case.A001_login_test import *
+from test_case.A002_disk_management_test import *
+from test_case.A003_configure_register_test import *
+from test_case.B001_record_page_operation_test import *
+from test_case.B002_record_test import *
 
 
 
@@ -33,6 +37,18 @@ if __name__ == '__main__':
     filename = report_path+'\\'+now+'result.html'
     with open(filename,'wb') as fp:
         runner = HTMLTestRunner.HTMLTestRunner(stream=fp,title='云互动UI自动化测试报告',description='环境：win10，firefox')
-        discover = unittest.defaultTestLoader.discover("test_case",pattern="*test.py",top_level_dir=None)
-        runner.run(discover)
+        # discover = unittest.defaultTestLoader.discover("test_case",pattern="*test.py",top_level_dir=None)
+        # runner.run(discover)
+
+        suite1 = unittest.makeSuite(LoginTest)
+        suite2 = unittest.makeSuite(DiskManagementTest)
+        suite3 = unittest.makeSuite(ConfigureRegisterTest)
+        suite4 = unittest.makeSuite(RecordOperationTest)
+        suite5 = unittest.makeSuite(Recorder)
+
+        unittest.TextTestRunner().run(suite1)
+        unittest.TextTestRunner().run(suite2)
+        unittest.TextTestRunner().run(suite3)
+        unittest.TextTestRunner().run(suite4)
+        unittest.TextTestRunner().run(suite5)
         fp.close()
