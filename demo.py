@@ -11,4 +11,4 @@ my_dict = {10: 'E3M12804', 11: 'E3M12798', 12: 'E3M12740', 13: 'E3M13393', 14: '
 with open('mycsvfile.csv', 'w') as f:  # Just use 'w' mode in 3.x
     w = csv.DictWriter(f, my_dict.keys())
     w.writeheader()
-    w.writerow(my_dict)
+    w.writerow(my_dict)   #16+6+2+262
