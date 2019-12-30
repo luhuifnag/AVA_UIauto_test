@@ -72,8 +72,8 @@ class Records(RecordPage,RecordSet):
         sleep(1)
         home.click_record()
         self.start_recording(thems)
-        sleep(999999999999999999999999999999999999999999999999999999999999999999999999)
-        # self.stop_recording()
+        sleep(30)
+        self.stop_recording()
 
     # #录制一段自定义的主码流质量的视频
     def record_custom_quality(self):

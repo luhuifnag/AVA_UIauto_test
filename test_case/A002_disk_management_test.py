@@ -42,31 +42,31 @@ class DiskManagementTest(MyTest, DiskManagement):
             self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_file_arrangement.png'))
             raise Exception("false")
 
-    # def test3_software_upload(self):   
-    #     '''辅助软件上传测试'''
-    #     try:
-    #         logger.info("辅助软件上传测试")
-    #         self.login()
-    #         self.software_upload(readconfig.date_path+"\\Auxiliary_software.zip")
-    #         self.find_element(self.success)
-    #         print(self.getAttribute(self.success,"textContent")) #获取 layer.msg 弹窗的信息
-    #         self.assertEqual(self.getAttribute(self.success,"textContent"),"上传成功！")
-    #     except Exception as msg:
-    #         logger.error(u"异常原因：%s"%msg)
-    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test3_software_upload.png'))
-    #         raise Exception("false")
+    def test3_software_upload(self):   
+        '''辅助软件上传测试'''
+        try:
+            logger.info("辅助软件上传测试")
+            self.login()
+            self.software_upload(readconfig.date_path+"\\Auxiliary_software.zip")
+            self.find_element(self.success)
+            print(self.getAttribute(self.success,"textContent")) #获取 layer.msg 弹窗的信息
+            self.assertEqual(self.getAttribute(self.success,"textContent"),"上传成功！")
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test3_software_upload.png'))
+            raise Exception("false")
 
-    # def test4_disk_format(self):   
-    #     '''硬盘格式化测试'''
-    #     try:
-    #         logger.info("硬盘格式化测试")
-    #         self.login()
-    #         result = self.disk_format()
-    #         self.assertIn("硬盘格式化成功" ,result)  
-    #     except Exception as msg:
-    #         logger.error(u"异常原因：%s"%msg)
-    #         self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_disk_format.png'))
-    #         raise Exception("false")
+    def test4_disk_format(self):   
+        '''硬盘格式化测试'''
+        try:
+            logger.info("硬盘格式化测试")
+            self.login()
+            result = self.disk_format()
+            self.assertIn("硬盘格式化成功" ,result)  
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'test_disk_format.png'))
+            raise Exception("false")
     
 
    
