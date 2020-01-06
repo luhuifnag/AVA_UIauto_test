@@ -1,14 +1,38 @@
-#coding:utf-8
-'''
-Created on 2019年05月08日
 
-@author: Aloe
-'''
-import csv
+import unittest
+from selenium import webdriver
+from selenium.webdriver.support import expected_conditions as ES
+from selenium.webdriver.support.ui import WebDriverWait
+from models import readconfig
+from selenium.webdriver.common.by import By
 
-my_dict = {10: 'E3M12804', 11: 'E3M12798', 12: 'E3M12740', 13: 'E3M13393', 14: 'E3M12402', 15: 'E3M13324', 16: 'E3M12855', 17: 'E3M12971', 18: 'E3M12871', 19: 'E3M13011', 20: 'E3M13418', 21: 'E3M12775', 22: 'E3M12886', 23: 'E3M12994', 24: 'E3M7566', 25: 'E3M12975', 26: 'E3M13405', 27: 'E3M13443', 28: 'E3M12817', 29: 'E3M12771', 30: 'E3M13373', 31: 'E3M12868', 32: 'E3M12767', 33: 'E3M12862', 34: 'E3M12851', 35: 'E3M5014', 36: 'E3M12996', 37: 'E3M11563', 38: 'E3M12756', 39: 'E3M12793', 40: 'E3M13438'}
+class LoginTest(unittest.TestCase):
+    '''登录测试'''
 
-with open('mycsvfile.csv', 'w') as f:  # Just use 'w' mode in 3.x
-    w = csv.DictWriter(f, my_dict.keys())
-    w.writeheader()
-    w.writerow(my_dict)   #16+6+2+262
+    #元素集
+    #用户名
+    username = (By.ID,"uname")
+    #密码
+    passwd = (By.ID,"upswd")
+    #登录 按钮
+    loginbtn = (By.ID,"lgBtn")
+    #记住密码按钮
+    remember_passwd = (By.XPATH,"//*[@id='lg']/div[2]/div[4]/label/i")
+
+    def test_login(self): 
+
+        try:
+            self.driver = webdriver.Firefox()             # 打开火狐浏览器驱动
+            self.driver.get("http://169.254.178.178")     # 打开这个网址
+            self.driver.implicitly_wait(20)               # 隐式等待20秒
+
+            self.input_text(self.username, "admin")       # 往用户名输入框输入admin
+            self.input_text(self.passwd, "admin")         # 往密码输入框输入admin
+            self.click(self.loginbtn)                     # 点击登录按钮
+            WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统"))   # 显示等待5秒
+
+            self.assertEqual(self.driver.title, u"录播管理系统")                   # 断言登录后的页面的title是否是录播管理系统
+        except Exception as msg:
+            logger.error(u"异常原因：%s"%msg)
+            self.driver.get_screenshot_as_file(os.path.join(readconfig.screen_path,'login.png'))  # 如果try模块出错，给出错误信息，并且将当前页面截图保存
+            raise Exception("false")
