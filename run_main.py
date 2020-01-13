@@ -21,7 +21,8 @@ import unittest
 
 import HTMLTestRunner
 from models import readconfig
-from test_case.A001_login_test import *
+from test_case.C003_buzzer_test import *
+from test_case.C006_language_test import *
 
 
 
@@ -37,8 +38,10 @@ if __name__ == '__main__':
         discover = unittest.defaultTestLoader.discover("test_case",pattern="*test.py",top_level_dir=None)
         runner.run(discover)
 
-        # #以测试用例集的方式运行用例
-        # suite1 = unittest.makeSuite(LoginTest)
+        #以测试用例集的方式运行用例
+        # suite1 = unittest.makeSuite(BuzzerTest)
+        # suite2 = unittest.makeSuite(LanguagesTest)
         # unittest.TextTestRunner().run(suite1)
+        # unittest.TextTestRunner().run(suite2)
 
         fp.close()

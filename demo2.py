@@ -4,21 +4,27 @@ Created on 2019年04月16日
 
 @author: Aloe
 '''
+class A:
+    cookies = []
+    def a(self):
+        global cookies
+        c = []
+        for i in range(3):
+            c.append(i)
+        cookies = c
 
-try:
-        try:
-            "1"=="2"
-            # print('199')
-        except:
-        print("111")
-        print("111")
-        print("111")
-        print("111")
-        print("111")
-        print("111")
-        print("111")
-        print("111")
-except:
-    print('0000')
+class B(A):
 
+    def b(self):
+        print(cookies)
+
+class C(A):
+
+    def b(self):
+        print(cookies)
+
+
+# A().a()
+B().b()
+C().b()
         
