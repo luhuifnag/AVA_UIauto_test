@@ -18,6 +18,7 @@ from utils.log import logger
 class RecordOperationTest(MyTest, RecordOperation):
     '''录播页面相关操作测试'''
 
+
     def test1_living_back(self):
         '''测试在直播过程中点击录播页面返回按钮，验证是否有提示信息'''   
         try:

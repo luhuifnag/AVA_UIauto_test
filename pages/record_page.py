@@ -114,7 +114,7 @@ class RecordPage(BasePage):
     # 云台的上、下、左、右控制按钮 
     '''
     svg的路径需要按照特殊写法编写才能进行识别,
-    从svg元素开始，下面的元素都要以  *[name()='svg element'] 这种形式进行编写 
+    从svg标签开始的元素，下面的元素都要以  *[name()='svg element'] 这种形式进行编写 
     在selenium点击svg形式的页面元素时，不能用普通的driver.find_element_by_xpath(svgelementXpath).click() 的方式进行点击，这样操作执行时会报错误信息。
     需要以定义action的形式访问svg的元素信息。
     from selenium.webdriver import ActionChains

@@ -16,11 +16,11 @@ from utils.log import logger
 
 class RecordOperation(RecordPage):
 
+
     #在直播过程中点击录播页面返回按钮
     def living_back(self):
         home = HomePage(self.driver)
-        home.click_record() 
-        sleep(1)                
+        home.goto_links('录播')             
         self.start_live()
         sleep(4)
         home.click_record_black()
@@ -29,22 +29,19 @@ class RecordOperation(RecordPage):
     # 点击全自动按钮
     def select_auto(self):
         home = HomePage(self.driver)
-        home.click_record() 
-        sleep(1) 
+        home.goto_links('录播') 
         self.click_autobtn()
 
     # 点击半自动按钮
     def select_semiauto(self):
         home = HomePage(self.driver)
-        home.click_record() 
-        sleep(1) 
+        home.goto_links('录播')
         self.click_semiautobtn()
     
     # 录制一段云台控制的视频
     def PTZ_control_record(self):
         home = HomePage(self.driver)
-        home.click_record() 
-        sleep(1)
+        home.goto_links('录播')
         self.select_windows_tags1()
         self.select_windows()
         self.start_recording("云台控制录制")
@@ -62,8 +59,7 @@ class RecordOperation(RecordPage):
     # 录制一段切换布局的视频
     def switching_layout(self):
         home = HomePage(self.driver)
-        home.click_record() 
-        sleep(1)
+        home.goto_links('录播')
         self.start_recording("切换布局录制")
         try:
             self.click(self.manualbtn)  #有的设备没有手动按钮，所以这一步要try起来
@@ -87,8 +83,7 @@ class RecordOperation(RecordPage):
     # 上传logo
     def upload_logo(self,path):
         home = HomePage(self.driver)
-        home.click_record() 
-        sleep(1)
+        home.goto_links('录播')
         self.click(self.logobtn)
         logger.info(u"上传logo")
         self.input_text(self.logofile,path)
@@ -99,8 +94,7 @@ class RecordOperation(RecordPage):
     # 录制一段调整字幕的视频
     def adjust_subtitles(self,):
         home = HomePage(self.driver)
-        home.click_record() 
-        sleep(1)
+        home.goto_links('录播')
         self.start_recording("字幕调整")
         sleep(5)
         self.click(self.subtitlebtn)

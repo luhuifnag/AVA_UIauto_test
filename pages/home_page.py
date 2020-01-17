@@ -8,6 +8,8 @@ from time import sleep
 from selenium.webdriver.common.by import By
 from pages.basepage import BasePage
 from utils.log import logger
+from models import readconfig
+
 
 class HomePage(BasePage):
 
@@ -105,9 +107,51 @@ class HomePage(BasePage):
         user = (By.XPATH,"//*[@id='user']")
         self.click(user)
 
+    def goto_links(self, links_name,labelname=None):
+        if links_name == '首页':
+            self.driver.get('%s/index.html?' % readconfig.url)
+            sleep(2)
+        elif links_name == '录播':
+            self.driver.get('%s/admin/playguide/playguide.html?' % readconfig.url)
+            sleep(3)
+        elif links_name == '互动':
+            self.driver.get('%s/admin/interact/interact.html?' % readconfig.url)
+            sleep(3)
+        elif links_name == '录制管理':
+            self.driver.get('%s/admin/file/filemanage.html?' % readconfig.url)
+            sleep(3)
+            self.driver.switch_to.frame("content")
+        elif links_name == '插件管理':
+            self.driver.get('%s/admin/system/soft.html?' % readconfig.url)
+        elif links_name == '应用设置':
+            self.driver.get('%s/admin/system/sysConfigure.html?' % readconfig.url)
+            sleep(2)
+            self.click(labelname)
+            sleep(2)
+            self.driver.switch_to.frame("content")
+        elif links_name =='基本设置':
+            self.driver.get('%s/admin/system/sysConfigure.html?' % readconfig.url)
+            sleep(2)
+            self.click_basic_setting()
+            sleep(2)
+            self.click(labelname)
+            sleep(2)
+            self.driver.switch_to.frame("content") 
+        elif links_name == '快速配置':
+            self.driver.get('%s/admin/systemQuick/quickConfigure.html?' % readconfig.url)
+            sleep(2)
+            self.click(labelname)
+            sleep(3)
+            self.driver.switch_to.frame("main") 
+        else:
+            logger.error('输入参数有误')
+    
+        
+
     #进入到应用设置的某个页面里面
     def swich_to_system_label(self,labelname,text):
         self.click_system_setup()
+        self.goto_links('系统设置')
         sleep(2)
         self.click_application_settings()
         sleep(3)
@@ -147,5 +191,6 @@ class HomePage(BasePage):
         sleep(3)
         self.driver.switch_to.frame("main") 
 
-
+    def aaa(self):
+        print('1111')
    

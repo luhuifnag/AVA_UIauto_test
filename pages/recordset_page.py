@@ -67,8 +67,9 @@ class RecordSet(BasePage):
     # 进入录制参数页面后判断设备类型
     def getinto_recordset(self):
         home = HomePage(self.driver)
-        home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
-        sleep(2)
+        home.goto_links('应用设置',self.recordsetbtn)
+        # home.swich_to_system_label(self.recordsetbtn,"录制参数") #进入到录制参数页面
+        # sleep(2)
         
     # 设置主码流质量
     def set_main_quality(self,num,quality="1080p"):

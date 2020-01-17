@@ -46,8 +46,7 @@ class VideoManagemen(BasePage):
     #进入录制管理页面
     def check_recorder_massage(self):
         home = HomePage(self.driver)
-        home.click_video_managemen()
-        sleep(2)
+        home.goto_links('录制管理')
      
 
     #查看文件详细信息

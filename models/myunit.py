@@ -38,4 +38,3 @@ class MyTest(unittest.TestCase):
         login = LoginPage(self.driver)
         login.login_sys(readconfig.username, readconfig.password)
         sleep(2)
-        WebDriverWait(self.driver,5,0.5).until(ES.title_is(u"录播管理系统")) 

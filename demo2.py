@@ -4,27 +4,36 @@ Created on 2019年04月16日
 
 @author: Aloe
 '''
-class A:
-    cookies = []
+class base:
+    def __init__(self,driver):
+        self.driver = driver
+
     def a(self):
-        global cookies
-        c = []
-        for i in range(3):
-            c.append(i)
-        cookies = c
+        print('000')
 
-class B(A):
+class record(base):
 
     def b(self):
-        print(cookies)
+        print('bbbbb')
 
-class C(A):
+class homepage(base):
 
-    def b(self):
-        print(cookies)
+    def f(self):
+        print('fffff')
 
+class operation(record):
 
-# A().a()
-B().b()
-C().b()
+    def __init__(self):
+        super(operation,self).__init__(self)
+        self.home = homepage(self.driver)
+  
+    def c(self):
+        self.home.f()
+        
+class M(operation):
+    def m(self):
+        self.c()
+
+# operation().c()
+M().m()
         

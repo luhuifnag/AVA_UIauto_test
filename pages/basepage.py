@@ -28,16 +28,31 @@ class BasePage(object):
         '''
         self.driver = driver
 
+
     #显式等待
     def WebDriverWait(self, loc, MaxTime=10, Mimtime=0.5):
         WebDriverWait(self.driver, MaxTime, Mimtime,ignored_exceptions="no this element").until(ES.presence_of_element_located((loc)))
 
-    # 查找元素s
-    def find_element(self, loc):
-        return WebDriverWait(self.driver,10, 0.5, ignored_exceptions="no this element").until(ES.presence_of_element_located((loc)))
-        # 使用上面的加了等待的查找元素有的类似于alert的对话框元素查找不到
-        # return self.driver.find_element(*loc)
+    # # 查找元素s
+    # def find_element(self, loc):
+    #     return WebDriverWait(self.driver,10, 0.5, ignored_exceptions="no this element").until(ES.presence_of_element_located((loc)))
+    #     # 使用上面的加了等待的查找元素有的类似于alert的对话框元素查找不到
+
     
+    def find_element(self, locator):
+        """重写元素定位方法"""
+        if not isinstance(locator, tuple):
+            self.log.error('locator参数必须是元组类型，而不是：{}'.format(type(locator)))
+            return ""
+        else:
+            try:
+                element = WebDriverWait(self.driver, 10, 0.5).until(
+                    ES.presence_of_element_located(locator))
+                if element.is_displayed():
+                    return element
+            except:
+                self.log.info('%s页面中未能找到元素%s' % (self, locator))
+                return ""
 
     #在输入框中输入文字
     def input_text(self,loc,text):

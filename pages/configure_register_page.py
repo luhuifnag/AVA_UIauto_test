@@ -91,7 +91,7 @@ class ConfigureRegister(BasePage):
     #设置注册服务的各项信息
     def register_rserver(self,ip,name,passwd,name2,ip2=""):
         home = HomePage(self.driver)
-        home.swich_to_configure_label(self.registerbtn,"注册服务")
+        home.goto_links('快速配置',self.registerbtn)
         self.input_serverIP(ip)
         self.input_userName(name)
         self.input_backupip(ip2)
